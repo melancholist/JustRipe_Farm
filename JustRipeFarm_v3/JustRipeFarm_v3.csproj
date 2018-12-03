@@ -67,13 +67,13 @@
       <DependentUpon>ManagerLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="DbConnector.cs" />
-    <Compile Include="Labourer.cs" />
+    <Compile Include="Staff.cs" />
     <Compile Include="LabourerHandler.cs" />
-    <Compile Include="LabourerManagement.cs">
+    <Compile Include="StaffManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LabourerManagement.Designer.cs">
-      <DependentUpon>LabourerManagement.cs</DependentUpon>
+    <Compile Include="StaffManagement.Designer.cs">
+      <DependentUpon>StaffManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -87,14 +87,6 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manager.cs" />
-    <Compile Include="ManagerAccount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManagerAccount.Designer.cs">
-      <DependentUpon>ManagerAccount.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ManagerHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecordTransaction.cs">
@@ -124,17 +116,14 @@
     <EmbeddedResource Include="ManagerLogin.resx">
       <DependentUpon>ManagerLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabourerManagement.resx">
-      <DependentUpon>LabourerManagement.cs</DependentUpon>
+    <EmbeddedResource Include="StaffManagement.resx">
+      <DependentUpon>StaffManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManagerAccount.resx">
-      <DependentUpon>ManagerAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

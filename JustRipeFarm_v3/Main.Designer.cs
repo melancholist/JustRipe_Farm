@@ -32,9 +32,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.manageraccountPictureBox = new System.Windows.Forms.PictureBox();
             this.logoutPictureBox = new System.Windows.Forms.PictureBox();
-            this.btnLabourerManagement = new System.Windows.Forms.Button();
+            this.btnStaffManagement = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelBtnIndicator6 = new System.Windows.Forms.Panel();
             this.panelBtnIndicator5 = new System.Windows.Forms.Panel();
@@ -53,29 +52,28 @@
             this.panelBtnIndicator1 = new System.Windows.Forms.Panel();
             this.btnSchedule = new System.Windows.Forms.Button();
             this.pnlSchedule = new System.Windows.Forms.Panel();
-            this.pnlSowing = new System.Windows.Forms.Panel();
-            this.pnlHarvest = new System.Windows.Forms.Panel();
             this.pnlAccounting = new System.Windows.Forms.Panel();
+            this.lblTransactionHistory = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnViewSales = new System.Windows.Forms.Button();
             this.btnRecordTransaction = new System.Windows.Forms.Button();
             this.lblAccounting = new System.Windows.Forms.Label();
+            this.pnlSowing = new System.Windows.Forms.Panel();
+            this.pnlHarvest = new System.Windows.Forms.Panel();
             this.panelBtnIndicatorHarv = new System.Windows.Forms.Panel();
             this.btnHarvest = new System.Windows.Forms.Button();
             this.panelBtnIndicatorSow = new System.Windows.Forms.Panel();
             this.btnSowing = new System.Windows.Forms.Button();
-            this.lblTransactionHistory = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.manageraccountPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxLabourer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxManager)).BeginInit();
             this.pnlSchedule.SuspendLayout();
-            this.pnlSowing.SuspendLayout();
             this.pnlAccounting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pnlSowing.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -104,9 +102,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.panel2.Controls.Add(this.manageraccountPictureBox);
             this.panel2.Controls.Add(this.logoutPictureBox);
-            this.panel2.Controls.Add(this.btnLabourerManagement);
+            this.panel2.Controls.Add(this.btnStaffManagement);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -115,20 +112,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1200, 65);
             this.panel2.TabIndex = 5;
-            // 
-            // manageraccountPictureBox
-            // 
-            this.manageraccountPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.manageraccountPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("manageraccountPictureBox.Image")));
-            this.manageraccountPictureBox.Location = new System.Drawing.Point(1078, 5);
-            this.manageraccountPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.manageraccountPictureBox.Name = "manageraccountPictureBox";
-            this.manageraccountPictureBox.Size = new System.Drawing.Size(57, 58);
-            this.manageraccountPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.manageraccountPictureBox.TabIndex = 9;
-            this.manageraccountPictureBox.TabStop = false;
-            this.manageraccountPictureBox.Visible = false;
-            this.manageraccountPictureBox.Click += new System.EventHandler(this.manageraccountPictureBox_Click);
             // 
             // logoutPictureBox
             // 
@@ -143,22 +126,22 @@
             this.logoutPictureBox.TabStop = false;
             this.logoutPictureBox.Click += new System.EventHandler(this.logoutPictureBox_Click);
             // 
-            // btnLabourerManagement
+            // btnStaffManagement
             // 
-            this.btnLabourerManagement.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnLabourerManagement.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
-            this.btnLabourerManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLabourerManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLabourerManagement.ForeColor = System.Drawing.Color.White;
-            this.btnLabourerManagement.Location = new System.Drawing.Point(808, 6);
-            this.btnLabourerManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLabourerManagement.Name = "btnLabourerManagement";
-            this.btnLabourerManagement.Size = new System.Drawing.Size(261, 54);
-            this.btnLabourerManagement.TabIndex = 8;
-            this.btnLabourerManagement.Text = "labourer management";
-            this.btnLabourerManagement.UseVisualStyleBackColor = true;
-            this.btnLabourerManagement.Visible = false;
-            this.btnLabourerManagement.Click += new System.EventHandler(this.btnAddLabourer_Click);
+            this.btnStaffManagement.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnStaffManagement.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnStaffManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStaffManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStaffManagement.ForeColor = System.Drawing.Color.White;
+            this.btnStaffManagement.Location = new System.Drawing.Point(870, 6);
+            this.btnStaffManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnStaffManagement.Name = "btnStaffManagement";
+            this.btnStaffManagement.Size = new System.Drawing.Size(261, 54);
+            this.btnStaffManagement.TabIndex = 8;
+            this.btnStaffManagement.Text = "staff management";
+            this.btnStaffManagement.UseVisualStyleBackColor = true;
+            this.btnStaffManagement.Visible = false;
+            this.btnStaffManagement.Click += new System.EventHandler(this.btnStaffManagement_Click);
             // 
             // panel1
             // 
@@ -433,27 +416,6 @@
             this.pnlSchedule.Size = new System.Drawing.Size(969, 722);
             this.pnlSchedule.TabIndex = 7;
             // 
-            // pnlSowing
-            // 
-            this.pnlSowing.BackColor = System.Drawing.Color.Gray;
-            this.pnlSowing.Controls.Add(this.pnlHarvest);
-            this.pnlSowing.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlSowing.Location = new System.Drawing.Point(2, 52);
-            this.pnlSowing.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlSowing.Name = "pnlSowing";
-            this.pnlSowing.Size = new System.Drawing.Size(968, 670);
-            this.pnlSowing.TabIndex = 8;
-            // 
-            // pnlHarvest
-            // 
-            this.pnlHarvest.BackColor = System.Drawing.Color.Moccasin;
-            this.pnlHarvest.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlHarvest.Location = new System.Drawing.Point(3, 0);
-            this.pnlHarvest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlHarvest.Name = "pnlHarvest";
-            this.pnlHarvest.Size = new System.Drawing.Size(970, 670);
-            this.pnlHarvest.TabIndex = 9;
-            // 
             // pnlAccounting
             // 
             this.pnlAccounting.BackColor = System.Drawing.Color.Tan;
@@ -466,6 +428,16 @@
             this.pnlAccounting.Name = "pnlAccounting";
             this.pnlAccounting.Size = new System.Drawing.Size(949, 678);
             this.pnlAccounting.TabIndex = 0;
+            // 
+            // lblTransactionHistory
+            // 
+            this.lblTransactionHistory.AutoSize = true;
+            this.lblTransactionHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTransactionHistory.Location = new System.Drawing.Point(20, 129);
+            this.lblTransactionHistory.Name = "lblTransactionHistory";
+            this.lblTransactionHistory.Size = new System.Drawing.Size(189, 24);
+            this.lblTransactionHistory.TabIndex = 5;
+            this.lblTransactionHistory.Text = "Transaction History";
             // 
             // dataGridView1
             // 
@@ -505,6 +477,27 @@
             this.lblAccounting.Size = new System.Drawing.Size(230, 46);
             this.lblAccounting.TabIndex = 0;
             this.lblAccounting.Text = "Accounting";
+            // 
+            // pnlSowing
+            // 
+            this.pnlSowing.BackColor = System.Drawing.Color.Gray;
+            this.pnlSowing.Controls.Add(this.pnlHarvest);
+            this.pnlSowing.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pnlSowing.Location = new System.Drawing.Point(2, 52);
+            this.pnlSowing.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlSowing.Name = "pnlSowing";
+            this.pnlSowing.Size = new System.Drawing.Size(968, 670);
+            this.pnlSowing.TabIndex = 8;
+            // 
+            // pnlHarvest
+            // 
+            this.pnlHarvest.BackColor = System.Drawing.Color.Moccasin;
+            this.pnlHarvest.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pnlHarvest.Location = new System.Drawing.Point(3, 0);
+            this.pnlHarvest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlHarvest.Name = "pnlHarvest";
+            this.pnlHarvest.Size = new System.Drawing.Size(970, 670);
+            this.pnlHarvest.TabIndex = 9;
             // 
             // panelBtnIndicatorHarv
             // 
@@ -564,16 +557,6 @@
             this.btnSowing.UseVisualStyleBackColor = false;
             this.btnSowing.Click += new System.EventHandler(this.btnSowing_Click);
             // 
-            // lblTransactionHistory
-            // 
-            this.lblTransactionHistory.AutoSize = true;
-            this.lblTransactionHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTransactionHistory.Location = new System.Drawing.Point(20, 129);
-            this.lblTransactionHistory.Name = "lblTransactionHistory";
-            this.lblTransactionHistory.Size = new System.Drawing.Size(189, 24);
-            this.lblTransactionHistory.TabIndex = 5;
-            this.lblTransactionHistory.Text = "Transaction History";
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -591,17 +574,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.manageraccountPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxLabourer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxManager)).EndInit();
             this.pnlSchedule.ResumeLayout(false);
-            this.pnlSowing.ResumeLayout(false);
             this.pnlAccounting.ResumeLayout(false);
             this.pnlAccounting.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.pnlSowing.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -611,7 +593,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox logoutPictureBox;
-        public System.Windows.Forms.Button btnLabourerManagement;
+        public System.Windows.Forms.Button btnStaffManagement;
         public System.Windows.Forms.Label lblLabourer;
         public System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.PictureBox picboxLabourer;
@@ -626,7 +608,6 @@
         private System.Windows.Forms.Panel pnlHarvest;
         private System.Windows.Forms.Panel panelBtnIndicator2;
         private System.Windows.Forms.Button btnResources;
-        public System.Windows.Forms.PictureBox manageraccountPictureBox;
         public System.Windows.Forms.Label lblManager;
         public System.Windows.Forms.PictureBox picBoxManager;
         private System.Windows.Forms.Button btnAccounting;

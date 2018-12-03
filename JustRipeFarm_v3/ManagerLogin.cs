@@ -46,7 +46,7 @@ namespace JustRipeFarm_v3
 
                         main.picBoxManager.Visible = true;
                         main.lblManager.Visible = true;
-                        main.btnLabourerManagement.Visible = true;
+                        main.btnStaffManagement.Visible = true;
                         main.manageraccountPictureBox.Visible = true;
                     }
                     else

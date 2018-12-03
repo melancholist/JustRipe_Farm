@@ -9,7 +9,7 @@ namespace JustRipeFarm_v3
 {
     public class LabourerHandler
     {
-        public int addNewLabourer(SqlConnection conn, Labourer labourer)
+        public int addNewLabourer(SqlConnection conn, Staff labourer)
         {
             string insertQuery = "INSERT INTO LabourerData (FirstName, LastName, Age, Sex, MaritalStatus, Address, ZipCode, NRIC, DateOfBirth, HandphoneNumber, HouseNumber, Status, DateOfHire, HourlyWage, Username, Password)"
                 + "VALUES ('" + labourer.FirstName1 + "', '" + labourer.LastName1 + "'  , " + labourer.Age1 + ", '" +

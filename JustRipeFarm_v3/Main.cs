@@ -13,8 +13,7 @@ namespace JustRipeFarm_v3
 {
     public partial class Main : Form
     {
-        Manager mangr = new Manager();
-        Labourer lab = new Labourer();
+        Staff lab = new Staff();
         DbConnector DbCon = new DbConnector();
 
         public Main()
@@ -44,13 +43,6 @@ namespace JustRipeFarm_v3
 
             Login login = new Login();
             login.Show();
-        }
-
-        private void btnAddLabourer_Click(object sender, EventArgs e)
-        {
-            LabourerManagement labr = new LabourerManagement();
-            labr.Show();
-            this.Hide();
         }
 
         private void btnSchedule_Click(object sender, EventArgs e)
@@ -107,14 +99,6 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator5.Hide();
                 panelBtnIndicator6.Hide();
             }
-        }
-
-        private void manageraccountPictureBox_Click(object sender, EventArgs e)
-        {
-            ManagerAccount mng = new ManagerAccount();
-            mng.Show();
-
-            this.Close();
         }
 
         private void btnStorage_Click(object sender, EventArgs e)
@@ -182,6 +166,13 @@ namespace JustRipeFarm_v3
         {
             Sales sales = new Sales();
             sales.Show();
+        }
+
+        private void btnStaffManagement_Click(object sender, EventArgs e)
+        {
+            StaffManagement labr = new StaffManagement();
+            labr.Show();
+            this.Hide();
         }
     }
 }

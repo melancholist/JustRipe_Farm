@@ -11,12 +11,12 @@ using System.Data.SqlClient;
 
 namespace JustRipeFarm_v3
 {
-    public partial class LabourerManagement : Form
+    public partial class StaffManagement : Form
     {
-        public LabourerManagement()
+        public StaffManagement()
         {
             InitializeComponent();
-            pnlAddLabourer.Show();
+            pnlAddStaff.Show();
             pnlBtnIndic1.Show();
         }
 
@@ -27,20 +27,9 @@ namespace JustRipeFarm_v3
 
             main.picBoxManager.Visible = true;
             main.lblManager.Visible = true;
-            main.btnLabourerManagement.Visible = true;
-            main.manageraccountPictureBox.Visible = true;
+            main.btnStaffManagement.Visible = true;
 
             this.Hide();
-        }
-
-        private void btnAddLabourer_Click(object sender, EventArgs e)
-        {
-            pnlAddLabourer.Show();
-
-            if(btnAddLabourer.Enabled)
-            {
-                pnlBtnIndic1.Show();
-            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -66,7 +55,7 @@ namespace JustRipeFarm_v3
             DbConnector dbConn = new DbConnector();
             dbConn.connect();
 
-            Labourer labr = new Labourer();
+            Staff labr = new Staff();
             labr.FirstName1 = fnameTextBox.Text;
             labr.LastName1 = lnameTextBox.Text;
             labr.Age1 = Decimal.Parse(ageTextBox.Text);
@@ -83,28 +72,12 @@ namespace JustRipeFarm_v3
             labr.HourlyWage1 = Decimal.Parse(wageTextBox.Text);
             labr.Username1 = usernameTextBox.Text;
             labr.Password1 = passwordTextBox.Text;
-
-
-            LabourerHandler labHnd = new LabourerHandler();
-            labHnd.addNewLabourer(dbConn.getConn(), labr);
-            MessageBox.Show("Labourer record has been added!");
-
-            //Clears the textboxes
-            fnameTextBox.Text = "";
-            lnameTextBox.Text = "";
-            ageTextBox.Text = "";
-            sexComboBox.Text = "";
-            maritalComboBox.Text = "";
-            addressRichTextBox.Text = "";
-            zipTextBox.Text = "";
-            nricTextBox.Text = "";
-            handphoneTextBox.Text = "";
-            houseTextBox.Text = "";
-            statusComboBox.Text = "";
-            wageTextBox.Text = "";
-            usernameTextBox.Text = "";
-            passwordTextBox.Text = "";
             
+        }
+
+        private void btnAddStaff_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
