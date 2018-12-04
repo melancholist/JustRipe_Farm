@@ -1,6 +1,6 @@
 ﻿namespace JustRipeFarm_v3
 {
-    partial class ResetPasswordLabourer
+    partial class ResetPassword
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResetPasswordLabourer));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResetPassword));
             this.label1 = new System.Windows.Forms.Label();
             this.exitPictureBox = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBoxLabrNewPass = new System.Windows.Forms.TextBox();
-            this.textBoxLabrConfirmPass = new System.Windows.Forms.TextBox();
-            this.textBoxLabrUser = new System.Windows.Forms.TextBox();
-            this.btnLabourerConfirm = new System.Windows.Forms.Button();
+            this.textBoxNewPassword = new System.Windows.Forms.TextBox();
+            this.textBoxConfirmPasssword = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.btnConfirm = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -74,51 +74,51 @@
             this.panel1.Size = new System.Drawing.Size(478, 81);
             this.panel1.TabIndex = 5;
             // 
-            // textBoxLabrNewPass
+            // textBoxNewPassword
             // 
-            this.textBoxLabrNewPass.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLabrNewPass.Location = new System.Drawing.Point(249, 182);
-            this.textBoxLabrNewPass.Multiline = true;
-            this.textBoxLabrNewPass.Name = "textBoxLabrNewPass";
-            this.textBoxLabrNewPass.PasswordChar = '●';
-            this.textBoxLabrNewPass.Size = new System.Drawing.Size(183, 32);
-            this.textBoxLabrNewPass.TabIndex = 21;
+            this.textBoxNewPassword.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNewPassword.Location = new System.Drawing.Point(249, 182);
+            this.textBoxNewPassword.Multiline = true;
+            this.textBoxNewPassword.Name = "textBoxNewPassword";
+            this.textBoxNewPassword.PasswordChar = '●';
+            this.textBoxNewPassword.Size = new System.Drawing.Size(183, 32);
+            this.textBoxNewPassword.TabIndex = 21;
             // 
-            // textBoxLabrConfirmPass
+            // textBoxConfirmPasssword
             // 
-            this.textBoxLabrConfirmPass.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLabrConfirmPass.Location = new System.Drawing.Point(249, 233);
-            this.textBoxLabrConfirmPass.Multiline = true;
-            this.textBoxLabrConfirmPass.Name = "textBoxLabrConfirmPass";
-            this.textBoxLabrConfirmPass.PasswordChar = '●';
-            this.textBoxLabrConfirmPass.Size = new System.Drawing.Size(183, 32);
-            this.textBoxLabrConfirmPass.TabIndex = 20;
+            this.textBoxConfirmPasssword.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConfirmPasssword.Location = new System.Drawing.Point(249, 233);
+            this.textBoxConfirmPasssword.Multiline = true;
+            this.textBoxConfirmPasssword.Name = "textBoxConfirmPasssword";
+            this.textBoxConfirmPasssword.PasswordChar = '●';
+            this.textBoxConfirmPasssword.Size = new System.Drawing.Size(183, 32);
+            this.textBoxConfirmPasssword.TabIndex = 20;
             // 
-            // textBoxLabrUser
+            // textBoxUsername
             // 
-            this.textBoxLabrUser.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLabrUser.Location = new System.Drawing.Point(249, 131);
-            this.textBoxLabrUser.Multiline = true;
-            this.textBoxLabrUser.Name = "textBoxLabrUser";
-            this.textBoxLabrUser.Size = new System.Drawing.Size(183, 32);
-            this.textBoxLabrUser.TabIndex = 19;
+            this.textBoxUsername.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.Location = new System.Drawing.Point(249, 131);
+            this.textBoxUsername.Multiline = true;
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(183, 32);
+            this.textBoxUsername.TabIndex = 19;
             // 
-            // btnLabourerConfirm
+            // btnConfirm
             // 
-            this.btnLabourerConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.btnLabourerConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLabourerConfirm.FlatAppearance.BorderSize = 0;
-            this.btnLabourerConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLabourerConfirm.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLabourerConfirm.ForeColor = System.Drawing.Color.White;
-            this.btnLabourerConfirm.Location = new System.Drawing.Point(110, 300);
-            this.btnLabourerConfirm.Margin = new System.Windows.Forms.Padding(0);
-            this.btnLabourerConfirm.Name = "btnLabourerConfirm";
-            this.btnLabourerConfirm.Size = new System.Drawing.Size(268, 50);
-            this.btnLabourerConfirm.TabIndex = 18;
-            this.btnLabourerConfirm.Text = "confirm";
-            this.btnLabourerConfirm.UseVisualStyleBackColor = false;
-            this.btnLabourerConfirm.Click += new System.EventHandler(this.btnLabourerConfirm_Click);
+            this.btnConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfirm.FlatAppearance.BorderSize = 0;
+            this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirm.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.ForeColor = System.Drawing.Color.White;
+            this.btnConfirm.Location = new System.Drawing.Point(110, 300);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(0);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(268, 50);
+            this.btnConfirm.TabIndex = 18;
+            this.btnConfirm.Text = "confirm";
+            this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // label2
             // 
@@ -156,24 +156,24 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "enter username:";
             // 
-            // ResetPasswordLabourer
+            // ResetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(478, 457);
-            this.Controls.Add(this.textBoxLabrNewPass);
-            this.Controls.Add(this.textBoxLabrConfirmPass);
+            this.Controls.Add(this.textBoxNewPassword);
+            this.Controls.Add(this.textBoxConfirmPasssword);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBoxLabrUser);
+            this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.exitPictureBox);
-            this.Controls.Add(this.btnLabourerConfirm);
+            this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ResetPasswordLabourer";
+            this.Name = "ResetPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ResetPassword";
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
@@ -187,10 +187,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox exitPictureBox;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBoxLabrNewPass;
-        private System.Windows.Forms.TextBox textBoxLabrConfirmPass;
-        private System.Windows.Forms.TextBox textBoxLabrUser;
-        private System.Windows.Forms.Button btnLabourerConfirm;
+        private System.Windows.Forms.TextBox textBoxNewPassword;
+        private System.Windows.Forms.TextBox textBoxConfirmPasssword;
+        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

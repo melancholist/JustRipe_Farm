@@ -139,7 +139,7 @@
             this.btnAddStaff.Name = "btnAddStaff";
             this.btnAddStaff.Size = new System.Drawing.Size(203, 79);
             this.btnAddStaff.TabIndex = 2;
-            this.btnAddStaff.Text = "Add Labourer";
+            this.btnAddStaff.Text = "Add Staff";
             this.btnAddStaff.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddStaff.UseVisualStyleBackColor = true;
             this.btnAddStaff.Click += new System.EventHandler(this.btnAddStaff_Click);
@@ -182,6 +182,7 @@
             this.btnAddManager.TabIndex = 3;
             this.btnAddManager.Text = "Manager";
             this.btnAddManager.UseVisualStyleBackColor = false;
+            this.btnAddManager.Click += new System.EventHandler(this.btnAddManager_Click);
             // 
             // btnAddLabourer
             // 
@@ -197,6 +198,7 @@
             this.btnAddLabourer.TabIndex = 4;
             this.btnAddLabourer.Text = "Labourer";
             this.btnAddLabourer.UseVisualStyleBackColor = false;
+            this.btnAddLabourer.Click += new System.EventHandler(this.btnAddLabourer_Click);
             // 
             // btnAddSalesStaff
             // 
@@ -206,12 +208,13 @@
             this.btnAddSalesStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddSalesStaff.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddSalesStaff.ForeColor = System.Drawing.Color.White;
-            this.btnAddSalesStaff.Location = new System.Drawing.Point(788, 21);
+            this.btnAddSalesStaff.Location = new System.Drawing.Point(786, 21);
             this.btnAddSalesStaff.Name = "btnAddSalesStaff";
             this.btnAddSalesStaff.Size = new System.Drawing.Size(203, 79);
             this.btnAddSalesStaff.TabIndex = 5;
             this.btnAddSalesStaff.Text = "Sales Staff";
             this.btnAddSalesStaff.UseVisualStyleBackColor = false;
+            this.btnAddSalesStaff.Click += new System.EventHandler(this.btnAddSalesStaff_Click);
             // 
             // dataGridView1
             // 
@@ -310,13 +313,13 @@
         private System.Windows.Forms.Panel pnlAddStaff;
         private System.Windows.Forms.Panel pnlBtnIndic1;
         private System.Windows.Forms.Panel pnlBtnIndic2;
-        private System.Windows.Forms.Button btnAddSalesStaff;
-        private System.Windows.Forms.Button btnAddLabourer;
-        private System.Windows.Forms.Button btnAddManager;
         private System.Windows.Forms.PictureBox picBocSearch;
         private System.Windows.Forms.ComboBox searchComboBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnUpdate;
+        public System.Windows.Forms.Button btnAddSalesStaff;
+        public System.Windows.Forms.Button btnAddLabourer;
+        public System.Windows.Forms.Button btnAddManager;
     }
 }

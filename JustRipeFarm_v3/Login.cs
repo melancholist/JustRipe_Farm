@@ -14,6 +14,7 @@ namespace JustRipeFarm_v3
     public partial class Login : Form
     {
         DbConnector DBConn = new DbConnector();
+        Main mn = new Main();
         SqlDataAdapter da;
 
         public Login()
@@ -31,29 +32,40 @@ namespace JustRipeFarm_v3
             Application.Exit();
         }
 
-        private void picBoxManager_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ManagerLogin adminLogin = new ManagerLogin();
-            adminLogin.Show();
-        }
-
         private void resetPasswordLabel_Click(object sender, EventArgs e)
         {
             //Hides this form
             this.Hide();
 
             //Proceeds to the reset password form
-            ResetPasswordLabourer reset = new ResetPasswordLabourer();
+            ResetPassword reset = new ResetPassword();
             reset.Show();
         }
 
-
-        private void btnLabourerLogin_Click(object sender, EventArgs e)
+        private void txtBoxUsername_KeyDown(object sender, KeyEventArgs e)
         {
-            Main mn = new Main();
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                btnLogin.PerformClick();
+            }
+        }
 
-            if (string.IsNullOrWhiteSpace(txtBoxuLabourer.Text) || string.IsNullOrWhiteSpace(txtBoxpLabourer.Text))
+        private void txtBoxPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                btnLogin.PerformClick();
+            }
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            DBConn.connect();
+            string loginQuery = "SELECT *  from StaffData WHERE Username ='" + txtBoxUsername.Text + "' and Password ='" + txtBoxPassword.Text + "'";
+
+            if (string.IsNullOrWhiteSpace(txtBoxUsername.Text) || string.IsNullOrWhiteSpace(txtBoxPassword.Text))
             {
                 MessageBox.Show("Please provide Username and Password.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -61,9 +73,6 @@ namespace JustRipeFarm_v3
             {
                 try
                 {
-                    DBConn.connect();
-                    string loginQuery = "SELECT Count(*) from LabourerData WHERE Username ='" + txtBoxuLabourer.Text + "' and Password ='" + txtBoxpLabourer.Text + "'";
-
                     da = new SqlDataAdapter(loginQuery, DBConn.getConn());
                     DataTable dta = new DataTable();
                     da.Fill(dta);
@@ -72,36 +81,47 @@ namespace JustRipeFarm_v3
                         this.Hide();
                         mn.Show();
 
-                        mn.lblLabourer.Visible = true;
-                        mn.picboxLabourer.Visible = true;
+                        string role = dta.Rows[0]["staffRole"].ToString();
+
+                        switch (role)
+                        {
+                            case "Manager":
+                                mn.Show();
+                                this.Hide();
+                                mn.btnStaffManagement.Visible = true;
+                                mn.lblManager.Visible = true;
+                                mn.picBoxManager.Visible = true;
+                                break;
+
+                            case "Sales Staff":
+                                mn.Show();
+                                this.Hide();
+                                break;
+
+                            case "Driver":
+                                mn.Show();
+                                this.Hide();
+                                mn.lblLabourer.Visible = true;
+                                mn.picboxLabourer.Visible = true;
+                                break;
+
+                            case "Field Worker":
+                                mn.Show();
+                                this.Hide();
+                                mn.lblLabourer.Visible = true;
+                                mn.picboxLabourer.Visible = true;
+                                break;
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Your username and password is incorrect");
+                        MessageBox.Show("Your username and password is incorrect", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-            }
-        }
-
-        private void txtBoxuLabourer_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                e.SuppressKeyPress = true;
-                btnLabourerLogin.PerformClick();
-            }
-        }
-
-        private void txtBoxpLabourer_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                e.SuppressKeyPress = true;
-                btnLabourerLogin.PerformClick();
             }
         }
     }

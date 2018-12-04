@@ -38,15 +38,13 @@
             this.resetPasswordLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnLabourerLogin = new System.Windows.Forms.Button();
-            this.txtBoxuLabourer = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtBoxUsername = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.txtBoxpLabourer = new System.Windows.Forms.TextBox();
-            this.picBoxManager = new System.Windows.Forms.PictureBox();
+            this.txtBoxPassword = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxManager)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -150,35 +148,35 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "password:";
             // 
-            // btnLabourerLogin
+            // btnLogin
             // 
-            this.btnLabourerLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.btnLabourerLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLabourerLogin.FlatAppearance.BorderSize = 0;
-            this.btnLabourerLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLabourerLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLabourerLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLabourerLogin.Location = new System.Drawing.Point(67, 365);
-            this.btnLabourerLogin.Margin = new System.Windows.Forms.Padding(0);
-            this.btnLabourerLogin.Name = "btnLabourerLogin";
-            this.btnLabourerLogin.Size = new System.Drawing.Size(414, 56);
-            this.btnLabourerLogin.TabIndex = 10;
-            this.btnLabourerLogin.Text = "login";
-            this.btnLabourerLogin.UseVisualStyleBackColor = false;
-            this.btnLabourerLogin.Click += new System.EventHandler(this.btnLabourerLogin_Click);
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(67, 365);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(414, 56);
+            this.btnLogin.TabIndex = 10;
+            this.btnLogin.Text = "login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // txtBoxuLabourer
+            // txtBoxUsername
             // 
-            this.txtBoxuLabourer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.txtBoxuLabourer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBoxuLabourer.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxuLabourer.ForeColor = System.Drawing.Color.Silver;
-            this.txtBoxuLabourer.Location = new System.Drawing.Point(207, 232);
-            this.txtBoxuLabourer.Name = "txtBoxuLabourer";
-            this.txtBoxuLabourer.Size = new System.Drawing.Size(258, 29);
-            this.txtBoxuLabourer.TabIndex = 8;
-            this.txtBoxuLabourer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtBoxuLabourer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxuLabourer_KeyDown);
+            this.txtBoxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.txtBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxUsername.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxUsername.ForeColor = System.Drawing.Color.Silver;
+            this.txtBoxUsername.Location = new System.Drawing.Point(207, 232);
+            this.txtBoxUsername.Name = "txtBoxUsername";
+            this.txtBoxUsername.Size = new System.Drawing.Size(258, 29);
+            this.txtBoxUsername.TabIndex = 8;
+            this.txtBoxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxUsername_KeyDown);
             // 
             // panel6
             // 
@@ -198,33 +196,20 @@
             this.panel7.Size = new System.Drawing.Size(270, 1);
             this.panel7.TabIndex = 4;
             // 
-            // txtBoxpLabourer
+            // txtBoxPassword
             // 
-            this.txtBoxpLabourer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.txtBoxpLabourer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBoxpLabourer.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxpLabourer.ForeColor = System.Drawing.Color.Silver;
-            this.txtBoxpLabourer.Location = new System.Drawing.Point(207, 308);
-            this.txtBoxpLabourer.MaxLength = 15;
-            this.txtBoxpLabourer.Name = "txtBoxpLabourer";
-            this.txtBoxpLabourer.PasswordChar = '●';
-            this.txtBoxpLabourer.Size = new System.Drawing.Size(258, 29);
-            this.txtBoxpLabourer.TabIndex = 9;
-            this.txtBoxpLabourer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtBoxpLabourer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxpLabourer_KeyDown);
-            // 
-            // picBoxManager
-            // 
-            this.picBoxManager.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBoxManager.Image = ((System.Drawing.Image)(resources.GetObject("picBoxManager.Image")));
-            this.picBoxManager.Location = new System.Drawing.Point(12, 11);
-            this.picBoxManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picBoxManager.Name = "picBoxManager";
-            this.picBoxManager.Size = new System.Drawing.Size(40, 38);
-            this.picBoxManager.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxManager.TabIndex = 15;
-            this.picBoxManager.TabStop = false;
-            this.picBoxManager.Click += new System.EventHandler(this.picBoxManager_Click);
+            this.txtBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.txtBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxPassword.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxPassword.ForeColor = System.Drawing.Color.Silver;
+            this.txtBoxPassword.Location = new System.Drawing.Point(207, 308);
+            this.txtBoxPassword.MaxLength = 15;
+            this.txtBoxPassword.Name = "txtBoxPassword";
+            this.txtBoxPassword.PasswordChar = '●';
+            this.txtBoxPassword.Size = new System.Drawing.Size(258, 29);
+            this.txtBoxPassword.TabIndex = 9;
+            this.txtBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxPassword_KeyDown);
             // 
             // Login
             // 
@@ -234,15 +219,14 @@
             this.ClientSize = new System.Drawing.Size(529, 611);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.picBoxManager);
-            this.Controls.Add(this.btnLabourerLogin);
-            this.Controls.Add(this.txtBoxuLabourer);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.txtBoxUsername);
             this.Controls.Add(this.resetPasswordLabel);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.txtBoxpLabourer);
+            this.Controls.Add(this.txtBoxPassword);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exitPictureBox);
@@ -254,7 +238,6 @@
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxManager)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,12 +254,11 @@
         private System.Windows.Forms.Label resetPasswordLabel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.Button btnLabourerLogin;
-        public System.Windows.Forms.TextBox txtBoxuLabourer;
+        public System.Windows.Forms.Button btnLogin;
+        public System.Windows.Forms.TextBox txtBoxUsername;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        public System.Windows.Forms.TextBox txtBoxpLabourer;
-        public System.Windows.Forms.PictureBox picBoxManager;
+        public System.Windows.Forms.TextBox txtBoxPassword;
     }
 }
 

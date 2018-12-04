@@ -32,52 +32,51 @@ namespace JustRipeFarm_v3
             this.Hide();
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            fnameTextBox.Text = "";
-            lnameTextBox.Text = "";
-            ageTextBox.Text = "";
-            sexComboBox.Text = "";
-            maritalComboBox.Text = "";
-            addressRichTextBox.Text = "";
-            zipTextBox.Text = "";
-            nricTextBox.Text = "";
-            handphoneTextBox.Text = "";
-            houseTextBox.Text = "";
-            statusComboBox.Text = "";
-            wageTextBox.Text = "";
-            usernameTextBox.Text = "";
-            passwordTextBox.Text = "";
-        }
-
-        private void btnSaveData_Click(object sender, EventArgs e)
-        {
-            DbConnector dbConn = new DbConnector();
-            dbConn.connect();
-
-            Staff labr = new Staff();
-            labr.FirstName1 = fnameTextBox.Text;
-            labr.LastName1 = lnameTextBox.Text;
-            labr.Age1 = Decimal.Parse(ageTextBox.Text);
-            labr.Sex1 = sexComboBox.Text;
-            labr.MaritalStatus1 = maritalComboBox.Text;
-            labr.Address1 = addressRichTextBox.Text;
-            labr.ZipCode1 = zipTextBox.Text;
-            labr.NRIC1 = nricTextBox.Text;
-            labr.DateOfBirth1 = birthDateTimePicker.Value.Date;
-            labr.HandphoneNumber1 = handphoneTextBox.Text;
-            labr.HouseNumber1 = houseTextBox.Text;
-            labr.Status1 = statusComboBox.Text;
-            labr.DateOfHire1 = hireDateTimePicker.Value.Date;
-            labr.HourlyWage1 = Decimal.Parse(wageTextBox.Text);
-            labr.Username1 = usernameTextBox.Text;
-            labr.Password1 = passwordTextBox.Text;
-            
-        }
-
         private void btnAddStaff_Click(object sender, EventArgs e)
         {
+            if (btnAddStaff.Enabled)
+            { 
+                pnlAddStaff.Show();
+                pnlBtnIndic1.Show();
+                pnlBtnIndic2.Hide();
+            }
+        }
 
+        private void btnAddManager_Click(object sender, EventArgs e)
+        {
+            AddManager add = new AddManager();
+            add.Show();
+
+            if (btnAddManager.Enabled)
+            {
+                add.lblManagerRole.Visible = true;
+            }
+        }
+
+        private void btnAddLabourer_Click(object sender, EventArgs e)
+        {
+            AddManager ad = new AddManager();
+            ad.Show();
+
+            if (btnAddLabourer.Enabled)
+            {
+                ad.labourerComboBox.Visible = true;
+                ad.lblDateHired.Visible = true;
+                ad.lblWage.Visible = true;
+                ad.hiredDateTimePicker.Visible = true;
+                ad.wageTextBox.Visible = true;
+            }
+        }
+
+        private void btnAddSalesStaff_Click(object sender, EventArgs e)
+        {
+            AddManager adstf = new AddManager();
+            adstf.Show();
+
+            if (btnAddSalesStaff.Enabled)
+            {
+                adstf.lblSalesStaff.Visible = true;
+            }
         }
     }
 }

@@ -60,15 +60,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ManagerLogin.cs">
+    <Compile Include="AddManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManagerLogin.Designer.cs">
-      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    <Compile Include="AddManager.Designer.cs">
+      <DependentUpon>AddManager.cs</DependentUpon>
     </Compile>
     <Compile Include="DbConnector.cs" />
     <Compile Include="Staff.cs" />
-    <Compile Include="LabourerHandler.cs" />
+    <Compile Include="StaffHandler.cs" />
     <Compile Include="StaffManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,17 +95,11 @@
     <Compile Include="RecordTransaction.Designer.cs">
       <DependentUpon>RecordTransaction.cs</DependentUpon>
     </Compile>
-    <Compile Include="ResetPasswordLabourer.cs">
+    <Compile Include="ResetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ResetPasswordLabourer.Designer.cs">
-      <DependentUpon>ResetPasswordLabourer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ResetPasswordManager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ResetPasswordManager.Designer.cs">
-      <DependentUpon>ResetPasswordManager.cs</DependentUpon>
+    <Compile Include="ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Sales.cs">
       <SubType>Form</SubType>
@@ -113,8 +107,8 @@
     <Compile Include="Sales.Designer.cs">
       <DependentUpon>Sales.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ManagerLogin.resx">
-      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    <EmbeddedResource Include="AddManager.resx">
+      <DependentUpon>AddManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffManagement.resx">
       <DependentUpon>StaffManagement.cs</DependentUpon>
@@ -137,11 +131,8 @@
     <EmbeddedResource Include="RecordTransaction.resx">
       <DependentUpon>RecordTransaction.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResetPasswordLabourer.resx">
-      <DependentUpon>ResetPasswordLabourer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ResetPasswordManager.resx">
-      <DependentUpon>ResetPasswordManager.cs</DependentUpon>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales.resx">
       <DependentUpon>Sales.cs</DependentUpon>

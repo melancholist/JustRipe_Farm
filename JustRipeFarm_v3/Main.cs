@@ -170,8 +170,8 @@ namespace JustRipeFarm_v3
 
         private void btnStaffManagement_Click(object sender, EventArgs e)
         {
-            StaffManagement labr = new StaffManagement();
-            labr.Show();
+            StaffManagement stf = new StaffManagement();
+            stf.Show();
             this.Hide();
         }
     }
