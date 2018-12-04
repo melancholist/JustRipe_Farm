@@ -63,7 +63,7 @@ namespace JustRipeFarm_v3
         private void btnLogin_Click(object sender, EventArgs e)
         {
             DBConn.connect();
-            string loginQuery = "SELECT *  from staffdata WHERE Username = '" + txtBoxUsername.Text + "' and Password = '" + txtBoxPassword.Text + "'";
+            string loginQuery = "SELECT *  from staffdata WHERE Username = binary '" + txtBoxUsername.Text + "' and Password = binary '" + txtBoxPassword.Text + "'";
 
             if (string.IsNullOrWhiteSpace(txtBoxUsername.Text) || string.IsNullOrWhiteSpace(txtBoxPassword.Text))
             {
