@@ -29,7 +29,7 @@ namespace JustRipeFarm_v3
         //Exit the form
         private void exitPictureBox_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            System.Environment.Exit(1);
         }
 
         private void resetPasswordLabel_Click(object sender, EventArgs e)
