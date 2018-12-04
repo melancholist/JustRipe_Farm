@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 using System.Data.SqlClient;
 
 namespace JustRipeFarm_v3
@@ -81,6 +82,11 @@ namespace JustRipeFarm_v3
             {
                 adstf.lblSalesStaff.Visible = true;
             }
+        }
+
+        private void StaffManagement_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

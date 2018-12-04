@@ -75,7 +75,7 @@
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1017, 56);
+            this.panel1.Size = new System.Drawing.Size(1004, 56);
             this.panel1.TabIndex = 0;
             // 
             // picBoxBack
@@ -95,7 +95,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(400, 9);
+            this.label1.Location = new System.Drawing.Point(388, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 34);
             this.label1.TabIndex = 0;
@@ -106,7 +106,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(20, 78);
+            this.label2.Location = new System.Drawing.Point(51, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 23);
             this.label2.TabIndex = 1;
@@ -128,7 +128,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(20, 153);
+            this.label4.Location = new System.Drawing.Point(51, 153);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 23);
             this.label4.TabIndex = 3;
@@ -161,7 +161,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(20, 296);
+            this.label7.Location = new System.Drawing.Point(51, 296);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(94, 23);
             this.label7.TabIndex = 6;
@@ -183,7 +183,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(20, 227);
+            this.label10.Location = new System.Drawing.Point(51, 227);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 23);
             this.label10.TabIndex = 9;
@@ -194,7 +194,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(20, 483);
+            this.label11.Location = new System.Drawing.Point(51, 483);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(179, 23);
             this.label11.TabIndex = 10;
@@ -205,7 +205,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(20, 416);
+            this.label12.Location = new System.Drawing.Point(51, 416);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(105, 23);
             this.label12.TabIndex = 11;
@@ -245,7 +245,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(649, 609);
+            this.btnSave.Location = new System.Drawing.Point(633, 609);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(200, 92);
             this.btnSave.TabIndex = 14;
@@ -255,14 +255,14 @@
             // 
             // fnameTextBox
             // 
-            this.fnameTextBox.Location = new System.Drawing.Point(217, 80);
+            this.fnameTextBox.Location = new System.Drawing.Point(248, 80);
             this.fnameTextBox.Name = "fnameTextBox";
             this.fnameTextBox.Size = new System.Drawing.Size(158, 22);
             this.fnameTextBox.TabIndex = 15;
             // 
             // ageTextBox
             // 
-            this.ageTextBox.Location = new System.Drawing.Point(217, 155);
+            this.ageTextBox.Location = new System.Drawing.Point(248, 155);
             this.ageTextBox.Name = "ageTextBox";
             this.ageTextBox.Size = new System.Drawing.Size(66, 22);
             this.ageTextBox.TabIndex = 16;
@@ -276,14 +276,14 @@
             // 
             // zipTextBox
             // 
-            this.zipTextBox.Location = new System.Drawing.Point(217, 416);
+            this.zipTextBox.Location = new System.Drawing.Point(248, 416);
             this.zipTextBox.Name = "zipTextBox";
             this.zipTextBox.Size = new System.Drawing.Size(158, 22);
             this.zipTextBox.TabIndex = 18;
             // 
             // contactTextBox
             // 
-            this.contactTextBox.Location = new System.Drawing.Point(217, 483);
+            this.contactTextBox.Location = new System.Drawing.Point(248, 483);
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.Size = new System.Drawing.Size(158, 22);
             this.contactTextBox.TabIndex = 19;
@@ -291,7 +291,7 @@
             // addressRichTextBox
             // 
             this.addressRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.addressRichTextBox.Location = new System.Drawing.Point(217, 298);
+            this.addressRichTextBox.Location = new System.Drawing.Point(248, 298);
             this.addressRichTextBox.Name = "addressRichTextBox";
             this.addressRichTextBox.Size = new System.Drawing.Size(211, 76);
             this.addressRichTextBox.TabIndex = 20;
@@ -303,7 +303,7 @@
             this.sexComboBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.sexComboBox.Location = new System.Drawing.Point(217, 227);
+            this.sexComboBox.Location = new System.Drawing.Point(248, 227);
             this.sexComboBox.Name = "sexComboBox";
             this.sexComboBox.Size = new System.Drawing.Size(132, 24);
             this.sexComboBox.TabIndex = 21;
@@ -414,7 +414,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1017, 751);
+            this.ClientSize = new System.Drawing.Size(1004, 751);
             this.Controls.Add(this.labourerComboBox);
             this.Controls.Add(this.wageTextBox);
             this.Controls.Add(this.lblWage);

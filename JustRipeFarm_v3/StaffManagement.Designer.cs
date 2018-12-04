@@ -33,25 +33,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.backpictureBox = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlBtnIndic2 = new System.Windows.Forms.Panel();
             this.pnlBtnIndic1 = new System.Windows.Forms.Panel();
             this.btnAssign = new System.Windows.Forms.Button();
             this.btnAddStaff = new System.Windows.Forms.Button();
             this.pnlAddStaff = new System.Windows.Forms.Panel();
-            this.pnlBtnIndic2 = new System.Windows.Forms.Panel();
-            this.btnAddManager = new System.Windows.Forms.Button();
-            this.btnAddLabourer = new System.Windows.Forms.Button();
-            this.btnAddSalesStaff = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.searchComboBox = new System.Windows.Forms.ComboBox();
-            this.picBocSearch = new System.Windows.Forms.PictureBox();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.picBocSearch = new System.Windows.Forms.PictureBox();
+            this.searchComboBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAddSalesStaff = new System.Windows.Forms.Button();
+            this.btnAddLabourer = new System.Windows.Forms.Button();
+            this.btnAddManager = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backpictureBox)).BeginInit();
             this.panel2.SuspendLayout();
             this.pnlAddStaff.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBocSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -101,6 +101,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(207, 694);
             this.panel2.TabIndex = 1;
+            // 
+            // pnlBtnIndic2
+            // 
+            this.pnlBtnIndic2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.pnlBtnIndic2.Location = new System.Drawing.Point(0, 203);
+            this.pnlBtnIndic2.Name = "pnlBtnIndic2";
+            this.pnlBtnIndic2.Size = new System.Drawing.Size(7, 79);
+            this.pnlBtnIndic2.TabIndex = 36;
             // 
             // pnlBtnIndic1
             // 
@@ -160,45 +168,66 @@
             this.pnlAddStaff.Size = new System.Drawing.Size(1023, 694);
             this.pnlAddStaff.TabIndex = 2;
             // 
-            // pnlBtnIndic2
+            // btnUpdate
             // 
-            this.pnlBtnIndic2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.pnlBtnIndic2.Location = new System.Drawing.Point(0, 203);
-            this.pnlBtnIndic2.Name = "pnlBtnIndic2";
-            this.pnlBtnIndic2.Size = new System.Drawing.Size(7, 79);
-            this.pnlBtnIndic2.TabIndex = 36;
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnUpdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(788, 167);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(188, 51);
+            this.btnUpdate.TabIndex = 10;
+            this.btnUpdate.Text = "Update Record";
+            this.btnUpdate.UseVisualStyleBackColor = false;
             // 
-            // btnAddManager
+            // picBocSearch
             // 
-            this.btnAddManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnAddManager.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnAddManager.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnAddManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddManager.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddManager.ForeColor = System.Drawing.Color.White;
-            this.btnAddManager.Location = new System.Drawing.Point(33, 21);
-            this.btnAddManager.Name = "btnAddManager";
-            this.btnAddManager.Size = new System.Drawing.Size(203, 79);
-            this.btnAddManager.TabIndex = 3;
-            this.btnAddManager.Text = "Manager";
-            this.btnAddManager.UseVisualStyleBackColor = false;
-            this.btnAddManager.Click += new System.EventHandler(this.btnAddManager_Click);
+            this.picBocSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBocSearch.Image = ((System.Drawing.Image)(resources.GetObject("picBocSearch.Image")));
+            this.picBocSearch.Location = new System.Drawing.Point(374, 158);
+            this.picBocSearch.Name = "picBocSearch";
+            this.picBocSearch.Size = new System.Drawing.Size(53, 48);
+            this.picBocSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBocSearch.TabIndex = 9;
+            this.picBocSearch.TabStop = false;
             // 
-            // btnAddLabourer
+            // searchComboBox
             // 
-            this.btnAddLabourer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnAddLabourer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnAddLabourer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnAddLabourer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddLabourer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddLabourer.ForeColor = System.Drawing.Color.White;
-            this.btnAddLabourer.Location = new System.Drawing.Point(412, 21);
-            this.btnAddLabourer.Name = "btnAddLabourer";
-            this.btnAddLabourer.Size = new System.Drawing.Size(203, 79);
-            this.btnAddLabourer.TabIndex = 4;
-            this.btnAddLabourer.Text = "Labourer";
-            this.btnAddLabourer.UseVisualStyleBackColor = false;
-            this.btnAddLabourer.Click += new System.EventHandler(this.btnAddLabourer_Click);
+            this.searchComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchComboBox.FormattingEnabled = true;
+            this.searchComboBox.Items.AddRange(new object[] {
+            "Manager",
+            "Driver",
+            "Field Worker",
+            "Sales Staff"});
+            this.searchComboBox.Location = new System.Drawing.Point(186, 167);
+            this.searchComboBox.Name = "searchComboBox";
+            this.searchComboBox.Size = new System.Drawing.Size(182, 28);
+            this.searchComboBox.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(73, 169);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 23);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Staff Role:";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(45, 229);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(931, 409);
+            this.dataGridView1.TabIndex = 6;
             // 
             // btnAddSalesStaff
             // 
@@ -216,66 +245,37 @@
             this.btnAddSalesStaff.UseVisualStyleBackColor = false;
             this.btnAddSalesStaff.Click += new System.EventHandler(this.btnAddSalesStaff_Click);
             // 
-            // dataGridView1
+            // btnAddLabourer
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 229);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(931, 409);
-            this.dataGridView1.TabIndex = 6;
+            this.btnAddLabourer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddLabourer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnAddLabourer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnAddLabourer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddLabourer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddLabourer.ForeColor = System.Drawing.Color.White;
+            this.btnAddLabourer.Location = new System.Drawing.Point(412, 21);
+            this.btnAddLabourer.Name = "btnAddLabourer";
+            this.btnAddLabourer.Size = new System.Drawing.Size(203, 79);
+            this.btnAddLabourer.TabIndex = 4;
+            this.btnAddLabourer.Text = "Labourer";
+            this.btnAddLabourer.UseVisualStyleBackColor = false;
+            this.btnAddLabourer.Click += new System.EventHandler(this.btnAddLabourer_Click);
             // 
-            // label2
+            // btnAddManager
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(73, 169);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 23);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Staff Role:";
-            // 
-            // searchComboBox
-            // 
-            this.searchComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchComboBox.FormattingEnabled = true;
-            this.searchComboBox.Items.AddRange(new object[] {
-            "Manager",
-            "Driver",
-            "Field Worker",
-            "Sales Staff"});
-            this.searchComboBox.Location = new System.Drawing.Point(186, 167);
-            this.searchComboBox.Name = "searchComboBox";
-            this.searchComboBox.Size = new System.Drawing.Size(182, 28);
-            this.searchComboBox.TabIndex = 8;
-            // 
-            // picBocSearch
-            // 
-            this.picBocSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBocSearch.Image = ((System.Drawing.Image)(resources.GetObject("picBocSearch.Image")));
-            this.picBocSearch.Location = new System.Drawing.Point(374, 158);
-            this.picBocSearch.Name = "picBocSearch";
-            this.picBocSearch.Size = new System.Drawing.Size(53, 48);
-            this.picBocSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBocSearch.TabIndex = 9;
-            this.picBocSearch.TabStop = false;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnUpdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(788, 167);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(188, 51);
-            this.btnUpdate.TabIndex = 10;
-            this.btnUpdate.Text = "Update Record";
-            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnAddManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddManager.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnAddManager.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnAddManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddManager.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddManager.ForeColor = System.Drawing.Color.White;
+            this.btnAddManager.Location = new System.Drawing.Point(33, 21);
+            this.btnAddManager.Name = "btnAddManager";
+            this.btnAddManager.Size = new System.Drawing.Size(203, 79);
+            this.btnAddManager.TabIndex = 3;
+            this.btnAddManager.Text = "Manager";
+            this.btnAddManager.UseVisualStyleBackColor = false;
+            this.btnAddManager.Click += new System.EventHandler(this.btnAddManager_Click);
             // 
             // StaffManagement
             // 
@@ -290,14 +290,15 @@
             this.Name = "StaffManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LabourerManagement";
+            this.Load += new System.EventHandler(this.StaffManagement_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backpictureBox)).EndInit();
             this.panel2.ResumeLayout(false);
             this.pnlAddStaff.ResumeLayout(false);
             this.pnlAddStaff.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBocSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
