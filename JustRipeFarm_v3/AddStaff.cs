@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace JustRipeFarm_v3
 {
@@ -44,6 +44,10 @@ namespace JustRipeFarm_v3
 
             staffHandlr.addNewStaff(DBConn.getConn(), stff);
             MessageBox.Show("A new staff has been added!");
+
+            this.Hide();
+            StaffManagement stf = new StaffManagement();
+            stf.Show();
         }
 
         private void picBoxBack_Click(object sender, EventArgs e)

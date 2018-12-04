@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace JustRipeFarm_v3
 {
     public class DbConnector
     {
-        SqlConnection conn;
+        MySqlConnection conn;
 
         public string connect()
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|JustRipeFarm.mdf;Integrated Security=False";
-            conn = new SqlConnection(connectionString);
+            string connectionString = "server=localhost;user=admin;database=justripe_farm;port=3306;password=11116666";
+            conn = new MySqlConnection(connectionString);
             try
             {
                 conn.Open();
@@ -28,7 +28,7 @@ namespace JustRipeFarm_v3
             return "Done";
         }
 
-        public SqlConnection getConn()
+        public MySqlConnection getConn()
         { return conn; }
     }
 }

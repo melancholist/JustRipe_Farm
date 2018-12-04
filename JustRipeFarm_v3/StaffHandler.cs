@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace JustRipeFarm_v3
 {
     public class StaffHandler
     {
-        public int addNewStaff(SqlConnection conn, Staff staff)
+        public int addNewStaff(MySqlConnection conn, Staff staff)
         {
             string insertQuery = "INSERT INTO StaffData (firstName, lastName, age, sex, address, zipCode, contactNumber, staffRole, loginStatus, dateOfHire, hourlyWage, username, password)"
                 + "VALUES ('" + staff.FirstName + "', '" + staff.LastName + "'  , " + staff.Age + ", '" +
@@ -18,16 +18,16 @@ namespace JustRipeFarm_v3
                 staff.DateOfHire.ToString("yyyy-MM-dd") + "', '" + staff.HourlyWage + "', '" +
                 staff.Username + "', '" + staff.Password + "' )";
 
-            SqlCommand sqlComm = new SqlCommand(insertQuery, conn);
+            MySqlCommand sqlComm = new MySqlCommand(insertQuery, conn);
 
             return sqlComm.ExecuteNonQuery();
         }
 
-        public int resetPassword(SqlConnection conn, Staff staff)
+        public int resetPassword(MySqlConnection conn, Staff staff)
         {
             string resetQuery = "UPDATE [StaffData] SET Password = '" + staff.Username + "' WHERE Username = '" + staff.Password + "'";
 
-            SqlCommand sqlCmd = new SqlCommand(resetQuery, conn);
+            MySqlCommand sqlCmd = new MySqlCommand(resetQuery, conn);
             return sqlCmd.ExecuteNonQuery();
         }
     }

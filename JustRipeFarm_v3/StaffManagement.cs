@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace JustRipeFarm_v3
 {

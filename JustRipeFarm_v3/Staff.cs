@@ -11,7 +11,7 @@ namespace JustRipeFarm_v3
         private int id;
         private String firstName;
         private String lastName;
-        private Decimal age;
+        private int age;
         private string sex;
         private string address;
         private string zipCode;
@@ -26,7 +26,7 @@ namespace JustRipeFarm_v3
         public int Id { get => id; set => id = value; }
         public string FirstName { get => firstName; set => firstName = value; }
         public string LastName { get => lastName; set => lastName = value; }
-        public decimal Age { get => age; set => age = value; }
+        public int Age { get => age; set => age = value; }
         public string Sex { get => sex; set => sex = value; }
         public string Address { get => address; set => address = value; }
         public string ZipCode { get => zipCode; set => zipCode = value; }

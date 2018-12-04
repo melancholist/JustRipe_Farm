@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace JustRipeFarm_v3
 {
@@ -15,7 +15,7 @@ namespace JustRipeFarm_v3
     {
         DbConnector DBConn = new DbConnector();
         Main mn = new Main();
-        SqlDataAdapter da;
+        MySqlDataAdapter da;
 
         public Login()
         {
@@ -73,7 +73,7 @@ namespace JustRipeFarm_v3
             {
                 try
                 {
-                    da = new SqlDataAdapter(loginQuery, DBConn.getConn());
+                    da = new MySqlDataAdapter(loginQuery, DBConn.getConn());
                     DataTable dta = new DataTable();
                     da.Fill(dta);
                     if (dta.Rows[0][0].ToString() == "1")
