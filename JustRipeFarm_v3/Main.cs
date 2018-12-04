@@ -34,7 +34,7 @@ namespace JustRipeFarm_v3
             //pnlStorage.Hide();
             //pnlVehicle.Hide();
             //pnlStock.Hide();
-            //pnlAccounting.Hide();
+            pnlAccounting.Hide();
         }
 
         private void logoutPictureBox_Click(object sender, EventArgs e)

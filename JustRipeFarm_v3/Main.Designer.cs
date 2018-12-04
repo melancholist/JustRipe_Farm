@@ -404,7 +404,6 @@
             // 
             // pnlSchedule
             // 
-            this.pnlSchedule.Controls.Add(this.pnlAccounting);
             this.pnlSchedule.Controls.Add(this.pnlSowing);
             this.pnlSchedule.Controls.Add(this.panelBtnIndicatorHarv);
             this.pnlSchedule.Controls.Add(this.btnHarvest);
@@ -420,13 +419,13 @@
             // 
             this.pnlAccounting.BackColor = System.Drawing.Color.Tan;
             this.pnlAccounting.Controls.Add(this.lblTransactionHistory);
+            this.pnlAccounting.Controls.Add(this.lblAccounting);
             this.pnlAccounting.Controls.Add(this.dataGridView1);
             this.pnlAccounting.Controls.Add(this.btnViewSales);
             this.pnlAccounting.Controls.Add(this.btnRecordTransaction);
-            this.pnlAccounting.Controls.Add(this.lblAccounting);
-            this.pnlAccounting.Location = new System.Drawing.Point(8, 2);
+            this.pnlAccounting.Location = new System.Drawing.Point(234, 67);
             this.pnlAccounting.Name = "pnlAccounting";
-            this.pnlAccounting.Size = new System.Drawing.Size(949, 678);
+            this.pnlAccounting.Size = new System.Drawing.Size(949, 675);
             this.pnlAccounting.TabIndex = 0;
             // 
             // lblTransactionHistory
@@ -472,7 +471,7 @@
             // 
             this.lblAccounting.AutoSize = true;
             this.lblAccounting.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccounting.Location = new System.Drawing.Point(7, 10);
+            this.lblAccounting.Location = new System.Drawing.Point(0, 0);
             this.lblAccounting.Name = "lblAccounting";
             this.lblAccounting.Size = new System.Drawing.Size(230, 46);
             this.lblAccounting.TabIndex = 0;
@@ -563,6 +562,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
+            this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlSchedule);
             this.Controls.Add(this.panel2);
