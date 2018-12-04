@@ -11,7 +11,7 @@ namespace JustRipeFarm_v3
     {
         public int addNewStaff(MySqlConnection conn, Staff staff)
         {
-            string insertQuery = "INSERT INTO StaffData (firstName, lastName, age, sex, address, zipCode, contactNumber, staffRole, loginStatus, dateOfHire, hourlyWage, username, password)"
+            string insertQuery = "INSERT INTO staffdata (firstName, lastName, age, sex, address, zipCode, contactNumber, staffRole, loginStatus, dateOfHire, hourlyWage, username, password)"
                 + "VALUES ('" + staff.FirstName + "', '" + staff.LastName + "'  , " + staff.Age + ", '" +
                 staff.Sex + "', '" + staff.Address + "', '" + staff.ZipCode 
                 + "', '" + staff.ContactNumber + "', '" + staff.StaffRole + "', '" + staff.LoginStatus + "', '" +
@@ -25,7 +25,7 @@ namespace JustRipeFarm_v3
 
         public int resetPassword(MySqlConnection conn, Staff staff)
         {
-            string resetQuery = "UPDATE [StaffData] SET Password = '" + staff.Username + "' WHERE Username = '" + staff.Password + "'";
+            string resetQuery = "UPDATE staffdata SET Password = '" + staff.Username + "' WHERE Username = '" + staff.Password + "'";
 
             MySqlCommand sqlCmd = new MySqlCommand(resetQuery, conn);
             return sqlCmd.ExecuteNonQuery();

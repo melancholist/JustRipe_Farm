@@ -63,7 +63,7 @@ namespace JustRipeFarm_v3
         private void btnLogin_Click(object sender, EventArgs e)
         {
             DBConn.connect();
-            string loginQuery = "SELECT *  from StaffData WHERE Username ='" + txtBoxUsername.Text + "' and Password ='" + txtBoxPassword.Text + "'";
+            string loginQuery = "SELECT *  from staffdata WHERE Username ='" + txtBoxUsername.Text + "' and Password ='" + txtBoxPassword.Text + "'";
 
             if (string.IsNullOrWhiteSpace(txtBoxUsername.Text) || string.IsNullOrWhiteSpace(txtBoxPassword.Text))
             {
@@ -76,7 +76,7 @@ namespace JustRipeFarm_v3
                     da = new MySqlDataAdapter(loginQuery, DBConn.getConn());
                     DataTable dta = new DataTable();
                     da.Fill(dta);
-                    if (dta.Rows[0][0].ToString() == "1")
+                    if (dta.Rows.Count == 1)
                     {
                         this.Hide();
                         mn.Show();
