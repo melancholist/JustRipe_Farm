@@ -22,28 +22,28 @@ namespace JustRipeFarm_v3
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-           
-                Staff stff = new Staff();
-                StaffHandler staffHandlr = new StaffHandler();
+            DBConn.connect();
+            Staff stff = new Staff();
+            StaffHandler staffHandlr = new StaffHandler();
 
-                DBConn.connect();
-                stff.FirstName = fnameTextBox.Text;
-                stff.LastName = lnameTextBox.Text;
-                stff.Age = Decimal.Parse(ageTextBox.Text);
-                stff.Sex = sexComboBox.Text;
-                stff.Address = addressRichTextBox.Text;
-                stff.ZipCode = zipTextBox.Text;
-                stff.ContactNumber = contactTextBox.Text;
-                stff.StaffRole = roleComboBox.Text;
-                stff.LoginStatus = statusComboBox.Text;
-                stff.DateOfHire = hiredDateTimePicker.Value.Date;
-                stff.HourlyWage = Decimal.Parse(wageTextBox.Text);
-                stff.Username = usernameTextBox.Text;
-                stff.Password = passwordTextBox.Text;
 
-                staffHandlr.addNewStaff(DBConn.getConn(), stff);
-                MessageBox.Show("A new staff has been added!");
-            
+            stff.FirstName = fnameTextBox.Text;
+            stff.LastName = lnameTextBox.Text;
+            stff.Age = Decimal.Parse(ageTextBox.Text);
+            stff.Sex = sexComboBox.Text;
+            stff.Address = addressRichTextBox.Text;
+            stff.ZipCode = zipTextBox.Text;
+            stff.ContactNumber = contactTextBox.Text;
+            stff.StaffRole = roleComboBox.Text;
+            stff.LoginStatus = statusComboBox.Text;
+            stff.DateOfHire = hiredDateTimePicker.Value.Date;
+            stff.HourlyWage = Decimal.Parse(wageTextBox.Text);
+            stff.Username = usernameTextBox.Text;
+            stff.Password = passwordTextBox.Text;
+
+            staffHandlr.addNewStaff(DBConn.getConn(), stff);
+            MessageBox.Show("A new staff has been added!");
+
         }
 
         private void picBoxBack_Click(object sender, EventArgs e)
