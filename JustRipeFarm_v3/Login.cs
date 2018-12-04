@@ -29,7 +29,7 @@ namespace JustRipeFarm_v3
         //Exit the form
         private void exitPictureBox_Click(object sender, EventArgs e)
         {
-            System.Environment.Exit(1);
+            Application.Exit();
         }
 
         private void resetPasswordLabel_Click(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace JustRipeFarm_v3
         private void btnLogin_Click(object sender, EventArgs e)
         {
             DBConn.connect();
-            string loginQuery = "SELECT *  from staffdata WHERE Username ='" + txtBoxUsername.Text + "' and Password ='" + txtBoxPassword.Text + "'";
+            string loginQuery = "SELECT *  from staffdata WHERE Username = '" + txtBoxUsername.Text + "' and Password = '" + txtBoxPassword.Text + "'";
 
             if (string.IsNullOrWhiteSpace(txtBoxUsername.Text) || string.IsNullOrWhiteSpace(txtBoxPassword.Text))
             {

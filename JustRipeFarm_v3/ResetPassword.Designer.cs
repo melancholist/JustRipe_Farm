@@ -82,7 +82,8 @@
             this.textBoxNewPassword.Name = "textBoxNewPassword";
             this.textBoxNewPassword.PasswordChar = '●';
             this.textBoxNewPassword.Size = new System.Drawing.Size(183, 32);
-            this.textBoxNewPassword.TabIndex = 21;
+            this.textBoxNewPassword.TabIndex = 1;
+            this.textBoxNewPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxNewPassword_KeyDown);
             // 
             // textBoxConfirmPasssword
             // 
@@ -92,7 +93,8 @@
             this.textBoxConfirmPasssword.Name = "textBoxConfirmPasssword";
             this.textBoxConfirmPasssword.PasswordChar = '●';
             this.textBoxConfirmPasssword.Size = new System.Drawing.Size(183, 32);
-            this.textBoxConfirmPasssword.TabIndex = 20;
+            this.textBoxConfirmPasssword.TabIndex = 2;
+            this.textBoxConfirmPasssword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxConfirmPasssword_KeyDown);
             // 
             // textBoxUsername
             // 
@@ -101,7 +103,8 @@
             this.textBoxUsername.Multiline = true;
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(183, 32);
-            this.textBoxUsername.TabIndex = 19;
+            this.textBoxUsername.TabIndex = 0;
+            this.textBoxUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxUsername_KeyDown);
             // 
             // btnConfirm
             // 
@@ -115,7 +118,7 @@
             this.btnConfirm.Margin = new System.Windows.Forms.Padding(0);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(268, 50);
-            this.btnConfirm.TabIndex = 18;
+            this.btnConfirm.TabIndex = 3;
             this.btnConfirm.Text = "confirm";
             this.btnConfirm.UseVisualStyleBackColor = false;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);

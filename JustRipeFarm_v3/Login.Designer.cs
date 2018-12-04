@@ -120,7 +120,7 @@
             this.resetPasswordLabel.Location = new System.Drawing.Point(169, 441);
             this.resetPasswordLabel.Name = "resetPasswordLabel";
             this.resetPasswordLabel.Size = new System.Drawing.Size(200, 24);
-            this.resetPasswordLabel.TabIndex = 11;
+            this.resetPasswordLabel.TabIndex = 3;
             this.resetPasswordLabel.Text = "forgot your password ?";
             this.resetPasswordLabel.Click += new System.EventHandler(this.resetPasswordLabel_Click);
             // 
@@ -160,7 +160,7 @@
             this.btnLogin.Margin = new System.Windows.Forms.Padding(0);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(414, 56);
-            this.btnLogin.TabIndex = 10;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -174,7 +174,7 @@
             this.txtBoxUsername.Location = new System.Drawing.Point(207, 232);
             this.txtBoxUsername.Name = "txtBoxUsername";
             this.txtBoxUsername.Size = new System.Drawing.Size(258, 29);
-            this.txtBoxUsername.TabIndex = 8;
+            this.txtBoxUsername.TabIndex = 0;
             this.txtBoxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtBoxUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxUsername_KeyDown);
             // 
@@ -207,7 +207,7 @@
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.PasswordChar = '●';
             this.txtBoxPassword.Size = new System.Drawing.Size(258, 29);
-            this.txtBoxPassword.TabIndex = 9;
+            this.txtBoxPassword.TabIndex = 1;
             this.txtBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtBoxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxPassword_KeyDown);
             // 
@@ -251,7 +251,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label resetPasswordLabel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Button btnLogin;
@@ -259,6 +258,7 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         public System.Windows.Forms.TextBox txtBoxPassword;
+        private System.Windows.Forms.Label resetPasswordLabel;
     }
 }
 

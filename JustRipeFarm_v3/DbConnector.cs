@@ -14,7 +14,7 @@ namespace JustRipeFarm_v3
 
         public string connect()
         {
-            string connectionString = "server=localhost;user=root;database=justripe_farm;port=3306";
+            string connectionString = "server=sql12.freemysqlhosting.net;user=sql12268366;database=sql12268366;password=1VpFDLJHBC;port=3306";
             conn = new MySqlConnection(connectionString);
             try
             {

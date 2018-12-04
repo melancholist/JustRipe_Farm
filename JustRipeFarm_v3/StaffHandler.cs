@@ -25,7 +25,7 @@ namespace JustRipeFarm_v3
 
         public int resetPassword(MySqlConnection conn, Staff staff)
         {
-            string resetQuery = "UPDATE staffdata SET Password = '" + staff.Username + "' WHERE Username = '" + staff.Password + "'";
+            string resetQuery = "UPDATE staffdata SET Password = '" + staff.Password + "' WHERE Username = '" + staff.Username + "'";
 
             MySqlCommand sqlCmd = new MySqlCommand(resetQuery, conn);
             return sqlCmd.ExecuteNonQuery();

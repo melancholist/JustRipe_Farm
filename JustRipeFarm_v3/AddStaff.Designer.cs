@@ -231,7 +231,7 @@
             this.btnClear.Location = new System.Drawing.Point(133, 609);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(200, 92);
-            this.btnClear.TabIndex = 13;
+            this.btnClear.TabIndex = 14;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -247,7 +247,7 @@
             this.btnSave.Location = new System.Drawing.Point(633, 609);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(200, 92);
-            this.btnSave.TabIndex = 14;
+            this.btnSave.TabIndex = 13;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -257,35 +257,35 @@
             this.fnameTextBox.Location = new System.Drawing.Point(248, 80);
             this.fnameTextBox.Name = "fnameTextBox";
             this.fnameTextBox.Size = new System.Drawing.Size(158, 22);
-            this.fnameTextBox.TabIndex = 15;
+            this.fnameTextBox.TabIndex = 0;
             // 
             // ageTextBox
             // 
             this.ageTextBox.Location = new System.Drawing.Point(248, 155);
             this.ageTextBox.Name = "ageTextBox";
             this.ageTextBox.Size = new System.Drawing.Size(66, 22);
-            this.ageTextBox.TabIndex = 16;
+            this.ageTextBox.TabIndex = 2;
             // 
             // lnameTextBox
             // 
             this.lnameTextBox.Location = new System.Drawing.Point(717, 79);
             this.lnameTextBox.Name = "lnameTextBox";
             this.lnameTextBox.Size = new System.Drawing.Size(144, 22);
-            this.lnameTextBox.TabIndex = 17;
+            this.lnameTextBox.TabIndex = 1;
             // 
             // zipTextBox
             // 
             this.zipTextBox.Location = new System.Drawing.Point(248, 416);
             this.zipTextBox.Name = "zipTextBox";
             this.zipTextBox.Size = new System.Drawing.Size(158, 22);
-            this.zipTextBox.TabIndex = 18;
+            this.zipTextBox.TabIndex = 8;
             // 
             // contactTextBox
             // 
             this.contactTextBox.Location = new System.Drawing.Point(248, 483);
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.Size = new System.Drawing.Size(158, 22);
-            this.contactTextBox.TabIndex = 19;
+            this.contactTextBox.TabIndex = 10;
             // 
             // addressRichTextBox
             // 
@@ -293,7 +293,7 @@
             this.addressRichTextBox.Location = new System.Drawing.Point(248, 298);
             this.addressRichTextBox.Name = "addressRichTextBox";
             this.addressRichTextBox.Size = new System.Drawing.Size(211, 76);
-            this.addressRichTextBox.TabIndex = 20;
+            this.addressRichTextBox.TabIndex = 6;
             this.addressRichTextBox.Text = "";
             // 
             // sexComboBox
@@ -305,7 +305,7 @@
             this.sexComboBox.Location = new System.Drawing.Point(248, 227);
             this.sexComboBox.Name = "sexComboBox";
             this.sexComboBox.Size = new System.Drawing.Size(132, 24);
-            this.sexComboBox.TabIndex = 21;
+            this.sexComboBox.TabIndex = 4;
             // 
             // statusComboBox
             // 
@@ -316,21 +316,21 @@
             this.statusComboBox.Location = new System.Drawing.Point(717, 215);
             this.statusComboBox.Name = "statusComboBox";
             this.statusComboBox.Size = new System.Drawing.Size(132, 24);
-            this.statusComboBox.TabIndex = 22;
+            this.statusComboBox.TabIndex = 5;
             // 
             // usernameTextBox
             // 
             this.usernameTextBox.Location = new System.Drawing.Point(717, 440);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(163, 22);
-            this.usernameTextBox.TabIndex = 23;
+            this.usernameTextBox.TabIndex = 11;
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.Location = new System.Drawing.Point(717, 494);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(163, 22);
-            this.passwordTextBox.TabIndex = 24;
+            this.passwordTextBox.TabIndex = 12;
             // 
             // lblDateHired
             // 
@@ -348,7 +348,7 @@
             this.hiredDateTimePicker.Location = new System.Drawing.Point(717, 300);
             this.hiredDateTimePicker.Name = "hiredDateTimePicker";
             this.hiredDateTimePicker.Size = new System.Drawing.Size(266, 22);
-            this.hiredDateTimePicker.TabIndex = 28;
+            this.hiredDateTimePicker.TabIndex = 7;
             // 
             // lblWage
             // 
@@ -366,7 +366,7 @@
             this.wageTextBox.Location = new System.Drawing.Point(717, 364);
             this.wageTextBox.Name = "wageTextBox";
             this.wageTextBox.Size = new System.Drawing.Size(163, 22);
-            this.wageTextBox.TabIndex = 30;
+            this.wageTextBox.TabIndex = 9;
             // 
             // roleComboBox
             // 
@@ -379,7 +379,7 @@
             this.roleComboBox.Location = new System.Drawing.Point(717, 152);
             this.roleComboBox.Name = "roleComboBox";
             this.roleComboBox.Size = new System.Drawing.Size(180, 24);
-            this.roleComboBox.TabIndex = 31;
+            this.roleComboBox.TabIndex = 3;
             // 
             // AddStaff
             // 

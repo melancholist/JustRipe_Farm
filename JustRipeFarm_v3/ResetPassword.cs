@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 
 namespace JustRipeFarm_v3
@@ -38,6 +38,7 @@ namespace JustRipeFarm_v3
             {
                 MessageBox.Show("Invalid Input!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
             try
             {
                 Staff staff = new Staff();
@@ -59,6 +60,33 @@ namespace JustRipeFarm_v3
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void textBoxUsername_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                btnConfirm.PerformClick();
+            }
+        }
+
+        private void textBoxNewPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                btnConfirm.PerformClick();
+            }
+        }
+
+        private void textBoxConfirmPasssword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                btnConfirm.PerformClick();
             }
         }
     }
