@@ -18,6 +18,7 @@ namespace JustRipeFarm_v3
             InitializeComponent();
             pnlAddStaff.Show();
             pnlBtnIndic1.Show();
+            pnlBtnIndic2.Hide();
         }
 
         private void backpictureBox_Click(object sender, EventArgs e)
@@ -44,8 +45,9 @@ namespace JustRipeFarm_v3
 
         private void btnAddManager_Click(object sender, EventArgs e)
         {
-            AddManager add = new AddManager();
+            AddStaff add = new AddStaff();
             add.Show();
+            this.Hide();
 
             if (btnAddManager.Enabled)
             {
@@ -55,8 +57,9 @@ namespace JustRipeFarm_v3
 
         private void btnAddLabourer_Click(object sender, EventArgs e)
         {
-            AddManager ad = new AddManager();
+            AddStaff ad = new AddStaff();
             ad.Show();
+            this.Hide();
 
             if (btnAddLabourer.Enabled)
             {
@@ -70,8 +73,9 @@ namespace JustRipeFarm_v3
 
         private void btnAddSalesStaff_Click(object sender, EventArgs e)
         {
-            AddManager adstf = new AddManager();
+            AddStaff adstf = new AddStaff();
             adstf.Show();
+            this.Hide();
 
             if (btnAddSalesStaff.Enabled)
             {

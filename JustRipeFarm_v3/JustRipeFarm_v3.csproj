@@ -60,11 +60,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddManager.cs">
+    <Compile Include="AddStaff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddManager.Designer.cs">
-      <DependentUpon>AddManager.cs</DependentUpon>
+    <Compile Include="AddStaff.Designer.cs">
+      <DependentUpon>AddStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="DbConnector.cs" />
     <Compile Include="Staff.cs" />
@@ -107,8 +107,8 @@
     <Compile Include="Sales.Designer.cs">
       <DependentUpon>Sales.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddManager.resx">
-      <DependentUpon>AddManager.cs</DependentUpon>
+    <EmbeddedResource Include="AddStaff.resx">
+      <DependentUpon>AddStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffManagement.resx">
       <DependentUpon>StaffManagement.cs</DependentUpon>

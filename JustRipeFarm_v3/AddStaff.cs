@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace JustRipeFarm_v3
 {
-    public partial class AddManager : Form
+    public partial class AddStaff : Form
     {
         Staff stff = new Staff();
         StaffManagement staff = new StaffManagement();
         StaffHandler staffHandlr = new StaffHandler();
         DbConnector DBConn = new DbConnector();
 
-        public AddManager()
+        public AddStaff()
         {
             InitializeComponent();
         }
@@ -99,6 +99,8 @@ namespace JustRipeFarm_v3
         private void picBoxBack_Click(object sender, EventArgs e)
         {
             this.Hide();
+            StaffManagement stf = new StaffManagement();
+            stf.Show();
         }
     }
 }
