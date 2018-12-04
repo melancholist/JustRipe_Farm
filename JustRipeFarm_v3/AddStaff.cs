@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace JustRipeFarm_v3
 {
@@ -29,7 +30,7 @@ namespace JustRipeFarm_v3
 
             stff.FirstName = fnameTextBox.Text;
             stff.LastName = lnameTextBox.Text;
-            stff.Age = Decimal.Parse(ageTextBox.Text);
+            stff.Age = int.Parse(ageTextBox.Text);
             stff.Sex = sexComboBox.Text;
             stff.Address = addressRichTextBox.Text;
             stff.ZipCode = zipTextBox.Text;
@@ -43,7 +44,6 @@ namespace JustRipeFarm_v3
 
             staffHandlr.addNewStaff(DBConn.getConn(), stff);
             MessageBox.Show("A new staff has been added!");
-
         }
 
         private void picBoxBack_Click(object sender, EventArgs e)
