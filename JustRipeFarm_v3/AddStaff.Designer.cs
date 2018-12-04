@@ -55,13 +55,11 @@
             this.statusComboBox = new System.Windows.Forms.ComboBox();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.lblManagerRole = new System.Windows.Forms.Label();
-            this.lblSalesStaff = new System.Windows.Forms.Label();
             this.lblDateHired = new System.Windows.Forms.Label();
             this.hiredDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.lblWage = new System.Windows.Forms.Label();
             this.wageTextBox = new System.Windows.Forms.TextBox();
-            this.labourerComboBox = new System.Windows.Forms.ComboBox();
+            this.roleComboBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).BeginInit();
             this.SuspendLayout();
@@ -95,7 +93,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(388, 9);
+            this.label1.Location = new System.Drawing.Point(411, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 34);
             this.label1.TabIndex = 0;
@@ -236,6 +234,7 @@
             this.btnClear.TabIndex = 13;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -333,30 +332,6 @@
             this.passwordTextBox.Size = new System.Drawing.Size(163, 22);
             this.passwordTextBox.TabIndex = 24;
             // 
-            // lblManagerRole
-            // 
-            this.lblManagerRole.AutoSize = true;
-            this.lblManagerRole.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManagerRole.ForeColor = System.Drawing.Color.White;
-            this.lblManagerRole.Location = new System.Drawing.Point(714, 146);
-            this.lblManagerRole.Name = "lblManagerRole";
-            this.lblManagerRole.Size = new System.Drawing.Size(119, 28);
-            this.lblManagerRole.TabIndex = 25;
-            this.lblManagerRole.Text = "Manager";
-            this.lblManagerRole.Visible = false;
-            // 
-            // lblSalesStaff
-            // 
-            this.lblSalesStaff.AutoSize = true;
-            this.lblSalesStaff.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalesStaff.ForeColor = System.Drawing.Color.White;
-            this.lblSalesStaff.Location = new System.Drawing.Point(719, 148);
-            this.lblSalesStaff.Name = "lblSalesStaff";
-            this.lblSalesStaff.Size = new System.Drawing.Size(128, 28);
-            this.lblSalesStaff.TabIndex = 26;
-            this.lblSalesStaff.Text = "Sales Staff";
-            this.lblSalesStaff.Visible = false;
-            // 
             // lblDateHired
             // 
             this.lblDateHired.AutoSize = true;
@@ -367,7 +342,6 @@
             this.lblDateHired.Size = new System.Drawing.Size(119, 23);
             this.lblDateHired.TabIndex = 27;
             this.lblDateHired.Text = "Date Hired:";
-            this.lblDateHired.Visible = false;
             // 
             // hiredDateTimePicker
             // 
@@ -375,7 +349,6 @@
             this.hiredDateTimePicker.Name = "hiredDateTimePicker";
             this.hiredDateTimePicker.Size = new System.Drawing.Size(266, 22);
             this.hiredDateTimePicker.TabIndex = 28;
-            this.hiredDateTimePicker.Visible = false;
             // 
             // lblWage
             // 
@@ -387,7 +360,6 @@
             this.lblWage.Size = new System.Drawing.Size(141, 23);
             this.lblWage.TabIndex = 29;
             this.lblWage.Text = "Hourly Wage:";
-            this.lblWage.Visible = false;
             // 
             // wageTextBox
             // 
@@ -395,19 +367,19 @@
             this.wageTextBox.Name = "wageTextBox";
             this.wageTextBox.Size = new System.Drawing.Size(163, 22);
             this.wageTextBox.TabIndex = 30;
-            this.wageTextBox.Visible = false;
             // 
-            // labourerComboBox
+            // roleComboBox
             // 
-            this.labourerComboBox.FormattingEnabled = true;
-            this.labourerComboBox.Items.AddRange(new object[] {
+            this.roleComboBox.FormattingEnabled = true;
+            this.roleComboBox.Items.AddRange(new object[] {
             "Driver",
-            "Field Worker"});
-            this.labourerComboBox.Location = new System.Drawing.Point(717, 150);
-            this.labourerComboBox.Name = "labourerComboBox";
-            this.labourerComboBox.Size = new System.Drawing.Size(180, 24);
-            this.labourerComboBox.TabIndex = 31;
-            this.labourerComboBox.Visible = false;
+            "Field Worker",
+            "Manager",
+            "Sales Staff"});
+            this.roleComboBox.Location = new System.Drawing.Point(717, 152);
+            this.roleComboBox.Name = "roleComboBox";
+            this.roleComboBox.Size = new System.Drawing.Size(180, 24);
+            this.roleComboBox.TabIndex = 31;
             // 
             // AddStaff
             // 
@@ -415,13 +387,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1004, 751);
-            this.Controls.Add(this.labourerComboBox);
+            this.Controls.Add(this.roleComboBox);
             this.Controls.Add(this.wageTextBox);
             this.Controls.Add(this.lblWage);
             this.Controls.Add(this.hiredDateTimePicker);
             this.Controls.Add(this.lblDateHired);
-            this.Controls.Add(this.lblSalesStaff);
-            this.Controls.Add(this.lblManagerRole);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.statusComboBox);
@@ -486,11 +456,9 @@
         public System.Windows.Forms.ComboBox sexComboBox;
         public System.Windows.Forms.TextBox usernameTextBox;
         public System.Windows.Forms.TextBox passwordTextBox;
-        public System.Windows.Forms.Label lblManagerRole;
-        public System.Windows.Forms.Label lblSalesStaff;
         public System.Windows.Forms.Label lblDateHired;
         public System.Windows.Forms.TextBox wageTextBox;
-        public System.Windows.Forms.ComboBox labourerComboBox;
+        public System.Windows.Forms.ComboBox roleComboBox;
         public System.Windows.Forms.Label lblWage;
         public System.Windows.Forms.DateTimePicker hiredDateTimePicker;
     }

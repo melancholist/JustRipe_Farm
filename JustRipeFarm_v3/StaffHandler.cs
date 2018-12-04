@@ -9,7 +9,7 @@ namespace JustRipeFarm_v3
 {
     public class StaffHandler
     {
-        public int addNewLabourer(SqlConnection conn, Staff staff)
+        public int addNewStaff(SqlConnection conn, Staff staff)
         {
             string insertQuery = "INSERT INTO StaffData (firstName, lastName, age, sex, address, zipCode, contactNumber, staffRole, loginStatus, dateOfHire, hourlyWage, username, password)"
                 + "VALUES ('" + staff.FirstName + "', '" + staff.LastName + "'  , " + staff.Age + ", '" +
@@ -20,31 +20,6 @@ namespace JustRipeFarm_v3
 
             SqlCommand sqlComm = new SqlCommand(insertQuery, conn);
 
-            return sqlComm.ExecuteNonQuery();
-        }
-
-        public int addNewManager(SqlConnection conn, Staff staff)
-        {
-            string insertQuery = "INSERT INTO StaffData (firstName, lastName, age, sex, address, zipCode, contactNumber, staffRole, loginStatus, username, password)"
-                + "VALUES ('" + staff.FirstName + "', '" + staff.LastName + "'  , " + staff.Age + ", '" +
-                staff.Sex + "', '" + staff.Address + "', '" + staff.ZipCode
-                + "', '" + staff.ContactNumber + "', '" + staff.StaffRole + "', '" + staff.LoginStatus + "', '" +
-                staff.Username + "', '" + staff.Password + "' )";
-
-            SqlCommand sqlComm = new SqlCommand(insertQuery, conn);
-
-            return sqlComm.ExecuteNonQuery();
-        }
-
-        public int addNewSalesStaff(SqlConnection conn, Staff staff)
-        {
-            string insertQuery = "INSERT INTO StaffData (firstName, lastName, age, sex, address, zipCode, contactNumber, staffRole, loginStatus, username, password)"
-                + "VALUES ('" + staff.FirstName + "', '" + staff.LastName + "'  , " + staff.Age + ", '" +
-                staff.Sex + "', '" + staff.Address + "', '" + staff.ZipCode
-                + "', '" + staff.ContactNumber + "', '" + staff.StaffRole + "', '" + staff.LoginStatus + "', '" +
-                staff.Username + "', '" + staff.Password + "' )";
-
-            SqlCommand sqlComm = new SqlCommand(insertQuery, conn);
             return sqlComm.ExecuteNonQuery();
         }
 

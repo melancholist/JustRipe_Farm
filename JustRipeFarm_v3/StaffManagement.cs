@@ -44,49 +44,17 @@ namespace JustRipeFarm_v3
             }
         }
 
-        private void btnAddManager_Click(object sender, EventArgs e)
-        {
-            AddStaff add = new AddStaff();
-            add.Show();
-            this.Hide();
-
-            if (btnAddManager.Enabled)
-            {
-                add.lblManagerRole.Visible = true;
-            }
-        }
-
-        private void btnAddLabourer_Click(object sender, EventArgs e)
-        {
-            AddStaff ad = new AddStaff();
-            ad.Show();
-            this.Hide();
-
-            if (btnAddLabourer.Enabled)
-            {
-                ad.labourerComboBox.Visible = true;
-                ad.lblDateHired.Visible = true;
-                ad.lblWage.Visible = true;
-                ad.hiredDateTimePicker.Visible = true;
-                ad.wageTextBox.Visible = true;
-            }
-        }
-
-        private void btnAddSalesStaff_Click(object sender, EventArgs e)
-        {
-            AddStaff adstf = new AddStaff();
-            adstf.Show();
-            this.Hide();
-
-            if (btnAddSalesStaff.Enabled)
-            {
-                adstf.lblSalesStaff.Visible = true;
-            }
-        }
-
+     
         private void StaffManagement_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddStaff adstf = new AddStaff();
+            adstf.Show();
         }
     }
 }

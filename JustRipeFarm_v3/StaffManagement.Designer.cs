@@ -43,9 +43,7 @@
             this.searchComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAddSalesStaff = new System.Windows.Forms.Button();
-            this.btnAddLabourer = new System.Windows.Forms.Button();
-            this.btnAddManager = new System.Windows.Forms.Button();
+            this.btnStaff = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backpictureBox)).BeginInit();
             this.panel2.SuspendLayout();
@@ -155,14 +153,12 @@
             // pnlAddStaff
             // 
             this.pnlAddStaff.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlAddStaff.Controls.Add(this.btnStaff);
             this.pnlAddStaff.Controls.Add(this.btnUpdate);
             this.pnlAddStaff.Controls.Add(this.picBocSearch);
             this.pnlAddStaff.Controls.Add(this.searchComboBox);
             this.pnlAddStaff.Controls.Add(this.label2);
             this.pnlAddStaff.Controls.Add(this.dataGridView1);
-            this.pnlAddStaff.Controls.Add(this.btnAddSalesStaff);
-            this.pnlAddStaff.Controls.Add(this.btnAddLabourer);
-            this.pnlAddStaff.Controls.Add(this.btnAddManager);
             this.pnlAddStaff.Location = new System.Drawing.Point(207, 68);
             this.pnlAddStaff.Name = "pnlAddStaff";
             this.pnlAddStaff.Size = new System.Drawing.Size(1023, 694);
@@ -176,7 +172,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(788, 167);
+            this.btnUpdate.Location = new System.Drawing.Point(788, 24);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(188, 51);
             this.btnUpdate.TabIndex = 10;
@@ -187,7 +183,7 @@
             // 
             this.picBocSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBocSearch.Image = ((System.Drawing.Image)(resources.GetObject("picBocSearch.Image")));
-            this.picBocSearch.Location = new System.Drawing.Point(374, 158);
+            this.picBocSearch.Location = new System.Drawing.Point(365, 24);
             this.picBocSearch.Name = "picBocSearch";
             this.picBocSearch.Size = new System.Drawing.Size(53, 48);
             this.picBocSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -204,7 +200,7 @@
             "Driver",
             "Field Worker",
             "Sales Staff"});
-            this.searchComboBox.Location = new System.Drawing.Point(186, 167);
+            this.searchComboBox.Location = new System.Drawing.Point(177, 33);
             this.searchComboBox.Name = "searchComboBox";
             this.searchComboBox.Size = new System.Drawing.Size(182, 28);
             this.searchComboBox.TabIndex = 8;
@@ -214,7 +210,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(73, 169);
+            this.label2.Location = new System.Drawing.Point(64, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 23);
             this.label2.TabIndex = 7;
@@ -223,59 +219,27 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 229);
+            this.dataGridView1.Location = new System.Drawing.Point(45, 109);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(931, 409);
+            this.dataGridView1.Size = new System.Drawing.Size(931, 544);
             this.dataGridView1.TabIndex = 6;
             // 
-            // btnAddSalesStaff
+            // btnStaff
             // 
-            this.btnAddSalesStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnAddSalesStaff.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnAddSalesStaff.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnAddSalesStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddSalesStaff.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSalesStaff.ForeColor = System.Drawing.Color.White;
-            this.btnAddSalesStaff.Location = new System.Drawing.Point(786, 21);
-            this.btnAddSalesStaff.Name = "btnAddSalesStaff";
-            this.btnAddSalesStaff.Size = new System.Drawing.Size(203, 79);
-            this.btnAddSalesStaff.TabIndex = 5;
-            this.btnAddSalesStaff.Text = "Sales Staff";
-            this.btnAddSalesStaff.UseVisualStyleBackColor = false;
-            this.btnAddSalesStaff.Click += new System.EventHandler(this.btnAddSalesStaff_Click);
-            // 
-            // btnAddLabourer
-            // 
-            this.btnAddLabourer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnAddLabourer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnAddLabourer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnAddLabourer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddLabourer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddLabourer.ForeColor = System.Drawing.Color.White;
-            this.btnAddLabourer.Location = new System.Drawing.Point(412, 21);
-            this.btnAddLabourer.Name = "btnAddLabourer";
-            this.btnAddLabourer.Size = new System.Drawing.Size(203, 79);
-            this.btnAddLabourer.TabIndex = 4;
-            this.btnAddLabourer.Text = "Labourer";
-            this.btnAddLabourer.UseVisualStyleBackColor = false;
-            this.btnAddLabourer.Click += new System.EventHandler(this.btnAddLabourer_Click);
-            // 
-            // btnAddManager
-            // 
-            this.btnAddManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnAddManager.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnAddManager.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnAddManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddManager.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddManager.ForeColor = System.Drawing.Color.White;
-            this.btnAddManager.Location = new System.Drawing.Point(33, 21);
-            this.btnAddManager.Name = "btnAddManager";
-            this.btnAddManager.Size = new System.Drawing.Size(203, 79);
-            this.btnAddManager.TabIndex = 3;
-            this.btnAddManager.Text = "Manager";
-            this.btnAddManager.UseVisualStyleBackColor = false;
-            this.btnAddManager.Click += new System.EventHandler(this.btnAddManager_Click);
+            this.btnStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnStaff.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnStaff.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStaff.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStaff.ForeColor = System.Drawing.Color.White;
+            this.btnStaff.Location = new System.Drawing.Point(569, 24);
+            this.btnStaff.Name = "btnStaff";
+            this.btnStaff.Size = new System.Drawing.Size(188, 51);
+            this.btnStaff.TabIndex = 11;
+            this.btnStaff.Text = "Add Record";
+            this.btnStaff.UseVisualStyleBackColor = false;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
             // StaffManagement
             // 
@@ -319,8 +283,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnUpdate;
-        public System.Windows.Forms.Button btnAddSalesStaff;
-        public System.Windows.Forms.Button btnAddLabourer;
-        public System.Windows.Forms.Button btnAddManager;
+        private System.Windows.Forms.Button btnStaff;
     }
 }
