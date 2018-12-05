@@ -63,7 +63,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Constantia", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(110, 33);
+            this.label1.Location = new System.Drawing.Point(102, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(325, 59);
             this.label1.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.SeaGreen;
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Location = new System.Drawing.Point(40, 144);
+            this.panel2.Location = new System.Drawing.Point(42, 135);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(445, 1);
             this.panel2.TabIndex = 3;
@@ -81,7 +81,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(232, 106);
+            this.pictureBox2.Location = new System.Drawing.Point(232, 107);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(64, 56);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -94,7 +94,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(133, 170);
+            this.label2.Location = new System.Drawing.Point(129, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(270, 30);
             this.label2.TabIndex = 5;
@@ -107,7 +107,7 @@
             this.resetPasswordLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.resetPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetPasswordLabel.ForeColor = System.Drawing.Color.Silver;
-            this.resetPasswordLabel.Location = new System.Drawing.Point(169, 441);
+            this.resetPasswordLabel.Location = new System.Drawing.Point(164, 441);
             this.resetPasswordLabel.Name = "resetPasswordLabel";
             this.resetPasswordLabel.Size = new System.Drawing.Size(200, 24);
             this.resetPasswordLabel.TabIndex = 3;
@@ -120,7 +120,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(52, 234);
+            this.label5.Location = new System.Drawing.Point(58, 231);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(139, 30);
             this.label5.TabIndex = 6;
@@ -132,7 +132,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(60, 310);
+            this.label6.Location = new System.Drawing.Point(62, 310);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(131, 30);
             this.label6.TabIndex = 7;
@@ -146,7 +146,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(67, 365);
+            this.btnLogin.Location = new System.Drawing.Point(57, 365);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(0);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(414, 56);
@@ -161,7 +161,7 @@
             this.txtBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxUsername.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxUsername.ForeColor = System.Drawing.Color.Silver;
-            this.txtBoxUsername.Location = new System.Drawing.Point(207, 232);
+            this.txtBoxUsername.Location = new System.Drawing.Point(213, 232);
             this.txtBoxUsername.Name = "txtBoxUsername";
             this.txtBoxUsername.Size = new System.Drawing.Size(258, 29);
             this.txtBoxUsername.TabIndex = 0;
@@ -193,7 +193,7 @@
             this.txtBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxPassword.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxPassword.ForeColor = System.Drawing.Color.Silver;
-            this.txtBoxPassword.Location = new System.Drawing.Point(207, 308);
+            this.txtBoxPassword.Location = new System.Drawing.Point(209, 311);
             this.txtBoxPassword.MaxLength = 15;
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.PasswordChar = '●';

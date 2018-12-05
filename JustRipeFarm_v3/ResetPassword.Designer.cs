@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResetPassword));
             this.label1 = new System.Windows.Forms.Label();
-            this.exitPictureBox = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBoxNewPassword = new System.Windows.Forms.TextBox();
             this.textBoxConfirmPasssword = new System.Windows.Forms.TextBox();
@@ -39,6 +39,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.exitPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,23 +49,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(97, 50);
+            this.label1.Location = new System.Drawing.Point(94, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(290, 34);
             this.label1.TabIndex = 3;
             this.label1.Text = "Reset your Password";
-            // 
-            // exitPictureBox
-            // 
-            this.exitPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
-            this.exitPictureBox.Location = new System.Drawing.Point(431, 12);
-            this.exitPictureBox.Name = "exitPictureBox";
-            this.exitPictureBox.Size = new System.Drawing.Size(35, 38);
-            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.exitPictureBox.TabIndex = 4;
-            this.exitPictureBox.TabStop = false;
-            this.exitPictureBox.Click += new System.EventHandler(this.exitPictureBox_Click);
             // 
             // panel1
             // 
@@ -77,7 +67,7 @@
             // textBoxNewPassword
             // 
             this.textBoxNewPassword.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNewPassword.Location = new System.Drawing.Point(249, 182);
+            this.textBoxNewPassword.Location = new System.Drawing.Point(268, 182);
             this.textBoxNewPassword.Multiline = true;
             this.textBoxNewPassword.Name = "textBoxNewPassword";
             this.textBoxNewPassword.PasswordChar = '●';
@@ -88,7 +78,7 @@
             // textBoxConfirmPasssword
             // 
             this.textBoxConfirmPasssword.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxConfirmPasssword.Location = new System.Drawing.Point(249, 233);
+            this.textBoxConfirmPasssword.Location = new System.Drawing.Point(268, 233);
             this.textBoxConfirmPasssword.Multiline = true;
             this.textBoxConfirmPasssword.Name = "textBoxConfirmPasssword";
             this.textBoxConfirmPasssword.PasswordChar = '●';
@@ -99,7 +89,7 @@
             // textBoxUsername
             // 
             this.textBoxUsername.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsername.Location = new System.Drawing.Point(249, 131);
+            this.textBoxUsername.Location = new System.Drawing.Point(268, 131);
             this.textBoxUsername.Multiline = true;
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(183, 32);
@@ -114,7 +104,7 @@
             this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirm.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirm.ForeColor = System.Drawing.Color.White;
-            this.btnConfirm.Location = new System.Drawing.Point(110, 300);
+            this.btnConfirm.Location = new System.Drawing.Point(107, 300);
             this.btnConfirm.Margin = new System.Windows.Forms.Padding(0);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(268, 50);
@@ -129,7 +119,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(47, 237);
+            this.label2.Location = new System.Drawing.Point(55, 233);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(188, 23);
             this.label2.TabIndex = 17;
@@ -141,7 +131,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(19, 186);
+            this.label3.Location = new System.Drawing.Point(27, 182);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(216, 23);
             this.label3.TabIndex = 16;
@@ -153,11 +143,30 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(66, 135);
+            this.label4.Location = new System.Drawing.Point(74, 131);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(169, 23);
             this.label4.TabIndex = 15;
             this.label4.Text = "enter username:";
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // exitPictureBox
+            // 
+            this.exitPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
+            this.exitPictureBox.ImageActive = null;
+            this.exitPictureBox.Location = new System.Drawing.Point(435, 12);
+            this.exitPictureBox.Name = "exitPictureBox";
+            this.exitPictureBox.Size = new System.Drawing.Size(31, 29);
+            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exitPictureBox.TabIndex = 18;
+            this.exitPictureBox.TabStop = false;
+            this.exitPictureBox.Zoom = 30;
+            this.exitPictureBox.Click += new System.EventHandler(this.exitPictureBox_Click);
             // 
             // ResetPassword
             // 
@@ -165,11 +174,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(478, 457);
+            this.Controls.Add(this.exitPictureBox);
             this.Controls.Add(this.textBoxNewPassword);
             this.Controls.Add(this.textBoxConfirmPasssword);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBoxUsername);
-            this.Controls.Add(this.exitPictureBox);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -188,7 +197,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox exitPictureBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBoxNewPassword;
         private System.Windows.Forms.TextBox textBoxConfirmPasssword;
@@ -197,5 +205,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuImageButton exitPictureBox;
     }
 }
