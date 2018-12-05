@@ -20,6 +20,7 @@ namespace JustRipeFarm_v3
         private void AssignTask_Load(object sender, EventArgs e)
         {
             pnlSowing.Visible = true;
+            pnlSowing.BringToFront();
         }
 
         private void picBoxBack_Click(object sender, EventArgs e)
@@ -31,22 +32,43 @@ namespace JustRipeFarm_v3
 
         private void btnSowing_Click(object sender, EventArgs e)
         {
-            pnlSowing.Visible = true;
+            while (btnSowing.Enabled)
+            {
+                pnlSowing.Visible = true;
+                pnlSowing.BringToFront();
+                break;
+            }
         }
 
         private void btnHarvest_Click(object sender, EventArgs e)
         {
-            pnlHarvest.Visible = true;
+            while (btnHarvest.Enabled)
+            {
+                pnlHarvest.Visible = true;
+                pnlHarvest.BringToFront();
+                break;
+            }
         }
 
         private void btnTreating_Click(object sender, EventArgs e)
         {
-            pnlTreatment.Visible = true;
+            while (btnTreating.Enabled)
+            {
+                pnlTreatment.Visible = true;
+                pnlTreatment.BringToFront();
+                break;
+            }
+           
         }
 
         private void btnDriving_Click(object sender, EventArgs e)
         {
-            pnlDriving.Visible = true;
+            while (btnDriving.Enabled)
+            {
+                pnlDriving.Visible = true;
+                pnlDriving.BringToFront();
+                break;
+            }
         }
 
     }

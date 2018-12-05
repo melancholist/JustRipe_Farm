@@ -137,7 +137,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.picBoxBack);
-            this.panel1.Controls.Add(this.pnlSowing);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -166,8 +165,7 @@
             this.pnlHarvest.Controls.Add(this.label12);
             this.pnlHarvest.Controls.Add(this.comboBoxWorkerHarv);
             this.pnlHarvest.Controls.Add(this.label11);
-            this.pnlHarvest.Controls.Add(this.pnlDriving);
-            this.pnlHarvest.Location = new System.Drawing.Point(177, 48);
+            this.pnlHarvest.Location = new System.Drawing.Point(178, 51);
             this.pnlHarvest.Name = "pnlHarvest";
             this.pnlHarvest.Size = new System.Drawing.Size(892, 622);
             this.pnlHarvest.TabIndex = 20;
@@ -403,7 +401,6 @@
             this.pnlTreatment.Controls.Add(this.dateTimePickerStartTr);
             this.pnlTreatment.Controls.Add(this.label24);
             this.pnlTreatment.Controls.Add(this.label25);
-            this.pnlTreatment.Controls.Add(this.label26);
             this.pnlTreatment.Controls.Add(this.textBoxTreatmentDate);
             this.pnlTreatment.Controls.Add(this.monthCalendarTreatment);
             this.pnlTreatment.Controls.Add(this.comboBoxFarmT);
@@ -415,7 +412,8 @@
             this.pnlTreatment.Controls.Add(this.label20);
             this.pnlTreatment.Controls.Add(this.comboBoxWorkerT);
             this.pnlTreatment.Controls.Add(this.label19);
-            this.pnlTreatment.Location = new System.Drawing.Point(3, 0);
+            this.pnlTreatment.Controls.Add(this.label26);
+            this.pnlTreatment.Location = new System.Drawing.Point(178, 50);
             this.pnlTreatment.Name = "pnlTreatment";
             this.pnlTreatment.Size = new System.Drawing.Size(892, 622);
             this.pnlTreatment.TabIndex = 24;
@@ -618,18 +616,18 @@
             // pnlDriving
             // 
             this.pnlDriving.BackColor = System.Drawing.Color.Teal;
+            this.pnlDriving.Controls.Add(this.label29);
             this.pnlDriving.Controls.Add(this.comboBoxVehicles);
             this.pnlDriving.Controls.Add(this.label27);
             this.pnlDriving.Controls.Add(this.btnClearDrive);
             this.pnlDriving.Controls.Add(this.btnSaveDive);
-            this.pnlDriving.Controls.Add(this.label29);
             this.pnlDriving.Controls.Add(this.textBox1);
             this.pnlDriving.Controls.Add(this.monthCalendarDriving);
             this.pnlDriving.Controls.Add(this.comboBoxFarmD);
             this.pnlDriving.Controls.Add(this.label30);
             this.pnlDriving.Controls.Add(this.comboBoxDriver);
             this.pnlDriving.Controls.Add(this.label34);
-            this.pnlDriving.Location = new System.Drawing.Point(0, 0);
+            this.pnlDriving.Location = new System.Drawing.Point(179, 50);
             this.pnlDriving.Name = "pnlDriving";
             this.pnlDriving.Size = new System.Drawing.Size(892, 622);
             this.pnlDriving.TabIndex = 25;
@@ -853,7 +851,6 @@
             this.pnlSowing.BackColor = System.Drawing.Color.DarkSlateGray;
             this.pnlSowing.Controls.Add(this.btnClear);
             this.pnlSowing.Controls.Add(this.btnSaveSow);
-            this.pnlSowing.Controls.Add(this.pnlTreatment);
             this.pnlSowing.Controls.Add(this.label10);
             this.pnlSowing.Controls.Add(this.numericUpDownQauntity);
             this.pnlSowing.Controls.Add(this.label9);
@@ -872,7 +869,7 @@
             this.pnlSowing.Controls.Add(this.label3);
             this.pnlSowing.Controls.Add(this.comboBoxWorkers);
             this.pnlSowing.Controls.Add(this.label2);
-            this.pnlSowing.Location = new System.Drawing.Point(175, 45);
+            this.pnlSowing.Location = new System.Drawing.Point(179, 50);
             this.pnlSowing.Name = "pnlSowing";
             this.pnlSowing.Size = new System.Drawing.Size(894, 622);
             this.pnlSowing.TabIndex = 3;
@@ -1106,9 +1103,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1069, 670);
+            this.Controls.Add(this.pnlTreatment);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlHarvest);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlSowing);
+            this.Controls.Add(this.pnlDriving);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AssignTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
