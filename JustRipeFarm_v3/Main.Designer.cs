@@ -65,27 +65,27 @@
             this.btnViewSales = new System.Windows.Forms.Button();
             this.btnRecordTransaction = new System.Windows.Forms.Button();
             this.pnlResources = new System.Windows.Forms.Panel();
-            this.pnlEquipment = new System.Windows.Forms.Panel();
-            this.dataGridViewEquipment = new System.Windows.Forms.DataGridView();
-            this.btnAddNewEq = new System.Windows.Forms.Button();
-            this.pnlCrops = new System.Windows.Forms.Panel();
-            this.btnAddNewPlant = new System.Windows.Forms.Button();
-            this.dataGridViewPlant = new System.Windows.Forms.DataGridView();
-            this.btnEquipment = new System.Windows.Forms.Button();
-            this.btnCrops = new System.Windows.Forms.Button();
             this.lblResources = new System.Windows.Forms.Label();
             this.pnlStorage = new System.Windows.Forms.Panel();
+            this.pnlEquipment = new System.Windows.Forms.Panel();
+            this.pnlCrops = new System.Windows.Forms.Panel();
+            this.btnAddNewPlant = new System.Windows.Forms.Button();
+            this.dataGridViewEquipment = new System.Windows.Forms.DataGridView();
+            this.btnAddNewEq = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnCrops = new System.Windows.Forms.Button();
+            this.btnEquipment = new System.Windows.Forms.Button();
             this.pnlStocks = new System.Windows.Forms.Panel();
-            this.lblStocks = new System.Windows.Forms.Label();
-            this.btnProducts = new System.Windows.Forms.Button();
-            this.pnlProducts = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.lblProducts = new System.Windows.Forms.Label();
-            this.btnAddNewProduct = new System.Windows.Forms.Button();
-            this.btnOnlineStore = new System.Windows.Forms.Button();
             this.pnlOnlineStore = new System.Windows.Forms.Panel();
             this.linkLabelOnlineStore = new System.Windows.Forms.LinkLabel();
+            this.btnOnlineStore = new System.Windows.Forms.Button();
+            this.pnlProducts = new System.Windows.Forms.Panel();
+            this.btnAddNewProduct = new System.Windows.Forms.Button();
+            this.lblProducts = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.btnProducts = new System.Windows.Forms.Button();
+            this.lblStocks = new System.Windows.Forms.Label();
+            this.dataGridViewCrops = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -97,15 +97,15 @@
             this.pnlAccounting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlResources.SuspendLayout();
-            this.pnlEquipment.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).BeginInit();
-            this.pnlCrops.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlant)).BeginInit();
             this.pnlStorage.SuspendLayout();
+            this.pnlEquipment.SuspendLayout();
+            this.pnlCrops.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).BeginInit();
             this.pnlStocks.SuspendLayout();
+            this.pnlOnlineStore.SuspendLayout();
             this.pnlProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.pnlOnlineStore.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCrops)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -528,7 +528,7 @@
             // 
             // pnlAccounting
             // 
-            this.pnlAccounting.BackColor = System.Drawing.Color.Tan;
+            this.pnlAccounting.BackColor = System.Drawing.Color.Gray;
             this.pnlAccounting.Controls.Add(this.lblTransactionHistory);
             this.pnlAccounting.Controls.Add(this.lblAccounting);
             this.pnlAccounting.Controls.Add(this.dataGridView1);
@@ -536,14 +536,14 @@
             this.pnlAccounting.Controls.Add(this.btnRecordTransaction);
             this.pnlAccounting.Location = new System.Drawing.Point(233, 64);
             this.pnlAccounting.Name = "pnlAccounting";
-            this.pnlAccounting.Size = new System.Drawing.Size(964, 724);
+            this.pnlAccounting.Size = new System.Drawing.Size(970, 660);
             this.pnlAccounting.TabIndex = 0;
             // 
             // lblTransactionHistory
             // 
             this.lblTransactionHistory.AutoSize = true;
             this.lblTransactionHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTransactionHistory.Location = new System.Drawing.Point(20, 129);
+            this.lblTransactionHistory.Location = new System.Drawing.Point(29, 100);
             this.lblTransactionHistory.Name = "lblTransactionHistory";
             this.lblTransactionHistory.Size = new System.Drawing.Size(189, 24);
             this.lblTransactionHistory.TabIndex = 5;
@@ -553,7 +553,7 @@
             // 
             this.lblAccounting.AutoSize = true;
             this.lblAccounting.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccounting.Location = new System.Drawing.Point(0, 0);
+            this.lblAccounting.Location = new System.Drawing.Point(25, 18);
             this.lblAccounting.Name = "lblAccounting";
             this.lblAccounting.Size = new System.Drawing.Size(230, 46);
             this.lblAccounting.TabIndex = 0;
@@ -562,15 +562,15 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 167);
+            this.dataGridView1.Location = new System.Drawing.Point(33, 138);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(731, 265);
+            this.dataGridView1.Size = new System.Drawing.Size(731, 387);
             this.dataGridView1.TabIndex = 4;
             // 
             // btnViewSales
             // 
-            this.btnViewSales.Location = new System.Drawing.Point(253, 76);
+            this.btnViewSales.Location = new System.Drawing.Point(501, 23);
             this.btnViewSales.Name = "btnViewSales";
             this.btnViewSales.Size = new System.Drawing.Size(107, 38);
             this.btnViewSales.TabIndex = 3;
@@ -580,7 +580,7 @@
             // 
             // btnRecordTransaction
             // 
-            this.btnRecordTransaction.Location = new System.Drawing.Point(24, 76);
+            this.btnRecordTransaction.Location = new System.Drawing.Point(286, 22);
             this.btnRecordTransaction.Name = "btnRecordTransaction";
             this.btnRecordTransaction.Size = new System.Drawing.Size(182, 38);
             this.btnRecordTransaction.TabIndex = 1;
@@ -590,26 +590,63 @@
             // 
             // pnlResources
             // 
-            this.pnlResources.BackColor = System.Drawing.Color.LightSalmon;
-            this.pnlResources.Controls.Add(this.pnlStorage);
-            this.pnlResources.Controls.Add(this.pnlEquipment);
+            this.pnlResources.BackColor = System.Drawing.Color.Gray;
             this.pnlResources.Controls.Add(this.pnlCrops);
+            this.pnlResources.Controls.Add(this.lblResources);
             this.pnlResources.Controls.Add(this.btnEquipment);
             this.pnlResources.Controls.Add(this.btnCrops);
-            this.pnlResources.Controls.Add(this.lblResources);
-            this.pnlResources.Location = new System.Drawing.Point(233, 64);
+            this.pnlResources.Controls.Add(this.pnlEquipment);
+            this.pnlResources.Location = new System.Drawing.Point(234, 64);
             this.pnlResources.Name = "pnlResources";
-            this.pnlResources.Size = new System.Drawing.Size(967, 727);
+            this.pnlResources.Size = new System.Drawing.Size(963, 696);
             this.pnlResources.TabIndex = 6;
+            // 
+            // lblResources
+            // 
+            this.lblResources.AutoSize = true;
+            this.lblResources.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResources.Location = new System.Drawing.Point(36, 28);
+            this.lblResources.Name = "lblResources";
+            this.lblResources.Size = new System.Drawing.Size(189, 39);
+            this.lblResources.TabIndex = 0;
+            this.lblResources.Text = "Resources";
+            // 
+            // pnlStorage
+            // 
+            this.pnlStorage.BackColor = System.Drawing.Color.Gray;
+            this.pnlStorage.Controls.Add(this.label2);
+            this.pnlStorage.Location = new System.Drawing.Point(234, 65);
+            this.pnlStorage.Name = "pnlStorage";
+            this.pnlStorage.Size = new System.Drawing.Size(912, 662);
+            this.pnlStorage.TabIndex = 5;
             // 
             // pnlEquipment
             // 
             this.pnlEquipment.Controls.Add(this.dataGridViewEquipment);
             this.pnlEquipment.Controls.Add(this.btnAddNewEq);
-            this.pnlEquipment.Location = new System.Drawing.Point(168, 87);
+            this.pnlEquipment.Location = new System.Drawing.Point(43, 85);
             this.pnlEquipment.Name = "pnlEquipment";
-            this.pnlEquipment.Size = new System.Drawing.Size(684, 476);
+            this.pnlEquipment.Size = new System.Drawing.Size(704, 444);
             this.pnlEquipment.TabIndex = 4;
+            // 
+            // pnlCrops
+            // 
+            this.pnlCrops.Controls.Add(this.dataGridViewCrops);
+            this.pnlCrops.Controls.Add(this.btnAddNewPlant);
+            this.pnlCrops.Location = new System.Drawing.Point(43, 82);
+            this.pnlCrops.Name = "pnlCrops";
+            this.pnlCrops.Size = new System.Drawing.Size(704, 450);
+            this.pnlCrops.TabIndex = 3;
+            // 
+            // btnAddNewPlant
+            // 
+            this.btnAddNewPlant.Location = new System.Drawing.Point(53, 31);
+            this.btnAddNewPlant.Name = "btnAddNewPlant";
+            this.btnAddNewPlant.Size = new System.Drawing.Size(117, 38);
+            this.btnAddNewPlant.TabIndex = 1;
+            this.btnAddNewPlant.Text = "Add new plant";
+            this.btnAddNewPlant.UseVisualStyleBackColor = true;
+            this.btnAddNewPlant.Click += new System.EventHandler(this.btnAddNewPlant_Click);
             // 
             // dataGridViewEquipment
             // 
@@ -622,80 +659,13 @@
             // 
             // btnAddNewEq
             // 
-            this.btnAddNewEq.Location = new System.Drawing.Point(34, 16);
+            this.btnAddNewEq.Location = new System.Drawing.Point(34, 26);
             this.btnAddNewEq.Name = "btnAddNewEq";
             this.btnAddNewEq.Size = new System.Drawing.Size(158, 37);
             this.btnAddNewEq.TabIndex = 0;
             this.btnAddNewEq.Text = "Add New Equipment";
             this.btnAddNewEq.UseVisualStyleBackColor = true;
             this.btnAddNewEq.Click += new System.EventHandler(this.btnAddNewEq_Click);
-            // 
-            // pnlCrops
-            // 
-            this.pnlCrops.Controls.Add(this.btnAddNewPlant);
-            this.pnlCrops.Controls.Add(this.dataGridViewPlant);
-            this.pnlCrops.Location = new System.Drawing.Point(168, 87);
-            this.pnlCrops.Name = "pnlCrops";
-            this.pnlCrops.Size = new System.Drawing.Size(684, 409);
-            this.pnlCrops.TabIndex = 3;
-            // 
-            // btnAddNewPlant
-            // 
-            this.btnAddNewPlant.Location = new System.Drawing.Point(34, 15);
-            this.btnAddNewPlant.Name = "btnAddNewPlant";
-            this.btnAddNewPlant.Size = new System.Drawing.Size(117, 38);
-            this.btnAddNewPlant.TabIndex = 1;
-            this.btnAddNewPlant.Text = "Add new plant";
-            this.btnAddNewPlant.UseVisualStyleBackColor = true;
-            this.btnAddNewPlant.Click += new System.EventHandler(this.btnAddNewPlant_Click);
-            // 
-            // dataGridViewPlant
-            // 
-            this.dataGridViewPlant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPlant.Location = new System.Drawing.Point(34, 68);
-            this.dataGridViewPlant.Name = "dataGridViewPlant";
-            this.dataGridViewPlant.RowTemplate.Height = 24;
-            this.dataGridViewPlant.Size = new System.Drawing.Size(593, 303);
-            this.dataGridViewPlant.TabIndex = 0;
-            // 
-            // btnEquipment
-            // 
-            this.btnEquipment.Location = new System.Drawing.Point(33, 137);
-            this.btnEquipment.Name = "btnEquipment";
-            this.btnEquipment.Size = new System.Drawing.Size(107, 35);
-            this.btnEquipment.TabIndex = 2;
-            this.btnEquipment.Text = "Equipment";
-            this.btnEquipment.UseVisualStyleBackColor = true;
-            this.btnEquipment.Click += new System.EventHandler(this.btnEquipment_Click);
-            // 
-            // btnCrops
-            // 
-            this.btnCrops.Location = new System.Drawing.Point(33, 87);
-            this.btnCrops.Name = "btnCrops";
-            this.btnCrops.Size = new System.Drawing.Size(87, 34);
-            this.btnCrops.TabIndex = 1;
-            this.btnCrops.Text = "Crops";
-            this.btnCrops.UseVisualStyleBackColor = true;
-            this.btnCrops.Click += new System.EventHandler(this.btnCrops_Click);
-            // 
-            // lblResources
-            // 
-            this.lblResources.AutoSize = true;
-            this.lblResources.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResources.Location = new System.Drawing.Point(27, 24);
-            this.lblResources.Name = "lblResources";
-            this.lblResources.Size = new System.Drawing.Size(159, 32);
-            this.lblResources.TabIndex = 0;
-            this.lblResources.Text = "Resources";
-            // 
-            // pnlStorage
-            // 
-            this.pnlStorage.BackColor = System.Drawing.Color.LightCoral;
-            this.pnlStorage.Controls.Add(this.label2);
-            this.pnlStorage.Location = new System.Drawing.Point(-2, 0);
-            this.pnlStorage.Name = "pnlStorage";
-            this.pnlStorage.Size = new System.Drawing.Size(967, 727);
-            this.pnlStorage.TabIndex = 5;
             // 
             // label2
             // 
@@ -707,8 +677,29 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Storage";
             // 
+            // btnCrops
+            // 
+            this.btnCrops.Location = new System.Drawing.Point(274, 33);
+            this.btnCrops.Name = "btnCrops";
+            this.btnCrops.Size = new System.Drawing.Size(87, 34);
+            this.btnCrops.TabIndex = 1;
+            this.btnCrops.Text = "Crops";
+            this.btnCrops.UseVisualStyleBackColor = true;
+            this.btnCrops.Click += new System.EventHandler(this.btnCrops_Click);
+            // 
+            // btnEquipment
+            // 
+            this.btnEquipment.Location = new System.Drawing.Point(405, 31);
+            this.btnEquipment.Name = "btnEquipment";
+            this.btnEquipment.Size = new System.Drawing.Size(107, 35);
+            this.btnEquipment.TabIndex = 2;
+            this.btnEquipment.Text = "Equipment";
+            this.btnEquipment.UseVisualStyleBackColor = true;
+            this.btnEquipment.Click += new System.EventHandler(this.btnEquipment_Click);
+            // 
             // pnlStocks
             // 
+            this.pnlStocks.BackColor = System.Drawing.Color.DarkGray;
             this.pnlStocks.Controls.Add(this.pnlOnlineStore);
             this.pnlStocks.Controls.Add(this.btnOnlineStore);
             this.pnlStocks.Controls.Add(this.pnlProducts);
@@ -718,74 +709,6 @@
             this.pnlStocks.Name = "pnlStocks";
             this.pnlStocks.Size = new System.Drawing.Size(972, 726);
             this.pnlStocks.TabIndex = 1;
-            // 
-            // lblStocks
-            // 
-            this.lblStocks.AutoSize = true;
-            this.lblStocks.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStocks.Location = new System.Drawing.Point(28, 23);
-            this.lblStocks.Name = "lblStocks";
-            this.lblStocks.Size = new System.Drawing.Size(125, 39);
-            this.lblStocks.TabIndex = 0;
-            this.lblStocks.Text = "Stocks";
-            // 
-            // btnProducts
-            // 
-            this.btnProducts.Location = new System.Drawing.Point(182, 30);
-            this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Size = new System.Drawing.Size(75, 23);
-            this.btnProducts.TabIndex = 1;
-            this.btnProducts.Text = "Products";
-            this.btnProducts.UseVisualStyleBackColor = true;
-            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
-            // 
-            // pnlProducts
-            // 
-            this.pnlProducts.Controls.Add(this.btnAddNewProduct);
-            this.pnlProducts.Controls.Add(this.lblProducts);
-            this.pnlProducts.Controls.Add(this.dataGridView2);
-            this.pnlProducts.Location = new System.Drawing.Point(35, 75);
-            this.pnlProducts.Name = "pnlProducts";
-            this.pnlProducts.Size = new System.Drawing.Size(706, 400);
-            this.pnlProducts.TabIndex = 2;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(46, 83);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(618, 277);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // lblProducts
-            // 
-            this.lblProducts.AutoSize = true;
-            this.lblProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProducts.Location = new System.Drawing.Point(28, 21);
-            this.lblProducts.Name = "lblProducts";
-            this.lblProducts.Size = new System.Drawing.Size(135, 32);
-            this.lblProducts.TabIndex = 1;
-            this.lblProducts.Text = "Products";
-            // 
-            // btnAddNewProduct
-            // 
-            this.btnAddNewProduct.Location = new System.Drawing.Point(536, 21);
-            this.btnAddNewProduct.Name = "btnAddNewProduct";
-            this.btnAddNewProduct.Size = new System.Drawing.Size(128, 36);
-            this.btnAddNewProduct.TabIndex = 2;
-            this.btnAddNewProduct.Text = "Add new product";
-            this.btnAddNewProduct.UseVisualStyleBackColor = true;
-            // 
-            // btnOnlineStore
-            // 
-            this.btnOnlineStore.Location = new System.Drawing.Point(288, 30);
-            this.btnOnlineStore.Name = "btnOnlineStore";
-            this.btnOnlineStore.Size = new System.Drawing.Size(114, 23);
-            this.btnOnlineStore.TabIndex = 3;
-            this.btnOnlineStore.Text = "Online Store";
-            this.btnOnlineStore.UseVisualStyleBackColor = true;
-            this.btnOnlineStore.Click += new System.EventHandler(this.btnOnlineStore_Click);
             // 
             // pnlOnlineStore
             // 
@@ -806,18 +729,96 @@
             this.linkLabelOnlineStore.Text = "Visit Online Store";
             this.linkLabelOnlineStore.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelOnlineStore_LinkClicked);
             // 
+            // btnOnlineStore
+            // 
+            this.btnOnlineStore.Location = new System.Drawing.Point(288, 30);
+            this.btnOnlineStore.Name = "btnOnlineStore";
+            this.btnOnlineStore.Size = new System.Drawing.Size(114, 23);
+            this.btnOnlineStore.TabIndex = 3;
+            this.btnOnlineStore.Text = "Online Store";
+            this.btnOnlineStore.UseVisualStyleBackColor = true;
+            this.btnOnlineStore.Click += new System.EventHandler(this.btnOnlineStore_Click);
+            // 
+            // pnlProducts
+            // 
+            this.pnlProducts.Controls.Add(this.btnAddNewProduct);
+            this.pnlProducts.Controls.Add(this.lblProducts);
+            this.pnlProducts.Controls.Add(this.dataGridView2);
+            this.pnlProducts.Location = new System.Drawing.Point(35, 75);
+            this.pnlProducts.Name = "pnlProducts";
+            this.pnlProducts.Size = new System.Drawing.Size(706, 400);
+            this.pnlProducts.TabIndex = 2;
+            // 
+            // btnAddNewProduct
+            // 
+            this.btnAddNewProduct.Location = new System.Drawing.Point(536, 21);
+            this.btnAddNewProduct.Name = "btnAddNewProduct";
+            this.btnAddNewProduct.Size = new System.Drawing.Size(128, 36);
+            this.btnAddNewProduct.TabIndex = 2;
+            this.btnAddNewProduct.Text = "Add new product";
+            this.btnAddNewProduct.UseVisualStyleBackColor = true;
+            // 
+            // lblProducts
+            // 
+            this.lblProducts.AutoSize = true;
+            this.lblProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProducts.Location = new System.Drawing.Point(28, 21);
+            this.lblProducts.Name = "lblProducts";
+            this.lblProducts.Size = new System.Drawing.Size(135, 32);
+            this.lblProducts.TabIndex = 1;
+            this.lblProducts.Text = "Products";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(46, 83);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(618, 277);
+            this.dataGridView2.TabIndex = 0;
+            // 
+            // btnProducts
+            // 
+            this.btnProducts.Location = new System.Drawing.Point(182, 30);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(75, 23);
+            this.btnProducts.TabIndex = 1;
+            this.btnProducts.Text = "Products";
+            this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
+            // 
+            // lblStocks
+            // 
+            this.lblStocks.AutoSize = true;
+            this.lblStocks.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStocks.Location = new System.Drawing.Point(28, 23);
+            this.lblStocks.Name = "lblStocks";
+            this.lblStocks.Size = new System.Drawing.Size(123, 38);
+            this.lblStocks.TabIndex = 0;
+            this.lblStocks.Text = "Stocks";
+            // 
+            // dataGridViewCrops
+            // 
+            this.dataGridViewCrops.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCrops.Location = new System.Drawing.Point(53, 90);
+            this.dataGridViewCrops.Name = "dataGridViewCrops";
+            this.dataGridViewCrops.RowTemplate.Height = 24;
+            this.dataGridViewCrops.Size = new System.Drawing.Size(581, 301);
+            this.dataGridViewCrops.TabIndex = 2;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
-            this.Controls.Add(this.pnlStocks);
             this.Controls.Add(this.pnlResources);
+            this.Controls.Add(this.pnlStorage);
             this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlSchedule);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlStocks);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Main";
@@ -838,19 +839,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnlResources.ResumeLayout(false);
             this.pnlResources.PerformLayout();
-            this.pnlEquipment.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).EndInit();
-            this.pnlCrops.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlant)).EndInit();
             this.pnlStorage.ResumeLayout(false);
             this.pnlStorage.PerformLayout();
+            this.pnlEquipment.ResumeLayout(false);
+            this.pnlCrops.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).EndInit();
             this.pnlStocks.ResumeLayout(false);
             this.pnlStocks.PerformLayout();
+            this.pnlOnlineStore.ResumeLayout(false);
+            this.pnlOnlineStore.PerformLayout();
             this.pnlProducts.ResumeLayout(false);
             this.pnlProducts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.pnlOnlineStore.ResumeLayout(false);
-            this.pnlOnlineStore.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCrops)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -894,7 +895,6 @@
         private System.Windows.Forms.Panel pnlResources;
         private System.Windows.Forms.Panel pnlCrops;
         private System.Windows.Forms.Button btnAddNewPlant;
-        private System.Windows.Forms.DataGridView dataGridViewPlant;
         private System.Windows.Forms.Button btnEquipment;
         private System.Windows.Forms.Button btnCrops;
         private System.Windows.Forms.Label lblResources;
@@ -913,5 +913,6 @@
         private System.Windows.Forms.Panel pnlOnlineStore;
         private System.Windows.Forms.LinkLabel linkLabelOnlineStore;
         private System.Windows.Forms.Button btnOnlineStore;
+        private System.Windows.Forms.DataGridView dataGridViewCrops;
     }
 }

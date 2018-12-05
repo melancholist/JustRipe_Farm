@@ -34,7 +34,7 @@ namespace JustRipeFarm_v3
             pnlResources.Hide();
             pnlStorage.Hide();
             //pnlVehicle.Hide();
-            //pnlStock.Hide();
+            pnlStocks.Hide();
             pnlAccounting.Hide();
         }
 
@@ -54,7 +54,7 @@ namespace JustRipeFarm_v3
             pnlResources.Hide();
             pnlStorage.Hide();
             //pnlVehicle.Hide();
-            //pnlStocks.Hide();
+            pnlStocks.Hide();
             pnlAccounting.Hide();
 
             if (btnSchedule.Enabled)
@@ -101,7 +101,7 @@ namespace JustRipeFarm_v3
             pnlResources.Show();
             pnlStorage.Hide();
             //pnlVehicle.Hide();
-            //pnlStocks.Hide();
+            pnlStocks.Hide();
             pnlAccounting.Hide();
 
             if (btnResources.Enabled)
@@ -118,6 +118,13 @@ namespace JustRipeFarm_v3
         //Storage panel appears when button is clicked
         private void btnStorage_Click(object sender, EventArgs e)
         {
+            pnlSchedule.Hide();
+            pnlResources.Hide();
+            pnlStorage.Show();
+            //pnlVehicle.Hide();
+            pnlStocks.Hide();
+            pnlAccounting.Hide();
+
             if (btnStorage.Enabled)
             {
                 panelBtnIndicator1.Hide();
@@ -146,6 +153,13 @@ namespace JustRipeFarm_v3
         //Stock panel appears when button is clicked
         private void btnStock_Click(object sender, EventArgs e)
         {
+            pnlSchedule.Hide();
+            pnlResources.Hide();
+            pnlStorage.Hide();
+            //pnlVehicle.Hide();
+            pnlStocks.Show();
+            pnlAccounting.Hide();
+
             if (btnStocks.Enabled)
             {
                 panelBtnIndicator1.Hide();
@@ -164,7 +178,7 @@ namespace JustRipeFarm_v3
             pnlResources.Hide();
             pnlStorage.Hide();
             //pnlVehicle.Hide();
-            //pnlStocks.Hide();
+            pnlStocks.Hide();
             pnlAccounting.Show();
 
             if (btnAccounting.Enabled)
