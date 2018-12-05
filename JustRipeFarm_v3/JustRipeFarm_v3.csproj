@@ -85,6 +85,12 @@
     <Compile Include="AddStaff.Designer.cs">
       <DependentUpon>AddStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="AssignTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignTask.Designer.cs">
+      <DependentUpon>AssignTask.cs</DependentUpon>
+    </Compile>
     <Compile Include="DbConnector.cs" />
     <Compile Include="loadingScreen.cs">
       <SubType>Form</SubType>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddStaff.resx">
       <DependentUpon>AddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignTask.resx">
+      <DependentUpon>AssignTask.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loadingScreen.resx">
       <DependentUpon>loadingScreen.cs</DependentUpon>
