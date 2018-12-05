@@ -159,6 +159,7 @@
             // 
             this.txtBoxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.txtBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxUsername.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.txtBoxUsername.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxUsername.ForeColor = System.Drawing.Color.Silver;
             this.txtBoxUsername.Location = new System.Drawing.Point(213, 232);
@@ -191,6 +192,7 @@
             // 
             this.txtBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.txtBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxPassword.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.txtBoxPassword.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxPassword.ForeColor = System.Drawing.Color.Silver;
             this.txtBoxPassword.Location = new System.Drawing.Point(209, 311);

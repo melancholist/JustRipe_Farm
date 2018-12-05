@@ -17,9 +17,9 @@ namespace JustRipeFarm_v3
         public StaffManagement()
         {
             InitializeComponent();
+
             pnlAddStaff.Show();
             pnlBtnIndic1.Show();
-            pnlBtnIndic2.Hide();
         }
 
         private void backpictureBox_Click(object sender, EventArgs e)
@@ -37,17 +37,10 @@ namespace JustRipeFarm_v3
         private void btnAddStaff_Click(object sender, EventArgs e)
         {
             if (btnAddStaff.Enabled)
-            { 
+            {
                 pnlAddStaff.Show();
                 pnlBtnIndic1.Show();
-                pnlBtnIndic2.Hide();
             }
-        }
-
-     
-        private void StaffManagement_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnStaff_Click(object sender, EventArgs e)
@@ -55,6 +48,13 @@ namespace JustRipeFarm_v3
             this.Hide();
             AddStaff adstf = new AddStaff();
             adstf.Show();
+        }
+
+        private void btnTask_Click(object sender, EventArgs e)
+        {
+            AssignTask tsk = new AssignTask();
+            tsk.Show();
+            this.Hide();
         }
     }
 }
