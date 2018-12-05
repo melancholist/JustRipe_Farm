@@ -206,6 +206,7 @@ namespace JustRipeFarm_v3
             sales.Show();
         }
 
+        //Redirrect users to staff management form
         private void btnStaffManagement_Click(object sender, EventArgs e)
         {
             StaffManagement stf = new StaffManagement();
@@ -213,41 +214,48 @@ namespace JustRipeFarm_v3
             this.Hide();
         }
 
+        //Redirect user to add new plant form
         private void btnAddNewPlant_Click(object sender, EventArgs e)
         {
             AddNewPlant addNewPlant = new AddNewPlant();
             addNewPlant.Show();
         }
 
+        //Equipment panel appears and crops panel is hidden when button is clicked
         private void btnEquipment_Click(object sender, EventArgs e)
         {
             pnlEquipment.Show();
             pnlCrops.Hide();
         }
 
+        //Redirect user to add new equipment form
         private void btnAddNewEq_Click(object sender, EventArgs e)
         {
             AddNewEquipment addNewEquipment = new AddNewEquipment();
             addNewEquipment.Show();
         }
 
+        //Crops panel appears and equipment panel is hidden when button is clicked
         private void btnCrops_Click(object sender, EventArgs e)
         {
             pnlCrops.Show();
             pnlEquipment.Hide();
         }
 
+        //Products panel within stock panel appears
         private void btnProducts_Click(object sender, EventArgs e)
         {
             pnlProducts.Show();
             pnlOnlineStore.Hide();
         }
 
+        //Redirect user to website
         private void linkLabelOnlineStore_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
         }
 
+        //Online Store panel within stock panel appears
         private void btnOnlineStore_Click(object sender, EventArgs e)
         {
             pnlProducts.Hide();

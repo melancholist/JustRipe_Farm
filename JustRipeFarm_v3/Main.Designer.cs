@@ -462,7 +462,7 @@
             // 
             this.pnlHarvest.BackColor = System.Drawing.Color.Moccasin;
             this.pnlHarvest.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlHarvest.Location = new System.Drawing.Point(3, 0);
+            this.pnlHarvest.Location = new System.Drawing.Point(0, 0);
             this.pnlHarvest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlHarvest.Name = "pnlHarvest";
             this.pnlHarvest.Size = new System.Drawing.Size(970, 670);

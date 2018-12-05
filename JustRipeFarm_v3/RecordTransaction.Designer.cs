@@ -42,7 +42,6 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.lblAmount = new System.Windows.Forms.Label();
             this.lblType = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.lblNewTransaction = new System.Windows.Forms.Label();
@@ -51,7 +50,7 @@
             // lblCustomer
             // 
             this.lblCustomer.AutoSize = true;
-            this.lblCustomer.Location = new System.Drawing.Point(26, 172);
+            this.lblCustomer.Location = new System.Drawing.Point(35, 178);
             this.lblCustomer.Name = "lblCustomer";
             this.lblCustomer.Size = new System.Drawing.Size(68, 17);
             this.lblCustomer.TabIndex = 28;
@@ -60,7 +59,7 @@
             // lblPayee
             // 
             this.lblPayee.AutoSize = true;
-            this.lblPayee.Location = new System.Drawing.Point(126, 178);
+            this.lblPayee.Location = new System.Drawing.Point(35, 176);
             this.lblPayee.Name = "lblPayee";
             this.lblPayee.Size = new System.Drawing.Size(48, 17);
             this.lblPayee.TabIndex = 27;
@@ -85,14 +84,14 @@
             "Taxes",
             "Utilities",
             "Other Expenses"});
-            this.comboBoxExpense.Location = new System.Drawing.Point(414, 206);
+            this.comboBoxExpense.Location = new System.Drawing.Point(142, 206);
             this.comboBoxExpense.Name = "comboBoxExpense";
-            this.comboBoxExpense.Size = new System.Drawing.Size(188, 24);
+            this.comboBoxExpense.Size = new System.Drawing.Size(200, 24);
             this.comboBoxExpense.TabIndex = 26;
             // 
             // textBoxDescription
             // 
-            this.textBoxDescription.Location = new System.Drawing.Point(190, 245);
+            this.textBoxDescription.Location = new System.Drawing.Point(142, 245);
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.Size = new System.Drawing.Size(200, 22);
             this.textBoxDescription.TabIndex = 25;
@@ -107,28 +106,28 @@
             "Crop insurance proceeds and federal crop disaster payments",
             "Custom hire (machine work) income",
             "Other income"});
-            this.comboBoxIncome.Location = new System.Drawing.Point(190, 206);
+            this.comboBoxIncome.Location = new System.Drawing.Point(142, 206);
             this.comboBoxIncome.Name = "comboBoxIncome";
             this.comboBoxIncome.Size = new System.Drawing.Size(200, 24);
             this.comboBoxIncome.TabIndex = 24;
             // 
             // textBoxCustomerPayee
             // 
-            this.textBoxCustomerPayee.Location = new System.Drawing.Point(190, 173);
+            this.textBoxCustomerPayee.Location = new System.Drawing.Point(142, 173);
             this.textBoxCustomerPayee.Name = "textBoxCustomerPayee";
             this.textBoxCustomerPayee.Size = new System.Drawing.Size(200, 22);
             this.textBoxCustomerPayee.TabIndex = 23;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(190, 130);
+            this.dateTimePicker1.Location = new System.Drawing.Point(142, 130);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 22;
             // 
             // textBoxAmount
             // 
-            this.textBoxAmount.Location = new System.Drawing.Point(190, 97);
+            this.textBoxAmount.Location = new System.Drawing.Point(142, 97);
             this.textBoxAmount.Name = "textBoxAmount";
             this.textBoxAmount.Size = new System.Drawing.Size(200, 22);
             this.textBoxAmount.TabIndex = 21;
@@ -139,7 +138,7 @@
             this.comboBoxType.Items.AddRange(new object[] {
             "Income",
             "Expense"});
-            this.comboBoxType.Location = new System.Drawing.Point(190, 61);
+            this.comboBoxType.Location = new System.Drawing.Point(142, 61);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(200, 24);
             this.comboBoxType.TabIndex = 20;
@@ -148,7 +147,7 @@
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(62, 245);
+            this.lblDescription.Location = new System.Drawing.Point(35, 248);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(79, 17);
             this.lblDescription.TabIndex = 19;
@@ -157,7 +156,7 @@
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
-            this.lblCategory.Location = new System.Drawing.Point(59, 206);
+            this.lblCategory.Location = new System.Drawing.Point(35, 213);
             this.lblCategory.Name = "lblCategory";
             this.lblCategory.Size = new System.Drawing.Size(65, 17);
             this.lblCategory.TabIndex = 18;
@@ -166,7 +165,7 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(56, 136);
+            this.lblDate.Location = new System.Drawing.Point(35, 135);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(38, 17);
             this.lblDate.TabIndex = 17;
@@ -175,7 +174,7 @@
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.Location = new System.Drawing.Point(56, 97);
+            this.lblAmount.Location = new System.Drawing.Point(35, 100);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.Size = new System.Drawing.Size(68, 17);
             this.lblAmount.TabIndex = 16;
@@ -184,25 +183,15 @@
             // lblType
             // 
             this.lblType.AutoSize = true;
-            this.lblType.Location = new System.Drawing.Point(53, 64);
+            this.lblType.Location = new System.Drawing.Point(35, 64);
             this.lblType.Name = "lblType";
             this.lblType.Size = new System.Drawing.Size(40, 17);
             this.lblType.TabIndex = 15;
             this.lblType.Text = "Type";
             // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(527, 22);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
-            this.btnBack.TabIndex = 31;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(527, 308);
+            this.btnSave.Location = new System.Drawing.Point(267, 308);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 30;
@@ -212,7 +201,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(414, 308);
+            this.btnClear.Location = new System.Drawing.Point(164, 308);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 29;
@@ -234,9 +223,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 367);
+            this.ClientSize = new System.Drawing.Size(392, 367);
             this.Controls.Add(this.lblNewTransaction);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lblCustomer);
@@ -276,7 +264,6 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.Label lblType;
-        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label lblNewTransaction;

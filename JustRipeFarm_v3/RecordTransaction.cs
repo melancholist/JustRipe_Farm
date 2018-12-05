@@ -17,21 +17,24 @@ namespace JustRipeFarm_v3
             InitializeComponent();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //Save information to database
         private void btnSave_Click(object sender, EventArgs e)
         {
 
         }
 
+        //Clear all
         private void btnClear_Click(object sender, EventArgs e)
         {
-
+            this.textBoxCustomerPayee.Text = "";
+            this.textBoxAmount.Text = "";
+            comboBoxType.SelectedIndex = -1;
+            this.textBoxDescription.Text = "";
+            comboBoxExpense.SelectedIndex = -1;
+            comboBoxIncome.SelectedIndex = -1;
         }
 
+        //Different appearence of comboboxes and labels absed on transaction type
         private void comboBoxType_SelectedIndexChanged(object sender, EventArgs e)
         {
             //INCOME
