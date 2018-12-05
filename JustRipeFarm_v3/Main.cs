@@ -30,13 +30,14 @@ namespace JustRipeFarm_v3
             panelBtnIndicator4.Hide();
             panelBtnIndicator5.Hide();
             panelBtnIndicator6.Hide();
-            //pnlResources.Hide();
+            pnlResources.Hide();
             //pnlStorage.Hide();
             //pnlVehicle.Hide();
             //pnlStock.Hide();
             pnlAccounting.Hide();
         }
 
+        //Exit Logout page and return to Login Page when button is clicked
         private void logoutPictureBox_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -45,6 +46,7 @@ namespace JustRipeFarm_v3
             login.Show();
         }
 
+        //Schedule panel appears when button is clicked
         private void btnSchedule_Click(object sender, EventArgs e)
         {
             pnlSchedule.Show();
@@ -61,11 +63,12 @@ namespace JustRipeFarm_v3
             }
         }
 
+        //Sowing panel within Schedule panel appears when button is clicked
         private void btnSowing_Click(object sender, EventArgs e)
         {
             pnlSowing.Show();
             pnlHarvest.Hide();
-
+            //Hide harvest panel and show Sowing panel
             if (btnSowing.Enabled)
             {
                 panelBtnIndicatorHarv.Hide();
@@ -73,11 +76,12 @@ namespace JustRipeFarm_v3
             }
         }
 
+        //Harvest panel within Schedule panel appears
         private void btnHarvest_Click(object sender, EventArgs e)
         {
             pnlSowing.Hide();
             pnlHarvest.Show();
-
+            //Hide Sowing panel and show Harvest panel
             if (btnHarvest.Enabled)
             {
                 panelBtnIndicatorHarv.Show();
@@ -85,10 +89,11 @@ namespace JustRipeFarm_v3
             }
         }
 
+        //Resources panel appears when button is clicked
         private void btnResourses_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
-            //pnlResourses.Show();
+            pnlResources.Show();
 
             if (btnResources.Enabled)
             {
@@ -101,6 +106,7 @@ namespace JustRipeFarm_v3
             }
         }
 
+        //Storage panel appears when button is clicked
         private void btnStorage_Click(object sender, EventArgs e)
         {
             if (btnStorage.Enabled)
@@ -114,6 +120,7 @@ namespace JustRipeFarm_v3
             }
         }
 
+        //Vehicle panel appears when button is clicked
         private void btnVehicle_Click(object sender, EventArgs e)
         {
             if (btnVehicle.Enabled)
@@ -127,6 +134,7 @@ namespace JustRipeFarm_v3
             }
         }
 
+        //Stock panel appears when button is clicked
         private void btnStock_Click(object sender, EventArgs e)
         {
             if (btnStocks.Enabled)
@@ -140,6 +148,7 @@ namespace JustRipeFarm_v3
             }
         }
 
+        //Accounting panel appears when button is clicked
         private void btnAccounting_Click(object sender, EventArgs e)
         {
             pnlAccounting.Show();
@@ -155,13 +164,14 @@ namespace JustRipeFarm_v3
             }
         }
 
-        //Record Transaction panel shows when button is clicked
+        //Record Transaction panel appears when button is clicked
         private void btnRecordTransaction_Click(object sender, EventArgs e)
         {
             RecordTransaction recordTransaction = new RecordTransaction();
             recordTransaction.Show();
         }
 
+        //Sales panel appears within the Accounting panel when button is clicked
         private void btnViewSales_Click(object sender, EventArgs e)
         {
             Sales sales = new Sales();
@@ -179,6 +189,17 @@ namespace JustRipeFarm_v3
         {
             AddNewPlant addNewPlant = new AddNewPlant();
             addNewPlant.Show();
+        }
+
+        private void btnEquipment_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnAddNewEq_Click(object sender, EventArgs e)
+        {
+            AddNewEquipment addNewEquipment = new AddNewEquipment();
+            addNewEquipment.Show();
         }
     }
 }

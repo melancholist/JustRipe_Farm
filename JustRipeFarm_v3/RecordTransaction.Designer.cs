@@ -192,7 +192,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(199, 308);
+            this.btnBack.Location = new System.Drawing.Point(527, 22);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 31;
@@ -202,7 +202,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(424, 308);
+            this.btnSave.Location = new System.Drawing.Point(527, 308);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 30;
@@ -212,7 +212,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(318, 308);
+            this.btnClear.Location = new System.Drawing.Point(414, 308);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 29;
@@ -234,7 +234,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 423);
+            this.ClientSize = new System.Drawing.Size(642, 367);
             this.Controls.Add(this.lblNewTransaction);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSave);

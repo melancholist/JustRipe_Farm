@@ -67,6 +67,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNewEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewEquipment.Designer.cs">
+      <DependentUpon>AddNewEquipment.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddNewPlant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <Compile Include="Sales.Designer.cs">
       <DependentUpon>Sales.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddNewEquipment.resx">
+      <DependentUpon>AddNewEquipment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddNewPlant.resx">
       <DependentUpon>AddNewPlant.cs</DependentUpon>
     </EmbeddedResource>

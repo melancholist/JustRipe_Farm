@@ -65,12 +65,15 @@
             this.btnViewSales = new System.Windows.Forms.Button();
             this.btnRecordTransaction = new System.Windows.Forms.Button();
             this.pnlResources = new System.Windows.Forms.Panel();
-            this.lblResources = new System.Windows.Forms.Label();
-            this.btnCrops = new System.Windows.Forms.Button();
-            this.btnEquipment = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridViewEquipment = new System.Windows.Forms.DataGridView();
+            this.btnAddNewEq = new System.Windows.Forms.Button();
             this.pnlCrops = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.btnAddNewPlant = new System.Windows.Forms.Button();
+            this.dataGridViewPlant = new System.Windows.Forms.DataGridView();
+            this.btnEquipment = new System.Windows.Forms.Button();
+            this.btnCrops = new System.Windows.Forms.Button();
+            this.lblResources = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -82,8 +85,10 @@
             this.pnlAccounting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlResources.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).BeginInit();
             this.pnlCrops.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlant)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -569,60 +574,52 @@
             // pnlResources
             // 
             this.pnlResources.BackColor = System.Drawing.Color.LightSalmon;
+            this.pnlResources.Controls.Add(this.panel3);
             this.pnlResources.Controls.Add(this.pnlCrops);
             this.pnlResources.Controls.Add(this.btnEquipment);
             this.pnlResources.Controls.Add(this.btnCrops);
             this.pnlResources.Controls.Add(this.lblResources);
-            this.pnlResources.Location = new System.Drawing.Point(29, 36);
+            this.pnlResources.Location = new System.Drawing.Point(231, 62);
             this.pnlResources.Name = "pnlResources";
-            this.pnlResources.Size = new System.Drawing.Size(897, 529);
+            this.pnlResources.Size = new System.Drawing.Size(904, 672);
             this.pnlResources.TabIndex = 6;
             // 
-            // lblResources
+            // panel3
             // 
-            this.lblResources.AutoSize = true;
-            this.lblResources.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResources.Location = new System.Drawing.Point(27, 24);
-            this.lblResources.Name = "lblResources";
-            this.lblResources.Size = new System.Drawing.Size(159, 32);
-            this.lblResources.TabIndex = 0;
-            this.lblResources.Text = "Resources";
+            this.panel3.Controls.Add(this.dataGridViewEquipment);
+            this.panel3.Controls.Add(this.btnAddNewEq);
+            this.panel3.Location = new System.Drawing.Point(168, 87);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(684, 476);
+            this.panel3.TabIndex = 4;
             // 
-            // btnCrops
+            // dataGridViewEquipment
             // 
-            this.btnCrops.Location = new System.Drawing.Point(33, 87);
-            this.btnCrops.Name = "btnCrops";
-            this.btnCrops.Size = new System.Drawing.Size(87, 34);
-            this.btnCrops.TabIndex = 1;
-            this.btnCrops.Text = "Crops";
-            this.btnCrops.UseVisualStyleBackColor = true;
+            this.dataGridViewEquipment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEquipment.Location = new System.Drawing.Point(34, 80);
+            this.dataGridViewEquipment.Name = "dataGridViewEquipment";
+            this.dataGridViewEquipment.RowTemplate.Height = 24;
+            this.dataGridViewEquipment.Size = new System.Drawing.Size(593, 291);
+            this.dataGridViewEquipment.TabIndex = 1;
             // 
-            // btnEquipment
+            // btnAddNewEq
             // 
-            this.btnEquipment.Location = new System.Drawing.Point(33, 137);
-            this.btnEquipment.Name = "btnEquipment";
-            this.btnEquipment.Size = new System.Drawing.Size(107, 35);
-            this.btnEquipment.TabIndex = 2;
-            this.btnEquipment.Text = "Equipment";
-            this.btnEquipment.UseVisualStyleBackColor = true;
+            this.btnAddNewEq.Location = new System.Drawing.Point(34, 16);
+            this.btnAddNewEq.Name = "btnAddNewEq";
+            this.btnAddNewEq.Size = new System.Drawing.Size(158, 37);
+            this.btnAddNewEq.TabIndex = 0;
+            this.btnAddNewEq.Text = "Add New Equipment";
+            this.btnAddNewEq.UseVisualStyleBackColor = true;
+            this.btnAddNewEq.Click += new System.EventHandler(this.btnAddNewEq_Click);
             // 
             // pnlCrops
             // 
             this.pnlCrops.Controls.Add(this.btnAddNewPlant);
-            this.pnlCrops.Controls.Add(this.dataGridView2);
+            this.pnlCrops.Controls.Add(this.dataGridViewPlant);
             this.pnlCrops.Location = new System.Drawing.Point(168, 87);
             this.pnlCrops.Name = "pnlCrops";
             this.pnlCrops.Size = new System.Drawing.Size(684, 409);
             this.pnlCrops.TabIndex = 3;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(34, 68);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(593, 303);
-            this.dataGridView2.TabIndex = 0;
             // 
             // btnAddNewPlant
             // 
@@ -633,6 +630,44 @@
             this.btnAddNewPlant.Text = "Add new plant";
             this.btnAddNewPlant.UseVisualStyleBackColor = true;
             this.btnAddNewPlant.Click += new System.EventHandler(this.btnAddNewPlant_Click);
+            // 
+            // dataGridViewPlant
+            // 
+            this.dataGridViewPlant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPlant.Location = new System.Drawing.Point(34, 68);
+            this.dataGridViewPlant.Name = "dataGridViewPlant";
+            this.dataGridViewPlant.RowTemplate.Height = 24;
+            this.dataGridViewPlant.Size = new System.Drawing.Size(593, 303);
+            this.dataGridViewPlant.TabIndex = 0;
+            // 
+            // btnEquipment
+            // 
+            this.btnEquipment.Location = new System.Drawing.Point(33, 137);
+            this.btnEquipment.Name = "btnEquipment";
+            this.btnEquipment.Size = new System.Drawing.Size(107, 35);
+            this.btnEquipment.TabIndex = 2;
+            this.btnEquipment.Text = "Equipment";
+            this.btnEquipment.UseVisualStyleBackColor = true;
+            this.btnEquipment.Click += new System.EventHandler(this.btnEquipment_Click);
+            // 
+            // btnCrops
+            // 
+            this.btnCrops.Location = new System.Drawing.Point(33, 87);
+            this.btnCrops.Name = "btnCrops";
+            this.btnCrops.Size = new System.Drawing.Size(87, 34);
+            this.btnCrops.TabIndex = 1;
+            this.btnCrops.Text = "Crops";
+            this.btnCrops.UseVisualStyleBackColor = true;
+            // 
+            // lblResources
+            // 
+            this.lblResources.AutoSize = true;
+            this.lblResources.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResources.Location = new System.Drawing.Point(27, 24);
+            this.lblResources.Name = "lblResources";
+            this.lblResources.Size = new System.Drawing.Size(159, 32);
+            this.lblResources.TabIndex = 0;
+            this.lblResources.Text = "Resources";
             // 
             // Main
             // 
@@ -665,8 +700,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnlResources.ResumeLayout(false);
             this.pnlResources.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).EndInit();
             this.pnlCrops.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlant)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -710,9 +747,12 @@
         private System.Windows.Forms.Panel pnlResources;
         private System.Windows.Forms.Panel pnlCrops;
         private System.Windows.Forms.Button btnAddNewPlant;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridViewPlant;
         private System.Windows.Forms.Button btnEquipment;
         private System.Windows.Forms.Button btnCrops;
         private System.Windows.Forms.Label lblResources;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView dataGridViewEquipment;
+        private System.Windows.Forms.Button btnAddNewEq;
     }
 }
