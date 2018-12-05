@@ -229,6 +229,7 @@
             this.btnTask.TabIndex = 12;
             this.btnTask.Text = "Assign Task";
             this.btnTask.UseVisualStyleBackColor = false;
+            this.btnTask.Click += new System.EventHandler(this.btnTask_Click);
             // 
             // StaffManagement
             // 

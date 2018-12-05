@@ -28,21 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AssignTask));
+            this.picBoxBack = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).BeginInit();
             this.SuspendLayout();
+            // 
+            // picBoxBack
+            // 
+            this.picBoxBack.Image = ((System.Drawing.Image)(resources.GetObject("picBoxBack.Image")));
+            this.picBoxBack.Location = new System.Drawing.Point(4, 3);
+            this.picBoxBack.Name = "picBoxBack";
+            this.picBoxBack.Size = new System.Drawing.Size(45, 39);
+            this.picBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxBack.TabIndex = 0;
+            this.picBoxBack.TabStop = false;
             // 
             // AssignTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(769, 537);
+            this.ClientSize = new System.Drawing.Size(1069, 548);
+            this.Controls.Add(this.picBoxBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AssignTask";
             this.Text = "AssignTask";
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox picBoxBack;
     }
 }

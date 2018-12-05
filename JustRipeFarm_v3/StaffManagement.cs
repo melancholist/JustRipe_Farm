@@ -49,5 +49,12 @@ namespace JustRipeFarm_v3
             AddStaff adstf = new AddStaff();
             adstf.Show();
         }
+
+        private void btnTask_Click(object sender, EventArgs e)
+        {
+            AssignTask tsk = new AssignTask();
+            tsk.Show();
+            this.Hide();
+        }
     }
 }
