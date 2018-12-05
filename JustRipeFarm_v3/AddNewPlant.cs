@@ -16,5 +16,10 @@ namespace JustRipeFarm_v3
         {
             InitializeComponent();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

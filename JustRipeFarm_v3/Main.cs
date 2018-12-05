@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace JustRipeFarm_v3
 {
@@ -31,9 +32,9 @@ namespace JustRipeFarm_v3
             panelBtnIndicator5.Hide();
             panelBtnIndicator6.Hide();
             pnlResources.Hide();
-            //pnlStorage.Hide();
+            pnlStorage.Hide();
             //pnlVehicle.Hide();
-            //pnlStock.Hide();
+            pnlStocks.Hide();
             pnlAccounting.Hide();
         }
 
@@ -50,7 +51,11 @@ namespace JustRipeFarm_v3
         private void btnSchedule_Click(object sender, EventArgs e)
         {
             pnlSchedule.Show();
-            //pnlResourses.Hide();
+            pnlResources.Hide();
+            pnlStorage.Hide();
+            //pnlVehicle.Hide();
+            pnlStocks.Hide();
+            pnlAccounting.Hide();
 
             if (btnSchedule.Enabled)
             {
@@ -90,10 +95,14 @@ namespace JustRipeFarm_v3
         }
 
         //Resources panel appears when button is clicked
-        private void btnResourses_Click(object sender, EventArgs e)
+        private void btnResources_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
             pnlResources.Show();
+            pnlStorage.Hide();
+            //pnlVehicle.Hide();
+            pnlStocks.Hide();
+            pnlAccounting.Hide();
 
             if (btnResources.Enabled)
             {
@@ -109,6 +118,13 @@ namespace JustRipeFarm_v3
         //Storage panel appears when button is clicked
         private void btnStorage_Click(object sender, EventArgs e)
         {
+            pnlSchedule.Hide();
+            pnlResources.Hide();
+            pnlStorage.Show();
+            //pnlVehicle.Hide();
+            pnlStocks.Hide();
+            pnlAccounting.Hide();
+
             if (btnStorage.Enabled)
             {
                 panelBtnIndicator1.Hide();
@@ -137,6 +153,13 @@ namespace JustRipeFarm_v3
         //Stock panel appears when button is clicked
         private void btnStock_Click(object sender, EventArgs e)
         {
+            pnlSchedule.Hide();
+            pnlResources.Hide();
+            pnlStorage.Hide();
+            //pnlVehicle.Hide();
+            pnlStocks.Show();
+            pnlAccounting.Hide();
+
             if (btnStocks.Enabled)
             {
                 panelBtnIndicator1.Hide();
@@ -151,6 +174,11 @@ namespace JustRipeFarm_v3
         //Accounting panel appears when button is clicked
         private void btnAccounting_Click(object sender, EventArgs e)
         {
+            pnlSchedule.Hide();
+            pnlResources.Hide();
+            pnlStorage.Hide();
+            //pnlVehicle.Hide();
+            pnlStocks.Hide();
             pnlAccounting.Show();
 
             if (btnAccounting.Enabled)
@@ -193,13 +221,37 @@ namespace JustRipeFarm_v3
 
         private void btnEquipment_Click(object sender, EventArgs e)
         {
-            
+            pnlEquipment.Show();
+            pnlCrops.Hide();
         }
 
         private void btnAddNewEq_Click(object sender, EventArgs e)
         {
             AddNewEquipment addNewEquipment = new AddNewEquipment();
             addNewEquipment.Show();
+        }
+
+        private void btnCrops_Click(object sender, EventArgs e)
+        {
+            pnlCrops.Show();
+            pnlEquipment.Hide();
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            pnlProducts.Show();
+            pnlOnlineStore.Hide();
+        }
+
+        private void linkLabelOnlineStore_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        }
+
+        private void btnOnlineStore_Click(object sender, EventArgs e)
+        {
+            pnlProducts.Hide();
+            pnlOnlineStore.Show();
         }
     }
 }
