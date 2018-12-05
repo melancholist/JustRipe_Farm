@@ -52,18 +52,25 @@
             this.panelBtnIndicator1 = new System.Windows.Forms.Panel();
             this.btnSchedule = new System.Windows.Forms.Button();
             this.pnlSchedule = new System.Windows.Forms.Panel();
-            this.pnlAccounting = new System.Windows.Forms.Panel();
-            this.lblTransactionHistory = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnViewSales = new System.Windows.Forms.Button();
-            this.btnRecordTransaction = new System.Windows.Forms.Button();
-            this.lblAccounting = new System.Windows.Forms.Label();
             this.pnlSowing = new System.Windows.Forms.Panel();
             this.pnlHarvest = new System.Windows.Forms.Panel();
             this.panelBtnIndicatorHarv = new System.Windows.Forms.Panel();
             this.btnHarvest = new System.Windows.Forms.Button();
             this.panelBtnIndicatorSow = new System.Windows.Forms.Panel();
             this.btnSowing = new System.Windows.Forms.Button();
+            this.pnlAccounting = new System.Windows.Forms.Panel();
+            this.lblTransactionHistory = new System.Windows.Forms.Label();
+            this.lblAccounting = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnViewSales = new System.Windows.Forms.Button();
+            this.btnRecordTransaction = new System.Windows.Forms.Button();
+            this.pnlResources = new System.Windows.Forms.Panel();
+            this.lblResources = new System.Windows.Forms.Label();
+            this.btnCrops = new System.Windows.Forms.Button();
+            this.btnEquipment = new System.Windows.Forms.Button();
+            this.pnlCrops = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.btnAddNewPlant = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -71,9 +78,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.picboxLabourer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxManager)).BeginInit();
             this.pnlSchedule.SuspendLayout();
+            this.pnlSowing.SuspendLayout();
             this.pnlAccounting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.pnlSowing.SuspendLayout();
+            this.pnlResources.SuspendLayout();
+            this.pnlCrops.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -415,68 +425,6 @@
             this.pnlSchedule.Size = new System.Drawing.Size(969, 722);
             this.pnlSchedule.TabIndex = 7;
             // 
-            // pnlAccounting
-            // 
-            this.pnlAccounting.BackColor = System.Drawing.Color.Tan;
-            this.pnlAccounting.Controls.Add(this.lblTransactionHistory);
-            this.pnlAccounting.Controls.Add(this.lblAccounting);
-            this.pnlAccounting.Controls.Add(this.dataGridView1);
-            this.pnlAccounting.Controls.Add(this.btnViewSales);
-            this.pnlAccounting.Controls.Add(this.btnRecordTransaction);
-            this.pnlAccounting.Location = new System.Drawing.Point(234, 67);
-            this.pnlAccounting.Name = "pnlAccounting";
-            this.pnlAccounting.Size = new System.Drawing.Size(949, 675);
-            this.pnlAccounting.TabIndex = 0;
-            // 
-            // lblTransactionHistory
-            // 
-            this.lblTransactionHistory.AutoSize = true;
-            this.lblTransactionHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTransactionHistory.Location = new System.Drawing.Point(20, 129);
-            this.lblTransactionHistory.Name = "lblTransactionHistory";
-            this.lblTransactionHistory.Size = new System.Drawing.Size(189, 24);
-            this.lblTransactionHistory.TabIndex = 5;
-            this.lblTransactionHistory.Text = "Transaction History";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 167);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(731, 265);
-            this.dataGridView1.TabIndex = 4;
-            // 
-            // btnViewSales
-            // 
-            this.btnViewSales.Location = new System.Drawing.Point(253, 76);
-            this.btnViewSales.Name = "btnViewSales";
-            this.btnViewSales.Size = new System.Drawing.Size(107, 38);
-            this.btnViewSales.TabIndex = 3;
-            this.btnViewSales.Text = "View Sales";
-            this.btnViewSales.UseVisualStyleBackColor = true;
-            this.btnViewSales.Click += new System.EventHandler(this.btnViewSales_Click);
-            // 
-            // btnRecordTransaction
-            // 
-            this.btnRecordTransaction.Location = new System.Drawing.Point(24, 76);
-            this.btnRecordTransaction.Name = "btnRecordTransaction";
-            this.btnRecordTransaction.Size = new System.Drawing.Size(182, 38);
-            this.btnRecordTransaction.TabIndex = 1;
-            this.btnRecordTransaction.Text = "Record a Transaction";
-            this.btnRecordTransaction.UseVisualStyleBackColor = true;
-            this.btnRecordTransaction.Click += new System.EventHandler(this.btnRecordTransaction_Click);
-            // 
-            // lblAccounting
-            // 
-            this.lblAccounting.AutoSize = true;
-            this.lblAccounting.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccounting.Location = new System.Drawing.Point(0, 0);
-            this.lblAccounting.Name = "lblAccounting";
-            this.lblAccounting.Size = new System.Drawing.Size(230, 46);
-            this.lblAccounting.TabIndex = 0;
-            this.lblAccounting.Text = "Accounting";
-            // 
             // pnlSowing
             // 
             this.pnlSowing.BackColor = System.Drawing.Color.Gray;
@@ -556,12 +504,143 @@
             this.btnSowing.UseVisualStyleBackColor = false;
             this.btnSowing.Click += new System.EventHandler(this.btnSowing_Click);
             // 
+            // pnlAccounting
+            // 
+            this.pnlAccounting.BackColor = System.Drawing.Color.Tan;
+            this.pnlAccounting.Controls.Add(this.lblTransactionHistory);
+            this.pnlAccounting.Controls.Add(this.lblAccounting);
+            this.pnlAccounting.Controls.Add(this.dataGridView1);
+            this.pnlAccounting.Controls.Add(this.btnViewSales);
+            this.pnlAccounting.Controls.Add(this.btnRecordTransaction);
+            this.pnlAccounting.Location = new System.Drawing.Point(231, 62);
+            this.pnlAccounting.Name = "pnlAccounting";
+            this.pnlAccounting.Size = new System.Drawing.Size(949, 675);
+            this.pnlAccounting.TabIndex = 0;
+            // 
+            // lblTransactionHistory
+            // 
+            this.lblTransactionHistory.AutoSize = true;
+            this.lblTransactionHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTransactionHistory.Location = new System.Drawing.Point(20, 129);
+            this.lblTransactionHistory.Name = "lblTransactionHistory";
+            this.lblTransactionHistory.Size = new System.Drawing.Size(189, 24);
+            this.lblTransactionHistory.TabIndex = 5;
+            this.lblTransactionHistory.Text = "Transaction History";
+            // 
+            // lblAccounting
+            // 
+            this.lblAccounting.AutoSize = true;
+            this.lblAccounting.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccounting.Location = new System.Drawing.Point(0, 0);
+            this.lblAccounting.Name = "lblAccounting";
+            this.lblAccounting.Size = new System.Drawing.Size(230, 46);
+            this.lblAccounting.TabIndex = 0;
+            this.lblAccounting.Text = "Accounting";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(24, 167);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(731, 265);
+            this.dataGridView1.TabIndex = 4;
+            // 
+            // btnViewSales
+            // 
+            this.btnViewSales.Location = new System.Drawing.Point(253, 76);
+            this.btnViewSales.Name = "btnViewSales";
+            this.btnViewSales.Size = new System.Drawing.Size(107, 38);
+            this.btnViewSales.TabIndex = 3;
+            this.btnViewSales.Text = "View Sales";
+            this.btnViewSales.UseVisualStyleBackColor = true;
+            this.btnViewSales.Click += new System.EventHandler(this.btnViewSales_Click);
+            // 
+            // btnRecordTransaction
+            // 
+            this.btnRecordTransaction.Location = new System.Drawing.Point(24, 76);
+            this.btnRecordTransaction.Name = "btnRecordTransaction";
+            this.btnRecordTransaction.Size = new System.Drawing.Size(182, 38);
+            this.btnRecordTransaction.TabIndex = 1;
+            this.btnRecordTransaction.Text = "Record a Transaction";
+            this.btnRecordTransaction.UseVisualStyleBackColor = true;
+            this.btnRecordTransaction.Click += new System.EventHandler(this.btnRecordTransaction_Click);
+            // 
+            // pnlResources
+            // 
+            this.pnlResources.BackColor = System.Drawing.Color.LightSalmon;
+            this.pnlResources.Controls.Add(this.pnlCrops);
+            this.pnlResources.Controls.Add(this.btnEquipment);
+            this.pnlResources.Controls.Add(this.btnCrops);
+            this.pnlResources.Controls.Add(this.lblResources);
+            this.pnlResources.Location = new System.Drawing.Point(29, 36);
+            this.pnlResources.Name = "pnlResources";
+            this.pnlResources.Size = new System.Drawing.Size(897, 529);
+            this.pnlResources.TabIndex = 6;
+            // 
+            // lblResources
+            // 
+            this.lblResources.AutoSize = true;
+            this.lblResources.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResources.Location = new System.Drawing.Point(27, 24);
+            this.lblResources.Name = "lblResources";
+            this.lblResources.Size = new System.Drawing.Size(159, 32);
+            this.lblResources.TabIndex = 0;
+            this.lblResources.Text = "Resources";
+            // 
+            // btnCrops
+            // 
+            this.btnCrops.Location = new System.Drawing.Point(33, 87);
+            this.btnCrops.Name = "btnCrops";
+            this.btnCrops.Size = new System.Drawing.Size(87, 34);
+            this.btnCrops.TabIndex = 1;
+            this.btnCrops.Text = "Crops";
+            this.btnCrops.UseVisualStyleBackColor = true;
+            // 
+            // btnEquipment
+            // 
+            this.btnEquipment.Location = new System.Drawing.Point(33, 137);
+            this.btnEquipment.Name = "btnEquipment";
+            this.btnEquipment.Size = new System.Drawing.Size(107, 35);
+            this.btnEquipment.TabIndex = 2;
+            this.btnEquipment.Text = "Equipment";
+            this.btnEquipment.UseVisualStyleBackColor = true;
+            // 
+            // pnlCrops
+            // 
+            this.pnlCrops.Controls.Add(this.btnAddNewPlant);
+            this.pnlCrops.Controls.Add(this.dataGridView2);
+            this.pnlCrops.Location = new System.Drawing.Point(168, 87);
+            this.pnlCrops.Name = "pnlCrops";
+            this.pnlCrops.Size = new System.Drawing.Size(684, 409);
+            this.pnlCrops.TabIndex = 3;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(34, 68);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(593, 303);
+            this.dataGridView2.TabIndex = 0;
+            // 
+            // btnAddNewPlant
+            // 
+            this.btnAddNewPlant.Location = new System.Drawing.Point(34, 15);
+            this.btnAddNewPlant.Name = "btnAddNewPlant";
+            this.btnAddNewPlant.Size = new System.Drawing.Size(117, 38);
+            this.btnAddNewPlant.TabIndex = 1;
+            this.btnAddNewPlant.Text = "Add new plant";
+            this.btnAddNewPlant.UseVisualStyleBackColor = true;
+            this.btnAddNewPlant.Click += new System.EventHandler(this.btnAddNewPlant_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
+            this.Controls.Add(this.pnlResources);
             this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlSchedule);
@@ -580,10 +659,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.picboxLabourer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxManager)).EndInit();
             this.pnlSchedule.ResumeLayout(false);
+            this.pnlSowing.ResumeLayout(false);
             this.pnlAccounting.ResumeLayout(false);
             this.pnlAccounting.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.pnlSowing.ResumeLayout(false);
+            this.pnlResources.ResumeLayout(false);
+            this.pnlResources.PerformLayout();
+            this.pnlCrops.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -624,5 +707,12 @@
         private System.Windows.Forms.Button btnViewSales;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblTransactionHistory;
+        private System.Windows.Forms.Panel pnlResources;
+        private System.Windows.Forms.Panel pnlCrops;
+        private System.Windows.Forms.Button btnAddNewPlant;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button btnEquipment;
+        private System.Windows.Forms.Button btnCrops;
+        private System.Windows.Forms.Label lblResources;
     }
 }

@@ -174,5 +174,11 @@ namespace JustRipeFarm_v3
             stf.Show();
             this.Hide();
         }
+
+        private void btnAddNewPlant_Click(object sender, EventArgs e)
+        {
+            AddNewPlant addNewPlant = new AddNewPlant();
+            addNewPlant.Show();
+        }
     }
 }
