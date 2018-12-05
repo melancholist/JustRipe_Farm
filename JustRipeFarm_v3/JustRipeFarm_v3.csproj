@@ -98,6 +98,7 @@
     <Compile Include="loadingScreen.Designer.cs">
       <DependentUpon>loadingScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Schedule.cs" />
     <Compile Include="Staff.cs" />
     <Compile Include="StaffHandler.cs" />
     <Compile Include="StaffManagement.cs">
