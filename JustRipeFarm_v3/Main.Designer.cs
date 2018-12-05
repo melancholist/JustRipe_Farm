@@ -65,7 +65,7 @@
             this.btnViewSales = new System.Windows.Forms.Button();
             this.btnRecordTransaction = new System.Windows.Forms.Button();
             this.pnlResources = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlEquipment = new System.Windows.Forms.Panel();
             this.dataGridViewEquipment = new System.Windows.Forms.DataGridView();
             this.btnAddNewEq = new System.Windows.Forms.Button();
             this.pnlCrops = new System.Windows.Forms.Panel();
@@ -74,6 +74,18 @@
             this.btnEquipment = new System.Windows.Forms.Button();
             this.btnCrops = new System.Windows.Forms.Button();
             this.lblResources = new System.Windows.Forms.Label();
+            this.pnlStorage = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pnlStocks = new System.Windows.Forms.Panel();
+            this.lblStocks = new System.Windows.Forms.Label();
+            this.btnProducts = new System.Windows.Forms.Button();
+            this.pnlProducts = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.lblProducts = new System.Windows.Forms.Label();
+            this.btnAddNewProduct = new System.Windows.Forms.Button();
+            this.btnOnlineStore = new System.Windows.Forms.Button();
+            this.pnlOnlineStore = new System.Windows.Forms.Panel();
+            this.linkLabelOnlineStore = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -85,10 +97,15 @@
             this.pnlAccounting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlResources.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.pnlEquipment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).BeginInit();
             this.pnlCrops.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlant)).BeginInit();
+            this.pnlStorage.SuspendLayout();
+            this.pnlStocks.SuspendLayout();
+            this.pnlProducts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.pnlOnlineStore.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -109,9 +126,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(77, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(399, 40);
+            this.label1.Size = new System.Drawing.Size(392, 40);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Welcome to Just Ripe Farm";
+            this.label1.Text = "Welcome to JustRipe Farm";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
@@ -385,7 +402,7 @@
             this.btnResources.Text = "Resources";
             this.btnResources.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnResources.UseVisualStyleBackColor = true;
-            this.btnResources.Click += new System.EventHandler(this.btnResourses_Click);
+            this.btnResources.Click += new System.EventHandler(this.btnResources_Click);
             // 
             // panelBtnIndicator1
             // 
@@ -517,9 +534,9 @@
             this.pnlAccounting.Controls.Add(this.dataGridView1);
             this.pnlAccounting.Controls.Add(this.btnViewSales);
             this.pnlAccounting.Controls.Add(this.btnRecordTransaction);
-            this.pnlAccounting.Location = new System.Drawing.Point(231, 62);
+            this.pnlAccounting.Location = new System.Drawing.Point(233, 64);
             this.pnlAccounting.Name = "pnlAccounting";
-            this.pnlAccounting.Size = new System.Drawing.Size(949, 675);
+            this.pnlAccounting.Size = new System.Drawing.Size(964, 724);
             this.pnlAccounting.TabIndex = 0;
             // 
             // lblTransactionHistory
@@ -574,24 +591,25 @@
             // pnlResources
             // 
             this.pnlResources.BackColor = System.Drawing.Color.LightSalmon;
-            this.pnlResources.Controls.Add(this.panel3);
+            this.pnlResources.Controls.Add(this.pnlStorage);
+            this.pnlResources.Controls.Add(this.pnlEquipment);
             this.pnlResources.Controls.Add(this.pnlCrops);
             this.pnlResources.Controls.Add(this.btnEquipment);
             this.pnlResources.Controls.Add(this.btnCrops);
             this.pnlResources.Controls.Add(this.lblResources);
-            this.pnlResources.Location = new System.Drawing.Point(231, 62);
+            this.pnlResources.Location = new System.Drawing.Point(233, 64);
             this.pnlResources.Name = "pnlResources";
-            this.pnlResources.Size = new System.Drawing.Size(904, 672);
+            this.pnlResources.Size = new System.Drawing.Size(967, 727);
             this.pnlResources.TabIndex = 6;
             // 
-            // panel3
+            // pnlEquipment
             // 
-            this.panel3.Controls.Add(this.dataGridViewEquipment);
-            this.panel3.Controls.Add(this.btnAddNewEq);
-            this.panel3.Location = new System.Drawing.Point(168, 87);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(684, 476);
-            this.panel3.TabIndex = 4;
+            this.pnlEquipment.Controls.Add(this.dataGridViewEquipment);
+            this.pnlEquipment.Controls.Add(this.btnAddNewEq);
+            this.pnlEquipment.Location = new System.Drawing.Point(168, 87);
+            this.pnlEquipment.Name = "pnlEquipment";
+            this.pnlEquipment.Size = new System.Drawing.Size(684, 476);
+            this.pnlEquipment.TabIndex = 4;
             // 
             // dataGridViewEquipment
             // 
@@ -658,6 +676,7 @@
             this.btnCrops.TabIndex = 1;
             this.btnCrops.Text = "Crops";
             this.btnCrops.UseVisualStyleBackColor = true;
+            this.btnCrops.Click += new System.EventHandler(this.btnCrops_Click);
             // 
             // lblResources
             // 
@@ -669,12 +688,131 @@
             this.lblResources.TabIndex = 0;
             this.lblResources.Text = "Resources";
             // 
+            // pnlStorage
+            // 
+            this.pnlStorage.BackColor = System.Drawing.Color.LightCoral;
+            this.pnlStorage.Controls.Add(this.label2);
+            this.pnlStorage.Location = new System.Drawing.Point(-2, 0);
+            this.pnlStorage.Name = "pnlStorage";
+            this.pnlStorage.Size = new System.Drawing.Size(967, 727);
+            this.pnlStorage.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(38, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 32);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Storage";
+            // 
+            // pnlStocks
+            // 
+            this.pnlStocks.Controls.Add(this.pnlOnlineStore);
+            this.pnlStocks.Controls.Add(this.btnOnlineStore);
+            this.pnlStocks.Controls.Add(this.pnlProducts);
+            this.pnlStocks.Controls.Add(this.btnProducts);
+            this.pnlStocks.Controls.Add(this.lblStocks);
+            this.pnlStocks.Location = new System.Drawing.Point(231, 65);
+            this.pnlStocks.Name = "pnlStocks";
+            this.pnlStocks.Size = new System.Drawing.Size(972, 726);
+            this.pnlStocks.TabIndex = 1;
+            // 
+            // lblStocks
+            // 
+            this.lblStocks.AutoSize = true;
+            this.lblStocks.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStocks.Location = new System.Drawing.Point(28, 23);
+            this.lblStocks.Name = "lblStocks";
+            this.lblStocks.Size = new System.Drawing.Size(125, 39);
+            this.lblStocks.TabIndex = 0;
+            this.lblStocks.Text = "Stocks";
+            // 
+            // btnProducts
+            // 
+            this.btnProducts.Location = new System.Drawing.Point(182, 30);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(75, 23);
+            this.btnProducts.TabIndex = 1;
+            this.btnProducts.Text = "Products";
+            this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
+            // 
+            // pnlProducts
+            // 
+            this.pnlProducts.Controls.Add(this.btnAddNewProduct);
+            this.pnlProducts.Controls.Add(this.lblProducts);
+            this.pnlProducts.Controls.Add(this.dataGridView2);
+            this.pnlProducts.Location = new System.Drawing.Point(35, 75);
+            this.pnlProducts.Name = "pnlProducts";
+            this.pnlProducts.Size = new System.Drawing.Size(706, 400);
+            this.pnlProducts.TabIndex = 2;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(46, 83);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(618, 277);
+            this.dataGridView2.TabIndex = 0;
+            // 
+            // lblProducts
+            // 
+            this.lblProducts.AutoSize = true;
+            this.lblProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProducts.Location = new System.Drawing.Point(28, 21);
+            this.lblProducts.Name = "lblProducts";
+            this.lblProducts.Size = new System.Drawing.Size(135, 32);
+            this.lblProducts.TabIndex = 1;
+            this.lblProducts.Text = "Products";
+            // 
+            // btnAddNewProduct
+            // 
+            this.btnAddNewProduct.Location = new System.Drawing.Point(536, 21);
+            this.btnAddNewProduct.Name = "btnAddNewProduct";
+            this.btnAddNewProduct.Size = new System.Drawing.Size(128, 36);
+            this.btnAddNewProduct.TabIndex = 2;
+            this.btnAddNewProduct.Text = "Add new product";
+            this.btnAddNewProduct.UseVisualStyleBackColor = true;
+            // 
+            // btnOnlineStore
+            // 
+            this.btnOnlineStore.Location = new System.Drawing.Point(288, 30);
+            this.btnOnlineStore.Name = "btnOnlineStore";
+            this.btnOnlineStore.Size = new System.Drawing.Size(114, 23);
+            this.btnOnlineStore.TabIndex = 3;
+            this.btnOnlineStore.Text = "Online Store";
+            this.btnOnlineStore.UseVisualStyleBackColor = true;
+            this.btnOnlineStore.Click += new System.EventHandler(this.btnOnlineStore_Click);
+            // 
+            // pnlOnlineStore
+            // 
+            this.pnlOnlineStore.Controls.Add(this.linkLabelOnlineStore);
+            this.pnlOnlineStore.Location = new System.Drawing.Point(35, 75);
+            this.pnlOnlineStore.Name = "pnlOnlineStore";
+            this.pnlOnlineStore.Size = new System.Drawing.Size(706, 400);
+            this.pnlOnlineStore.TabIndex = 4;
+            // 
+            // linkLabelOnlineStore
+            // 
+            this.linkLabelOnlineStore.AutoSize = true;
+            this.linkLabelOnlineStore.Location = new System.Drawing.Point(53, 48);
+            this.linkLabelOnlineStore.Name = "linkLabelOnlineStore";
+            this.linkLabelOnlineStore.Size = new System.Drawing.Size(117, 17);
+            this.linkLabelOnlineStore.TabIndex = 1;
+            this.linkLabelOnlineStore.TabStop = true;
+            this.linkLabelOnlineStore.Text = "Visit Online Store";
+            this.linkLabelOnlineStore.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelOnlineStore_LinkClicked);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
+            this.Controls.Add(this.pnlStocks);
             this.Controls.Add(this.pnlResources);
             this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.panel1);
@@ -700,10 +838,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnlResources.ResumeLayout(false);
             this.pnlResources.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.pnlEquipment.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).EndInit();
             this.pnlCrops.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlant)).EndInit();
+            this.pnlStorage.ResumeLayout(false);
+            this.pnlStorage.PerformLayout();
+            this.pnlStocks.ResumeLayout(false);
+            this.pnlStocks.PerformLayout();
+            this.pnlProducts.ResumeLayout(false);
+            this.pnlProducts.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.pnlOnlineStore.ResumeLayout(false);
+            this.pnlOnlineStore.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -751,8 +898,20 @@
         private System.Windows.Forms.Button btnEquipment;
         private System.Windows.Forms.Button btnCrops;
         private System.Windows.Forms.Label lblResources;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlEquipment;
         private System.Windows.Forms.DataGridView dataGridViewEquipment;
         private System.Windows.Forms.Button btnAddNewEq;
+        private System.Windows.Forms.Panel pnlStorage;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel pnlStocks;
+        private System.Windows.Forms.Panel pnlProducts;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button btnProducts;
+        private System.Windows.Forms.Label lblStocks;
+        private System.Windows.Forms.Button btnAddNewProduct;
+        private System.Windows.Forms.Label lblProducts;
+        private System.Windows.Forms.Panel pnlOnlineStore;
+        private System.Windows.Forms.LinkLabel linkLabelOnlineStore;
+        private System.Windows.Forms.Button btnOnlineStore;
     }
 }
