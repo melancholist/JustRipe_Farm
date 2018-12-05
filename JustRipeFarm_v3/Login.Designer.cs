@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.exitPictureBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -43,8 +43,10 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.txtBoxPassword = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.exitPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -55,18 +57,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(529, 130);
             this.panel1.TabIndex = 0;
-            // 
-            // exitPictureBox
-            // 
-            this.exitPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
-            this.exitPictureBox.Location = new System.Drawing.Point(482, 12);
-            this.exitPictureBox.Name = "exitPictureBox";
-            this.exitPictureBox.Size = new System.Drawing.Size(35, 38);
-            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.exitPictureBox.TabIndex = 1;
-            this.exitPictureBox.TabStop = false;
-            this.exitPictureBox.Click += new System.EventHandler(this.exitPictureBox_Click);
             // 
             // label1
             // 
@@ -176,6 +166,7 @@
             this.txtBoxUsername.Size = new System.Drawing.Size(258, 29);
             this.txtBoxUsername.TabIndex = 0;
             this.txtBoxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxUsername.UseWaitCursor = true;
             this.txtBoxUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxUsername_KeyDown);
             // 
             // panel6
@@ -209,7 +200,27 @@
             this.txtBoxPassword.Size = new System.Drawing.Size(258, 29);
             this.txtBoxPassword.TabIndex = 1;
             this.txtBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxPassword.UseWaitCursor = true;
             this.txtBoxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxPassword_KeyDown);
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // exitPictureBox
+            // 
+            this.exitPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
+            this.exitPictureBox.ImageActive = null;
+            this.exitPictureBox.Location = new System.Drawing.Point(486, 12);
+            this.exitPictureBox.Name = "exitPictureBox";
+            this.exitPictureBox.Size = new System.Drawing.Size(31, 29);
+            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exitPictureBox.TabIndex = 8;
+            this.exitPictureBox.TabStop = false;
+            this.exitPictureBox.Zoom = 30;
+            this.exitPictureBox.Click += new System.EventHandler(this.exitPictureBox_Click);
             // 
             // Login
             // 
@@ -217,6 +228,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(529, 611);
+            this.Controls.Add(this.exitPictureBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnLogin);
@@ -229,15 +241,14 @@
             this.Controls.Add(this.txtBoxPassword);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.exitPictureBox);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,7 +257,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox exitPictureBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -259,6 +269,8 @@
         private System.Windows.Forms.Panel panel7;
         public System.Windows.Forms.TextBox txtBoxPassword;
         private System.Windows.Forms.Label resetPasswordLabel;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuImageButton exitPictureBox;
     }
 }
 
