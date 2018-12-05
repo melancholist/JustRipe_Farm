@@ -36,6 +36,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,20 +64,20 @@
             this.bunifuCircleProgressbar1.LabelVisible = false;
             this.bunifuCircleProgressbar1.LineProgressThickness = 8;
             this.bunifuCircleProgressbar1.LineThickness = 5;
-            this.bunifuCircleProgressbar1.Location = new System.Drawing.Point(143, 217);
+            this.bunifuCircleProgressbar1.Location = new System.Drawing.Point(152, 210);
             this.bunifuCircleProgressbar1.Margin = new System.Windows.Forms.Padding(10);
             this.bunifuCircleProgressbar1.MaxValue = 100;
             this.bunifuCircleProgressbar1.Name = "bunifuCircleProgressbar1";
             this.bunifuCircleProgressbar1.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.bunifuCircleProgressbar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.bunifuCircleProgressbar1.Size = new System.Drawing.Size(165, 165);
+            this.bunifuCircleProgressbar1.Size = new System.Drawing.Size(177, 177);
             this.bunifuCircleProgressbar1.TabIndex = 8;
             this.bunifuCircleProgressbar1.Value = 40;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(193, 118);
+            this.pictureBox2.Location = new System.Drawing.Point(208, 111);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(64, 56);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -87,7 +88,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.SeaGreen;
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Location = new System.Drawing.Point(3, 142);
+            this.panel2.Location = new System.Drawing.Point(18, 139);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(445, 1);
             this.panel2.TabIndex = 10;
@@ -97,18 +98,30 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Constantia", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(63, 38);
+            this.label1.Location = new System.Drawing.Point(78, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(325, 59);
             this.label1.TabIndex = 9;
             this.label1.Text = "Just Ripe Farm";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label2.Location = new System.Drawing.Point(120, 437);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(240, 34);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Version 3.9.1\r\nCreated by Adrian , Deborah and Alif";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // loadingScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(450, 450);
+            this.ClientSize = new System.Drawing.Size(480, 480);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.bunifuCircleProgressbar1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel2);
@@ -131,5 +144,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label2;
     }
 }

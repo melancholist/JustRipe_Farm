@@ -17,9 +17,19 @@ namespace JustRipeFarm_v3
             InitializeComponent();
         }
 
-        private void buttonClose_Click(object sender, EventArgs e)
+        private void buttonSave_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            this.textBoxType.Text = "";
+            this.textBoxBrand.Text = "";
+            this.textBoxModel.Text = "";
+            this.textBoxSerialNumber.Text = "";
+            this.textBoxPrice.Text = "";
+            this.textBoxDescription.Text = "";
         }
     }
 }

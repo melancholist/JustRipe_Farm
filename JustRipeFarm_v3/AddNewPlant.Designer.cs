@@ -39,27 +39,20 @@
             this.checkBoxGMO = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.comboBoxPlantingMethod = new System.Windows.Forms.ComboBox();
+            this.textBoxAddInfo = new System.Windows.Forms.TextBox();
+            this.textBoxSeedOrigin = new System.Windows.Forms.TextBox();
+            this.textBoxSeedLotNo = new System.Windows.Forms.TextBox();
+            this.textBoxSeedCompany = new System.Windows.Forms.TextBox();
+            this.textBoxVariety = new System.Windows.Forms.TextBox();
+            this.textBoxType = new System.Windows.Forms.TextBox();
+            this.buttonClear = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNewPlant
@@ -164,28 +157,10 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Planting Method";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(40, 331);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 17);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Days to Emerge";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(40, 364);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(110, 17);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Days to Maturity";
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(40, 395);
+            this.label11.Location = new System.Drawing.Point(40, 341);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(144, 17);
             this.label11.TabIndex = 13;
@@ -205,124 +180,96 @@
             this.numericUpDown2.Size = new System.Drawing.Size(120, 22);
             this.numericUpDown2.TabIndex = 15;
             // 
-            // comboBox1
+            // comboBoxPlantingMethod
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxPlantingMethod.FormattingEnabled = true;
+            this.comboBoxPlantingMethod.Items.AddRange(new object[] {
             "Direct Sow",
             "Transplant",
             "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(205, 297);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 16;
+            this.comboBoxPlantingMethod.Location = new System.Drawing.Point(205, 297);
+            this.comboBoxPlantingMethod.Name = "comboBoxPlantingMethod";
+            this.comboBoxPlantingMethod.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxPlantingMethod.TabIndex = 16;
             // 
-            // numericUpDown3
+            // textBoxAddInfo
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(205, 329);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown3.TabIndex = 17;
+            this.textBoxAddInfo.Location = new System.Drawing.Point(205, 338);
+            this.textBoxAddInfo.Name = "textBoxAddInfo";
+            this.textBoxAddInfo.Size = new System.Drawing.Size(100, 22);
+            this.textBoxAddInfo.TabIndex = 19;
             // 
-            // numericUpDown4
+            // textBoxSeedOrigin
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(205, 362);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown4.TabIndex = 18;
+            this.textBoxSeedOrigin.Location = new System.Drawing.Point(206, 200);
+            this.textBoxSeedOrigin.Name = "textBoxSeedOrigin";
+            this.textBoxSeedOrigin.Size = new System.Drawing.Size(100, 22);
+            this.textBoxSeedOrigin.TabIndex = 20;
             // 
-            // textBox1
+            // textBoxSeedLotNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(205, 392);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 19;
+            this.textBoxSeedLotNo.Location = new System.Drawing.Point(206, 172);
+            this.textBoxSeedLotNo.Name = "textBoxSeedLotNo";
+            this.textBoxSeedLotNo.Size = new System.Drawing.Size(100, 22);
+            this.textBoxSeedLotNo.TabIndex = 21;
             // 
-            // textBox2
+            // textBoxSeedCompany
             // 
-            this.textBox2.Location = new System.Drawing.Point(206, 200);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 20;
+            this.textBoxSeedCompany.Location = new System.Drawing.Point(206, 141);
+            this.textBoxSeedCompany.Name = "textBoxSeedCompany";
+            this.textBoxSeedCompany.Size = new System.Drawing.Size(100, 22);
+            this.textBoxSeedCompany.TabIndex = 22;
             // 
-            // textBox3
+            // textBoxVariety
             // 
-            this.textBox3.Location = new System.Drawing.Point(206, 172);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 21;
+            this.textBoxVariety.Location = new System.Drawing.Point(206, 111);
+            this.textBoxVariety.Name = "textBoxVariety";
+            this.textBoxVariety.Size = new System.Drawing.Size(100, 22);
+            this.textBoxVariety.TabIndex = 23;
             // 
-            // textBox4
+            // textBoxType
             // 
-            this.textBox4.Location = new System.Drawing.Point(206, 141);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 22;
+            this.textBoxType.Location = new System.Drawing.Point(206, 79);
+            this.textBoxType.Name = "textBoxType";
+            this.textBoxType.Size = new System.Drawing.Size(100, 22);
+            this.textBoxType.TabIndex = 24;
             // 
-            // textBox5
+            // buttonClear
             // 
-            this.textBox5.Location = new System.Drawing.Point(206, 111);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 23;
+            this.buttonClear.Location = new System.Drawing.Point(337, 379);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(75, 23);
+            this.buttonClear.TabIndex = 26;
+            this.buttonClear.Text = "Clear All";
+            this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
-            // textBox6
+            // buttonSave
             // 
-            this.textBox6.Location = new System.Drawing.Point(206, 79);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 24;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(454, 24);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 25;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(337, 433);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Clear All";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(442, 433);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonSave.Location = new System.Drawing.Point(442, 379);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(75, 23);
+            this.buttonSave.TabIndex = 27;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = true;
             // 
             // AddNewPlant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 483);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.numericUpDown4);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(561, 428);
+            this.Controls.Add(this.buttonSave);
+            this.Controls.Add(this.buttonClear);
+            this.Controls.Add(this.textBoxType);
+            this.Controls.Add(this.textBoxVariety);
+            this.Controls.Add(this.textBoxSeedCompany);
+            this.Controls.Add(this.textBoxSeedLotNo);
+            this.Controls.Add(this.textBoxSeedOrigin);
+            this.Controls.Add(this.textBoxAddInfo);
+            this.Controls.Add(this.comboBoxPlantingMethod);
             this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.checkBoxGMO);
@@ -338,8 +285,6 @@
             this.Text = "AddNewPlant";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,22 +303,17 @@
         private System.Windows.Forms.CheckBox checkBoxGMO;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBoxPlantingMethod;
+        private System.Windows.Forms.TextBox textBoxAddInfo;
+        private System.Windows.Forms.TextBox textBoxSeedOrigin;
+        private System.Windows.Forms.TextBox textBoxSeedLotNo;
+        private System.Windows.Forms.TextBox textBoxSeedCompany;
+        private System.Windows.Forms.TextBox textBoxVariety;
+        private System.Windows.Forms.TextBox textBoxType;
+        private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.Button buttonSave;
     }
 }

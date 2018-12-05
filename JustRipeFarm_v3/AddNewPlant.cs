@@ -17,9 +17,15 @@ namespace JustRipeFarm_v3
             InitializeComponent();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void buttonClear_Click(object sender, EventArgs e)
         {
-
+            this.textBoxType.Text = "";
+            this.textBoxVariety.Text = "";
+            comboBoxPlantingMethod.SelectedIndex = -1;
+            this.textBoxSeedLotNo.Text = "";
+            this.textBoxSeedCompany.Text = "";
+            this.textBoxSeedOrigin.Text = "";
+            this.textBoxAddInfo.Text = "";
         }
     }
 }

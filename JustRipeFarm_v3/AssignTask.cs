@@ -16,5 +16,12 @@ namespace JustRipeFarm_v3
         {
             InitializeComponent();
         }
+
+        private void picBoxBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            StaffManagement stffMng = new StaffManagement();
+            stffMng.Show();
+        }
     }
 }

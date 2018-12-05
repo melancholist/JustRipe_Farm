@@ -42,6 +42,7 @@
             this.picBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxBack.TabIndex = 0;
             this.picBoxBack.TabStop = false;
+            this.picBoxBack.Click += new System.EventHandler(this.picBoxBack_Click);
             // 
             // AssignTask
             // 
@@ -52,6 +53,7 @@
             this.Controls.Add(this.picBoxBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AssignTask";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AssignTask";
             ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).EndInit();
             this.ResumeLayout(false);
