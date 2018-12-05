@@ -15,6 +15,15 @@ namespace JustRipeFarm_v3
         public AssignTask()
         {
             InitializeComponent();
+            pnlFieldWorkers.Show();
+            //pnlDrivers.Hode();
+        }
+
+        private void picBoxBack_Click(object sender, EventArgs e)
+        {
+            StaffManagement staff = new StaffManagement();
+            staff.Show();
+            this.Hide();
         }
     }
 }
