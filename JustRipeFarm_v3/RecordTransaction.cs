@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace JustRipeFarm_v3
 {
     public partial class RecordTransaction : Form
     {
+        RecordTransaction transaction = new RecordTransaction();
+        DbConnector DBConn = new DbConnector();
+
         public RecordTransaction()
         {
             InitializeComponent();
@@ -20,7 +24,24 @@ namespace JustRipeFarm_v3
         //Save information to database
         private void btnSave_Click(object sender, EventArgs e)
         {
+            /*DBConn.connect();
+            Staff stff = new Staff();
+            StaffHandler staffHandlr = new StaffHandler();
 
+            tran.Type = comboBoxType.Text;
+            tran.Amount = Decimal.Parse(textBoxAmount.Text);
+            tran.Date = dateTimePicker1.Value.Date;
+            tran.CustPayee = textBoxCustomerPayee.Text;
+            tran.Expense = comboBoxExpense.Text;
+            tran.Income = comboBoxIncome.Text;
+            tran.Description = textBoxDescription.Text;
+
+            staffHandlr.addNewStaff(DBConn.getConn(), stff);
+            MessageBox.Show("A new transaction has been added!");
+
+            this.Hide();
+            StaffManagement stf = new StaffManagement();
+            stf.Show();*/
         }
 
         //Clear all

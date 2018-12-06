@@ -26,6 +26,8 @@ namespace JustRipeFarm_v3
             this.textBoxSeedCompany.Text = "";
             this.textBoxSeedOrigin.Text = "";
             this.textBoxAddInfo.Text = "";
+            numericUpDown1.DecimalPlaces = 0;
+            numericUpDown2.DecimalPlaces = 0;
         }
     }
 }
