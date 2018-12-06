@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddStaff));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.picBoxBack = new System.Windows.Forms.PictureBox();
+            this.picBoxBack = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -78,14 +78,16 @@
             // 
             // picBoxBack
             // 
-            this.picBoxBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBoxBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.picBoxBack.Image = ((System.Drawing.Image)(resources.GetObject("picBoxBack.Image")));
-            this.picBoxBack.Location = new System.Drawing.Point(3, 0);
+            this.picBoxBack.ImageActive = null;
+            this.picBoxBack.Location = new System.Drawing.Point(12, 6);
             this.picBoxBack.Name = "picBoxBack";
-            this.picBoxBack.Size = new System.Drawing.Size(53, 53);
+            this.picBoxBack.Size = new System.Drawing.Size(42, 45);
             this.picBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxBack.TabIndex = 2;
+            this.picBoxBack.TabIndex = 14;
             this.picBoxBack.TabStop = false;
+            this.picBoxBack.Zoom = 30;
             this.picBoxBack.Click += new System.EventHandler(this.picBoxBack_Click);
             // 
             // label1
@@ -433,7 +435,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox picBoxBack;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -461,5 +462,6 @@
         public System.Windows.Forms.ComboBox roleComboBox;
         public System.Windows.Forms.Label lblWage;
         public System.Windows.Forms.DateTimePicker hiredDateTimePicker;
+        private Bunifu.Framework.UI.BunifuImageButton picBoxBack;
     }
 }

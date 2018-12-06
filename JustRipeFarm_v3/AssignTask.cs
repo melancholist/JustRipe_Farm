@@ -70,6 +70,5 @@ namespace JustRipeFarm_v3
                 break;
             }
         }
-
     }
 }

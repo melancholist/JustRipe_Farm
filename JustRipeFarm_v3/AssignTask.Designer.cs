@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AssignTask));
-            this.picBoxBack = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picBoxBack = new Bunifu.Framework.UI.BunifuImageButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlHarvest = new System.Windows.Forms.Panel();
             this.btnClearHarv = new System.Windows.Forms.Button();
             this.btnSaveHarv = new System.Windows.Forms.Button();
@@ -58,7 +59,6 @@
             this.dateTimePickerStartTr = new System.Windows.Forms.DateTimePicker();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.textBoxTreatmentDate = new System.Windows.Forms.TextBox();
             this.monthCalendarTreatment = new System.Windows.Forms.MonthCalendar();
             this.comboBoxFarmT = new System.Windows.Forms.ComboBox();
@@ -70,19 +70,19 @@
             this.label20 = new System.Windows.Forms.Label();
             this.comboBoxWorkerT = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.pnlDriving = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
             this.comboBoxVehicles = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
             this.btnClearDrive = new System.Windows.Forms.Button();
             this.btnSaveDive = new System.Windows.Forms.Button();
-            this.label29 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.monthCalendarDriving = new System.Windows.Forms.MonthCalendar();
             this.comboBoxFarmD = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
             this.comboBoxDriver = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnDriving = new System.Windows.Forms.Button();
             this.btnSowing = new System.Windows.Forms.Button();
@@ -109,8 +109,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxWorkers = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).BeginInit();
             this.pnlHarvest.SuspendLayout();
             this.pnlTreatment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -120,28 +120,42 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQauntity)).BeginInit();
             this.SuspendLayout();
             // 
-            // picBoxBack
-            // 
-            this.picBoxBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBoxBack.Image = ((System.Drawing.Image)(resources.GetObject("picBoxBack.Image")));
-            this.picBoxBack.Location = new System.Drawing.Point(2, 4);
-            this.picBoxBack.Name = "picBoxBack";
-            this.picBoxBack.Size = new System.Drawing.Size(45, 39);
-            this.picBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxBack.TabIndex = 0;
-            this.picBoxBack.TabStop = false;
-            this.picBoxBack.Click += new System.EventHandler(this.picBoxBack_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.picBoxBack);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1069, 48);
             this.panel1.TabIndex = 1;
+            // 
+            // picBoxBack
+            // 
+            this.picBoxBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.picBoxBack.Image = ((System.Drawing.Image)(resources.GetObject("picBoxBack.Image")));
+            this.picBoxBack.ImageActive = null;
+            this.picBoxBack.Location = new System.Drawing.Point(1022, 6);
+            this.picBoxBack.Name = "picBoxBack";
+            this.picBoxBack.Size = new System.Drawing.Size(35, 35);
+            this.picBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxBack.TabIndex = 9;
+            this.picBoxBack.TabStop = false;
+            this.picBoxBack.Zoom = 20;
+            this.picBoxBack.Click += new System.EventHandler(this.picBoxBack_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(423, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(222, 37);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Assigning Tasks";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlHarvest
             // 
@@ -495,17 +509,6 @@
             this.label25.TabIndex = 19;
             this.label25.Text = "Start Time:";
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(500, 276);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(62, 23);
-            this.label26.TabIndex = 18;
-            this.label26.Text = "Date:";
-            // 
             // textBoxTreatmentDate
             // 
             this.textBoxTreatmentDate.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -613,6 +616,17 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Field Worker:";
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(500, 276);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(62, 23);
+            this.label26.TabIndex = 18;
+            this.label26.Text = "Date:";
+            // 
             // pnlDriving
             // 
             this.pnlDriving.BackColor = System.Drawing.Color.Teal;
@@ -632,6 +646,17 @@
             this.pnlDriving.Size = new System.Drawing.Size(892, 622);
             this.pnlDriving.TabIndex = 25;
             this.pnlDriving.Visible = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(500, 276);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(62, 23);
+            this.label29.TabIndex = 18;
+            this.label29.Text = "Date:";
             // 
             // comboBoxVehicles
             // 
@@ -685,17 +710,6 @@
             this.btnSaveDive.TabIndex = 7;
             this.btnSaveDive.Text = "Save";
             this.btnSaveDive.UseVisualStyleBackColor = false;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(500, 276);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(62, 23);
-            this.label29.TabIndex = 18;
-            this.label29.Text = "Date:";
             // 
             // textBox1
             // 
@@ -752,18 +766,6 @@
             this.label34.Size = new System.Drawing.Size(71, 23);
             this.label34.TabIndex = 0;
             this.label34.Text = "Driver:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Candara", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(413, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 35);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Assigning Tasks";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -1114,9 +1116,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AssignTask";
             this.Load += new System.EventHandler(this.AssignTask_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).EndInit();
             this.pnlHarvest.ResumeLayout(false);
             this.pnlHarvest.PerformLayout();
             this.pnlTreatment.ResumeLayout(false);
@@ -1133,8 +1135,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picBoxBack;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
@@ -1214,5 +1214,6 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.ComboBox comboBoxDriver;
         private System.Windows.Forms.Label label34;
+        private Bunifu.Framework.UI.BunifuImageButton picBoxBack;
     }
 }

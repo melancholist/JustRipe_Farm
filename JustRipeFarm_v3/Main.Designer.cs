@@ -32,7 +32,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.logoutPictureBox = new System.Windows.Forms.PictureBox();
             this.btnStaffManagement = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelBtnIndicator6 = new System.Windows.Forms.Panel();
@@ -65,16 +64,17 @@
             this.btnViewSales = new System.Windows.Forms.Button();
             this.btnRecordTransaction = new System.Windows.Forms.Button();
             this.pnlResources = new System.Windows.Forms.Panel();
-            this.lblResources = new System.Windows.Forms.Label();
-            this.pnlStorage = new System.Windows.Forms.Panel();
-            this.pnlEquipment = new System.Windows.Forms.Panel();
             this.pnlCrops = new System.Windows.Forms.Panel();
+            this.dataGridViewCrops = new System.Windows.Forms.DataGridView();
             this.btnAddNewPlant = new System.Windows.Forms.Button();
+            this.lblResources = new System.Windows.Forms.Label();
+            this.btnEquipment = new System.Windows.Forms.Button();
+            this.btnCrops = new System.Windows.Forms.Button();
+            this.pnlEquipment = new System.Windows.Forms.Panel();
             this.dataGridViewEquipment = new System.Windows.Forms.DataGridView();
             this.btnAddNewEq = new System.Windows.Forms.Button();
+            this.pnlStorage = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnCrops = new System.Windows.Forms.Button();
-            this.btnEquipment = new System.Windows.Forms.Button();
             this.pnlStocks = new System.Windows.Forms.Panel();
             this.pnlOnlineStore = new System.Windows.Forms.Panel();
             this.linkLabelOnlineStore = new System.Windows.Forms.LinkLabel();
@@ -85,10 +85,9 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.btnProducts = new System.Windows.Forms.Button();
             this.lblStocks = new System.Windows.Forms.Label();
-            this.dataGridViewCrops = new System.Windows.Forms.DataGridView();
+            this.logoutPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxLabourer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxManager)).BeginInit();
@@ -97,15 +96,16 @@
             this.pnlAccounting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlResources.SuspendLayout();
-            this.pnlStorage.SuspendLayout();
-            this.pnlEquipment.SuspendLayout();
             this.pnlCrops.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCrops)).BeginInit();
+            this.pnlEquipment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).BeginInit();
+            this.pnlStorage.SuspendLayout();
             this.pnlStocks.SuspendLayout();
             this.pnlOnlineStore.SuspendLayout();
             this.pnlProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCrops)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -145,19 +145,6 @@
             this.panel2.Size = new System.Drawing.Size(1200, 65);
             this.panel2.TabIndex = 5;
             // 
-            // logoutPictureBox
-            // 
-            this.logoutPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logoutPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoutPictureBox.Image")));
-            this.logoutPictureBox.Location = new System.Drawing.Point(1141, 2);
-            this.logoutPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.logoutPictureBox.Name = "logoutPictureBox";
-            this.logoutPictureBox.Size = new System.Drawing.Size(57, 63);
-            this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logoutPictureBox.TabIndex = 7;
-            this.logoutPictureBox.TabStop = false;
-            this.logoutPictureBox.Click += new System.EventHandler(this.logoutPictureBox_Click);
-            // 
             // btnStaffManagement
             // 
             this.btnStaffManagement.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -165,7 +152,7 @@
             this.btnStaffManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStaffManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStaffManagement.ForeColor = System.Drawing.Color.White;
-            this.btnStaffManagement.Location = new System.Drawing.Point(870, 6);
+            this.btnStaffManagement.Location = new System.Drawing.Point(870, 5);
             this.btnStaffManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStaffManagement.Name = "btnStaffManagement";
             this.btnStaffManagement.Size = new System.Drawing.Size(261, 54);
@@ -601,34 +588,6 @@
             this.pnlResources.Size = new System.Drawing.Size(963, 696);
             this.pnlResources.TabIndex = 6;
             // 
-            // lblResources
-            // 
-            this.lblResources.AutoSize = true;
-            this.lblResources.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResources.Location = new System.Drawing.Point(36, 28);
-            this.lblResources.Name = "lblResources";
-            this.lblResources.Size = new System.Drawing.Size(189, 39);
-            this.lblResources.TabIndex = 0;
-            this.lblResources.Text = "Resources";
-            // 
-            // pnlStorage
-            // 
-            this.pnlStorage.BackColor = System.Drawing.Color.Gray;
-            this.pnlStorage.Controls.Add(this.label2);
-            this.pnlStorage.Location = new System.Drawing.Point(234, 65);
-            this.pnlStorage.Name = "pnlStorage";
-            this.pnlStorage.Size = new System.Drawing.Size(912, 662);
-            this.pnlStorage.TabIndex = 5;
-            // 
-            // pnlEquipment
-            // 
-            this.pnlEquipment.Controls.Add(this.dataGridViewEquipment);
-            this.pnlEquipment.Controls.Add(this.btnAddNewEq);
-            this.pnlEquipment.Location = new System.Drawing.Point(43, 85);
-            this.pnlEquipment.Name = "pnlEquipment";
-            this.pnlEquipment.Size = new System.Drawing.Size(704, 444);
-            this.pnlEquipment.TabIndex = 4;
-            // 
             // pnlCrops
             // 
             this.pnlCrops.Controls.Add(this.dataGridViewCrops);
@@ -637,6 +596,15 @@
             this.pnlCrops.Name = "pnlCrops";
             this.pnlCrops.Size = new System.Drawing.Size(704, 450);
             this.pnlCrops.TabIndex = 3;
+            // 
+            // dataGridViewCrops
+            // 
+            this.dataGridViewCrops.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCrops.Location = new System.Drawing.Point(53, 90);
+            this.dataGridViewCrops.Name = "dataGridViewCrops";
+            this.dataGridViewCrops.RowTemplate.Height = 24;
+            this.dataGridViewCrops.Size = new System.Drawing.Size(581, 301);
+            this.dataGridViewCrops.TabIndex = 2;
             // 
             // btnAddNewPlant
             // 
@@ -647,6 +615,45 @@
             this.btnAddNewPlant.Text = "Add new plant";
             this.btnAddNewPlant.UseVisualStyleBackColor = true;
             this.btnAddNewPlant.Click += new System.EventHandler(this.btnAddNewPlant_Click);
+            // 
+            // lblResources
+            // 
+            this.lblResources.AutoSize = true;
+            this.lblResources.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResources.Location = new System.Drawing.Point(36, 28);
+            this.lblResources.Name = "lblResources";
+            this.lblResources.Size = new System.Drawing.Size(184, 38);
+            this.lblResources.TabIndex = 0;
+            this.lblResources.Text = "Resources";
+            // 
+            // btnEquipment
+            // 
+            this.btnEquipment.Location = new System.Drawing.Point(405, 31);
+            this.btnEquipment.Name = "btnEquipment";
+            this.btnEquipment.Size = new System.Drawing.Size(107, 35);
+            this.btnEquipment.TabIndex = 2;
+            this.btnEquipment.Text = "Equipment";
+            this.btnEquipment.UseVisualStyleBackColor = true;
+            this.btnEquipment.Click += new System.EventHandler(this.btnEquipment_Click);
+            // 
+            // btnCrops
+            // 
+            this.btnCrops.Location = new System.Drawing.Point(274, 33);
+            this.btnCrops.Name = "btnCrops";
+            this.btnCrops.Size = new System.Drawing.Size(87, 34);
+            this.btnCrops.TabIndex = 1;
+            this.btnCrops.Text = "Crops";
+            this.btnCrops.UseVisualStyleBackColor = true;
+            this.btnCrops.Click += new System.EventHandler(this.btnCrops_Click);
+            // 
+            // pnlEquipment
+            // 
+            this.pnlEquipment.Controls.Add(this.dataGridViewEquipment);
+            this.pnlEquipment.Controls.Add(this.btnAddNewEq);
+            this.pnlEquipment.Location = new System.Drawing.Point(43, 85);
+            this.pnlEquipment.Name = "pnlEquipment";
+            this.pnlEquipment.Size = new System.Drawing.Size(704, 444);
+            this.pnlEquipment.TabIndex = 4;
             // 
             // dataGridViewEquipment
             // 
@@ -667,6 +674,15 @@
             this.btnAddNewEq.UseVisualStyleBackColor = true;
             this.btnAddNewEq.Click += new System.EventHandler(this.btnAddNewEq_Click);
             // 
+            // pnlStorage
+            // 
+            this.pnlStorage.BackColor = System.Drawing.Color.Gray;
+            this.pnlStorage.Controls.Add(this.label2);
+            this.pnlStorage.Location = new System.Drawing.Point(234, 65);
+            this.pnlStorage.Name = "pnlStorage";
+            this.pnlStorage.Size = new System.Drawing.Size(912, 662);
+            this.pnlStorage.TabIndex = 5;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -676,26 +692,6 @@
             this.label2.Size = new System.Drawing.Size(122, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "Storage";
-            // 
-            // btnCrops
-            // 
-            this.btnCrops.Location = new System.Drawing.Point(274, 33);
-            this.btnCrops.Name = "btnCrops";
-            this.btnCrops.Size = new System.Drawing.Size(87, 34);
-            this.btnCrops.TabIndex = 1;
-            this.btnCrops.Text = "Crops";
-            this.btnCrops.UseVisualStyleBackColor = true;
-            this.btnCrops.Click += new System.EventHandler(this.btnCrops_Click);
-            // 
-            // btnEquipment
-            // 
-            this.btnEquipment.Location = new System.Drawing.Point(405, 31);
-            this.btnEquipment.Name = "btnEquipment";
-            this.btnEquipment.Size = new System.Drawing.Size(107, 35);
-            this.btnEquipment.TabIndex = 2;
-            this.btnEquipment.Text = "Equipment";
-            this.btnEquipment.UseVisualStyleBackColor = true;
-            this.btnEquipment.Click += new System.EventHandler(this.btnEquipment_Click);
             // 
             // pnlStocks
             // 
@@ -797,14 +793,19 @@
             this.lblStocks.TabIndex = 0;
             this.lblStocks.Text = "Stocks";
             // 
-            // dataGridViewCrops
+            // logoutPictureBox
             // 
-            this.dataGridViewCrops.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCrops.Location = new System.Drawing.Point(53, 90);
-            this.dataGridViewCrops.Name = "dataGridViewCrops";
-            this.dataGridViewCrops.RowTemplate.Height = 24;
-            this.dataGridViewCrops.Size = new System.Drawing.Size(581, 301);
-            this.dataGridViewCrops.TabIndex = 2;
+            this.logoutPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.logoutPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoutPictureBox.Image")));
+            this.logoutPictureBox.ImageActive = null;
+            this.logoutPictureBox.Location = new System.Drawing.Point(1147, 11);
+            this.logoutPictureBox.Name = "logoutPictureBox";
+            this.logoutPictureBox.Size = new System.Drawing.Size(41, 43);
+            this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoutPictureBox.TabIndex = 9;
+            this.logoutPictureBox.TabStop = false;
+            this.logoutPictureBox.Zoom = 30;
+            this.logoutPictureBox.Click += new System.EventHandler(this.logoutPictureBox_Click);
             // 
             // Main
             // 
@@ -827,7 +828,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxLabourer)).EndInit();
@@ -839,11 +839,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnlResources.ResumeLayout(false);
             this.pnlResources.PerformLayout();
+            this.pnlCrops.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCrops)).EndInit();
+            this.pnlEquipment.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).EndInit();
             this.pnlStorage.ResumeLayout(false);
             this.pnlStorage.PerformLayout();
-            this.pnlEquipment.ResumeLayout(false);
-            this.pnlCrops.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).EndInit();
             this.pnlStocks.ResumeLayout(false);
             this.pnlStocks.PerformLayout();
             this.pnlOnlineStore.ResumeLayout(false);
@@ -851,7 +852,7 @@
             this.pnlProducts.ResumeLayout(false);
             this.pnlProducts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCrops)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -860,7 +861,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox logoutPictureBox;
         public System.Windows.Forms.Button btnStaffManagement;
         public System.Windows.Forms.Label lblLabourer;
         public System.Windows.Forms.Panel panel1;
@@ -914,5 +914,6 @@
         private System.Windows.Forms.LinkLabel linkLabelOnlineStore;
         private System.Windows.Forms.Button btnOnlineStore;
         private System.Windows.Forms.DataGridView dataGridViewCrops;
+        private Bunifu.Framework.UI.BunifuImageButton logoutPictureBox;
     }
 }

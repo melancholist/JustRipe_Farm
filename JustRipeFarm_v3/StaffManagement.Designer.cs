@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffManagement));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.backpictureBox = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnTask = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.backpictureBox = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnlBtnIndic1 = new System.Windows.Forms.Panel();
             this.btnAddStaff = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.searchComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnTask = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backpictureBox)).BeginInit();
             this.panel2.SuspendLayout();
@@ -54,38 +54,56 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.panel1.Controls.Add(this.backpictureBox);
             this.panel1.Controls.Add(this.btnTask);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.backpictureBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1230, 68);
             this.panel1.TabIndex = 0;
             // 
+            // backpictureBox
+            // 
+            this.backpictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.backpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("backpictureBox.Image")));
+            this.backpictureBox.ImageActive = null;
+            this.backpictureBox.Location = new System.Drawing.Point(12, 12);
+            this.backpictureBox.Name = "backpictureBox";
+            this.backpictureBox.Size = new System.Drawing.Size(42, 45);
+            this.backpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.backpictureBox.TabIndex = 13;
+            this.backpictureBox.TabStop = false;
+            this.backpictureBox.Zoom = 30;
+            this.backpictureBox.Click += new System.EventHandler(this.backpictureBox_Click);
+            // 
+            // btnTask
+            // 
+            this.btnTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btnTask.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnTask.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTask.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTask.ForeColor = System.Drawing.Color.White;
+            this.btnTask.Location = new System.Drawing.Point(1044, 9);
+            this.btnTask.Name = "btnTask";
+            this.btnTask.Size = new System.Drawing.Size(175, 51);
+            this.btnTask.TabIndex = 12;
+            this.btnTask.Text = "Assign Task";
+            this.btnTask.UseVisualStyleBackColor = false;
+            this.btnTask.Click += new System.EventHandler(this.btnTask_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Candara", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(491, 11);
+            this.label1.Location = new System.Drawing.Point(476, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(279, 40);
             this.label1.TabIndex = 5;
             this.label1.Text = "Staff Management";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // backpictureBox
-            // 
-            this.backpictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.backpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("backpictureBox.Image")));
-            this.backpictureBox.Location = new System.Drawing.Point(12, 6);
-            this.backpictureBox.Name = "backpictureBox";
-            this.backpictureBox.Size = new System.Drawing.Size(69, 56);
-            this.backpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.backpictureBox.TabIndex = 1;
-            this.backpictureBox.TabStop = false;
-            this.backpictureBox.Click += new System.EventHandler(this.backpictureBox_Click);
             // 
             // panel2
             // 
@@ -215,22 +233,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(931, 544);
             this.dataGridView1.TabIndex = 6;
             // 
-            // btnTask
-            // 
-            this.btnTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.btnTask.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnTask.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTask.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTask.ForeColor = System.Drawing.Color.White;
-            this.btnTask.Location = new System.Drawing.Point(1044, 8);
-            this.btnTask.Name = "btnTask";
-            this.btnTask.Size = new System.Drawing.Size(175, 51);
-            this.btnTask.TabIndex = 12;
-            this.btnTask.Text = "Assign Task";
-            this.btnTask.UseVisualStyleBackColor = false;
-            this.btnTask.Click += new System.EventHandler(this.btnTask_Click);
-            // 
             // StaffManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -259,7 +261,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox backpictureBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnAddStaff;
@@ -272,5 +273,6 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnStaff;
         private System.Windows.Forms.Button btnTask;
+        private Bunifu.Framework.UI.BunifuImageButton backpictureBox;
     }
 }
