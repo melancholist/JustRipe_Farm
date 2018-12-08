@@ -32,6 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.logoutPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnStaffManagement = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelBtnIndicator6 = new System.Windows.Forms.Panel();
@@ -58,11 +59,11 @@
             this.panelBtnIndicatorSow = new System.Windows.Forms.Panel();
             this.btnSowing = new System.Windows.Forms.Button();
             this.pnlAccounting = new System.Windows.Forms.Panel();
-            this.lblTransactionHistory = new System.Windows.Forms.Label();
+            this.lblIncome = new System.Windows.Forms.Label();
             this.lblAccounting = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnViewSales = new System.Windows.Forms.Button();
-            this.btnRecordTransaction = new System.Windows.Forms.Button();
+            this.btnNewIncome = new System.Windows.Forms.Button();
             this.pnlResources = new System.Windows.Forms.Panel();
             this.pnlCrops = new System.Windows.Forms.Panel();
             this.dataGridViewCrops = new System.Windows.Forms.DataGridView();
@@ -85,9 +86,12 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.btnProducts = new System.Windows.Forms.Button();
             this.lblStocks = new System.Windows.Forms.Label();
-            this.logoutPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnNewExpense = new System.Windows.Forms.Button();
+            this.lblExpenses = new System.Windows.Forms.Label();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxLabourer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxManager)).BeginInit();
@@ -105,7 +109,7 @@
             this.pnlOnlineStore.SuspendLayout();
             this.pnlProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -144,6 +148,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1200, 65);
             this.panel2.TabIndex = 5;
+            // 
+            // logoutPictureBox
+            // 
+            this.logoutPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.logoutPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoutPictureBox.Image")));
+            this.logoutPictureBox.ImageActive = null;
+            this.logoutPictureBox.Location = new System.Drawing.Point(1147, 11);
+            this.logoutPictureBox.Name = "logoutPictureBox";
+            this.logoutPictureBox.Size = new System.Drawing.Size(41, 43);
+            this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoutPictureBox.TabIndex = 9;
+            this.logoutPictureBox.TabStop = false;
+            this.logoutPictureBox.Zoom = 30;
+            this.logoutPictureBox.Click += new System.EventHandler(this.logoutPictureBox_Click);
             // 
             // btnStaffManagement
             // 
@@ -516,25 +534,28 @@
             // pnlAccounting
             // 
             this.pnlAccounting.BackColor = System.Drawing.Color.Gray;
-            this.pnlAccounting.Controls.Add(this.lblTransactionHistory);
+            this.pnlAccounting.Controls.Add(this.dataGridView3);
+            this.pnlAccounting.Controls.Add(this.lblExpenses);
+            this.pnlAccounting.Controls.Add(this.btnNewExpense);
+            this.pnlAccounting.Controls.Add(this.lblIncome);
             this.pnlAccounting.Controls.Add(this.lblAccounting);
             this.pnlAccounting.Controls.Add(this.dataGridView1);
             this.pnlAccounting.Controls.Add(this.btnViewSales);
-            this.pnlAccounting.Controls.Add(this.btnRecordTransaction);
-            this.pnlAccounting.Location = new System.Drawing.Point(233, 64);
+            this.pnlAccounting.Controls.Add(this.btnNewIncome);
+            this.pnlAccounting.Location = new System.Drawing.Point(234, 64);
             this.pnlAccounting.Name = "pnlAccounting";
-            this.pnlAccounting.Size = new System.Drawing.Size(970, 660);
+            this.pnlAccounting.Size = new System.Drawing.Size(966, 642);
             this.pnlAccounting.TabIndex = 0;
             // 
-            // lblTransactionHistory
+            // lblIncome
             // 
-            this.lblTransactionHistory.AutoSize = true;
-            this.lblTransactionHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTransactionHistory.Location = new System.Drawing.Point(29, 100);
-            this.lblTransactionHistory.Name = "lblTransactionHistory";
-            this.lblTransactionHistory.Size = new System.Drawing.Size(189, 24);
-            this.lblTransactionHistory.TabIndex = 5;
-            this.lblTransactionHistory.Text = "Transaction History";
+            this.lblIncome.AutoSize = true;
+            this.lblIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIncome.Location = new System.Drawing.Point(29, 100);
+            this.lblIncome.Name = "lblIncome";
+            this.lblIncome.Size = new System.Drawing.Size(136, 24);
+            this.lblIncome.TabIndex = 5;
+            this.lblIncome.Text = "Income/Sales";
             // 
             // lblAccounting
             // 
@@ -552,12 +573,12 @@
             this.dataGridView1.Location = new System.Drawing.Point(33, 138);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(731, 387);
+            this.dataGridView1.Size = new System.Drawing.Size(435, 387);
             this.dataGridView1.TabIndex = 4;
             // 
             // btnViewSales
             // 
-            this.btnViewSales.Location = new System.Drawing.Point(501, 23);
+            this.btnViewSales.Location = new System.Drawing.Point(733, 20);
             this.btnViewSales.Name = "btnViewSales";
             this.btnViewSales.Size = new System.Drawing.Size(107, 38);
             this.btnViewSales.TabIndex = 3;
@@ -565,15 +586,15 @@
             this.btnViewSales.UseVisualStyleBackColor = true;
             this.btnViewSales.Click += new System.EventHandler(this.btnViewSales_Click);
             // 
-            // btnRecordTransaction
+            // btnNewIncome
             // 
-            this.btnRecordTransaction.Location = new System.Drawing.Point(286, 22);
-            this.btnRecordTransaction.Name = "btnRecordTransaction";
-            this.btnRecordTransaction.Size = new System.Drawing.Size(182, 38);
-            this.btnRecordTransaction.TabIndex = 1;
-            this.btnRecordTransaction.Text = "Record a Transaction";
-            this.btnRecordTransaction.UseVisualStyleBackColor = true;
-            this.btnRecordTransaction.Click += new System.EventHandler(this.btnRecordTransaction_Click);
+            this.btnNewIncome.Location = new System.Drawing.Point(286, 22);
+            this.btnNewIncome.Name = "btnNewIncome";
+            this.btnNewIncome.Size = new System.Drawing.Size(130, 38);
+            this.btnNewIncome.TabIndex = 1;
+            this.btnNewIncome.Text = "New Income";
+            this.btnNewIncome.UseVisualStyleBackColor = true;
+            this.btnNewIncome.Click += new System.EventHandler(this.btnRecordTransaction_Click);
             // 
             // pnlResources
             // 
@@ -793,19 +814,34 @@
             this.lblStocks.TabIndex = 0;
             this.lblStocks.Text = "Stocks";
             // 
-            // logoutPictureBox
+            // btnNewExpense
             // 
-            this.logoutPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.logoutPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoutPictureBox.Image")));
-            this.logoutPictureBox.ImageActive = null;
-            this.logoutPictureBox.Location = new System.Drawing.Point(1147, 11);
-            this.logoutPictureBox.Name = "logoutPictureBox";
-            this.logoutPictureBox.Size = new System.Drawing.Size(41, 43);
-            this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logoutPictureBox.TabIndex = 9;
-            this.logoutPictureBox.TabStop = false;
-            this.logoutPictureBox.Zoom = 30;
-            this.logoutPictureBox.Click += new System.EventHandler(this.logoutPictureBox_Click);
+            this.btnNewExpense.Location = new System.Drawing.Point(487, 21);
+            this.btnNewExpense.Name = "btnNewExpense";
+            this.btnNewExpense.Size = new System.Drawing.Size(134, 42);
+            this.btnNewExpense.TabIndex = 6;
+            this.btnNewExpense.Text = "New Expense";
+            this.btnNewExpense.UseVisualStyleBackColor = true;
+            this.btnNewExpense.Click += new System.EventHandler(this.btnNewExpense_Click);
+            // 
+            // lblExpenses
+            // 
+            this.lblExpenses.AutoSize = true;
+            this.lblExpenses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpenses.Location = new System.Drawing.Point(514, 106);
+            this.lblExpenses.Name = "lblExpenses";
+            this.lblExpenses.Size = new System.Drawing.Size(107, 25);
+            this.lblExpenses.TabIndex = 7;
+            this.lblExpenses.Text = "Expenses";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(519, 134);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(378, 398);
+            this.dataGridView3.TabIndex = 8;
             // 
             // Main
             // 
@@ -813,9 +849,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
+            this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.pnlResources);
             this.Controls.Add(this.pnlStorage);
-            this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlSchedule);
             this.Controls.Add(this.panel2);
@@ -828,6 +864,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxLabourer)).EndInit();
@@ -852,7 +889,7 @@
             this.pnlProducts.ResumeLayout(false);
             this.pnlProducts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -887,11 +924,11 @@
         private System.Windows.Forms.Panel panelBtnIndicator4;
         private System.Windows.Forms.Panel panelBtnIndicator3;
         private System.Windows.Forms.Panel pnlAccounting;
-        private System.Windows.Forms.Button btnRecordTransaction;
+        private System.Windows.Forms.Button btnNewIncome;
         private System.Windows.Forms.Label lblAccounting;
         private System.Windows.Forms.Button btnViewSales;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label lblTransactionHistory;
+        private System.Windows.Forms.Label lblIncome;
         private System.Windows.Forms.Panel pnlResources;
         private System.Windows.Forms.Panel pnlCrops;
         private System.Windows.Forms.Button btnAddNewPlant;
@@ -915,5 +952,8 @@
         private System.Windows.Forms.Button btnOnlineStore;
         private System.Windows.Forms.DataGridView dataGridViewCrops;
         private Bunifu.Framework.UI.BunifuImageButton logoutPictureBox;
+        private System.Windows.Forms.Button btnNewExpense;
+        private System.Windows.Forms.Label lblExpenses;
+        private System.Windows.Forms.DataGridView dataGridView3;
     }
 }

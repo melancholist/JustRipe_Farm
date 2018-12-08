@@ -195,8 +195,8 @@ namespace JustRipeFarm_v3
         //Record Transaction panel appears when button is clicked
         private void btnRecordTransaction_Click(object sender, EventArgs e)
         {
-            RecordTransaction recordTransaction = new RecordTransaction();
-            recordTransaction.Show();
+            NewIncome newIncome = new NewIncome();
+            newIncome.Show();
         }
 
         //Sales panel appears within the Accounting panel when button is clicked
@@ -262,5 +262,10 @@ namespace JustRipeFarm_v3
             pnlOnlineStore.Show();
         }
 
+        private void btnNewExpense_Click(object sender, EventArgs e)
+        {
+            NewExpense newExpense = new NewExpense();
+            newExpense.Show();
+        }
     }
 }
