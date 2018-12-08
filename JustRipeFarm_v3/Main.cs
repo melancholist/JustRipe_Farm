@@ -190,20 +190,10 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator5.Hide();
                 panelBtnIndicator6.Show();
             }
-        }
 
-        //Record Transaction panel appears when button is clicked
-        private void btnRecordTransaction_Click(object sender, EventArgs e)
-        {
-            NewIncome newIncome = new NewIncome();
-            newIncome.Show();
-        }
-
-        //Sales panel appears within the Accounting panel when button is clicked
-        private void btnViewSales_Click(object sender, EventArgs e)
-        {
-            Sales sales = new Sales();
-            sales.Show();
+            pnlIncome.Hide();
+            pnlExpenses.Hide();
+            pnlAccMain.Show();
         }
 
         //Redirrect users to staff management form
@@ -262,10 +252,32 @@ namespace JustRipeFarm_v3
             pnlOnlineStore.Show();
         }
 
+        //New Expense form appears when button is clicked
         private void btnNewExpense_Click(object sender, EventArgs e)
         {
             NewExpense newExpense = new NewExpense();
             newExpense.Show();
+        }
+
+        //New Income form appears when button is clicked
+        private void btnNewIncome_Click(object sender, EventArgs e)
+        {
+            NewIncome newIncome = new NewIncome();
+            newIncome.Show();
+        }
+
+        //Income panel appears within Accounting panel when button is clicked
+        private void btnIncomeSales_Click(object sender, EventArgs e)
+        {
+            pnlIncome.Show();
+            pnlExpenses.Hide();
+        }
+
+        //Expenses panel appears within Accounting panel when button is clicked
+        private void btnExpenses_Click(object sender, EventArgs e)
+        {
+            pnlIncome.Hide();
+            pnlExpenses.Show();
         }
     }
 }
