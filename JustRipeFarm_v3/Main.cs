@@ -190,10 +190,6 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator5.Hide();
                 panelBtnIndicator6.Show();
             }
-
-            pnlIncome.Hide();
-            pnlExpenses.Hide();
-            pnlAccMain.Show();
         }
 
         //Redirrect users to staff management form

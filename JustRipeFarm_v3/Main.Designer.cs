@@ -59,7 +59,6 @@
             this.panelBtnIndicatorSow = new System.Windows.Forms.Panel();
             this.btnSowing = new System.Windows.Forms.Button();
             this.pnlAccounting = new System.Windows.Forms.Panel();
-            this.pnlAccMain = new System.Windows.Forms.Panel();
             this.pnlExpenses = new System.Windows.Forms.Panel();
             this.dataGridViewExpenses = new System.Windows.Forms.DataGridView();
             this.lblExpenses = new System.Windows.Forms.Label();
@@ -549,7 +548,6 @@
             // pnlAccounting
             // 
             this.pnlAccounting.BackColor = System.Drawing.Color.Gray;
-            this.pnlAccounting.Controls.Add(this.pnlAccMain);
             this.pnlAccounting.Controls.Add(this.pnlExpenses);
             this.pnlAccounting.Controls.Add(this.pnlIncome);
             this.pnlAccounting.Controls.Add(this.btnExpenses);
@@ -559,13 +557,6 @@
             this.pnlAccounting.Name = "pnlAccounting";
             this.pnlAccounting.Size = new System.Drawing.Size(969, 642);
             this.pnlAccounting.TabIndex = 0;
-            // 
-            // pnlAccMain
-            // 
-            this.pnlAccMain.Location = new System.Drawing.Point(32, 73);
-            this.pnlAccMain.Name = "pnlAccMain";
-            this.pnlAccMain.Size = new System.Drawing.Size(837, 550);
-            this.pnlAccMain.TabIndex = 13;
             // 
             // pnlExpenses
             // 
@@ -1075,7 +1066,6 @@
         private System.Windows.Forms.Panel pnlIncome;
         private System.Windows.Forms.Button btnExpenses;
         private System.Windows.Forms.Button btnIncomeSales;
-        private System.Windows.Forms.Panel pnlAccMain;
         private System.Windows.Forms.Panel pnlMaintenance;
         private System.Windows.Forms.Panel pnlEqMain;
         private System.Windows.Forms.Button btnMaintenance;
