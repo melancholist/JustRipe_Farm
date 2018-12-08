@@ -92,6 +92,8 @@
       <DependentUpon>AssignTask.cs</DependentUpon>
     </Compile>
     <Compile Include="DbConnector.cs" />
+    <Compile Include="Equipment.cs" />
+    <Compile Include="EquipmentHandler.cs" />
     <Compile Include="Expense.cs" />
     <Compile Include="ExpenseHandler.cs" />
     <Compile Include="Income.cs" />
