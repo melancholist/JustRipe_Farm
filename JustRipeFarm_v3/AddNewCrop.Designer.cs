@@ -1,6 +1,6 @@
 ﻿namespace JustRipeFarm_v3
 {
-    partial class AddNewPlant
+    partial class AddNewCrop
     {
         /// <summary>
         /// Required designer variable.
@@ -51,8 +51,15 @@
             this.textBoxType = new System.Windows.Forms.TextBox();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNewPlant
@@ -61,14 +68,14 @@
             this.lblNewPlant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNewPlant.Location = new System.Drawing.Point(38, 24);
             this.lblNewPlant.Name = "lblNewPlant";
-            this.lblNewPlant.Size = new System.Drawing.Size(109, 25);
+            this.lblNewPlant.Size = new System.Drawing.Size(107, 25);
             this.lblNewPlant.TabIndex = 0;
-            this.lblNewPlant.Text = "New Plant";
+            this.lblNewPlant.Text = "New Crop";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 82);
+            this.label1.Location = new System.Drawing.Point(19, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 17);
             this.label1.TabIndex = 1;
@@ -77,7 +84,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 114);
+            this.label2.Location = new System.Drawing.Point(19, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 17);
             this.label2.TabIndex = 2;
@@ -86,7 +93,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 144);
+            this.label3.Location = new System.Drawing.Point(19, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 17);
             this.label3.TabIndex = 3;
@@ -95,7 +102,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 175);
+            this.label4.Location = new System.Drawing.Point(19, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 17);
             this.label4.TabIndex = 4;
@@ -104,7 +111,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(40, 205);
+            this.label5.Location = new System.Drawing.Point(19, 160);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 17);
             this.label5.TabIndex = 5;
@@ -113,7 +120,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(40, 237);
+            this.label6.Location = new System.Drawing.Point(19, 32);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 17);
             this.label6.TabIndex = 6;
@@ -122,7 +129,7 @@
             // checkBoxOrganic
             // 
             this.checkBoxOrganic.AutoSize = true;
-            this.checkBoxOrganic.Location = new System.Drawing.Point(332, 201);
+            this.checkBoxOrganic.Location = new System.Drawing.Point(311, 156);
             this.checkBoxOrganic.Name = "checkBoxOrganic";
             this.checkBoxOrganic.Size = new System.Drawing.Size(80, 21);
             this.checkBoxOrganic.TabIndex = 7;
@@ -132,7 +139,7 @@
             // checkBoxGMO
             // 
             this.checkBoxGMO.AutoSize = true;
-            this.checkBoxGMO.Location = new System.Drawing.Point(433, 202);
+            this.checkBoxGMO.Location = new System.Drawing.Point(412, 157);
             this.checkBoxGMO.Name = "checkBoxGMO";
             this.checkBoxGMO.Size = new System.Drawing.Size(63, 21);
             this.checkBoxGMO.TabIndex = 8;
@@ -142,7 +149,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(40, 268);
+            this.label7.Location = new System.Drawing.Point(19, 63);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 17);
             this.label7.TabIndex = 9;
@@ -151,7 +158,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(40, 300);
+            this.label8.Location = new System.Drawing.Point(19, 129);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(110, 17);
             this.label8.TabIndex = 10;
@@ -160,7 +167,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(40, 341);
+            this.label11.Location = new System.Drawing.Point(62, 473);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(144, 17);
             this.label11.TabIndex = 13;
@@ -168,14 +175,14 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(206, 235);
+            this.numericUpDown1.Location = new System.Drawing.Point(185, 30);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
             this.numericUpDown1.TabIndex = 14;
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(207, 266);
+            this.numericUpDown2.Location = new System.Drawing.Point(186, 61);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(120, 22);
             this.numericUpDown2.TabIndex = 15;
@@ -187,56 +194,56 @@
             "Direct Sow",
             "Transplant",
             "Other"});
-            this.comboBoxPlantingMethod.Location = new System.Drawing.Point(205, 297);
+            this.comboBoxPlantingMethod.Location = new System.Drawing.Point(184, 126);
             this.comboBoxPlantingMethod.Name = "comboBoxPlantingMethod";
             this.comboBoxPlantingMethod.Size = new System.Drawing.Size(121, 24);
             this.comboBoxPlantingMethod.TabIndex = 16;
             // 
             // textBoxAddInfo
             // 
-            this.textBoxAddInfo.Location = new System.Drawing.Point(205, 338);
+            this.textBoxAddInfo.Location = new System.Drawing.Point(227, 470);
             this.textBoxAddInfo.Name = "textBoxAddInfo";
-            this.textBoxAddInfo.Size = new System.Drawing.Size(100, 22);
+            this.textBoxAddInfo.Size = new System.Drawing.Size(316, 22);
             this.textBoxAddInfo.TabIndex = 19;
             // 
             // textBoxSeedOrigin
             // 
-            this.textBoxSeedOrigin.Location = new System.Drawing.Point(206, 200);
+            this.textBoxSeedOrigin.Location = new System.Drawing.Point(185, 155);
             this.textBoxSeedOrigin.Name = "textBoxSeedOrigin";
             this.textBoxSeedOrigin.Size = new System.Drawing.Size(100, 22);
             this.textBoxSeedOrigin.TabIndex = 20;
             // 
             // textBoxSeedLotNo
             // 
-            this.textBoxSeedLotNo.Location = new System.Drawing.Point(206, 172);
+            this.textBoxSeedLotNo.Location = new System.Drawing.Point(185, 127);
             this.textBoxSeedLotNo.Name = "textBoxSeedLotNo";
             this.textBoxSeedLotNo.Size = new System.Drawing.Size(100, 22);
             this.textBoxSeedLotNo.TabIndex = 21;
             // 
             // textBoxSeedCompany
             // 
-            this.textBoxSeedCompany.Location = new System.Drawing.Point(206, 141);
+            this.textBoxSeedCompany.Location = new System.Drawing.Point(185, 96);
             this.textBoxSeedCompany.Name = "textBoxSeedCompany";
             this.textBoxSeedCompany.Size = new System.Drawing.Size(100, 22);
             this.textBoxSeedCompany.TabIndex = 22;
             // 
             // textBoxVariety
             // 
-            this.textBoxVariety.Location = new System.Drawing.Point(206, 111);
+            this.textBoxVariety.Location = new System.Drawing.Point(185, 66);
             this.textBoxVariety.Name = "textBoxVariety";
             this.textBoxVariety.Size = new System.Drawing.Size(100, 22);
             this.textBoxVariety.TabIndex = 23;
             // 
             // textBoxType
             // 
-            this.textBoxType.Location = new System.Drawing.Point(206, 79);
+            this.textBoxType.Location = new System.Drawing.Point(185, 34);
             this.textBoxType.Name = "textBoxType";
             this.textBoxType.Size = new System.Drawing.Size(100, 22);
             this.textBoxType.TabIndex = 24;
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(337, 379);
+            this.buttonClear.Location = new System.Drawing.Point(372, 516);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
             this.buttonClear.TabIndex = 26;
@@ -246,45 +253,89 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(442, 379);
+            this.buttonSave.Location = new System.Drawing.Point(468, 516);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 27;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
-            // AddNewPlant
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.numericUpDown3);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.numericUpDown2);
+            this.groupBox1.Controls.Add(this.comboBoxPlantingMethod);
+            this.groupBox1.Location = new System.Drawing.Point(43, 283);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(500, 166);
+            this.groupBox1.TabIndex = 28;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Planting";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.textBoxVariety);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.textBoxType);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.textBoxSeedCompany);
+            this.groupBox2.Controls.Add(this.checkBoxOrganic);
+            this.groupBox2.Controls.Add(this.textBoxSeedLotNo);
+            this.groupBox2.Controls.Add(this.checkBoxGMO);
+            this.groupBox2.Controls.Add(this.textBoxSeedOrigin);
+            this.groupBox2.Location = new System.Drawing.Point(44, 68);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(499, 200);
+            this.groupBox2.TabIndex = 29;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Crop Information";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(19, 96);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 17);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Seed per hole";
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(184, 94);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(120, 22);
+            this.numericUpDown3.TabIndex = 18;
+            // 
+            // AddNewCrop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 428);
+            this.ClientSize = new System.Drawing.Size(603, 564);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.textBoxType);
-            this.Controls.Add(this.textBoxVariety);
-            this.Controls.Add(this.textBoxSeedCompany);
-            this.Controls.Add(this.textBoxSeedLotNo);
-            this.Controls.Add(this.textBoxSeedOrigin);
             this.Controls.Add(this.textBoxAddInfo);
-            this.Controls.Add(this.comboBoxPlantingMethod);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.checkBoxGMO);
-            this.Controls.Add(this.checkBoxOrganic);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblNewPlant);
-            this.Name = "AddNewPlant";
-            this.Text = "AddNewPlant";
+            this.Name = "AddNewCrop";
+            this.Text = "AddNewCrop";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,5 +366,9 @@
         private System.Windows.Forms.TextBox textBoxType;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.Label label9;
     }
 }

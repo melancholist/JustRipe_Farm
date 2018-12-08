@@ -1,6 +1,6 @@
 ﻿namespace JustRipeFarm_v3
 {
-    partial class NewExpense
+    partial class AddNewExpense
     {
         /// <summary>
         /// Required designer variable.

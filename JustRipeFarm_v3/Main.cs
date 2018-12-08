@@ -205,10 +205,10 @@ namespace JustRipeFarm_v3
         }
 
         //Redirect user to add new plant form
-        private void btnAddNewPlant_Click(object sender, EventArgs e)
+        private void btnAddNewCrop_Click(object sender, EventArgs e)
         {
-            AddNewPlant addNewPlant = new AddNewPlant();
-            addNewPlant.Show();
+            AddNewCrop addNewCrop = new AddNewCrop();
+            addNewCrop.Show();
         }
 
         //Equipment panel appears and crops panel is hidden when button is clicked
@@ -255,14 +255,14 @@ namespace JustRipeFarm_v3
         //New Expense form appears when button is clicked
         private void btnNewExpense_Click(object sender, EventArgs e)
         {
-            NewExpense newExpense = new NewExpense();
+            AddNewExpense newExpense = new AddNewExpense();
             newExpense.Show();
         }
 
         //New Income form appears when button is clicked
         private void btnNewIncome_Click(object sender, EventArgs e)
         {
-            NewIncome newIncome = new NewIncome();
+            AddNewIncome newIncome = new AddNewIncome();
             newIncome.Show();
         }
 

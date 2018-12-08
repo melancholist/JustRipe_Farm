@@ -73,11 +73,11 @@
     <Compile Include="AddNewEquipment.Designer.cs">
       <DependentUpon>AddNewEquipment.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNewPlant.cs">
+    <Compile Include="AddNewCrop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewPlant.Designer.cs">
-      <DependentUpon>AddNewPlant.cs</DependentUpon>
+    <Compile Include="AddNewCrop.Designer.cs">
+      <DependentUpon>AddNewCrop.cs</DependentUpon>
     </Compile>
     <Compile Include="AddStaff.cs">
       <SubType>Form</SubType>
@@ -101,12 +101,14 @@
     <Compile Include="loadingScreen.Designer.cs">
       <DependentUpon>loadingScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewExpense.cs">
+    <Compile Include="AddNewExpense.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewExpense.Designer.cs">
-      <DependentUpon>NewExpense.cs</DependentUpon>
+    <Compile Include="AddNewExpense.Designer.cs">
+      <DependentUpon>AddNewExpense.cs</DependentUpon>
     </Compile>
+    <Compile Include="Crop.cs" />
+    <Compile Include="CropHandler.cs" />
     <Compile Include="Schedule.cs" />
     <Compile Include="Staff.cs" />
     <Compile Include="StaffHandler.cs" />
@@ -130,11 +132,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="NewIncome.cs">
+    <Compile Include="AddNewIncome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewIncome.Designer.cs">
-      <DependentUpon>NewIncome.cs</DependentUpon>
+    <Compile Include="AddNewIncome.Designer.cs">
+      <DependentUpon>AddNewIncome.cs</DependentUpon>
     </Compile>
     <Compile Include="ResetPassword.cs">
       <SubType>Form</SubType>
@@ -146,8 +148,8 @@
     <EmbeddedResource Include="AddNewEquipment.resx">
       <DependentUpon>AddNewEquipment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNewPlant.resx">
-      <DependentUpon>AddNewPlant.cs</DependentUpon>
+    <EmbeddedResource Include="AddNewCrop.resx">
+      <DependentUpon>AddNewCrop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddStaff.resx">
       <DependentUpon>AddStaff.cs</DependentUpon>
@@ -158,8 +160,8 @@
     <EmbeddedResource Include="loadingScreen.resx">
       <DependentUpon>loadingScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewExpense.resx">
-      <DependentUpon>NewExpense.cs</DependentUpon>
+    <EmbeddedResource Include="AddNewExpense.resx">
+      <DependentUpon>AddNewExpense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffManagement.resx">
       <DependentUpon>StaffManagement.cs</DependentUpon>
@@ -179,8 +181,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="NewIncome.resx">
-      <DependentUpon>NewIncome.cs</DependentUpon>
+    <EmbeddedResource Include="AddNewIncome.resx">
+      <DependentUpon>AddNewIncome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>

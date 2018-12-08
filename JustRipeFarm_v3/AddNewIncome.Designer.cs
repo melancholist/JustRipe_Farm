@@ -1,6 +1,6 @@
 ﻿namespace JustRipeFarm_v3
 {
-    partial class NewIncome
+    partial class AddNewIncome
     {
         /// <summary>
         /// Required designer variable.

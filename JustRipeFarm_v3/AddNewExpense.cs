@@ -11,12 +11,12 @@ using MySql.Data.MySqlClient;
 
 namespace JustRipeFarm_v3
 {
-    public partial class NewExpense : Form
+    public partial class AddNewExpense : Form
     {
-        NewExpense expense = new NewExpense();
+        AddNewExpense expense = new AddNewExpense();
         DbConnector DBConn = new DbConnector();
 
-        public NewExpense()
+        public AddNewExpense()
         {
             InitializeComponent();
         }

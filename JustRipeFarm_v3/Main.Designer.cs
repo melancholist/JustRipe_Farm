@@ -74,7 +74,7 @@
             this.pnlResources = new System.Windows.Forms.Panel();
             this.pnlCrops = new System.Windows.Forms.Panel();
             this.dataGridViewCrops = new System.Windows.Forms.DataGridView();
-            this.btnAddNewPlant = new System.Windows.Forms.Button();
+            this.btnAddNewCrop = new System.Windows.Forms.Button();
             this.lblResources = new System.Windows.Forms.Label();
             this.btnEquipment = new System.Windows.Forms.Button();
             this.btnCrops = new System.Windows.Forms.Button();
@@ -546,9 +546,9 @@
             this.pnlAccounting.Controls.Add(this.btnExpenses);
             this.pnlAccounting.Controls.Add(this.btnIncomeSales);
             this.pnlAccounting.Controls.Add(this.lblAccounting);
-            this.pnlAccounting.Location = new System.Drawing.Point(234, 64);
+            this.pnlAccounting.Location = new System.Drawing.Point(231, 64);
             this.pnlAccounting.Name = "pnlAccounting";
-            this.pnlAccounting.Size = new System.Drawing.Size(966, 642);
+            this.pnlAccounting.Size = new System.Drawing.Size(969, 642);
             this.pnlAccounting.TabIndex = 0;
             // 
             // pnlAccMain
@@ -682,7 +682,7 @@
             // pnlCrops
             // 
             this.pnlCrops.Controls.Add(this.dataGridViewCrops);
-            this.pnlCrops.Controls.Add(this.btnAddNewPlant);
+            this.pnlCrops.Controls.Add(this.btnAddNewCrop);
             this.pnlCrops.Location = new System.Drawing.Point(43, 82);
             this.pnlCrops.Name = "pnlCrops";
             this.pnlCrops.Size = new System.Drawing.Size(704, 450);
@@ -697,15 +697,15 @@
             this.dataGridViewCrops.Size = new System.Drawing.Size(581, 301);
             this.dataGridViewCrops.TabIndex = 2;
             // 
-            // btnAddNewPlant
+            // btnAddNewCrop
             // 
-            this.btnAddNewPlant.Location = new System.Drawing.Point(53, 31);
-            this.btnAddNewPlant.Name = "btnAddNewPlant";
-            this.btnAddNewPlant.Size = new System.Drawing.Size(117, 38);
-            this.btnAddNewPlant.TabIndex = 1;
-            this.btnAddNewPlant.Text = "Add new plant";
-            this.btnAddNewPlant.UseVisualStyleBackColor = true;
-            this.btnAddNewPlant.Click += new System.EventHandler(this.btnAddNewPlant_Click);
+            this.btnAddNewCrop.Location = new System.Drawing.Point(53, 31);
+            this.btnAddNewCrop.Name = "btnAddNewCrop";
+            this.btnAddNewCrop.Size = new System.Drawing.Size(117, 38);
+            this.btnAddNewCrop.TabIndex = 1;
+            this.btnAddNewCrop.Text = "Add new crop";
+            this.btnAddNewCrop.UseVisualStyleBackColor = true;
+            this.btnAddNewCrop.Click += new System.EventHandler(this.btnAddNewCrop_Click);
             // 
             // lblResources
             // 
@@ -975,7 +975,7 @@
         private System.Windows.Forms.Label lblIncome;
         private System.Windows.Forms.Panel pnlResources;
         private System.Windows.Forms.Panel pnlCrops;
-        private System.Windows.Forms.Button btnAddNewPlant;
+        private System.Windows.Forms.Button btnAddNewCrop;
         private System.Windows.Forms.Button btnEquipment;
         private System.Windows.Forms.Button btnCrops;
         private System.Windows.Forms.Label lblResources;
