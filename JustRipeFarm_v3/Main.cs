@@ -279,5 +279,17 @@ namespace JustRipeFarm_v3
             pnlIncome.Hide();
             pnlExpenses.Show();
         }
+
+        private void btnMaintenance_Click(object sender, EventArgs e)
+        {
+            pnlIncome.Hide();
+            pnlExpenses.Show();
+        }
+
+        private void btnNewServiceRecord_Click(object sender, EventArgs e)
+        {
+            AddNewServiceRecord addNewServiceRecord = new AddNewServiceRecord();
+            addNewServiceRecord.Show();
+        }
     }
 }

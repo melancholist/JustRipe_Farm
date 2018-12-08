@@ -31,6 +31,7 @@ namespace JustRipeFarm_v3
             equipment.Brand = textBoxBrand.Text;
             equipment.Model = textBoxModel.Text;
             equipment.SerialNumber = textBoxSerialNumber.Text;
+            equipment.PurchaseDate = dateTimePicker.Value.Date;
             equipment.Price = Decimal.Parse(textBoxPrice.Text);
             equipment.Description = textBoxDescription.Text;
 

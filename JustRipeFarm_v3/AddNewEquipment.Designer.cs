@@ -39,7 +39,7 @@
             this.textBoxBrand = new System.Windows.Forms.TextBox();
             this.textBoxModel = new System.Windows.Forms.TextBox();
             this.textBoxSerialNumber = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.buttonClear = new System.Windows.Forms.Button();
@@ -139,12 +139,12 @@
             this.textBoxSerialNumber.Size = new System.Drawing.Size(100, 22);
             this.textBoxSerialNumber.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(207, 203);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 14;
+            this.dateTimePicker.Location = new System.Drawing.Point(207, 203);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker.TabIndex = 14;
             // 
             // textBoxPrice
             // 
@@ -199,7 +199,7 @@
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.textBoxDescription);
             this.Controls.Add(this.textBoxPrice);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.textBoxSerialNumber);
             this.Controls.Add(this.textBoxModel);
             this.Controls.Add(this.textBoxBrand);
@@ -231,7 +231,7 @@
         private System.Windows.Forms.TextBox textBoxBrand;
         private System.Windows.Forms.TextBox textBoxModel;
         private System.Windows.Forms.TextBox textBoxSerialNumber;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.TextBox textBoxPrice;
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.Button buttonClear;

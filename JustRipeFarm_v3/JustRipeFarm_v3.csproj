@@ -79,6 +79,12 @@
     <Compile Include="AddNewCrop.Designer.cs">
       <DependentUpon>AddNewCrop.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddNewServiceRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewServiceRecord.Designer.cs">
+      <DependentUpon>AddNewServiceRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddStaff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,8 @@
     <Compile Include="Crop.cs" />
     <Compile Include="CropHandler.cs" />
     <Compile Include="Schedule.cs" />
+    <Compile Include="ServiceRecord.cs" />
+    <Compile Include="ServiceRecordHandler.cs" />
     <Compile Include="Staff.cs" />
     <Compile Include="StaffHandler.cs" />
     <Compile Include="StaffManagement.cs">
@@ -152,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddNewCrop.resx">
       <DependentUpon>AddNewCrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewServiceRecord.resx">
+      <DependentUpon>AddNewServiceRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddStaff.resx">
       <DependentUpon>AddStaff.cs</DependentUpon>

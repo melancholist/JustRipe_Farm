@@ -72,15 +72,21 @@
             this.btnIncomeSales = new System.Windows.Forms.Button();
             this.lblAccounting = new System.Windows.Forms.Label();
             this.pnlResources = new System.Windows.Forms.Panel();
+            this.pnlEquipment = new System.Windows.Forms.Panel();
+            this.pnlMaintenance = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnNewServiceRecord = new System.Windows.Forms.Button();
+            this.dataGridViewMaintenance = new System.Windows.Forms.DataGridView();
+            this.pnlEqMain = new System.Windows.Forms.Panel();
+            this.dataGridViewEquipment = new System.Windows.Forms.DataGridView();
+            this.btnMaintenance = new System.Windows.Forms.Button();
+            this.btnAddNewEq = new System.Windows.Forms.Button();
             this.pnlCrops = new System.Windows.Forms.Panel();
             this.dataGridViewCrops = new System.Windows.Forms.DataGridView();
             this.btnAddNewCrop = new System.Windows.Forms.Button();
             this.lblResources = new System.Windows.Forms.Label();
             this.btnEquipment = new System.Windows.Forms.Button();
             this.btnCrops = new System.Windows.Forms.Button();
-            this.pnlEquipment = new System.Windows.Forms.Panel();
-            this.dataGridViewEquipment = new System.Windows.Forms.DataGridView();
-            this.btnAddNewEq = new System.Windows.Forms.Button();
             this.pnlStorage = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlStocks = new System.Windows.Forms.Panel();
@@ -107,10 +113,13 @@
             this.pnlIncome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).BeginInit();
             this.pnlResources.SuspendLayout();
+            this.pnlEquipment.SuspendLayout();
+            this.pnlMaintenance.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaintenance)).BeginInit();
+            this.pnlEqMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).BeginInit();
             this.pnlCrops.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCrops)).BeginInit();
-            this.pnlEquipment.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).BeginInit();
             this.pnlStorage.SuspendLayout();
             this.pnlStocks.SuspendLayout();
             this.pnlOnlineStore.SuspendLayout();
@@ -323,7 +332,7 @@
             this.btnStorage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStorage.ForeColor = System.Drawing.Color.White;
             this.btnStorage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStorage.Location = new System.Drawing.Point(1, 332);
+            this.btnStorage.Location = new System.Drawing.Point(1, 334);
             this.btnStorage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStorage.Name = "btnStorage";
             this.btnStorage.Size = new System.Drawing.Size(229, 82);
@@ -669,15 +678,102 @@
             // pnlResources
             // 
             this.pnlResources.BackColor = System.Drawing.Color.Gray;
+            this.pnlResources.Controls.Add(this.pnlEquipment);
             this.pnlResources.Controls.Add(this.pnlCrops);
             this.pnlResources.Controls.Add(this.lblResources);
             this.pnlResources.Controls.Add(this.btnEquipment);
             this.pnlResources.Controls.Add(this.btnCrops);
-            this.pnlResources.Controls.Add(this.pnlEquipment);
-            this.pnlResources.Location = new System.Drawing.Point(234, 64);
+            this.pnlResources.Location = new System.Drawing.Point(231, 64);
             this.pnlResources.Name = "pnlResources";
-            this.pnlResources.Size = new System.Drawing.Size(963, 696);
+            this.pnlResources.Size = new System.Drawing.Size(969, 696);
             this.pnlResources.TabIndex = 6;
+            // 
+            // pnlEquipment
+            // 
+            this.pnlEquipment.Controls.Add(this.pnlMaintenance);
+            this.pnlEquipment.Controls.Add(this.pnlEqMain);
+            this.pnlEquipment.Controls.Add(this.btnMaintenance);
+            this.pnlEquipment.Controls.Add(this.btnAddNewEq);
+            this.pnlEquipment.Location = new System.Drawing.Point(43, 82);
+            this.pnlEquipment.Name = "pnlEquipment";
+            this.pnlEquipment.Size = new System.Drawing.Size(835, 517);
+            this.pnlEquipment.TabIndex = 4;
+            // 
+            // pnlMaintenance
+            // 
+            this.pnlMaintenance.Controls.Add(this.label3);
+            this.pnlMaintenance.Controls.Add(this.btnNewServiceRecord);
+            this.pnlMaintenance.Controls.Add(this.dataGridViewMaintenance);
+            this.pnlMaintenance.Location = new System.Drawing.Point(26, 77);
+            this.pnlMaintenance.Name = "pnlMaintenance";
+            this.pnlMaintenance.Size = new System.Drawing.Size(777, 428);
+            this.pnlMaintenance.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(52, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(249, 29);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Maintenance History";
+            // 
+            // btnNewServiceRecord
+            // 
+            this.btnNewServiceRecord.Location = new System.Drawing.Point(596, 379);
+            this.btnNewServiceRecord.Name = "btnNewServiceRecord";
+            this.btnNewServiceRecord.Size = new System.Drawing.Size(146, 32);
+            this.btnNewServiceRecord.TabIndex = 1;
+            this.btnNewServiceRecord.Text = "New Service Record";
+            this.btnNewServiceRecord.UseVisualStyleBackColor = true;
+            this.btnNewServiceRecord.Click += new System.EventHandler(this.btnNewServiceRecord_Click);
+            // 
+            // dataGridViewMaintenance
+            // 
+            this.dataGridViewMaintenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMaintenance.Location = new System.Drawing.Point(52, 71);
+            this.dataGridViewMaintenance.Name = "dataGridViewMaintenance";
+            this.dataGridViewMaintenance.RowTemplate.Height = 24;
+            this.dataGridViewMaintenance.Size = new System.Drawing.Size(620, 299);
+            this.dataGridViewMaintenance.TabIndex = 0;
+            // 
+            // pnlEqMain
+            // 
+            this.pnlEqMain.Controls.Add(this.dataGridViewEquipment);
+            this.pnlEqMain.Location = new System.Drawing.Point(27, 77);
+            this.pnlEqMain.Name = "pnlEqMain";
+            this.pnlEqMain.Size = new System.Drawing.Size(728, 399);
+            this.pnlEqMain.TabIndex = 3;
+            // 
+            // dataGridViewEquipment
+            // 
+            this.dataGridViewEquipment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEquipment.Location = new System.Drawing.Point(51, 51);
+            this.dataGridViewEquipment.Name = "dataGridViewEquipment";
+            this.dataGridViewEquipment.RowTemplate.Height = 24;
+            this.dataGridViewEquipment.Size = new System.Drawing.Size(578, 291);
+            this.dataGridViewEquipment.TabIndex = 1;
+            // 
+            // btnMaintenance
+            // 
+            this.btnMaintenance.Location = new System.Drawing.Point(231, 26);
+            this.btnMaintenance.Name = "btnMaintenance";
+            this.btnMaintenance.Size = new System.Drawing.Size(128, 37);
+            this.btnMaintenance.TabIndex = 2;
+            this.btnMaintenance.Text = "Maintenance";
+            this.btnMaintenance.UseVisualStyleBackColor = true;
+            this.btnMaintenance.Click += new System.EventHandler(this.btnMaintenance_Click);
+            // 
+            // btnAddNewEq
+            // 
+            this.btnAddNewEq.Location = new System.Drawing.Point(34, 26);
+            this.btnAddNewEq.Name = "btnAddNewEq";
+            this.btnAddNewEq.Size = new System.Drawing.Size(158, 37);
+            this.btnAddNewEq.TabIndex = 0;
+            this.btnAddNewEq.Text = "Add New Equipment";
+            this.btnAddNewEq.UseVisualStyleBackColor = true;
+            this.btnAddNewEq.Click += new System.EventHandler(this.btnAddNewEq_Click);
             // 
             // pnlCrops
             // 
@@ -736,34 +832,6 @@
             this.btnCrops.Text = "Crops";
             this.btnCrops.UseVisualStyleBackColor = true;
             this.btnCrops.Click += new System.EventHandler(this.btnCrops_Click);
-            // 
-            // pnlEquipment
-            // 
-            this.pnlEquipment.Controls.Add(this.dataGridViewEquipment);
-            this.pnlEquipment.Controls.Add(this.btnAddNewEq);
-            this.pnlEquipment.Location = new System.Drawing.Point(43, 85);
-            this.pnlEquipment.Name = "pnlEquipment";
-            this.pnlEquipment.Size = new System.Drawing.Size(704, 444);
-            this.pnlEquipment.TabIndex = 4;
-            // 
-            // dataGridViewEquipment
-            // 
-            this.dataGridViewEquipment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEquipment.Location = new System.Drawing.Point(34, 80);
-            this.dataGridViewEquipment.Name = "dataGridViewEquipment";
-            this.dataGridViewEquipment.RowTemplate.Height = 24;
-            this.dataGridViewEquipment.Size = new System.Drawing.Size(593, 291);
-            this.dataGridViewEquipment.TabIndex = 1;
-            // 
-            // btnAddNewEq
-            // 
-            this.btnAddNewEq.Location = new System.Drawing.Point(34, 26);
-            this.btnAddNewEq.Name = "btnAddNewEq";
-            this.btnAddNewEq.Size = new System.Drawing.Size(158, 37);
-            this.btnAddNewEq.TabIndex = 0;
-            this.btnAddNewEq.Text = "Add New Equipment";
-            this.btnAddNewEq.UseVisualStyleBackColor = true;
-            this.btnAddNewEq.Click += new System.EventHandler(this.btnAddNewEq_Click);
             // 
             // pnlStorage
             // 
@@ -890,8 +958,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
-            this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.pnlResources);
+            this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.pnlStorage);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlSchedule);
@@ -922,10 +990,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).EndInit();
             this.pnlResources.ResumeLayout(false);
             this.pnlResources.PerformLayout();
+            this.pnlEquipment.ResumeLayout(false);
+            this.pnlMaintenance.ResumeLayout(false);
+            this.pnlMaintenance.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaintenance)).EndInit();
+            this.pnlEqMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).EndInit();
             this.pnlCrops.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCrops)).EndInit();
-            this.pnlEquipment.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).EndInit();
             this.pnlStorage.ResumeLayout(false);
             this.pnlStorage.PerformLayout();
             this.pnlStocks.ResumeLayout(false);
@@ -1004,5 +1076,11 @@
         private System.Windows.Forms.Button btnExpenses;
         private System.Windows.Forms.Button btnIncomeSales;
         private System.Windows.Forms.Panel pnlAccMain;
+        private System.Windows.Forms.Panel pnlMaintenance;
+        private System.Windows.Forms.Panel pnlEqMain;
+        private System.Windows.Forms.Button btnMaintenance;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnNewServiceRecord;
+        private System.Windows.Forms.DataGridView dataGridViewMaintenance;
     }
 }
