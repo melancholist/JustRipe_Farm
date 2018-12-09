@@ -110,11 +110,11 @@
       <DependentUpon>AssignTask.cs</DependentUpon>
     </Compile>
     <Compile Include="DbConnector.cs" />
-    <Compile Include="Equipment.cs" />
-    <Compile Include="EquipmentHandler.cs" />
-    <Compile Include="Expense.cs" />
-    <Compile Include="ExpenseHandler.cs" />
-    <Compile Include="Income.cs" />
+    <Compile Include="Classes\Equipment.cs" />
+    <Compile Include="ClassHandlers\EquipmentHandler.cs" />
+    <Compile Include="Classes\Expense.cs" />
+    <Compile Include="ClassHandlers\ExpenseHandler.cs" />
+    <Compile Include="Classes\Income.cs" />
     <Compile Include="loadingScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,15 +127,15 @@
     <Compile Include="AddNewExpense.Designer.cs">
       <DependentUpon>AddNewExpense.cs</DependentUpon>
     </Compile>
-    <Compile Include="Crop.cs" />
-    <Compile Include="CropHandler.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="ProductHandler.cs" />
-    <Compile Include="Schedule.cs" />
-    <Compile Include="ServiceRecord.cs" />
-    <Compile Include="ServiceRecordHandler.cs" />
-    <Compile Include="Staff.cs" />
-    <Compile Include="StaffHandler.cs" />
+    <Compile Include="Classes\Crop.cs" />
+    <Compile Include="ClassHandlers\CropHandler.cs" />
+    <Compile Include="Classes\Product.cs" />
+    <Compile Include="ClassHandlers\ProductHandler.cs" />
+    <Compile Include="Classes\Schedule.cs" />
+    <Compile Include="Classes\ServiceRecord.cs" />
+    <Compile Include="ClassHandlers\ServiceRecordHandler.cs" />
+    <Compile Include="Classes\Staff.cs" />
+    <Compile Include="ClassHandlers\StaffHandler.cs" />
     <Compile Include="StaffManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,9 +168,9 @@
     <Compile Include="ResetPassword.Designer.cs">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="IncomeHandler.cs" />
-    <Compile Include="Vehicle.cs" />
-    <Compile Include="VehicleHandler.cs" />
+    <Compile Include="ClassHandlers\IncomeHandler.cs" />
+    <Compile Include="Classes\Vehicle.cs" />
+    <Compile Include="ClassHandlers\VehicleHandler.cs" />
     <EmbeddedResource Include="AddNewEquipment.resx">
       <DependentUpon>AddNewEquipment.cs</DependentUpon>
     </EmbeddedResource>
