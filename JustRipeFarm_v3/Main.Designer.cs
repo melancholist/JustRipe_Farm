@@ -846,14 +846,14 @@
             // pnlStocks
             // 
             this.pnlStocks.BackColor = System.Drawing.Color.DarkGray;
+            this.pnlStocks.Controls.Add(this.pnlProducts);
             this.pnlStocks.Controls.Add(this.pnlOnlineStore);
             this.pnlStocks.Controls.Add(this.btnOnlineStore);
-            this.pnlStocks.Controls.Add(this.pnlProducts);
             this.pnlStocks.Controls.Add(this.btnProducts);
             this.pnlStocks.Controls.Add(this.lblStocks);
-            this.pnlStocks.Location = new System.Drawing.Point(231, 65);
+            this.pnlStocks.Location = new System.Drawing.Point(231, 64);
             this.pnlStocks.Name = "pnlStocks";
-            this.pnlStocks.Size = new System.Drawing.Size(972, 726);
+            this.pnlStocks.Size = new System.Drawing.Size(969, 727);
             this.pnlStocks.TabIndex = 1;
             // 
             // pnlOnlineStore
@@ -890,9 +890,9 @@
             this.pnlProducts.Controls.Add(this.btnAddNewProduct);
             this.pnlProducts.Controls.Add(this.lblProducts);
             this.pnlProducts.Controls.Add(this.dataGridView2);
-            this.pnlProducts.Location = new System.Drawing.Point(35, 75);
+            this.pnlProducts.Location = new System.Drawing.Point(35, 73);
             this.pnlProducts.Name = "pnlProducts";
-            this.pnlProducts.Size = new System.Drawing.Size(706, 400);
+            this.pnlProducts.Size = new System.Drawing.Size(709, 402);
             this.pnlProducts.TabIndex = 2;
             // 
             // btnAddNewProduct
@@ -903,6 +903,7 @@
             this.btnAddNewProduct.TabIndex = 2;
             this.btnAddNewProduct.Text = "Add new product";
             this.btnAddNewProduct.UseVisualStyleBackColor = true;
+            this.btnAddNewProduct.Click += new System.EventHandler(this.btnAddNewProduct_Click);
             // 
             // lblProducts
             // 
@@ -949,13 +950,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
+            this.Controls.Add(this.pnlStocks);
             this.Controls.Add(this.pnlResources);
             this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.pnlStorage);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlSchedule);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pnlStocks);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Main";

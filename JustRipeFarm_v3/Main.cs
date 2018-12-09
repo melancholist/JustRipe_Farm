@@ -287,5 +287,11 @@ namespace JustRipeFarm_v3
             AddNewServiceRecord addNewServiceRecord = new AddNewServiceRecord();
             addNewServiceRecord.Show();
         }
+
+        private void btnAddNewProduct_Click(object sender, EventArgs e)
+        {
+            AddNewProduct addNewProduct = new AddNewProduct();
+            addNewProduct.Show();
+        }
     }
 }

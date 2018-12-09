@@ -52,14 +52,16 @@
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNewPlant
@@ -263,6 +265,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.numericUpDown3);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.numericUpDown1);
@@ -277,6 +281,41 @@
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Planting";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(311, 63);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(26, 17);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "cm";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(311, 32);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(26, 17);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "cm";
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(184, 94);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(120, 22);
+            this.numericUpDown3.TabIndex = 18;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(19, 96);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 17);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Seed per hole";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // groupBox2
             // 
@@ -299,22 +338,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Crop Information";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(19, 96);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 17);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Seed per hole";
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(184, 94);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown3.TabIndex = 18;
-            // 
             // AddNewCrop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -333,9 +356,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,5 +393,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label10;
     }
 }
