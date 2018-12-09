@@ -447,7 +447,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.ComboBox statusComboBox;
         public System.Windows.Forms.TextBox fnameTextBox;
         public System.Windows.Forms.TextBox ageTextBox;
         public System.Windows.Forms.TextBox lnameTextBox;
@@ -463,5 +462,6 @@
         public System.Windows.Forms.Label lblWage;
         public System.Windows.Forms.DateTimePicker hiredDateTimePicker;
         private Bunifu.Framework.UI.BunifuImageButton picBoxBack;
+        public System.Windows.Forms.ComboBox statusComboBox;
     }
 }

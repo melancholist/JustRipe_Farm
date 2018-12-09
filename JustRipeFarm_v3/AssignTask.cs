@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Globalization;
 
 namespace JustRipeFarm_v3
 {
@@ -104,7 +105,7 @@ namespace JustRipeFarm_v3
             Sowing sow = new Sowing();
             sow.LabourerName = comboBoxWorkers.Text;
             sow.FarmSector = int.Parse(comboBoxFarmSectorSow.Text);
-            sow.Date = DateTime.ParseExact(textBoxSowDate.Text, "d-M-yyyy", System.Globalization.CultureInfo.InvariantCulture);
+            sow.Date = DateTime.ParseExact(textBoxSowDate.Text, "d-M-yyyy", CultureInfo.InvariantCulture);
             sow.Method = comboBoxMethods.Text;
             sow.Seed = comboBoxSeeds.Text;
             sow.Quantity = numericUpDownQauntity.Value;
@@ -123,7 +124,7 @@ namespace JustRipeFarm_v3
             Harvest harv = new Harvest();
             harv.LabourerName = comboBoxWorkerHarv.Text;
             harv.FarmSector = int.Parse(comboBoxFarmSectorHarv.Text);
-            harv.Date = DateTime.ParseExact(textBoxHarvDate.Text, "d-M-yyyy", System.Globalization.CultureInfo.InvariantCulture);
+            harv.Date = DateTime.ParseExact(textBoxHarvDate.Text, "d-M-yyyy", CultureInfo.InvariantCulture);
             harv.Method = comboBoxHarvestMehtod.Text;
             harv.PlantType = comboBoxPlantType.Text;
             harv.StorageUnit = int.Parse(comboBoxStorageUnit.Text);
