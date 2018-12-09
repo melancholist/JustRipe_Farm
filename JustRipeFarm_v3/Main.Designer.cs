@@ -98,6 +98,10 @@
             this.btnOnlineStore = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.lblStocks = new System.Windows.Forms.Label();
+            this.panelVehicle = new System.Windows.Forms.Panel();
+            this.labelVeh = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridViewVehicle = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -124,6 +128,8 @@
             this.pnlProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
             this.pnlOnlineStore.SuspendLayout();
+            this.panelVehicle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -944,18 +950,57 @@
             this.lblStocks.TabIndex = 0;
             this.lblStocks.Text = "Stocks";
             // 
+            // panelVehicle
+            // 
+            this.panelVehicle.Controls.Add(this.dataGridViewVehicle);
+            this.panelVehicle.Controls.Add(this.button1);
+            this.panelVehicle.Controls.Add(this.labelVeh);
+            this.panelVehicle.Location = new System.Drawing.Point(231, 64);
+            this.panelVehicle.Name = "panelVehicle";
+            this.panelVehicle.Size = new System.Drawing.Size(970, 673);
+            this.panelVehicle.TabIndex = 5;
+            // 
+            // labelVeh
+            // 
+            this.labelVeh.AutoSize = true;
+            this.labelVeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVeh.Location = new System.Drawing.Point(43, 37);
+            this.labelVeh.Name = "labelVeh";
+            this.labelVeh.Size = new System.Drawing.Size(117, 32);
+            this.labelVeh.TabIndex = 0;
+            this.labelVeh.Text = "Vehicle";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(227, 43);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(143, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Add new vehicle";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewVehicle
+            // 
+            this.dataGridViewVehicle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewVehicle.Location = new System.Drawing.Point(59, 122);
+            this.dataGridViewVehicle.Name = "dataGridViewVehicle";
+            this.dataGridViewVehicle.RowTemplate.Height = 24;
+            this.dataGridViewVehicle.Size = new System.Drawing.Size(654, 379);
+            this.dataGridViewVehicle.TabIndex = 2;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
+            this.Controls.Add(this.panelVehicle);
+            this.Controls.Add(this.pnlSchedule);
             this.Controls.Add(this.pnlStocks);
             this.Controls.Add(this.pnlResources);
             this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.pnlStorage);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pnlSchedule);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -999,6 +1044,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
             this.pnlOnlineStore.ResumeLayout(false);
             this.pnlOnlineStore.PerformLayout();
+            this.panelVehicle.ResumeLayout(false);
+            this.panelVehicle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1073,5 +1121,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnNewServiceRecord;
         private System.Windows.Forms.DataGridView dataGridViewMaintenance;
+        private System.Windows.Forms.Panel panelVehicle;
+        private System.Windows.Forms.Label labelVeh;
+        private System.Windows.Forms.DataGridView dataGridViewVehicle;
+        private System.Windows.Forms.Button button1;
     }
 }
