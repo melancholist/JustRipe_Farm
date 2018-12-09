@@ -36,7 +36,6 @@
             this.btnClearHarv = new System.Windows.Forms.Button();
             this.btnSaveHarv = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBoxPlant = new System.Windows.Forms.TextBox();
             this.comboBoxStorageUnit = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.comboBoxFarmSectorHarv = new System.Windows.Forms.ComboBox();
@@ -64,7 +63,7 @@
             this.comboBoxFarmT = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownFertilisers = new System.Windows.Forms.NumericUpDown();
             this.label21 = new System.Windows.Forms.Label();
             this.comboBoxFertilisers = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -76,8 +75,8 @@
             this.comboBoxVehicles = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
             this.btnClearDrive = new System.Windows.Forms.Button();
-            this.btnSaveDive = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnSaveDrive = new System.Windows.Forms.Button();
+            this.textBoxDrivingDate = new System.Windows.Forms.TextBox();
             this.monthCalendarDriving = new System.Windows.Forms.MonthCalendar();
             this.comboBoxFarmD = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
@@ -109,11 +108,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxWorkers = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.comboBoxPlantType = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).BeginInit();
             this.pnlHarvest.SuspendLayout();
             this.pnlTreatment.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFertilisers)).BeginInit();
             this.pnlDriving.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnlSowing.SuspendLayout();
@@ -160,10 +160,10 @@
             // pnlHarvest
             // 
             this.pnlHarvest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlHarvest.Controls.Add(this.comboBoxPlantType);
             this.pnlHarvest.Controls.Add(this.btnClearHarv);
             this.pnlHarvest.Controls.Add(this.btnSaveHarv);
             this.pnlHarvest.Controls.Add(this.label18);
-            this.pnlHarvest.Controls.Add(this.textBoxPlant);
             this.pnlHarvest.Controls.Add(this.comboBoxStorageUnit);
             this.pnlHarvest.Controls.Add(this.label17);
             this.pnlHarvest.Controls.Add(this.comboBoxFarmSectorHarv);
@@ -200,6 +200,7 @@
             this.btnClearHarv.TabIndex = 23;
             this.btnClearHarv.Text = "Clear";
             this.btnClearHarv.UseVisualStyleBackColor = false;
+            this.btnClearHarv.Click += new System.EventHandler(this.btnClearHarv_Click);
             // 
             // btnSaveHarv
             // 
@@ -216,6 +217,7 @@
             this.btnSaveHarv.TabIndex = 7;
             this.btnSaveHarv.Text = "Save";
             this.btnSaveHarv.UseVisualStyleBackColor = false;
+            this.btnSaveHarv.Click += new System.EventHandler(this.btnSaveHarv_Click);
             // 
             // label18
             // 
@@ -227,14 +229,6 @@
             this.label18.Size = new System.Drawing.Size(113, 23);
             this.label18.TabIndex = 22;
             this.label18.Text = "Plant type:";
-            // 
-            // textBoxPlant
-            // 
-            this.textBoxPlant.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPlant.Location = new System.Drawing.Point(180, 384);
-            this.textBoxPlant.Name = "textBoxPlant";
-            this.textBoxPlant.Size = new System.Drawing.Size(215, 30);
-            this.textBoxPlant.TabIndex = 21;
             // 
             // comboBoxStorageUnit
             // 
@@ -363,6 +357,7 @@
             this.monthCalendarHarvest.Location = new System.Drawing.Point(533, 24);
             this.monthCalendarHarvest.Name = "monthCalendarHarvest";
             this.monthCalendarHarvest.TabIndex = 4;
+            this.monthCalendarHarvest.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendarHarvest_DateChanged);
             // 
             // comboBoxHarvestMehtod
             // 
@@ -420,7 +415,7 @@
             this.pnlTreatment.Controls.Add(this.comboBoxFarmT);
             this.pnlTreatment.Controls.Add(this.label23);
             this.pnlTreatment.Controls.Add(this.label22);
-            this.pnlTreatment.Controls.Add(this.numericUpDown1);
+            this.pnlTreatment.Controls.Add(this.numericUpDownFertilisers);
             this.pnlTreatment.Controls.Add(this.label21);
             this.pnlTreatment.Controls.Add(this.comboBoxFertilisers);
             this.pnlTreatment.Controls.Add(this.label20);
@@ -448,6 +443,7 @@
             this.btnClearT.TabIndex = 23;
             this.btnClearT.Text = "Clear";
             this.btnClearT.UseVisualStyleBackColor = false;
+            this.btnClearT.Click += new System.EventHandler(this.btnClearT_Click);
             // 
             // btnSaveT
             // 
@@ -523,6 +519,7 @@
             this.monthCalendarTreatment.Location = new System.Drawing.Point(533, 27);
             this.monthCalendarTreatment.Name = "monthCalendarTreatment";
             this.monthCalendarTreatment.TabIndex = 9;
+            this.monthCalendarTreatment.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendarTreatment_DateChanged);
             // 
             // comboBoxFarmT
             // 
@@ -556,13 +553,14 @@
             this.label22.TabIndex = 6;
             this.label22.Text = "kg";
             // 
-            // numericUpDown1
+            // numericUpDownFertilisers
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(148, 242);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 27);
-            this.numericUpDown1.TabIndex = 5;
+            this.numericUpDownFertilisers.DecimalPlaces = 2;
+            this.numericUpDownFertilisers.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownFertilisers.Location = new System.Drawing.Point(148, 242);
+            this.numericUpDownFertilisers.Name = "numericUpDownFertilisers";
+            this.numericUpDownFertilisers.Size = new System.Drawing.Size(120, 27);
+            this.numericUpDownFertilisers.TabIndex = 5;
             // 
             // label21
             // 
@@ -635,8 +633,8 @@
             this.pnlDriving.Controls.Add(this.comboBoxVehicles);
             this.pnlDriving.Controls.Add(this.label27);
             this.pnlDriving.Controls.Add(this.btnClearDrive);
-            this.pnlDriving.Controls.Add(this.btnSaveDive);
-            this.pnlDriving.Controls.Add(this.textBox1);
+            this.pnlDriving.Controls.Add(this.btnSaveDrive);
+            this.pnlDriving.Controls.Add(this.textBoxDrivingDate);
             this.pnlDriving.Controls.Add(this.monthCalendarDriving);
             this.pnlDriving.Controls.Add(this.comboBoxFarmD);
             this.pnlDriving.Controls.Add(this.label30);
@@ -695,36 +693,39 @@
             this.btnClearDrive.TabIndex = 23;
             this.btnClearDrive.Text = "Clear";
             this.btnClearDrive.UseVisualStyleBackColor = false;
+            this.btnClearDrive.Click += new System.EventHandler(this.btnClearDrive_Click);
             // 
-            // btnSaveDive
+            // btnSaveDrive
             // 
-            this.btnSaveDive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnSaveDive.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnSaveDive.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnSaveDive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnSaveDive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveDive.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveDive.ForeColor = System.Drawing.Color.White;
-            this.btnSaveDive.Location = new System.Drawing.Point(504, 454);
-            this.btnSaveDive.Name = "btnSaveDive";
-            this.btnSaveDive.Size = new System.Drawing.Size(169, 63);
-            this.btnSaveDive.TabIndex = 7;
-            this.btnSaveDive.Text = "Save";
-            this.btnSaveDive.UseVisualStyleBackColor = false;
+            this.btnSaveDrive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnSaveDrive.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSaveDrive.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnSaveDrive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnSaveDrive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveDrive.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveDrive.ForeColor = System.Drawing.Color.White;
+            this.btnSaveDrive.Location = new System.Drawing.Point(504, 454);
+            this.btnSaveDrive.Name = "btnSaveDrive";
+            this.btnSaveDrive.Size = new System.Drawing.Size(169, 63);
+            this.btnSaveDrive.TabIndex = 7;
+            this.btnSaveDrive.Text = "Save";
+            this.btnSaveDrive.UseVisualStyleBackColor = false;
+            this.btnSaveDrive.Click += new System.EventHandler(this.btnSaveDrive_Click);
             // 
-            // textBox1
+            // textBoxDrivingDate
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(590, 271);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 30);
-            this.textBox1.TabIndex = 17;
+            this.textBoxDrivingDate.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDrivingDate.Location = new System.Drawing.Point(590, 271);
+            this.textBoxDrivingDate.Name = "textBoxDrivingDate";
+            this.textBoxDrivingDate.Size = new System.Drawing.Size(215, 30);
+            this.textBoxDrivingDate.TabIndex = 17;
             // 
             // monthCalendarDriving
             // 
             this.monthCalendarDriving.Location = new System.Drawing.Point(522, 27);
             this.monthCalendarDriving.Name = "monthCalendarDriving";
             this.monthCalendarDriving.TabIndex = 9;
+            this.monthCalendarDriving.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendarDriving_DateChanged);
             // 
             // comboBoxFarmD
             // 
@@ -893,6 +894,7 @@
             this.btnClear.TabIndex = 19;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSaveSow
             // 
@@ -909,6 +911,7 @@
             this.btnSaveSow.TabIndex = 7;
             this.btnSaveSow.Text = "Save";
             this.btnSaveSow.UseVisualStyleBackColor = false;
+            this.btnSaveSow.Click += new System.EventHandler(this.btnSaveSow_Click);
             // 
             // label10
             // 
@@ -923,6 +926,7 @@
             // 
             // numericUpDownQauntity
             // 
+            this.numericUpDownQauntity.DecimalPlaces = 2;
             this.numericUpDownQauntity.Location = new System.Drawing.Point(180, 412);
             this.numericUpDownQauntity.Name = "numericUpDownQauntity";
             this.numericUpDownQauntity.Size = new System.Drawing.Size(120, 22);
@@ -1057,6 +1061,7 @@
             this.monthCalendarSowing.Location = new System.Drawing.Point(533, 18);
             this.monthCalendarSowing.Name = "monthCalendarSowing";
             this.monthCalendarSowing.TabIndex = 4;
+            this.monthCalendarSowing.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendarSowing_DateChanged);
             // 
             // comboBoxMethods
             // 
@@ -1100,14 +1105,33 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Field Workers:";
             // 
+            // comboBoxPlantType
+            // 
+            this.comboBoxPlantType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxPlantType.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxPlantType.FormattingEnabled = true;
+            this.comboBoxPlantType.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.comboBoxPlantType.Location = new System.Drawing.Point(178, 388);
+            this.comboBoxPlantType.Name = "comboBoxPlantType";
+            this.comboBoxPlantType.Size = new System.Drawing.Size(205, 29);
+            this.comboBoxPlantType.TabIndex = 25;
+            // 
             // AssignTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1069, 670);
-            this.Controls.Add(this.pnlTreatment);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlTreatment);
             this.Controls.Add(this.pnlHarvest);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlSowing);
@@ -1124,7 +1148,7 @@
             this.pnlHarvest.PerformLayout();
             this.pnlTreatment.ResumeLayout(false);
             this.pnlTreatment.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFertilisers)).EndInit();
             this.pnlDriving.ResumeLayout(false);
             this.pnlDriving.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1171,7 +1195,6 @@
         private System.Windows.Forms.ComboBox comboBoxHarvestMehtod;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBoxPlant;
         private System.Windows.Forms.ComboBox comboBoxStorageUnit;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ComboBox comboBoxFarmSectorHarv;
@@ -1197,7 +1220,7 @@
         private System.Windows.Forms.ComboBox comboBoxFarmT;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDownFertilisers;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox comboBoxFertilisers;
         private System.Windows.Forms.Label label20;
@@ -1207,14 +1230,15 @@
         private System.Windows.Forms.ComboBox comboBoxVehicles;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button btnClearDrive;
-        private System.Windows.Forms.Button btnSaveDive;
+        private System.Windows.Forms.Button btnSaveDrive;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxDrivingDate;
         private System.Windows.Forms.MonthCalendar monthCalendarDriving;
         private System.Windows.Forms.ComboBox comboBoxFarmD;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.ComboBox comboBoxDriver;
         private System.Windows.Forms.Label label34;
         private Bunifu.Framework.UI.BunifuImageButton picBoxBack;
+        private System.Windows.Forms.ComboBox comboBoxPlantType;
     }
 }

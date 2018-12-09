@@ -9,12 +9,12 @@ namespace JustRipeFarm_v3
     public class Schedule
     {
         private int id;
-        private string Labourer;
+        private string labourerName;
         private int farmSector;
         private DateTime date;
 
         public int Id { get => id; set => id = value; }
-        public string Labourer1 { get => Labourer; set => Labourer = value; }
+        public string LabourerName { get => labourerName; set => labourerName = value; }
         public int FarmSector { get => farmSector; set => farmSector = value; }
         public DateTime Date { get => date; set => date = value; }
     }
@@ -52,12 +52,12 @@ namespace JustRipeFarm_v3
     public class Treating : Schedule
     {
         private string fertiliserUsed;
-        private string quantity;
+        private decimal quantity;
         private DateTime startTime;
         private DateTime endTime;
 
         public string FertiliserUsed { get => fertiliserUsed; set => fertiliserUsed = value; }
-        public string Quantity { get => quantity; set => quantity = value; }
+        public decimal Quantity { get => quantity; set => quantity = value; }
         public DateTime StartTime { get => startTime; set => startTime = value; }
         public DateTime EndTime { get => endTime; set => endTime = value; }
     }

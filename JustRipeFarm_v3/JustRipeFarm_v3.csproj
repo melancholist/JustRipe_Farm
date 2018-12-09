@@ -109,6 +109,7 @@
     <Compile Include="AssignTask.Designer.cs">
       <DependentUpon>AssignTask.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClassHandlers\ScheduleHandler.cs" />
     <Compile Include="DbConnector.cs" />
     <Compile Include="Classes\Equipment.cs" />
     <Compile Include="ClassHandlers\EquipmentHandler.cs" />
