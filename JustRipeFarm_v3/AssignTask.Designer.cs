@@ -464,6 +464,7 @@
             this.btnSaveT.TabIndex = 7;
             this.btnSaveT.Text = "Save";
             this.btnSaveT.UseVisualStyleBackColor = false;
+            this.btnSaveT.Click += new System.EventHandler(this.btnSaveT_Click);
             // 
             // dateTimePickerEndTr
             // 

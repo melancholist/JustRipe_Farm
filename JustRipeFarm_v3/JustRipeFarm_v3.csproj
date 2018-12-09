@@ -169,6 +169,9 @@
     <EmbeddedResource Include="AddNewCrop.resx">
       <DependentUpon>AddNewCrop.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddNewProduct.resx">
+      <DependentUpon>AddNewProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddNewServiceRecord.resx">
       <DependentUpon>AddNewServiceRecord.cs</DependentUpon>
     </EmbeddedResource>
