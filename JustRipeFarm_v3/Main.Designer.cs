@@ -89,15 +89,20 @@
             this.pnlStorage = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlStocks = new System.Windows.Forms.Panel();
-            this.pnlOnlineStore = new System.Windows.Forms.Panel();
-            this.linkLabelOnlineStore = new System.Windows.Forms.LinkLabel();
-            this.btnOnlineStore = new System.Windows.Forms.Button();
             this.pnlProducts = new System.Windows.Forms.Panel();
             this.btnAddNewProduct = new System.Windows.Forms.Button();
             this.lblProducts = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewProducts = new System.Windows.Forms.DataGridView();
+            this.pnlOnlineStore = new System.Windows.Forms.Panel();
+            this.linkLabelOnlineStore = new System.Windows.Forms.LinkLabel();
+            this.btnOnlineStore = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.lblStocks = new System.Windows.Forms.Label();
+            this.btnOrders = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridViewOrders = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnAddNewOrder = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -121,9 +126,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCrops)).BeginInit();
             this.pnlStorage.SuspendLayout();
             this.pnlStocks.SuspendLayout();
-            this.pnlOnlineStore.SuspendLayout();
             this.pnlProducts.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
+            this.pnlOnlineStore.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrders)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -846,6 +853,8 @@
             // pnlStocks
             // 
             this.pnlStocks.BackColor = System.Drawing.Color.DarkGray;
+            this.pnlStocks.Controls.Add(this.panel3);
+            this.pnlStocks.Controls.Add(this.btnOrders);
             this.pnlStocks.Controls.Add(this.pnlProducts);
             this.pnlStocks.Controls.Add(this.pnlOnlineStore);
             this.pnlStocks.Controls.Add(this.btnOnlineStore);
@@ -856,40 +865,11 @@
             this.pnlStocks.Size = new System.Drawing.Size(969, 727);
             this.pnlStocks.TabIndex = 1;
             // 
-            // pnlOnlineStore
-            // 
-            this.pnlOnlineStore.Controls.Add(this.linkLabelOnlineStore);
-            this.pnlOnlineStore.Location = new System.Drawing.Point(35, 75);
-            this.pnlOnlineStore.Name = "pnlOnlineStore";
-            this.pnlOnlineStore.Size = new System.Drawing.Size(706, 400);
-            this.pnlOnlineStore.TabIndex = 4;
-            // 
-            // linkLabelOnlineStore
-            // 
-            this.linkLabelOnlineStore.AutoSize = true;
-            this.linkLabelOnlineStore.Location = new System.Drawing.Point(53, 48);
-            this.linkLabelOnlineStore.Name = "linkLabelOnlineStore";
-            this.linkLabelOnlineStore.Size = new System.Drawing.Size(117, 17);
-            this.linkLabelOnlineStore.TabIndex = 1;
-            this.linkLabelOnlineStore.TabStop = true;
-            this.linkLabelOnlineStore.Text = "Visit Online Store";
-            this.linkLabelOnlineStore.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelOnlineStore_LinkClicked);
-            // 
-            // btnOnlineStore
-            // 
-            this.btnOnlineStore.Location = new System.Drawing.Point(288, 30);
-            this.btnOnlineStore.Name = "btnOnlineStore";
-            this.btnOnlineStore.Size = new System.Drawing.Size(114, 23);
-            this.btnOnlineStore.TabIndex = 3;
-            this.btnOnlineStore.Text = "Online Store";
-            this.btnOnlineStore.UseVisualStyleBackColor = true;
-            this.btnOnlineStore.Click += new System.EventHandler(this.btnOnlineStore_Click);
-            // 
             // pnlProducts
             // 
             this.pnlProducts.Controls.Add(this.btnAddNewProduct);
             this.pnlProducts.Controls.Add(this.lblProducts);
-            this.pnlProducts.Controls.Add(this.dataGridView2);
+            this.pnlProducts.Controls.Add(this.dataGridViewProducts);
             this.pnlProducts.Location = new System.Drawing.Point(35, 73);
             this.pnlProducts.Name = "pnlProducts";
             this.pnlProducts.Size = new System.Drawing.Size(709, 402);
@@ -915,14 +895,43 @@
             this.lblProducts.TabIndex = 1;
             this.lblProducts.Text = "Products";
             // 
-            // dataGridView2
+            // dataGridViewProducts
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(46, 83);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(618, 277);
-            this.dataGridView2.TabIndex = 0;
+            this.dataGridViewProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProducts.Location = new System.Drawing.Point(46, 83);
+            this.dataGridViewProducts.Name = "dataGridViewProducts";
+            this.dataGridViewProducts.RowTemplate.Height = 24;
+            this.dataGridViewProducts.Size = new System.Drawing.Size(618, 277);
+            this.dataGridViewProducts.TabIndex = 0;
+            // 
+            // pnlOnlineStore
+            // 
+            this.pnlOnlineStore.Controls.Add(this.linkLabelOnlineStore);
+            this.pnlOnlineStore.Location = new System.Drawing.Point(35, 75);
+            this.pnlOnlineStore.Name = "pnlOnlineStore";
+            this.pnlOnlineStore.Size = new System.Drawing.Size(706, 400);
+            this.pnlOnlineStore.TabIndex = 4;
+            // 
+            // linkLabelOnlineStore
+            // 
+            this.linkLabelOnlineStore.AutoSize = true;
+            this.linkLabelOnlineStore.Location = new System.Drawing.Point(53, 48);
+            this.linkLabelOnlineStore.Name = "linkLabelOnlineStore";
+            this.linkLabelOnlineStore.Size = new System.Drawing.Size(117, 17);
+            this.linkLabelOnlineStore.TabIndex = 1;
+            this.linkLabelOnlineStore.TabStop = true;
+            this.linkLabelOnlineStore.Text = "Visit Online Store";
+            this.linkLabelOnlineStore.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelOnlineStore_LinkClicked);
+            // 
+            // btnOnlineStore
+            // 
+            this.btnOnlineStore.Location = new System.Drawing.Point(405, 32);
+            this.btnOnlineStore.Name = "btnOnlineStore";
+            this.btnOnlineStore.Size = new System.Drawing.Size(114, 23);
+            this.btnOnlineStore.TabIndex = 3;
+            this.btnOnlineStore.Text = "Online Store";
+            this.btnOnlineStore.UseVisualStyleBackColor = true;
+            this.btnOnlineStore.Click += new System.EventHandler(this.btnOnlineStore_Click);
             // 
             // btnProducts
             // 
@@ -943,6 +952,54 @@
             this.lblStocks.Size = new System.Drawing.Size(123, 38);
             this.lblStocks.TabIndex = 0;
             this.lblStocks.Text = "Stocks";
+            // 
+            // btnOrders
+            // 
+            this.btnOrders.Location = new System.Drawing.Point(299, 30);
+            this.btnOrders.Name = "btnOrders";
+            this.btnOrders.Size = new System.Drawing.Size(75, 23);
+            this.btnOrders.TabIndex = 5;
+            this.btnOrders.Text = "Orders";
+            this.btnOrders.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnAddNewOrder);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.dataGridViewOrders);
+            this.panel3.Location = new System.Drawing.Point(35, 73);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(709, 402);
+            this.panel3.TabIndex = 6;
+            // 
+            // dataGridViewOrders
+            // 
+            this.dataGridViewOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewOrders.Location = new System.Drawing.Point(56, 79);
+            this.dataGridViewOrders.Name = "dataGridViewOrders";
+            this.dataGridViewOrders.RowTemplate.Height = 24;
+            this.dataGridViewOrders.Size = new System.Drawing.Size(557, 281);
+            this.dataGridViewOrders.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(56, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(94, 29);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Orders";
+            // 
+            // btnAddNewOrder
+            // 
+            this.btnAddNewOrder.Location = new System.Drawing.Point(497, 26);
+            this.btnAddNewOrder.Name = "btnAddNewOrder";
+            this.btnAddNewOrder.Size = new System.Drawing.Size(116, 31);
+            this.btnAddNewOrder.TabIndex = 2;
+            this.btnAddNewOrder.Text = "Add new order";
+            this.btnAddNewOrder.UseVisualStyleBackColor = true;
+            this.btnAddNewOrder.Click += new System.EventHandler(this.btnAddNewOrder_Click);
             // 
             // Main
             // 
@@ -994,11 +1051,14 @@
             this.pnlStorage.PerformLayout();
             this.pnlStocks.ResumeLayout(false);
             this.pnlStocks.PerformLayout();
-            this.pnlOnlineStore.ResumeLayout(false);
-            this.pnlOnlineStore.PerformLayout();
             this.pnlProducts.ResumeLayout(false);
             this.pnlProducts.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
+            this.pnlOnlineStore.ResumeLayout(false);
+            this.pnlOnlineStore.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrders)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1050,7 +1110,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel pnlStocks;
         private System.Windows.Forms.Panel pnlProducts;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridViewProducts;
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Label lblStocks;
         private System.Windows.Forms.Button btnAddNewProduct;
@@ -1073,5 +1133,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnNewServiceRecord;
         private System.Windows.Forms.DataGridView dataGridViewMaintenance;
+        private System.Windows.Forms.Button btnOrders;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnAddNewOrder;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dataGridViewOrders;
     }
 }

@@ -79,6 +79,12 @@
     <Compile Include="AddNewCrop.Designer.cs">
       <DependentUpon>AddNewCrop.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddNewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewOrder.Designer.cs">
+      <DependentUpon>AddNewOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddNewProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,8 @@
     </Compile>
     <Compile Include="Crop.cs" />
     <Compile Include="CropHandler.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderHandler.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductHandler.cs" />
     <Compile Include="Schedule.cs" />
