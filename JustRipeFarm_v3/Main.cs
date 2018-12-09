@@ -293,11 +293,5 @@ namespace JustRipeFarm_v3
             AddNewProduct addNewProduct = new AddNewProduct();
             addNewProduct.Show();
         }
-
-        private void btnAddNewOrder_Click(object sender, EventArgs e)
-        {
-            AddNewOrder addNewOrder = new AddNewOrder();
-            addNewOrder.Show();
-        }
     }
 }
