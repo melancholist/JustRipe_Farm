@@ -183,6 +183,9 @@
     <EmbeddedResource Include="AddNewServiceRecord.resx">
       <DependentUpon>AddNewServiceRecord.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddNewVehicle.resx">
+      <DependentUpon>AddNewVehicle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddStaff.resx">
       <DependentUpon>AddStaff.cs</DependentUpon>
     </EmbeddedResource>

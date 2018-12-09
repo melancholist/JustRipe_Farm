@@ -98,10 +98,15 @@
             this.btnOnlineStore = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.lblStocks = new System.Windows.Forms.Label();
-            this.panelVehicle = new System.Windows.Forms.Panel();
-            this.labelVeh = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pnlVehicle = new System.Windows.Forms.Panel();
+            this.pnlVehicleMain = new System.Windows.Forms.Panel();
             this.dataGridViewVehicle = new System.Windows.Forms.DataGridView();
+            this.btnAddNewVehicle = new System.Windows.Forms.Button();
+            this.pnlVehicleMaintenance = new System.Windows.Forms.Panel();
+            this.dataGridViewMaintenanceHistory = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnVehicleMaintenance = new System.Windows.Forms.Button();
+            this.labelVehicle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -128,8 +133,11 @@
             this.pnlProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
             this.pnlOnlineStore.SuspendLayout();
-            this.panelVehicle.SuspendLayout();
+            this.pnlVehicle.SuspendLayout();
+            this.pnlVehicleMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).BeginInit();
+            this.pnlVehicleMaintenance.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaintenanceHistory)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -738,9 +746,9 @@
             // pnlEqMain
             // 
             this.pnlEqMain.Controls.Add(this.dataGridViewEquipment);
-            this.pnlEqMain.Location = new System.Drawing.Point(27, 77);
+            this.pnlEqMain.Location = new System.Drawing.Point(34, 77);
             this.pnlEqMain.Name = "pnlEqMain";
-            this.pnlEqMain.Size = new System.Drawing.Size(728, 399);
+            this.pnlEqMain.Size = new System.Drawing.Size(721, 399);
             this.pnlEqMain.TabIndex = 3;
             // 
             // dataGridViewEquipment
@@ -950,43 +958,93 @@
             this.lblStocks.TabIndex = 0;
             this.lblStocks.Text = "Stocks";
             // 
-            // panelVehicle
+            // pnlVehicle
             // 
-            this.panelVehicle.Controls.Add(this.dataGridViewVehicle);
-            this.panelVehicle.Controls.Add(this.button1);
-            this.panelVehicle.Controls.Add(this.labelVeh);
-            this.panelVehicle.Location = new System.Drawing.Point(231, 64);
-            this.panelVehicle.Name = "panelVehicle";
-            this.panelVehicle.Size = new System.Drawing.Size(970, 673);
-            this.panelVehicle.TabIndex = 5;
+            this.pnlVehicle.Controls.Add(this.pnlVehicleMain);
+            this.pnlVehicle.Controls.Add(this.pnlVehicleMaintenance);
+            this.pnlVehicle.Controls.Add(this.btnVehicleMaintenance);
+            this.pnlVehicle.Controls.Add(this.labelVehicle);
+            this.pnlVehicle.Location = new System.Drawing.Point(231, 64);
+            this.pnlVehicle.Name = "pnlVehicle";
+            this.pnlVehicle.Size = new System.Drawing.Size(970, 673);
+            this.pnlVehicle.TabIndex = 5;
             // 
-            // labelVeh
+            // pnlVehicleMain
             // 
-            this.labelVeh.AutoSize = true;
-            this.labelVeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVeh.Location = new System.Drawing.Point(43, 37);
-            this.labelVeh.Name = "labelVeh";
-            this.labelVeh.Size = new System.Drawing.Size(117, 32);
-            this.labelVeh.TabIndex = 0;
-            this.labelVeh.Text = "Vehicle";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(227, 43);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Add new vehicle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.pnlVehicleMain.Controls.Add(this.dataGridViewVehicle);
+            this.pnlVehicleMain.Controls.Add(this.btnAddNewVehicle);
+            this.pnlVehicleMain.Location = new System.Drawing.Point(43, 94);
+            this.pnlVehicleMain.Name = "pnlVehicleMain";
+            this.pnlVehicleMain.Size = new System.Drawing.Size(704, 490);
+            this.pnlVehicleMain.TabIndex = 5;
             // 
             // dataGridViewVehicle
             // 
             this.dataGridViewVehicle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewVehicle.Location = new System.Drawing.Point(59, 122);
+            this.dataGridViewVehicle.Location = new System.Drawing.Point(27, 42);
             this.dataGridViewVehicle.Name = "dataGridViewVehicle";
             this.dataGridViewVehicle.RowTemplate.Height = 24;
             this.dataGridViewVehicle.Size = new System.Drawing.Size(654, 379);
             this.dataGridViewVehicle.TabIndex = 2;
+            // 
+            // btnAddNewVehicle
+            // 
+            this.btnAddNewVehicle.Location = new System.Drawing.Point(542, 444);
+            this.btnAddNewVehicle.Name = "btnAddNewVehicle";
+            this.btnAddNewVehicle.Size = new System.Drawing.Size(143, 31);
+            this.btnAddNewVehicle.TabIndex = 1;
+            this.btnAddNewVehicle.Text = "Add new vehicle";
+            this.btnAddNewVehicle.UseVisualStyleBackColor = true;
+            this.btnAddNewVehicle.Click += new System.EventHandler(this.btnAddNewVehicle_Click);
+            // 
+            // pnlVehicleMaintenance
+            // 
+            this.pnlVehicleMaintenance.Controls.Add(this.dataGridViewMaintenanceHistory);
+            this.pnlVehicleMaintenance.Controls.Add(this.label4);
+            this.pnlVehicleMaintenance.Location = new System.Drawing.Point(38, 97);
+            this.pnlVehicleMaintenance.Name = "pnlVehicleMaintenance";
+            this.pnlVehicleMaintenance.Size = new System.Drawing.Size(709, 490);
+            this.pnlVehicleMaintenance.TabIndex = 4;
+            // 
+            // dataGridViewMaintenanceHistory
+            // 
+            this.dataGridViewMaintenanceHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMaintenanceHistory.Location = new System.Drawing.Point(39, 77);
+            this.dataGridViewMaintenanceHistory.Name = "dataGridViewMaintenanceHistory";
+            this.dataGridViewMaintenanceHistory.RowTemplate.Height = 24;
+            this.dataGridViewMaintenanceHistory.Size = new System.Drawing.Size(595, 312);
+            this.dataGridViewMaintenanceHistory.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(34, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(249, 29);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Maintenance History";
+            // 
+            // btnVehicleMaintenance
+            // 
+            this.btnVehicleMaintenance.Location = new System.Drawing.Point(243, 36);
+            this.btnVehicleMaintenance.Name = "btnVehicleMaintenance";
+            this.btnVehicleMaintenance.Size = new System.Drawing.Size(159, 33);
+            this.btnVehicleMaintenance.TabIndex = 3;
+            this.btnVehicleMaintenance.Text = "Vehicle Maintenance";
+            this.btnVehicleMaintenance.UseVisualStyleBackColor = true;
+            this.btnVehicleMaintenance.Click += new System.EventHandler(this.btnVehicleMaintenance_Click);
+            // 
+            // labelVehicle
+            // 
+            this.labelVehicle.AutoSize = true;
+            this.labelVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVehicle.Location = new System.Drawing.Point(43, 37);
+            this.labelVehicle.Name = "labelVehicle";
+            this.labelVehicle.Size = new System.Drawing.Size(117, 32);
+            this.labelVehicle.TabIndex = 0;
+            this.labelVehicle.Text = "Vehicle";
+            this.labelVehicle.Click += new System.EventHandler(this.labelVehicle_Click);
             // 
             // Main
             // 
@@ -994,10 +1052,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
-            this.Controls.Add(this.panelVehicle);
+            this.Controls.Add(this.pnlResources);
+            this.Controls.Add(this.pnlVehicle);
             this.Controls.Add(this.pnlSchedule);
             this.Controls.Add(this.pnlStocks);
-            this.Controls.Add(this.pnlResources);
             this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.pnlStorage);
             this.Controls.Add(this.panel1);
@@ -1044,9 +1102,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
             this.pnlOnlineStore.ResumeLayout(false);
             this.pnlOnlineStore.PerformLayout();
-            this.panelVehicle.ResumeLayout(false);
-            this.panelVehicle.PerformLayout();
+            this.pnlVehicle.ResumeLayout(false);
+            this.pnlVehicle.PerformLayout();
+            this.pnlVehicleMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).EndInit();
+            this.pnlVehicleMaintenance.ResumeLayout(false);
+            this.pnlVehicleMaintenance.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaintenanceHistory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1121,9 +1183,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnNewServiceRecord;
         private System.Windows.Forms.DataGridView dataGridViewMaintenance;
-        private System.Windows.Forms.Panel panelVehicle;
-        private System.Windows.Forms.Label labelVeh;
+        private System.Windows.Forms.Panel pnlVehicle;
+        private System.Windows.Forms.Label labelVehicle;
         private System.Windows.Forms.DataGridView dataGridViewVehicle;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddNewVehicle;
+        private System.Windows.Forms.Panel pnlVehicleMain;
+        private System.Windows.Forms.Panel pnlVehicleMaintenance;
+        private System.Windows.Forms.DataGridView dataGridViewMaintenanceHistory;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnVehicleMaintenance;
     }
 }

@@ -33,7 +33,7 @@ namespace JustRipeFarm_v3
             panelBtnIndicator6.Hide();
             pnlResources.Hide();
             pnlStorage.Hide();
-            //pnlVehicle.Hide();
+            pnlVehicle.Hide();
             pnlStocks.Hide();
             pnlAccounting.Hide();
         }
@@ -53,7 +53,7 @@ namespace JustRipeFarm_v3
             pnlSchedule.Show();
             pnlResources.Hide();
             pnlStorage.Hide();
-            //pnlVehicle.Hide();
+            pnlVehicle.Hide();
             pnlStocks.Hide();
             pnlAccounting.Hide();
 
@@ -100,7 +100,7 @@ namespace JustRipeFarm_v3
             pnlSchedule.Hide();
             pnlResources.Show();
             pnlStorage.Hide();
-            //pnlVehicle.Hide();
+            pnlVehicle.Hide();
             pnlStocks.Hide();
             pnlAccounting.Hide();
 
@@ -121,7 +121,7 @@ namespace JustRipeFarm_v3
             pnlSchedule.Hide();
             pnlResources.Hide();
             pnlStorage.Show();
-            //pnlVehicle.Hide();
+            pnlVehicle.Hide();
             pnlStocks.Hide();
             pnlAccounting.Hide();
 
@@ -139,6 +139,13 @@ namespace JustRipeFarm_v3
         //Vehicle panel appears when button is clicked
         private void btnVehicle_Click(object sender, EventArgs e)
         {
+            pnlSchedule.Hide();
+            pnlResources.Hide();
+            pnlStorage.Hide();
+            pnlVehicle.Show();
+            pnlStocks.Hide();
+            pnlAccounting.Hide();
+
             if (btnVehicle.Enabled)
             {
                 panelBtnIndicator1.Hide();
@@ -156,7 +163,7 @@ namespace JustRipeFarm_v3
             pnlSchedule.Hide();
             pnlResources.Hide();
             pnlStorage.Hide();
-            //pnlVehicle.Hide();
+            pnlVehicle.Hide();
             pnlStocks.Show();
             pnlAccounting.Hide();
 
@@ -177,7 +184,7 @@ namespace JustRipeFarm_v3
             pnlSchedule.Hide();
             pnlResources.Hide();
             pnlStorage.Hide();
-            //pnlVehicle.Hide();
+            pnlVehicle.Hide();
             pnlStocks.Hide();
             pnlAccounting.Show();
 
@@ -276,22 +283,46 @@ namespace JustRipeFarm_v3
             pnlExpenses.Show();
         }
 
+        //Maintenance panel appears within Equipment panel when button is clicked
         private void btnMaintenance_Click(object sender, EventArgs e)
         {
-            pnlIncome.Hide();
-            pnlExpenses.Show();
+            pnlEqMain.Hide();
+            pnlMaintenance.Show();
         }
 
+        //Add New Service Record form appears when button is clicked
         private void btnNewServiceRecord_Click(object sender, EventArgs e)
         {
             AddNewServiceRecord addNewServiceRecord = new AddNewServiceRecord();
             addNewServiceRecord.Show();
         }
 
+        //Add New Product form appears when button is clicked
         private void btnAddNewProduct_Click(object sender, EventArgs e)
         {
             AddNewProduct addNewProduct = new AddNewProduct();
             addNewProduct.Show();
+        }
+
+        //Main Vehicle panel appears within Vehicle panel when button is clicked
+        private void labelVehicle_Click(object sender, EventArgs e)
+        {
+            pnlMaintenance.Hide();
+            pnlVehicleMain.Show();
+        }
+
+        //Maintenance panel appears within Vehicle panel when button is clicked
+        private void btnVehicleMaintenance_Click(object sender, EventArgs e)
+        {
+            pnlMaintenance.Show();
+            pnlVehicleMain.Hide();
+        }
+
+        //Add New Vehicle form appears when button is clicked
+        private void btnAddNewVehicle_Click(object sender, EventArgs e)
+        {
+            AddNewVehicle addNewVehicle = new AddNewVehicle();
+            addNewVehicle.Show();
         }
     }
 }
