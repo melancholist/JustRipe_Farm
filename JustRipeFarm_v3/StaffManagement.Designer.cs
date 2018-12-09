@@ -42,13 +42,13 @@
             this.picBocSearch = new System.Windows.Forms.PictureBox();
             this.searchComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewStaff = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backpictureBox)).BeginInit();
             this.panel2.SuspendLayout();
             this.pnlAddStaff.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBocSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStaff)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -149,7 +149,7 @@
             this.pnlAddStaff.Controls.Add(this.picBocSearch);
             this.pnlAddStaff.Controls.Add(this.searchComboBox);
             this.pnlAddStaff.Controls.Add(this.label2);
-            this.pnlAddStaff.Controls.Add(this.dataGridView1);
+            this.pnlAddStaff.Controls.Add(this.dataGridViewStaff);
             this.pnlAddStaff.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlAddStaff.Location = new System.Drawing.Point(207, 68);
             this.pnlAddStaff.Name = "pnlAddStaff";
@@ -197,6 +197,7 @@
             this.picBocSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBocSearch.TabIndex = 9;
             this.picBocSearch.TabStop = false;
+            this.picBocSearch.Click += new System.EventHandler(this.picBocSearch_Click);
             // 
             // searchComboBox
             // 
@@ -224,14 +225,14 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Staff Role:";
             // 
-            // dataGridView1
+            // dataGridViewStaff
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 109);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(931, 544);
-            this.dataGridView1.TabIndex = 6;
+            this.dataGridViewStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewStaff.Location = new System.Drawing.Point(45, 109);
+            this.dataGridViewStaff.Name = "dataGridViewStaff";
+            this.dataGridViewStaff.RowTemplate.Height = 24;
+            this.dataGridViewStaff.Size = new System.Drawing.Size(931, 544);
+            this.dataGridViewStaff.TabIndex = 6;
             // 
             // StaffManagement
             // 
@@ -246,6 +247,7 @@
             this.Name = "StaffManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LabourerManagement";
+            this.Load += new System.EventHandler(this.StaffManagement_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backpictureBox)).EndInit();
@@ -253,7 +255,7 @@
             this.pnlAddStaff.ResumeLayout(false);
             this.pnlAddStaff.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBocSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStaff)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -269,7 +271,7 @@
         private System.Windows.Forms.PictureBox picBocSearch;
         private System.Windows.Forms.ComboBox searchComboBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewStaff;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnStaff;
         private System.Windows.Forms.Button btnTask;

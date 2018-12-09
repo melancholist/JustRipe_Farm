@@ -14,12 +14,43 @@ namespace JustRipeFarm_v3
 {
     public partial class StaffManagement : Form
     {
+        DbConnector Dbconn = new DbConnector();
+
         public StaffManagement()
         {
             InitializeComponent();
 
             pnlAddStaff.Show();
             pnlBtnIndic1.Show();
+        }
+
+        DataTable dt = new DataTable("TBL_Transaction");
+        private void StaffManagement_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                string connString = "server=sql12.freemysqlhosting.net;user=sql12268366;database=sql12268366;password=1VpFDLJHBC;port=3306";
+                string query = "SELECT * FROM staffdata";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewStaff.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void picBocSearch_Click(object sender, EventArgs e)
+        {
+            DataView dv = dt.DefaultView;
+            dv.RowFilter = string.Format("staffRole LIKE '%{0}%'", searchComboBox.SelectedItem.ToString());
+            dataGridViewStaff.DataSource = dv.ToTable();
         }
 
         private void backpictureBox_Click(object sender, EventArgs e)
