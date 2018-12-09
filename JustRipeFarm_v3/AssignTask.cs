@@ -19,7 +19,63 @@ namespace JustRipeFarm_v3
         public AssignTask()
         {
             InitializeComponent();
+            FillFieldWorker();
+            FillDriver();
+            //FillFertilisers();
+            //FillSeeds();
+            //FillPlants();
+            //FillStorageUnit();
+            //FillVehicles();
         }
+        
+        //auto-fill comboBoxes
+        void FillFieldWorker()
+        {
+            dbconn.connect();
+            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Field Worker' ";
+            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            MySqlDataReader reader;
+            try
+            {
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string fieldWorker = reader.GetString("lastname");
+                    comboBoxWorkers.Items.Add(fieldWorker);
+                    comboBoxWorkerHarv.Items.Add(fieldWorker);
+                    comboBoxWorkerT.Items.Add(fieldWorker);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        void FillDriver()
+        {
+            dbconn.connect();
+            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
+            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            MySqlDataReader reader;
+            try
+            {
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string driver = reader.GetString("lastname");
+                    comboBoxDriver.Items.Add(driver);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
 
         private void AssignTask_Load(object sender, EventArgs e)
         {

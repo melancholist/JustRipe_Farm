@@ -107,6 +107,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnVehicleMaintenance = new System.Windows.Forms.Button();
             this.labelVehicle = new System.Windows.Forms.Label();
+            this.lblSalesStaff = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -211,6 +212,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.panel1.Controls.Add(this.lblSalesStaff);
             this.panel1.Controls.Add(this.panelBtnIndicator6);
             this.panel1.Controls.Add(this.panelBtnIndicator5);
             this.panel1.Controls.Add(this.panelBtnIndicator4);
@@ -373,7 +375,7 @@
             this.lblLabourer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblLabourer.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabourer.ForeColor = System.Drawing.Color.Silver;
-            this.lblLabourer.Location = new System.Drawing.Point(52, 11);
+            this.lblLabourer.Location = new System.Drawing.Point(62, 11);
             this.lblLabourer.Name = "lblLabourer";
             this.lblLabourer.Size = new System.Drawing.Size(112, 30);
             this.lblLabourer.TabIndex = 6;
@@ -399,7 +401,7 @@
             this.lblManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblManager.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManager.ForeColor = System.Drawing.Color.Silver;
-            this.lblManager.Location = new System.Drawing.Point(46, 11);
+            this.lblManager.Location = new System.Drawing.Point(56, 11);
             this.lblManager.Name = "lblManager";
             this.lblManager.Size = new System.Drawing.Size(123, 30);
             this.lblManager.TabIndex = 10;
@@ -1046,6 +1048,20 @@
             this.labelVehicle.Text = "Vehicle";
             this.labelVehicle.Click += new System.EventHandler(this.labelVehicle_Click);
             // 
+            // lblSalesStaff
+            // 
+            this.lblSalesStaff.AutoSize = true;
+            this.lblSalesStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblSalesStaff.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalesStaff.ForeColor = System.Drawing.Color.Silver;
+            this.lblSalesStaff.Location = new System.Drawing.Point(53, 15);
+            this.lblSalesStaff.Name = "lblSalesStaff";
+            this.lblSalesStaff.Size = new System.Drawing.Size(128, 30);
+            this.lblSalesStaff.TabIndex = 17;
+            this.lblSalesStaff.Text = "sales staff";
+            this.lblSalesStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSalesStaff.Visible = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1192,5 +1208,6 @@
         private System.Windows.Forms.DataGridView dataGridViewMaintenanceHistory;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnVehicleMaintenance;
+        public System.Windows.Forms.Label lblSalesStaff;
     }
 }

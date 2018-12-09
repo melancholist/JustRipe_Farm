@@ -95,6 +95,8 @@ namespace JustRipeFarm_v3
 
                             case "Sales Staff":
                                 mn.Show();
+                                mn.lblSalesStaff.Visible = true;
+                                mn.picBoxManager.Visible = true;
                                 this.Hide();
                                 break;
 

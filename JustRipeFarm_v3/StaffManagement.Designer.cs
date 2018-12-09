@@ -210,6 +210,7 @@
             // 
             // dataGridViewStaff
             // 
+            this.dataGridViewStaff.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridViewStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewStaff.Location = new System.Drawing.Point(45, 109);
             this.dataGridViewStaff.Name = "dataGridViewStaff";

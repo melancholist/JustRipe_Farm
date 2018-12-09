@@ -33,6 +33,7 @@
             this.picBoxBack = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlHarvest = new System.Windows.Forms.Panel();
+            this.comboBoxPlantType = new System.Windows.Forms.ComboBox();
             this.btnClearHarv = new System.Windows.Forms.Button();
             this.btnSaveHarv = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
@@ -108,7 +109,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxWorkers = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBoxPlantType = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).BeginInit();
             this.pnlHarvest.SuspendLayout();
@@ -184,6 +184,25 @@
             this.pnlHarvest.Size = new System.Drawing.Size(892, 622);
             this.pnlHarvest.TabIndex = 20;
             this.pnlHarvest.Visible = false;
+            // 
+            // comboBoxPlantType
+            // 
+            this.comboBoxPlantType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxPlantType.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxPlantType.FormattingEnabled = true;
+            this.comboBoxPlantType.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.comboBoxPlantType.Location = new System.Drawing.Point(178, 388);
+            this.comboBoxPlantType.Name = "comboBoxPlantType";
+            this.comboBoxPlantType.Size = new System.Drawing.Size(205, 29);
+            this.comboBoxPlantType.TabIndex = 25;
             // 
             // btnClearHarv
             // 
@@ -1105,25 +1124,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Field Workers:";
             // 
-            // comboBoxPlantType
-            // 
-            this.comboBoxPlantType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxPlantType.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxPlantType.FormattingEnabled = true;
-            this.comboBoxPlantType.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8"});
-            this.comboBoxPlantType.Location = new System.Drawing.Point(178, 388);
-            this.comboBoxPlantType.Name = "comboBoxPlantType";
-            this.comboBoxPlantType.Size = new System.Drawing.Size(205, 29);
-            this.comboBoxPlantType.TabIndex = 25;
-            // 
             // AssignTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1168,18 +1168,14 @@
         private System.Windows.Forms.Button btnTreating;
         private System.Windows.Forms.Button btnHarvest;
         private System.Windows.Forms.Panel pnlSowing;
-        private System.Windows.Forms.ComboBox comboBoxMethods;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBoxWorkers;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSaveSow;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown numericUpDownQauntity;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBoxSeeds;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBoxFarmSectorSow;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePickerEndSow;
         private System.Windows.Forms.DateTimePicker dateTimePickerStartSow;
@@ -1190,14 +1186,10 @@
         private System.Windows.Forms.MonthCalendar monthCalendarSowing;
         private System.Windows.Forms.Panel pnlHarvest;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBoxWorkerHarv;
         private System.Windows.Forms.MonthCalendar monthCalendarHarvest;
-        private System.Windows.Forms.ComboBox comboBoxHarvestMehtod;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBoxStorageUnit;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBoxFarmSectorHarv;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DateTimePicker dateTimePickerEndHarv;
         private System.Windows.Forms.DateTimePicker dateTimePickerStartHarv;
@@ -1217,28 +1209,36 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox textBoxTreatmentDate;
         private System.Windows.Forms.MonthCalendar monthCalendarTreatment;
-        private System.Windows.Forms.ComboBox comboBoxFarmT;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.NumericUpDown numericUpDownFertilisers;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox comboBoxFertilisers;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox comboBoxWorkerT;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel pnlDriving;
-        private System.Windows.Forms.ComboBox comboBoxVehicles;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button btnClearDrive;
         private System.Windows.Forms.Button btnSaveDrive;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox textBoxDrivingDate;
         private System.Windows.Forms.MonthCalendar monthCalendarDriving;
-        private System.Windows.Forms.ComboBox comboBoxFarmD;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ComboBox comboBoxDriver;
         private System.Windows.Forms.Label label34;
         private Bunifu.Framework.UI.BunifuImageButton picBoxBack;
-        private System.Windows.Forms.ComboBox comboBoxPlantType;
+        public System.Windows.Forms.ComboBox comboBoxMethods;
+        public System.Windows.Forms.ComboBox comboBoxWorkers;
+        public System.Windows.Forms.ComboBox comboBoxSeeds;
+        public System.Windows.Forms.ComboBox comboBoxFarmSectorSow;
+        public System.Windows.Forms.ComboBox comboBoxWorkerHarv;
+        public System.Windows.Forms.ComboBox comboBoxHarvestMehtod;
+        public System.Windows.Forms.ComboBox comboBoxStorageUnit;
+        public System.Windows.Forms.ComboBox comboBoxFarmSectorHarv;
+        public System.Windows.Forms.ComboBox comboBoxFarmT;
+        public System.Windows.Forms.ComboBox comboBoxFertilisers;
+        public System.Windows.Forms.ComboBox comboBoxWorkerT;
+        public System.Windows.Forms.ComboBox comboBoxVehicles;
+        public System.Windows.Forms.ComboBox comboBoxFarmD;
+        public System.Windows.Forms.ComboBox comboBoxDriver;
+        public System.Windows.Forms.ComboBox comboBoxPlantType;
     }
 }
