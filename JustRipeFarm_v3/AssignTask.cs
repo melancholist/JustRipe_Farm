@@ -21,11 +21,11 @@ namespace JustRipeFarm_v3
             InitializeComponent();
             FillFieldWorker();
             FillDriver();
-            //FillFertilisers();
-            //FillSeeds();
-            //FillPlants();
-            //FillStorageUnit();
-            //FillVehicles();
+            FillFertilisers();
+            FillSeeds();
+            FillPlants();
+            FillStorageUnit();
+            FillVehicles();
         }
         
         //auto-fill comboBoxes
