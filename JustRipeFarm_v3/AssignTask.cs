@@ -52,7 +52,6 @@ namespace JustRipeFarm_v3
                 MessageBox.Show(ex.Message);
             }
         }
-
         void FillDriver()
         {
             dbconn.connect();
@@ -74,8 +73,112 @@ namespace JustRipeFarm_v3
                 MessageBox.Show(ex.Message);
             }
         }
+        void FillFertilisers()
+        {
+            dbconn.connect();
+            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
+            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            MySqlDataReader reader;
+            try
+            {
+                reader = cmd.ExecuteReader();
 
+                while (reader.Read())
+                {
+                    string driver = reader.GetString("lastname");
+                    comboBoxDriver.Items.Add(driver);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
+        }
+        void FillSeeds()
+        {
+            dbconn.connect();
+            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
+            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            MySqlDataReader reader;
+            try
+            {
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string driver = reader.GetString("lastname");
+                    comboBoxDriver.Items.Add(driver);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        void FillPlants()
+        {
+            dbconn.connect();
+            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
+            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            MySqlDataReader reader;
+            try
+            {
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string driver = reader.GetString("lastname");
+                    comboBoxDriver.Items.Add(driver);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        void FillStorageUnit()
+        {
+            dbconn.connect();
+            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
+            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            MySqlDataReader reader;
+            try
+            {
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string driver = reader.GetString("lastname");
+                    comboBoxDriver.Items.Add(driver);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        void FillVehicles()
+        {
+            dbconn.connect();
+            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
+            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            MySqlDataReader reader;
+            try
+            {
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string driver = reader.GetString("lastname");
+                    comboBoxDriver.Items.Add(driver);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void AssignTask_Load(object sender, EventArgs e)
         {
