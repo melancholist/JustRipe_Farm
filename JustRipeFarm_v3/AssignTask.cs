@@ -23,7 +23,7 @@ namespace JustRipeFarm_v3
             FillDriver();
             FillFertilisers();
             FillSeeds();
-            FillPlants();
+            FillMachines();
             FillStorageUnit();
             FillVehicles();
         }
@@ -55,8 +55,8 @@ namespace JustRipeFarm_v3
         void FillDriver()
         {
             dbconn.connect();
-            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
-            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            string driverquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
+            MySqlCommand cmd = new MySqlCommand(driverquery, dbconn.getConn());
             MySqlDataReader reader;
             try
             {
@@ -77,8 +77,8 @@ namespace JustRipeFarm_v3
         void FillFertilisers()
         {
             dbconn.connect();
-            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
-            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            string fertiliserquery = "Select * FROM fertilsers";
+            MySqlCommand cmd = new MySqlCommand(fertiliserquery, dbconn.getConn());
             MySqlDataReader reader;
             try
             {
@@ -86,8 +86,8 @@ namespace JustRipeFarm_v3
 
                 while (reader.Read())
                 {
-                    string driver = reader.GetString("lastname");
-                    comboBoxDriver.Items.Add(driver);
+                    string fertiliser = reader.GetString("fertilserType");
+                    comboBoxFertilisers.Items.Add(fertiliser);
                 }
             }
             catch (Exception ex)
@@ -99,8 +99,8 @@ namespace JustRipeFarm_v3
         void FillSeeds()
         {
             dbconn.connect();
-            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
-            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            string seedquery = "Select * FROM crop";
+            MySqlCommand cmd = new MySqlCommand(seedquery, dbconn.getConn());
             MySqlDataReader reader;
             try
             {
@@ -108,8 +108,8 @@ namespace JustRipeFarm_v3
 
                 while (reader.Read())
                 {
-                    string driver = reader.GetString("lastname");
-                    comboBoxDriver.Items.Add(driver);
+                    string seed = reader.GetString("type");
+                    comboBoxSeeds.Items.Add(seed);
                 }
             }
             catch (Exception ex)
@@ -117,11 +117,11 @@ namespace JustRipeFarm_v3
                 MessageBox.Show(ex.Message);
             }
         }
-        void FillPlants()
+        void FillMachines()
         {
             dbconn.connect();
-            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
-            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            string machinequery = "Select * FROM machine WHERE machineType = 'Harvesters' ";
+            MySqlCommand cmd = new MySqlCommand(machinequery, dbconn.getConn());
             MySqlDataReader reader;
             try
             {
@@ -129,8 +129,8 @@ namespace JustRipeFarm_v3
 
                 while (reader.Read())
                 {
-                    string driver = reader.GetString("lastname");
-                    comboBoxDriver.Items.Add(driver);
+                    string machine = reader.GetString("modelName");
+                    comboBoxPlantType.Items.Add(machine);
                 }
             }
             catch (Exception ex)
@@ -141,8 +141,8 @@ namespace JustRipeFarm_v3
         void FillStorageUnit()
         {
             dbconn.connect();
-            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
-            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            string storagequery = "Select * FROM storage ";
+            MySqlCommand cmd = new MySqlCommand(storagequery, dbconn.getConn());
             MySqlDataReader reader;
             try
             {
@@ -150,8 +150,8 @@ namespace JustRipeFarm_v3
 
                 while (reader.Read())
                 {
-                    string driver = reader.GetString("lastname");
-                    comboBoxDriver.Items.Add(driver);
+                    string storage = reader.GetString("unitName");
+                    comboBoxStorageUnit.Items.Add(storage);
                 }
             }
             catch (Exception ex)
@@ -162,7 +162,7 @@ namespace JustRipeFarm_v3
         void FillVehicles()
         {
             dbconn.connect();
-            string fieldworkerquery = "Select * FROM staffdata WHERE staffRole = 'Driver' ";
+            string fieldworkerquery = "Select * FROM vehicle WHERE vehicleType = 'Truck' ";
             MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
             MySqlDataReader reader;
             try
@@ -171,8 +171,8 @@ namespace JustRipeFarm_v3
 
                 while (reader.Read())
                 {
-                    string driver = reader.GetString("lastname");
-                    comboBoxDriver.Items.Add(driver);
+                    string vehicle = reader.GetString("modelName");
+                    comboBoxVehicles.Items.Add(vehicle);
                 }
             }
             catch (Exception ex)
@@ -201,59 +201,42 @@ namespace JustRipeFarm_v3
 
         private void btnSowing_Click(object sender, EventArgs e)
         {
-            //while (btnSowing.Enabled)
-            //{
-                pnlSowing.Visible = true;
+            pnlSowing.Visible = true;
             pnlSowing.Show();
             pnlHarvest.Hide();
             pnlTreatment.Hide();
             pnlDriving.Hide();
             pnlSowing.BringToFront();
-            //break;
-            //}
         }
 
         private void btnHarvest_Click(object sender, EventArgs e)
         {
-            //while (btnHarvest.Enabled)
-            //{
-                pnlHarvest.Visible = true;
+            pnlHarvest.Visible = true;
             pnlSowing.Hide();
             pnlHarvest.Show();
             pnlTreatment.Hide();
             pnlDriving.Hide();
             pnlHarvest.BringToFront();
-            //break;
-            //}
         }
 
         private void btnTreating_Click(object sender, EventArgs e)
         {
-            //while (btnTreating.Enabled)
-            //{
-                pnlTreatment.Visible = true;
+            pnlTreatment.Visible = true;
             pnlSowing.Hide();
             pnlHarvest.Hide();
             pnlTreatment.Show();
             pnlDriving.Hide();
             pnlTreatment.BringToFront();
-            //break;
-            //}
-
         }
 
         private void btnDriving_Click(object sender, EventArgs e)
         {
-            //while (btnDriving.Enabled)
-            //{
-                pnlDriving.Visible = true;
+            pnlDriving.Visible = true;
             pnlSowing.Hide();
             pnlHarvest.Hide();
             pnlTreatment.Hide();
             pnlDriving.Show();
             pnlDriving.BringToFront();
-            //break;
-            //}
         }
 
         //Calender values to input in textbox

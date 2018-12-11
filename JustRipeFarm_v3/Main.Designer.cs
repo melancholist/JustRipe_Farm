@@ -41,7 +41,7 @@
             this.panelBtnIndicator4 = new System.Windows.Forms.Panel();
             this.panelBtnIndicator3 = new System.Windows.Forms.Panel();
             this.btnAccounting = new System.Windows.Forms.Button();
-            this.btnStocks = new System.Windows.Forms.Button();
+            this.btnYields = new System.Windows.Forms.Button();
             this.btnVehicle = new System.Windows.Forms.Button();
             this.btnStorage = new System.Windows.Forms.Button();
             this.picboxLabourer = new System.Windows.Forms.PictureBox();
@@ -218,7 +218,7 @@
             this.panel1.Controls.Add(this.panelBtnIndicator4);
             this.panel1.Controls.Add(this.panelBtnIndicator3);
             this.panel1.Controls.Add(this.btnAccounting);
-            this.panel1.Controls.Add(this.btnStocks);
+            this.panel1.Controls.Add(this.btnYields);
             this.panel1.Controls.Add(this.btnVehicle);
             this.panel1.Controls.Add(this.btnStorage);
             this.panel1.Controls.Add(this.picboxLabourer);
@@ -311,25 +311,25 @@
             this.btnAccounting.UseVisualStyleBackColor = true;
             this.btnAccounting.Click += new System.EventHandler(this.btnAccounting_Click);
             // 
-            // btnStocks
+            // btnYields
             // 
-            this.btnStocks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnStocks.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStocks.FlatAppearance.BorderSize = 0;
-            this.btnStocks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
-            this.btnStocks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStocks.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStocks.ForeColor = System.Drawing.Color.White;
-            this.btnStocks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStocks.Location = new System.Drawing.Point(1, 504);
-            this.btnStocks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnStocks.Name = "btnStocks";
-            this.btnStocks.Size = new System.Drawing.Size(229, 82);
-            this.btnStocks.TabIndex = 15;
-            this.btnStocks.Text = "Stocks";
-            this.btnStocks.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnStocks.UseVisualStyleBackColor = true;
-            this.btnStocks.Click += new System.EventHandler(this.btnStock_Click);
+            this.btnYields.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnYields.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnYields.FlatAppearance.BorderSize = 0;
+            this.btnYields.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
+            this.btnYields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnYields.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYields.ForeColor = System.Drawing.Color.White;
+            this.btnYields.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnYields.Location = new System.Drawing.Point(1, 504);
+            this.btnYields.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnYields.Name = "btnYields";
+            this.btnYields.Size = new System.Drawing.Size(229, 82);
+            this.btnYields.TabIndex = 15;
+            this.btnYields.Text = "Yields";
+            this.btnYields.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnYields.UseVisualStyleBackColor = true;
+            this.btnYields.Click += new System.EventHandler(this.btnStock_Click);
             // 
             // btnVehicle
             // 
@@ -1151,7 +1151,7 @@
         public System.Windows.Forms.Label lblManager;
         public System.Windows.Forms.PictureBox picBoxManager;
         private System.Windows.Forms.Button btnAccounting;
-        private System.Windows.Forms.Button btnStocks;
+        private System.Windows.Forms.Button btnYields;
         private System.Windows.Forms.Button btnVehicle;
         private System.Windows.Forms.Button btnStorage;
         private System.Windows.Forms.Panel panelBtnIndicator6;

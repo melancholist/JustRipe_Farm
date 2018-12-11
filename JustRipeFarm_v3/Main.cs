@@ -167,7 +167,7 @@ namespace JustRipeFarm_v3
             pnlStocks.Show();
             pnlAccounting.Hide();
 
-            if (btnStocks.Enabled)
+            if (btnYields.Enabled)
             {
                 panelBtnIndicator1.Hide();
                 panelBtnIndicator2.Hide();

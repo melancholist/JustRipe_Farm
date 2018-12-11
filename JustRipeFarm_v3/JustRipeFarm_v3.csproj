@@ -109,7 +109,15 @@
     <Compile Include="AssignTask.Designer.cs">
       <DependentUpon>AssignTask.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Fertiliser.cs" />
+    <Compile Include="Classes\Pesticides.cs" />
+    <Compile Include="Classes\Storage.cs" />
+    <Compile Include="Classes\Yield.cs" />
+    <Compile Include="ClassHandlers\FertiliserHandler.cs" />
+    <Compile Include="ClassHandlers\MachineHandler.cs" />
+    <Compile Include="ClassHandlers\PesticideHandler.cs" />
     <Compile Include="ClassHandlers\ScheduleHandler.cs" />
+    <Compile Include="ClassHandlers\StorageHandler.cs" />
     <Compile Include="DbConnector.cs" />
     <Compile Include="Classes\Equipment.cs" />
     <Compile Include="ClassHandlers\EquipmentHandler.cs" />
@@ -137,6 +145,7 @@
     <Compile Include="ClassHandlers\ServiceRecordHandler.cs" />
     <Compile Include="Classes\Staff.cs" />
     <Compile Include="ClassHandlers\StaffHandler.cs" />
+    <Compile Include="Classes\Machine.cs" />
     <Compile Include="StaffManagement.cs">
       <SubType>Form</SubType>
     </Compile>
