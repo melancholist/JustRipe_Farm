@@ -118,6 +118,7 @@
     <Compile Include="ClassHandlers\PesticideHandler.cs" />
     <Compile Include="ClassHandlers\ScheduleHandler.cs" />
     <Compile Include="ClassHandlers\StorageHandler.cs" />
+    <Compile Include="ClassHandlers\YieldHandler.cs" />
     <Compile Include="DbConnector.cs" />
     <Compile Include="Classes\Equipment.cs" />
     <Compile Include="ClassHandlers\EquipmentHandler.cs" />

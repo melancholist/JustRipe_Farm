@@ -162,9 +162,9 @@
             this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStaff.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStaff.ForeColor = System.Drawing.Color.White;
-            this.btnStaff.Location = new System.Drawing.Point(779, 24);
+            this.btnStaff.Location = new System.Drawing.Point(783, 33);
             this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(188, 51);
+            this.btnStaff.Size = new System.Drawing.Size(190, 51);
             this.btnStaff.TabIndex = 11;
             this.btnStaff.Text = "+ Add Record";
             this.btnStaff.UseVisualStyleBackColor = false;
@@ -255,9 +255,9 @@
         private System.Windows.Forms.PictureBox picBocSearch;
         private System.Windows.Forms.ComboBox searchComboBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridViewStaff;
         private System.Windows.Forms.Button btnStaff;
         private Bunifu.Framework.UI.BunifuImageButton backpictureBox;
         public System.Windows.Forms.Button btnTask;
+        public System.Windows.Forms.DataGridView dataGridViewStaff;
     }
 }

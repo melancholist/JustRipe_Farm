@@ -27,7 +27,6 @@ namespace JustRipeFarm_v3
             Staff stff = new Staff();
             StaffHandler staffHandlr = new StaffHandler();
 
-
             stff.FirstName = fnameTextBox.Text;
             stff.LastName = lnameTextBox.Text;
             stff.Age = int.Parse(ageTextBox.Text);
