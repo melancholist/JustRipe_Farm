@@ -38,13 +38,13 @@ namespace JustRipeFarm_v3
     {
         private string method;
         private int storageUnit;
-        private string plantType;
+        private string machine;
         private DateTime startTime;
         private DateTime endTime;
 
         public string Method { get => method; set => method = value; }
         public int StorageUnit { get => storageUnit; set => storageUnit = value; }
-        public string PlantType { get => plantType; set => plantType = value; }
+        public string Machine { get => machine; set => machine = value; }
         public DateTime StartTime { get => startTime; set => startTime = value; }
         public DateTime EndTime { get => endTime; set => endTime = value; }
     }

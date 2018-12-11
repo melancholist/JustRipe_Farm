@@ -23,9 +23,9 @@ namespace JustRipeFarm_v3
 
         public int addHarvestSchedule(MySqlConnection cn, Harvest harvest)
         {
-            string harvestQuery = "INSERT INTO harvestTask (labourerName, farmSector, date, method, storageUnit, plantType, startTime, endTime)"
+            string harvestQuery = "INSERT INTO harvestTask (labourerName, farmSector, date, method, storageUnit, machine, startTime, endTime)"
                 + "VALUES ('" + harvest.LabourerName + "', " + harvest.FarmSector + ", '" + harvest.Date.ToString("yyyy-MM-dd") + "', '" +
-                harvest.Method + "', '" + harvest.StorageUnit + "', '" + harvest.PlantType + "', '" + harvest.StartTime.ToString("hh:mm") + "', '" +
+                harvest.Method + "', '" + harvest.StorageUnit + "', '" + harvest.Machine + "', '" + harvest.StartTime.ToString("hh:mm") + "', '" +
                 harvest.EndTime.ToString("hh:mm") + "' )";
 
             MySqlCommand sqlCmd = new MySqlCommand(harvestQuery, cn);

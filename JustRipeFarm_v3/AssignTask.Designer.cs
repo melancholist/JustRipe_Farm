@@ -179,11 +179,10 @@
             this.pnlHarvest.Controls.Add(this.label12);
             this.pnlHarvest.Controls.Add(this.comboBoxWorkerHarv);
             this.pnlHarvest.Controls.Add(this.label11);
-            this.pnlHarvest.Location = new System.Drawing.Point(178, 51);
+            this.pnlHarvest.Location = new System.Drawing.Point(177, 48);
             this.pnlHarvest.Name = "pnlHarvest";
             this.pnlHarvest.Size = new System.Drawing.Size(892, 622);
             this.pnlHarvest.TabIndex = 20;
-            this.pnlHarvest.Visible = false;
             // 
             // comboBoxPlantType
             // 
@@ -243,11 +242,11 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(29, 389);
+            this.label18.Location = new System.Drawing.Point(33, 391);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(113, 23);
+            this.label18.Size = new System.Drawing.Size(102, 23);
             this.label18.TabIndex = 22;
-            this.label18.Text = "Plant type:";
+            this.label18.Text = "Machine:";
             // 
             // comboBoxStorageUnit
             // 
@@ -441,11 +440,10 @@
             this.pnlTreatment.Controls.Add(this.comboBoxWorkerT);
             this.pnlTreatment.Controls.Add(this.label19);
             this.pnlTreatment.Controls.Add(this.label26);
-            this.pnlTreatment.Location = new System.Drawing.Point(178, 50);
+            this.pnlTreatment.Location = new System.Drawing.Point(176, 48);
             this.pnlTreatment.Name = "pnlTreatment";
             this.pnlTreatment.Size = new System.Drawing.Size(892, 622);
             this.pnlTreatment.TabIndex = 24;
-            this.pnlTreatment.Visible = false;
             // 
             // btnClearT
             // 
@@ -663,7 +661,6 @@
             this.pnlDriving.Name = "pnlDriving";
             this.pnlDriving.Size = new System.Drawing.Size(892, 622);
             this.pnlDriving.TabIndex = 25;
-            this.pnlDriving.Visible = false;
             // 
             // label29
             // 
@@ -896,7 +893,6 @@
             this.pnlSowing.Name = "pnlSowing";
             this.pnlSowing.Size = new System.Drawing.Size(894, 622);
             this.pnlSowing.TabIndex = 3;
-            this.pnlSowing.Visible = false;
             // 
             // btnClear
             // 
@@ -1130,8 +1126,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1069, 670);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlTreatment);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlHarvest);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlSowing);

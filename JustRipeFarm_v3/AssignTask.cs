@@ -41,7 +41,7 @@ namespace JustRipeFarm_v3
 
                 while (reader.Read())
                 {
-                    string fieldWorker = reader.GetString("lastname");
+                    string fieldWorker = reader.GetString("username");
                     comboBoxWorkers.Items.Add(fieldWorker);
                     comboBoxWorkerHarv.Items.Add(fieldWorker);
                     comboBoxWorkerT.Items.Add(fieldWorker);
@@ -64,8 +64,9 @@ namespace JustRipeFarm_v3
 
                 while (reader.Read())
                 {
-                    string driver = reader.GetString("lastname");
+                    string driver = reader.GetString("username");
                     comboBoxDriver.Items.Add(driver);
+                    break;
                 }
             }
             catch (Exception ex)
@@ -183,6 +184,10 @@ namespace JustRipeFarm_v3
         private void AssignTask_Load(object sender, EventArgs e)
         {
             pnlSowing.Visible = true;
+            pnlSowing.Show();
+            pnlHarvest.Hide();
+            pnlTreatment.Hide();
+            pnlDriving.Hide();
             pnlSowing.BringToFront();
         }
 
@@ -196,43 +201,59 @@ namespace JustRipeFarm_v3
 
         private void btnSowing_Click(object sender, EventArgs e)
         {
-            while (btnSowing.Enabled)
-            {
+            //while (btnSowing.Enabled)
+            //{
                 pnlSowing.Visible = true;
-                pnlSowing.BringToFront();
-                break;
-            }
+            pnlSowing.Show();
+            pnlHarvest.Hide();
+            pnlTreatment.Hide();
+            pnlDriving.Hide();
+            pnlSowing.BringToFront();
+            //break;
+            //}
         }
 
         private void btnHarvest_Click(object sender, EventArgs e)
         {
-            while (btnHarvest.Enabled)
-            {
+            //while (btnHarvest.Enabled)
+            //{
                 pnlHarvest.Visible = true;
-                pnlHarvest.BringToFront();
-                break;
-            }
+            pnlSowing.Hide();
+            pnlHarvest.Show();
+            pnlTreatment.Hide();
+            pnlDriving.Hide();
+            pnlHarvest.BringToFront();
+            //break;
+            //}
         }
 
         private void btnTreating_Click(object sender, EventArgs e)
         {
-            while (btnTreating.Enabled)
-            {
+            //while (btnTreating.Enabled)
+            //{
                 pnlTreatment.Visible = true;
-                pnlTreatment.BringToFront();
-                break;
-            }
-           
+            pnlSowing.Hide();
+            pnlHarvest.Hide();
+            pnlTreatment.Show();
+            pnlDriving.Hide();
+            pnlTreatment.BringToFront();
+            //break;
+            //}
+
         }
 
         private void btnDriving_Click(object sender, EventArgs e)
         {
-            while (btnDriving.Enabled)
-            {
+            //while (btnDriving.Enabled)
+            //{
                 pnlDriving.Visible = true;
-                pnlDriving.BringToFront();
-                break;
-            }
+            pnlSowing.Hide();
+            pnlHarvest.Hide();
+            pnlTreatment.Hide();
+            pnlDriving.Show();
+            pnlDriving.BringToFront();
+            //break;
+            //}
         }
 
         //Calender values to input in textbox
@@ -285,7 +306,7 @@ namespace JustRipeFarm_v3
             harv.FarmSector = int.Parse(comboBoxFarmSectorHarv.Text);
             harv.Date = DateTime.ParseExact(textBoxHarvDate.Text, "d-M-yyyy", CultureInfo.InvariantCulture);
             harv.Method = comboBoxHarvestMehtod.Text;
-            harv.PlantType = comboBoxPlantType.Text;
+            harv.Machine = comboBoxPlantType.Text;
             harv.StorageUnit = int.Parse(comboBoxStorageUnit.Text);
             harv.StartTime = dateTimePickerStartHarv.Value.Date;
             harv.EndTime = dateTimePickerEndHarv.Value.Date;
