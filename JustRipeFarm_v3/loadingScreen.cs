@@ -15,6 +15,7 @@ namespace JustRipeFarm_v3
         public loadingScreen()
         {
             InitializeComponent();
+            System.Diagnostics.Debugger.Launch();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
