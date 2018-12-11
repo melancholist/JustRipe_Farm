@@ -35,6 +35,7 @@
             this.logoutPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnStaffManagement = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblSalesStaff = new System.Windows.Forms.Label();
             this.panelBtnIndicator6 = new System.Windows.Forms.Panel();
             this.panelBtnIndicator5 = new System.Windows.Forms.Panel();
             this.panelBtnIndicator4 = new System.Windows.Forms.Panel();
@@ -107,7 +108,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnVehicleMaintenance = new System.Windows.Forms.Button();
             this.labelVehicle = new System.Windows.Forms.Label();
-            this.lblSalesStaff = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -237,6 +237,20 @@
             this.panel1.Size = new System.Drawing.Size(233, 726);
             this.panel1.TabIndex = 6;
             // 
+            // lblSalesStaff
+            // 
+            this.lblSalesStaff.AutoSize = true;
+            this.lblSalesStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblSalesStaff.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalesStaff.ForeColor = System.Drawing.Color.Silver;
+            this.lblSalesStaff.Location = new System.Drawing.Point(53, 15);
+            this.lblSalesStaff.Name = "lblSalesStaff";
+            this.lblSalesStaff.Size = new System.Drawing.Size(128, 30);
+            this.lblSalesStaff.TabIndex = 17;
+            this.lblSalesStaff.Text = "sales staff";
+            this.lblSalesStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSalesStaff.Visible = false;
+            // 
             // panelBtnIndicator6
             // 
             this.panelBtnIndicator6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
@@ -332,7 +346,7 @@
             this.btnVehicle.Name = "btnVehicle";
             this.btnVehicle.Size = new System.Drawing.Size(229, 82);
             this.btnVehicle.TabIndex = 14;
-            this.btnVehicle.Text = "Vehicle";
+            this.btnVehicle.Text = "Vehicle / Machine";
             this.btnVehicle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVehicle.UseVisualStyleBackColor = true;
             this.btnVehicle.Click += new System.EventHandler(this.btnVehicle_Click);
@@ -1047,20 +1061,6 @@
             this.labelVehicle.TabIndex = 0;
             this.labelVehicle.Text = "Vehicle";
             this.labelVehicle.Click += new System.EventHandler(this.labelVehicle_Click);
-            // 
-            // lblSalesStaff
-            // 
-            this.lblSalesStaff.AutoSize = true;
-            this.lblSalesStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblSalesStaff.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalesStaff.ForeColor = System.Drawing.Color.Silver;
-            this.lblSalesStaff.Location = new System.Drawing.Point(53, 15);
-            this.lblSalesStaff.Name = "lblSalesStaff";
-            this.lblSalesStaff.Size = new System.Drawing.Size(128, 30);
-            this.lblSalesStaff.TabIndex = 17;
-            this.lblSalesStaff.Text = "sales staff";
-            this.lblSalesStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSalesStaff.Visible = false;
             // 
             // Main
             // 
