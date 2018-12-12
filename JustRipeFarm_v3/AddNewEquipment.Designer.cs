@@ -61,9 +61,9 @@
             this.label1.ForeColor = System.Drawing.Color.Silver;
             this.label1.Location = new System.Drawing.Point(23, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 34);
+            this.label1.Size = new System.Drawing.Size(228, 34);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Equipment";
+            this.label1.Text = "New Equipment";
             // 
             // label2
             // 
