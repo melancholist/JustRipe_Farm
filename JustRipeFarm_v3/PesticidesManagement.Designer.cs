@@ -358,6 +358,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PesticidesManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PesticidesManagement";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

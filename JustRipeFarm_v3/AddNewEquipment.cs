@@ -50,5 +50,10 @@ namespace JustRipeFarm_v3
             this.textBoxPrice.Text = "";
             this.textBoxDescription.Text = "";
         }
+
+        private void exitPictureBox_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

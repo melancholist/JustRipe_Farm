@@ -43,13 +43,13 @@
             this.btnClearF = new System.Windows.Forms.Button();
             this.btnSaveF = new System.Windows.Forms.Button();
             this.pnlUpdateFer = new System.Windows.Forms.Panel();
+            this.btnClearFerU = new System.Windows.Forms.Button();
+            this.btnSaveFerUp = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.numericUpDownUpdateQ = new System.Windows.Forms.NumericUpDown();
             this.comboBoxUpdateFer = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnClearFerU = new System.Windows.Forms.Button();
-            this.btnSaveFerUp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.panel1.SuspendLayout();
             this.pnlAddFertiliser.SuspendLayout();
@@ -250,6 +250,38 @@
             this.pnlUpdateFer.Size = new System.Drawing.Size(584, 459);
             this.pnlUpdateFer.TabIndex = 44;
             // 
+            // btnClearFerU
+            // 
+            this.btnClearFerU.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnClearFerU.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnClearFerU.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnClearFerU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearFerU.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearFerU.ForeColor = System.Drawing.Color.White;
+            this.btnClearFerU.Location = new System.Drawing.Point(96, 307);
+            this.btnClearFerU.Name = "btnClearFerU";
+            this.btnClearFerU.Size = new System.Drawing.Size(114, 48);
+            this.btnClearFerU.TabIndex = 49;
+            this.btnClearFerU.Text = "Clear";
+            this.btnClearFerU.UseVisualStyleBackColor = true;
+            this.btnClearFerU.Click += new System.EventHandler(this.btnClearFerU_Click);
+            // 
+            // btnSaveFerUp
+            // 
+            this.btnSaveFerUp.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSaveFerUp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnSaveFerUp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnSaveFerUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveFerUp.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveFerUp.ForeColor = System.Drawing.Color.White;
+            this.btnSaveFerUp.Location = new System.Drawing.Point(337, 307);
+            this.btnSaveFerUp.Name = "btnSaveFerUp";
+            this.btnSaveFerUp.Size = new System.Drawing.Size(114, 48);
+            this.btnSaveFerUp.TabIndex = 48;
+            this.btnSaveFerUp.Text = "Save";
+            this.btnSaveFerUp.UseVisualStyleBackColor = true;
+            this.btnSaveFerUp.Click += new System.EventHandler(this.btnSaveFerUp_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -323,38 +355,6 @@
             this.label8.TabIndex = 43;
             this.label8.Text = "Fertiliser Type:";
             // 
-            // btnClearFerU
-            // 
-            this.btnClearFerU.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnClearFerU.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnClearFerU.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnClearFerU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearFerU.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearFerU.ForeColor = System.Drawing.Color.White;
-            this.btnClearFerU.Location = new System.Drawing.Point(96, 307);
-            this.btnClearFerU.Name = "btnClearFerU";
-            this.btnClearFerU.Size = new System.Drawing.Size(114, 48);
-            this.btnClearFerU.TabIndex = 49;
-            this.btnClearFerU.Text = "Clear";
-            this.btnClearFerU.UseVisualStyleBackColor = true;
-            this.btnClearFerU.Click += new System.EventHandler(this.btnClearFerU_Click);
-            // 
-            // btnSaveFerUp
-            // 
-            this.btnSaveFerUp.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnSaveFerUp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnSaveFerUp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnSaveFerUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveFerUp.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveFerUp.ForeColor = System.Drawing.Color.White;
-            this.btnSaveFerUp.Location = new System.Drawing.Point(337, 307);
-            this.btnSaveFerUp.Name = "btnSaveFerUp";
-            this.btnSaveFerUp.Size = new System.Drawing.Size(114, 48);
-            this.btnSaveFerUp.TabIndex = 48;
-            this.btnSaveFerUp.Text = "Save";
-            this.btnSaveFerUp.UseVisualStyleBackColor = true;
-            this.btnSaveFerUp.Click += new System.EventHandler(this.btnSaveFerUp_Click);
-            // 
             // FertiliserManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -366,6 +366,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FertiliserManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddNewFertiliser";
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
             this.panel1.ResumeLayout(false);
