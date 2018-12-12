@@ -30,7 +30,7 @@ namespace JustRipeFarm_v3
             this.textBoxPrice.Text = "";
         }
 
-        private void btbSave_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             DBConn.connect();
             Vehicle vehicle = new Vehicle();

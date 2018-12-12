@@ -63,5 +63,10 @@ namespace JustRipeFarm_v3
             comboBoxUpdType.Text = "";
             numericUpDownUpdateQ.Value = 0;
         }
+
+        private void exitPictureBox_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

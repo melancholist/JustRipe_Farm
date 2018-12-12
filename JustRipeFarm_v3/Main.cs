@@ -316,6 +316,7 @@ namespace JustRipeFarm_v3
                 groupBoxEquip.Visible = true;
             }
         }
+
         private void btnAddEquipment_Click(object sender, EventArgs e)
         {
             AddNewEquipment equip = new AddNewEquipment();
