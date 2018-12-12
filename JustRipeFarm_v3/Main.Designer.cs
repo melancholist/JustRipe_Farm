@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -113,7 +115,6 @@
             this.comboBoxYieldType = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnAddYield = new System.Windows.Forms.Button();
-            this.dataGridViewYields = new System.Windows.Forms.DataGridView();
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnYields = new System.Windows.Forms.Button();
             this.pnlAccounting = new System.Windows.Forms.Panel();
@@ -132,6 +133,7 @@
             this.btnExpense = new System.Windows.Forms.Button();
             this.btnIncome = new System.Windows.Forms.Button();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.dataGridViewYields = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -165,7 +167,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
             this.groupBoxYields.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchYield)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYields)).BeginInit();
             this.pnlAccounting.SuspendLayout();
             this.groupBoxExpense.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchExpDate)).BeginInit();
@@ -173,6 +174,7 @@
             this.groupBoxIncome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxSearchInDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYields)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -633,7 +635,7 @@
             this.dataGridViewSchedule.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1237,7 +1239,6 @@
             // pnlStocks
             // 
             this.pnlStocks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(146)))), ((int)(((byte)(103)))));
-            this.pnlStocks.Controls.Add(this.groupBoxProducts);
             this.pnlStocks.Controls.Add(this.groupBoxYields);
             this.pnlStocks.Controls.Add(this.btnProducts);
             this.pnlStocks.Controls.Add(this.btnYields);
@@ -1255,7 +1256,7 @@
             this.groupBoxProducts.Controls.Add(this.dataGridViewProducts);
             this.groupBoxProducts.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxProducts.ForeColor = System.Drawing.Color.White;
-            this.groupBoxProducts.Location = new System.Drawing.Point(44, 126);
+            this.groupBoxProducts.Location = new System.Drawing.Point(0, 0);
             this.groupBoxProducts.Name = "groupBoxProducts";
             this.groupBoxProducts.Size = new System.Drawing.Size(884, 563);
             this.groupBoxProducts.TabIndex = 21;
@@ -1327,6 +1328,7 @@
             // 
             // groupBoxYields
             // 
+            this.groupBoxYields.Controls.Add(this.groupBoxProducts);
             this.groupBoxYields.Controls.Add(this.picBoxSearchYield);
             this.groupBoxYields.Controls.Add(this.comboBoxYieldType);
             this.groupBoxYields.Controls.Add(this.label5);
@@ -1334,7 +1336,7 @@
             this.groupBoxYields.Controls.Add(this.dataGridViewYields);
             this.groupBoxYields.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxYields.ForeColor = System.Drawing.Color.White;
-            this.groupBoxYields.Location = new System.Drawing.Point(44, 126);
+            this.groupBoxYields.Location = new System.Drawing.Point(46, 143);
             this.groupBoxYields.Name = "groupBoxYields";
             this.groupBoxYields.Size = new System.Drawing.Size(884, 563);
             this.groupBoxYields.TabIndex = 20;
@@ -1393,16 +1395,6 @@
             this.btnAddYield.Text = "+ yield";
             this.btnAddYield.UseVisualStyleBackColor = false;
             this.btnAddYield.Click += new System.EventHandler(this.btnAddYield_Click);
-            // 
-            // dataGridViewYields
-            // 
-            this.dataGridViewYields.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewYields.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewYields.Location = new System.Drawing.Point(59, 127);
-            this.dataGridViewYields.Name = "dataGridViewYields";
-            this.dataGridViewYields.RowTemplate.Height = 24;
-            this.dataGridViewYields.Size = new System.Drawing.Size(765, 399);
-            this.dataGridViewYields.TabIndex = 0;
             // 
             // btnProducts
             // 
@@ -1645,16 +1637,46 @@
             this.bunifuDragControl1.TargetControl = this.panel2;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // dataGridViewYields
+            // 
+            this.dataGridViewYields.AllowUserToAddRows = false;
+            this.dataGridViewYields.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewYields.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewYields.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridViewYields.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(146)))), ((int)(((byte)(103)))));
+            this.dataGridViewYields.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewYields.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewYields.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewYields.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewYields.DoubleBuffered = true;
+            this.dataGridViewYields.EnableHeadersVisualStyles = false;
+            this.dataGridViewYields.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.dataGridViewYields.HeaderForeColor = System.Drawing.Color.White;
+            this.dataGridViewYields.Location = new System.Drawing.Point(59, 127);
+            this.dataGridViewYields.Name = "dataGridViewYields";
+            this.dataGridViewYields.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridViewYields.RowTemplate.Height = 24;
+            this.dataGridViewYields.Size = new System.Drawing.Size(765, 399);
+            this.dataGridViewYields.TabIndex = 25;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
+            this.Controls.Add(this.pnlStocks);
             this.Controls.Add(this.pnlSchedule);
             this.Controls.Add(this.pnlResources);
             this.Controls.Add(this.pnlAccounting);
-            this.Controls.Add(this.pnlStocks);
             this.Controls.Add(this.pnlVehicMach);
             this.Controls.Add(this.pnlStorage);
             this.Controls.Add(this.panel1);
@@ -1704,7 +1726,6 @@
             this.groupBoxYields.ResumeLayout(false);
             this.groupBoxYields.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchYield)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYields)).EndInit();
             this.pnlAccounting.ResumeLayout(false);
             this.groupBoxExpense.ResumeLayout(false);
             this.groupBoxExpense.PerformLayout();
@@ -1714,6 +1735,7 @@
             this.groupBoxIncome.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxSearchInDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYields)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1791,7 +1813,6 @@
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button btnYields;
         private System.Windows.Forms.GroupBox groupBoxYields;
-        private System.Windows.Forms.DataGridView dataGridViewYields;
         private System.Windows.Forms.Button btnAddYield;
         private System.Windows.Forms.PictureBox picBoxSearchYield;
         private System.Windows.Forms.ComboBox comboBoxYieldType;
@@ -1819,5 +1840,6 @@
         private System.Windows.Forms.DataGridView dataGridViewExpense;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewSchedule;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewYields;
     }
 }
