@@ -53,23 +53,26 @@
             // lblCustomer
             // 
             this.lblCustomer.AutoSize = true;
-            this.lblCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomer.BackColor = System.Drawing.Color.Linen;
+            this.lblCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCustomer.ForeColor = System.Drawing.Color.Black;
-            this.lblCustomer.Location = new System.Drawing.Point(32, 91);
+            this.lblCustomer.Location = new System.Drawing.Point(56, 91);
             this.lblCustomer.Name = "lblCustomer";
-            this.lblCustomer.Size = new System.Drawing.Size(76, 17);
+            this.lblCustomer.Size = new System.Drawing.Size(90, 20);
             this.lblCustomer.TabIndex = 28;
             this.lblCustomer.Text = "Customer";
             // 
             // textBoxDescription
             // 
-            this.textBoxDescription.Location = new System.Drawing.Point(142, 233);
+            this.textBoxDescription.BackColor = System.Drawing.Color.Linen;
+            this.textBoxDescription.Location = new System.Drawing.Point(191, 274);
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.Size = new System.Drawing.Size(200, 22);
             this.textBoxDescription.TabIndex = 25;
             // 
             // comboBoxIncome
             // 
+            this.comboBoxIncome.BackColor = System.Drawing.Color.Linen;
             this.comboBoxIncome.FormattingEnabled = true;
             this.comboBoxIncome.Items.AddRange(new object[] {
             "Sales of produce, grains and other products",
@@ -78,28 +81,31 @@
             "Crop insurance proceeds and federal crop disaster payments",
             "Custom hire (machine work) income",
             "Other income"});
-            this.comboBoxIncome.Location = new System.Drawing.Point(142, 192);
+            this.comboBoxIncome.Location = new System.Drawing.Point(191, 224);
             this.comboBoxIncome.Name = "comboBoxIncome";
             this.comboBoxIncome.Size = new System.Drawing.Size(200, 24);
             this.comboBoxIncome.TabIndex = 24;
             // 
             // textBoxCustomer
             // 
-            this.textBoxCustomer.Location = new System.Drawing.Point(142, 86);
+            this.textBoxCustomer.BackColor = System.Drawing.Color.Linen;
+            this.textBoxCustomer.Location = new System.Drawing.Point(191, 91);
             this.textBoxCustomer.Name = "textBoxCustomer";
             this.textBoxCustomer.Size = new System.Drawing.Size(200, 22);
             this.textBoxCustomer.TabIndex = 23;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(142, 154);
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Linen;
+            this.dateTimePicker1.Location = new System.Drawing.Point(191, 182);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(222, 22);
             this.dateTimePicker1.TabIndex = 22;
             // 
             // textBoxAmount
             // 
-            this.textBoxAmount.Location = new System.Drawing.Point(142, 119);
+            this.textBoxAmount.BackColor = System.Drawing.Color.Linen;
+            this.textBoxAmount.Location = new System.Drawing.Point(191, 136);
             this.textBoxAmount.Name = "textBoxAmount";
             this.textBoxAmount.Size = new System.Drawing.Size(200, 22);
             this.textBoxAmount.TabIndex = 21;
@@ -107,54 +113,58 @@
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.BackColor = System.Drawing.Color.Linen;
+            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescription.ForeColor = System.Drawing.Color.Black;
-            this.lblDescription.Location = new System.Drawing.Point(35, 238);
+            this.lblDescription.Location = new System.Drawing.Point(56, 274);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(90, 17);
+            this.lblDescription.Size = new System.Drawing.Size(106, 20);
             this.lblDescription.TabIndex = 19;
             this.lblDescription.Text = "Description";
             // 
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
-            this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.BackColor = System.Drawing.Color.Linen;
+            this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategory.ForeColor = System.Drawing.Color.Black;
-            this.lblCategory.Location = new System.Drawing.Point(35, 199);
+            this.lblCategory.Location = new System.Drawing.Point(56, 224);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(73, 17);
+            this.lblCategory.Size = new System.Drawing.Size(84, 20);
             this.lblCategory.TabIndex = 18;
             this.lblCategory.Text = "Category";
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.BackColor = System.Drawing.Color.Linen;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.Black;
-            this.lblDate.Location = new System.Drawing.Point(35, 159);
+            this.lblDate.Location = new System.Drawing.Point(56, 182);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(42, 17);
+            this.lblDate.Size = new System.Drawing.Size(49, 20);
             this.lblDate.TabIndex = 17;
             this.lblDate.Text = "Date";
             // 
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmount.BackColor = System.Drawing.Color.Linen;
+            this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAmount.ForeColor = System.Drawing.Color.Black;
-            this.lblAmount.Location = new System.Drawing.Point(35, 124);
+            this.lblAmount.Location = new System.Drawing.Point(56, 136);
             this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(76, 17);
+            this.lblAmount.Size = new System.Drawing.Size(88, 20);
             this.lblAmount.TabIndex = 16;
             this.lblAmount.Text = "Amount $";
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(267, 308);
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(308, 358);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 37);
+            this.btnSave.Size = new System.Drawing.Size(105, 37);
             this.btnSave.TabIndex = 30;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -163,10 +173,10 @@
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(179, 308);
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(200, 358);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(82, 37);
+            this.btnClear.Size = new System.Drawing.Size(102, 37);
             this.btnClear.TabIndex = 29;
             this.btnClear.Text = "Clear all";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -178,7 +188,7 @@
             this.lblNewTransaction.BackColor = System.Drawing.Color.OliveDrab;
             this.lblNewTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNewTransaction.ForeColor = System.Drawing.Color.LemonChiffon;
-            this.lblNewTransaction.Location = new System.Drawing.Point(12, 7);
+            this.lblNewTransaction.Location = new System.Drawing.Point(34, 10);
             this.lblNewTransaction.Name = "lblNewTransaction";
             this.lblNewTransaction.Size = new System.Drawing.Size(188, 32);
             this.lblNewTransaction.TabIndex = 32;
@@ -189,7 +199,7 @@
             this.exitPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
             this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
             this.exitPictureBox.ImageActive = null;
-            this.exitPictureBox.Location = new System.Drawing.Point(349, 10);
+            this.exitPictureBox.Location = new System.Drawing.Point(428, 13);
             this.exitPictureBox.Name = "exitPictureBox";
             this.exitPictureBox.Size = new System.Drawing.Size(31, 29);
             this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -206,7 +216,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(392, 49);
+            this.panel1.Size = new System.Drawing.Size(483, 60);
             this.panel1.TabIndex = 52;
             // 
             // bunifuDragControl1
@@ -220,8 +230,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(392, 367);
+            this.BackColor = System.Drawing.Color.Linen;
+            this.ClientSize = new System.Drawing.Size(483, 433);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClear);
