@@ -109,9 +109,9 @@
             // 
             this.btnClear.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(275, 349);
+            this.btnClear.Location = new System.Drawing.Point(285, 349);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(119, 44);
+            this.btnClear.Size = new System.Drawing.Size(109, 44);
             this.btnClear.TabIndex = 5;
             this.btnClear.Text = "Clear All";
             this.btnClear.UseVisualStyleBackColor = false;
