@@ -34,7 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -105,20 +104,21 @@
             this.btnMachine = new System.Windows.Forms.Button();
             this.btnVehic = new System.Windows.Forms.Button();
             this.pnlStocks = new System.Windows.Forms.Panel();
-            this.groupBoxProducts = new System.Windows.Forms.GroupBox();
-            this.picBoxSearchProd = new System.Windows.Forms.PictureBox();
-            this.comboBoxProdCat = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnAddProd = new System.Windows.Forms.Button();
-            this.dataGridViewProducts = new System.Windows.Forms.DataGridView();
+            this.storageYieldCapacity = new Bunifu.Framework.UI.BunifuCircleProgressbar();
+            this.btnProducts = new System.Windows.Forms.Button();
+            this.btnYields = new System.Windows.Forms.Button();
             this.groupBoxYields = new System.Windows.Forms.GroupBox();
             this.picBoxSearchYield = new System.Windows.Forms.PictureBox();
             this.comboBoxYieldType = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnAddYield = new System.Windows.Forms.Button();
             this.dataGridViewYields = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.btnProducts = new System.Windows.Forms.Button();
-            this.btnYields = new System.Windows.Forms.Button();
+            this.groupBoxProducts = new System.Windows.Forms.GroupBox();
+            this.picBoxSearchProd = new System.Windows.Forms.PictureBox();
+            this.comboBoxProdCat = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnAddProd = new System.Windows.Forms.Button();
+            this.dataGridViewProducts = new System.Windows.Forms.DataGridView();
             this.pnlAccounting = new System.Windows.Forms.Panel();
             this.groupBoxExpense = new System.Windows.Forms.GroupBox();
             this.picBoxSearchExpDate = new System.Windows.Forms.PictureBox();
@@ -135,7 +135,6 @@
             this.btnExpense = new System.Windows.Forms.Button();
             this.btnIncome = new System.Windows.Forms.Button();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.storageYieldCapacity = new Bunifu.Framework.UI.BunifuCircleProgressbar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -164,12 +163,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).BeginInit();
             this.pnlStocks.SuspendLayout();
-            this.groupBoxProducts.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchProd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
             this.groupBoxYields.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchYield)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYields)).BeginInit();
+            this.groupBoxProducts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchProd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
             this.pnlAccounting.SuspendLayout();
             this.groupBoxExpense.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchExpDate)).BeginInit();
@@ -1251,84 +1250,69 @@
             this.pnlStocks.Size = new System.Drawing.Size(967, 726);
             this.pnlStocks.TabIndex = 22;
             // 
-            // groupBoxProducts
+            // storageYieldCapacity
             // 
-            this.groupBoxProducts.Controls.Add(this.picBoxSearchProd);
-            this.groupBoxProducts.Controls.Add(this.comboBoxProdCat);
-            this.groupBoxProducts.Controls.Add(this.label6);
-            this.groupBoxProducts.Controls.Add(this.btnAddProd);
-            this.groupBoxProducts.Controls.Add(this.dataGridViewProducts);
-            this.groupBoxProducts.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxProducts.ForeColor = System.Drawing.Color.White;
-            this.groupBoxProducts.Location = new System.Drawing.Point(46, 143);
-            this.groupBoxProducts.Name = "groupBoxProducts";
-            this.groupBoxProducts.Size = new System.Drawing.Size(884, 563);
-            this.groupBoxProducts.TabIndex = 21;
-            this.groupBoxProducts.TabStop = false;
-            this.groupBoxProducts.Text = "Products";
-            this.groupBoxProducts.Visible = false;
+            this.storageYieldCapacity.animated = false;
+            this.storageYieldCapacity.animationIterval = 5;
+            this.storageYieldCapacity.animationSpeed = 300;
+            this.storageYieldCapacity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(146)))), ((int)(((byte)(103)))));
+            this.storageYieldCapacity.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("storageYieldCapacity.BackgroundImage")));
+            this.storageYieldCapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
+            this.storageYieldCapacity.ForeColor = System.Drawing.Color.White;
+            this.storageYieldCapacity.LabelVisible = true;
+            this.storageYieldCapacity.LineProgressThickness = 8;
+            this.storageYieldCapacity.LineThickness = 5;
+            this.storageYieldCapacity.Location = new System.Drawing.Point(753, 20);
+            this.storageYieldCapacity.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.storageYieldCapacity.MaxValue = 100;
+            this.storageYieldCapacity.Name = "storageYieldCapacity";
+            this.storageYieldCapacity.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.storageYieldCapacity.ProgressColor = System.Drawing.Color.SeaGreen;
+            this.storageYieldCapacity.Size = new System.Drawing.Size(117, 117);
+            this.storageYieldCapacity.TabIndex = 26;
+            this.storageYieldCapacity.Value = 0;
             // 
-            // picBoxSearchProd
+            // btnProducts
             // 
-            this.picBoxSearchProd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBoxSearchProd.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSearchProd.Image")));
-            this.picBoxSearchProd.Location = new System.Drawing.Point(369, 66);
-            this.picBoxSearchProd.Name = "picBoxSearchProd";
-            this.picBoxSearchProd.Size = new System.Drawing.Size(53, 44);
-            this.picBoxSearchProd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxSearchProd.TabIndex = 24;
-            this.picBoxSearchProd.TabStop = false;
-            this.picBoxSearchProd.Click += new System.EventHandler(this.picBoxSearchProd_Click);
+            this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnProducts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProducts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnProducts.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnProducts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducts.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProducts.ForeColor = System.Drawing.Color.White;
+            this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProducts.Location = new System.Drawing.Point(487, 31);
+            this.btnProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(186, 74);
+            this.btnProducts.TabIndex = 19;
+            this.btnProducts.Text = "Products";
+            this.btnProducts.UseVisualStyleBackColor = false;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
-            // comboBoxProdCat
+            // btnYields
             // 
-            this.comboBoxProdCat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxProdCat.FormattingEnabled = true;
-            this.comboBoxProdCat.Location = new System.Drawing.Point(164, 73);
-            this.comboBoxProdCat.Name = "comboBoxProdCat";
-            this.comboBoxProdCat.Size = new System.Drawing.Size(183, 31);
-            this.comboBoxProdCat.TabIndex = 23;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 76);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 23);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Category:";
-            // 
-            // btnAddProd
-            // 
-            this.btnAddProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnAddProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddProd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddProd.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnAddProd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnAddProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnAddProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddProd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProd.ForeColor = System.Drawing.Color.White;
-            this.btnAddProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddProd.Location = new System.Drawing.Point(655, 58);
-            this.btnAddProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddProd.Name = "btnAddProd";
-            this.btnAddProd.Size = new System.Drawing.Size(156, 54);
-            this.btnAddProd.TabIndex = 21;
-            this.btnAddProd.Text = "+ product";
-            this.btnAddProd.UseVisualStyleBackColor = false;
-            this.btnAddProd.Click += new System.EventHandler(this.btnAddProd_Click);
-            // 
-            // dataGridViewProducts
-            // 
-            this.dataGridViewProducts.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProducts.Location = new System.Drawing.Point(59, 127);
-            this.dataGridViewProducts.Name = "dataGridViewProducts";
-            this.dataGridViewProducts.RowTemplate.Height = 24;
-            this.dataGridViewProducts.Size = new System.Drawing.Size(765, 399);
-            this.dataGridViewProducts.TabIndex = 0;
+            this.btnYields.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnYields.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnYields.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnYields.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnYields.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnYields.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnYields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnYields.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYields.ForeColor = System.Drawing.Color.White;
+            this.btnYields.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnYields.Location = new System.Drawing.Point(269, 31);
+            this.btnYields.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnYields.Name = "btnYields";
+            this.btnYields.Size = new System.Drawing.Size(186, 74);
+            this.btnYields.TabIndex = 18;
+            this.btnYields.Text = "Yields";
+            this.btnYields.UseVisualStyleBackColor = false;
+            this.btnYields.Click += new System.EventHandler(this.btnYields_Click);
             // 
             // groupBoxYields
             // 
@@ -1411,7 +1395,7 @@
             this.dataGridViewYields.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1425,59 +1409,88 @@
             this.dataGridViewYields.Location = new System.Drawing.Point(59, 127);
             this.dataGridViewYields.Name = "dataGridViewYields";
             this.dataGridViewYields.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewYields.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewYields.RowTemplate.Height = 24;
             this.dataGridViewYields.Size = new System.Drawing.Size(765, 399);
             this.dataGridViewYields.TabIndex = 25;
             // 
-            // btnProducts
+            // groupBoxProducts
             // 
-            this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnProducts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnProducts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnProducts.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnProducts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProducts.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProducts.ForeColor = System.Drawing.Color.White;
-            this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProducts.Location = new System.Drawing.Point(487, 31);
-            this.btnProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Size = new System.Drawing.Size(186, 74);
-            this.btnProducts.TabIndex = 19;
-            this.btnProducts.Text = "Products";
-            this.btnProducts.UseVisualStyleBackColor = false;
-            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
+            this.groupBoxProducts.Controls.Add(this.picBoxSearchProd);
+            this.groupBoxProducts.Controls.Add(this.comboBoxProdCat);
+            this.groupBoxProducts.Controls.Add(this.label6);
+            this.groupBoxProducts.Controls.Add(this.btnAddProd);
+            this.groupBoxProducts.Controls.Add(this.dataGridViewProducts);
+            this.groupBoxProducts.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxProducts.ForeColor = System.Drawing.Color.White;
+            this.groupBoxProducts.Location = new System.Drawing.Point(46, 143);
+            this.groupBoxProducts.Name = "groupBoxProducts";
+            this.groupBoxProducts.Size = new System.Drawing.Size(884, 563);
+            this.groupBoxProducts.TabIndex = 21;
+            this.groupBoxProducts.TabStop = false;
+            this.groupBoxProducts.Text = "Products";
+            this.groupBoxProducts.Visible = false;
             // 
-            // btnYields
+            // picBoxSearchProd
             // 
-            this.btnYields.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnYields.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnYields.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnYields.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnYields.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnYields.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnYields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnYields.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnYields.ForeColor = System.Drawing.Color.White;
-            this.btnYields.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnYields.Location = new System.Drawing.Point(269, 31);
-            this.btnYields.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnYields.Name = "btnYields";
-            this.btnYields.Size = new System.Drawing.Size(186, 74);
-            this.btnYields.TabIndex = 18;
-            this.btnYields.Text = "Yields";
-            this.btnYields.UseVisualStyleBackColor = false;
-            this.btnYields.Click += new System.EventHandler(this.btnYields_Click);
+            this.picBoxSearchProd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBoxSearchProd.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSearchProd.Image")));
+            this.picBoxSearchProd.Location = new System.Drawing.Point(369, 66);
+            this.picBoxSearchProd.Name = "picBoxSearchProd";
+            this.picBoxSearchProd.Size = new System.Drawing.Size(53, 44);
+            this.picBoxSearchProd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxSearchProd.TabIndex = 24;
+            this.picBoxSearchProd.TabStop = false;
+            this.picBoxSearchProd.Click += new System.EventHandler(this.picBoxSearchProd_Click);
+            // 
+            // comboBoxProdCat
+            // 
+            this.comboBoxProdCat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxProdCat.FormattingEnabled = true;
+            this.comboBoxProdCat.Location = new System.Drawing.Point(164, 73);
+            this.comboBoxProdCat.Name = "comboBoxProdCat";
+            this.comboBoxProdCat.Size = new System.Drawing.Size(183, 31);
+            this.comboBoxProdCat.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(33, 76);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(108, 23);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Category:";
+            // 
+            // btnAddProd
+            // 
+            this.btnAddProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddProd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddProd.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddProd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnAddProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnAddProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddProd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddProd.ForeColor = System.Drawing.Color.White;
+            this.btnAddProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddProd.Location = new System.Drawing.Point(655, 58);
+            this.btnAddProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddProd.Name = "btnAddProd";
+            this.btnAddProd.Size = new System.Drawing.Size(156, 54);
+            this.btnAddProd.TabIndex = 21;
+            this.btnAddProd.Text = "+ product";
+            this.btnAddProd.UseVisualStyleBackColor = false;
+            this.btnAddProd.Click += new System.EventHandler(this.btnAddProd_Click);
+            // 
+            // dataGridViewProducts
+            // 
+            this.dataGridViewProducts.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProducts.Location = new System.Drawing.Point(59, 127);
+            this.dataGridViewProducts.Name = "dataGridViewProducts";
+            this.dataGridViewProducts.RowTemplate.Height = 24;
+            this.dataGridViewProducts.Size = new System.Drawing.Size(765, 399);
+            this.dataGridViewProducts.TabIndex = 0;
             // 
             // pnlAccounting
             // 
@@ -1678,28 +1691,6 @@
             this.bunifuDragControl1.TargetControl = this.panel2;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // storageYieldCapacity
-            // 
-            this.storageYieldCapacity.animated = false;
-            this.storageYieldCapacity.animationIterval = 5;
-            this.storageYieldCapacity.animationSpeed = 300;
-            this.storageYieldCapacity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(146)))), ((int)(((byte)(103)))));
-            this.storageYieldCapacity.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("storageYieldCapacity.BackgroundImage")));
-            this.storageYieldCapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
-            this.storageYieldCapacity.ForeColor = System.Drawing.Color.White;
-            this.storageYieldCapacity.LabelVisible = true;
-            this.storageYieldCapacity.LineProgressThickness = 8;
-            this.storageYieldCapacity.LineThickness = 5;
-            this.storageYieldCapacity.Location = new System.Drawing.Point(753, 20);
-            this.storageYieldCapacity.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.storageYieldCapacity.MaxValue = 100;
-            this.storageYieldCapacity.Name = "storageYieldCapacity";
-            this.storageYieldCapacity.ProgressBackColor = System.Drawing.Color.Gainsboro;
-            this.storageYieldCapacity.ProgressColor = System.Drawing.Color.SeaGreen;
-            this.storageYieldCapacity.Size = new System.Drawing.Size(117, 117);
-            this.storageYieldCapacity.TabIndex = 26;
-            this.storageYieldCapacity.Value = 0;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1752,14 +1743,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).EndInit();
             this.pnlStocks.ResumeLayout(false);
-            this.groupBoxProducts.ResumeLayout(false);
-            this.groupBoxProducts.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchProd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
             this.groupBoxYields.ResumeLayout(false);
             this.groupBoxYields.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchYield)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYields)).EndInit();
+            this.groupBoxProducts.ResumeLayout(false);
+            this.groupBoxProducts.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchProd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
             this.pnlAccounting.ResumeLayout(false);
             this.groupBoxExpense.ResumeLayout(false);
             this.groupBoxExpense.PerformLayout();
