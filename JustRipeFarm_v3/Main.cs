@@ -32,7 +32,7 @@ namespace JustRipeFarm_v3
             pnlStorage.Hide();
             pnlVehicMach.Hide();
             pnlStocks.Hide();
-            //pnlAccounting.Hide();
+            pnlAccounting.Hide();
         }
 
         //Exit Logout page and return to Login Page when button is clicked
@@ -52,7 +52,7 @@ namespace JustRipeFarm_v3
             pnlStorage.Hide();
             pnlVehicMach.Hide();
             pnlStocks.Hide();
-            //pnlAccounting.Hide();
+            pnlAccounting.Hide();
 
             if (btnSchedule.Enabled)
             {
@@ -155,7 +155,7 @@ namespace JustRipeFarm_v3
             pnlStorage.Hide();
             pnlVehicMach.Hide();
             pnlStocks.Hide();
-            //pnlAccounting.Hide();
+            pnlAccounting.Hide();
 
             if (btnResources.Enabled)
             {
@@ -319,7 +319,7 @@ namespace JustRipeFarm_v3
             pnlStorage.Show();
             pnlVehicMach.Hide();
             pnlStocks.Hide();
-            //pnlAccounting.Hide();
+            pnlAccounting.Hide();
 
             if (btnStorage.Enabled)
             {
@@ -364,9 +364,9 @@ namespace JustRipeFarm_v3
             pnlSchedule.Hide();
             pnlResources.Hide();
             pnlStorage.Hide();
-            pnlVehicMach.Hide();
+            pnlVehicMach.Show();
             pnlStocks.Hide();
-            //pnlAccounting.Hide();
+            pnlAccounting.Hide();
 
             if (btnVehicle.Enabled)
             {
@@ -467,7 +467,7 @@ namespace JustRipeFarm_v3
             pnlStorage.Hide();
             pnlVehicMach.Hide();
             pnlStocks.Show();
-            //pnlAccounting.Hide();
+            pnlAccounting.Hide();
 
             if (btnStock.Enabled)
             {
@@ -551,15 +551,16 @@ namespace JustRipeFarm_v3
             comboBoxProdCat.DataSource = dv.ToTable();
         }
 
-        //Accounting 
+
+        //Accounting panel
         private void btnAccounting_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
             pnlResources.Hide();
             pnlStorage.Hide();
-            //pnlVehicle.Hide();
-            //pnlStocks.Hide();
-            //pnlAccounting.Show();
+            pnlVehicMach.Hide();
+            pnlStocks.Hide();
+            pnlAccounting.Show();
 
             if (btnAccounting.Enabled)
             {
@@ -571,6 +572,79 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator6.Show();
             }
         }
+        //Income
+        private void btnIncome_Click(object sender, EventArgs e)
+        {
+            groupBoxIncome.Visible = true;
+            groupBoxExpense.Visible = false;
+
+            DataTable dt = new DataTable("income");
+            try
+            {
+                string query = "SELECT * FROM income";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewIncome.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btnAddIncome_Click(object sender, EventArgs e)
+        {
+            AddNewIncome inc = new AddNewIncome();
+            inc.Show();
+        }
+        private void pictBoxSearchInDate_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("income");
+            DataView dv = dt.DefaultView;
+            dv.RowFilter = string.Format("date = '#{0}#'", dateTimePickerInDate.Value.ToShortDateString());
+            dataGridViewIncome.DataSource = dv.ToTable();
+        }
+        //Expense
+        private void btnExpense_Click(object sender, EventArgs e)
+        {
+            groupBoxIncome.Visible = false;
+            groupBoxExpense.Visible = true;
+
+            DataTable dt = new DataTable("expense");
+            try
+            {
+                string query = "SELECT * FROM expense";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewExpense.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btnAddExpense_Click(object sender, EventArgs e)
+        {
+            AddNewExpense exp = new AddNewExpense();
+            exp.Show();
+        }
+        private void picBoxSearchExpDate_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("expense");
+            DataView dv = dt.DefaultView;
+            dv.RowFilter = string.Format("date = '#{0}#'", dateTimePickerExpDate.Value.ToShortDateString());
+            dataGridViewExpense.DataSource = dv.ToTable();
+        }
+
 
         //Redirrect users to staff management form
         private void btnStaffManagement_Click(object sender, EventArgs e)

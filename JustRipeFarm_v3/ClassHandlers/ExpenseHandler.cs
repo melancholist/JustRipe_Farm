@@ -12,7 +12,7 @@ namespace JustRipeFarm_v3
         public int addNewExpense(MySqlConnection conn, Expense expense)
         {
             string insertQuery = "INSERT INTO expense (payee, amount, date, category, description)"
-                + "VALUES ('" + expense.Payee + "', '" + expense.Amount + "'  , " + expense.Date + ", '" +
+                + "VALUES ('" + expense.Payee + "', '" + expense.Amount + "'  , '" + expense.Date.ToString("yyyy-MM-dd") + "', '" +
                expense.Category + "', '" + expense.Description + "' )";
 
             MySqlCommand sqlComm = new MySqlCommand(insertQuery, conn);

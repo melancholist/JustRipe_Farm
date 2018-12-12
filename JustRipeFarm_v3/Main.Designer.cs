@@ -115,6 +115,21 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnAddProd = new System.Windows.Forms.Button();
             this.dataGridViewProducts = new System.Windows.Forms.DataGridView();
+            this.pnlAccounting = new System.Windows.Forms.Panel();
+            this.btnIncome = new System.Windows.Forms.Button();
+            this.btnExpense = new System.Windows.Forms.Button();
+            this.groupBoxIncome = new System.Windows.Forms.GroupBox();
+            this.dataGridViewIncome = new System.Windows.Forms.DataGridView();
+            this.btnAddIncome = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dateTimePickerInDate = new System.Windows.Forms.DateTimePicker();
+            this.pictBoxSearchInDate = new System.Windows.Forms.PictureBox();
+            this.groupBoxExpense = new System.Windows.Forms.GroupBox();
+            this.picBoxSearchExpDate = new System.Windows.Forms.PictureBox();
+            this.dateTimePickerExpDate = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnAddExpense = new System.Windows.Forms.Button();
+            this.dataGridViewExpense = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -149,6 +164,13 @@
             this.groupBoxProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
+            this.pnlAccounting.SuspendLayout();
+            this.groupBoxIncome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxSearchInDate)).BeginInit();
+            this.groupBoxExpense.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchExpDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpense)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -306,7 +328,8 @@
             this.btnAccounting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAccounting.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAccounting.FlatAppearance.BorderSize = 0;
-            this.btnAccounting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
+            this.btnAccounting.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
+            this.btnAccounting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
             this.btnAccounting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccounting.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccounting.ForeColor = System.Drawing.Color.White;
@@ -1442,12 +1465,205 @@
             this.dataGridViewProducts.Size = new System.Drawing.Size(765, 399);
             this.dataGridViewProducts.TabIndex = 0;
             // 
+            // pnlAccounting
+            // 
+            this.pnlAccounting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
+            this.pnlAccounting.Controls.Add(this.groupBoxExpense);
+            this.pnlAccounting.Controls.Add(this.groupBoxIncome);
+            this.pnlAccounting.Controls.Add(this.btnExpense);
+            this.pnlAccounting.Controls.Add(this.btnIncome);
+            this.pnlAccounting.Location = new System.Drawing.Point(233, 65);
+            this.pnlAccounting.Name = "pnlAccounting";
+            this.pnlAccounting.Size = new System.Drawing.Size(967, 726);
+            this.pnlAccounting.TabIndex = 22;
+            // 
+            // btnIncome
+            // 
+            this.btnIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnIncome.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnIncome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIncome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIncome.ForeColor = System.Drawing.Color.White;
+            this.btnIncome.Location = new System.Drawing.Point(234, 43);
+            this.btnIncome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnIncome.Name = "btnIncome";
+            this.btnIncome.Size = new System.Drawing.Size(184, 66);
+            this.btnIncome.TabIndex = 10;
+            this.btnIncome.Text = "Income";
+            this.btnIncome.UseVisualStyleBackColor = false;
+            this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click);
+            // 
+            // btnExpense
+            // 
+            this.btnExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnExpense.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnExpense.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExpense.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpense.ForeColor = System.Drawing.Color.White;
+            this.btnExpense.Location = new System.Drawing.Point(504, 43);
+            this.btnExpense.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExpense.Name = "btnExpense";
+            this.btnExpense.Size = new System.Drawing.Size(184, 66);
+            this.btnExpense.TabIndex = 11;
+            this.btnExpense.Text = "Expense";
+            this.btnExpense.UseVisualStyleBackColor = false;
+            this.btnExpense.Click += new System.EventHandler(this.btnExpense_Click);
+            // 
+            // groupBoxIncome
+            // 
+            this.groupBoxIncome.Controls.Add(this.pictBoxSearchInDate);
+            this.groupBoxIncome.Controls.Add(this.dateTimePickerInDate);
+            this.groupBoxIncome.Controls.Add(this.label7);
+            this.groupBoxIncome.Controls.Add(this.btnAddIncome);
+            this.groupBoxIncome.Controls.Add(this.dataGridViewIncome);
+            this.groupBoxIncome.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxIncome.ForeColor = System.Drawing.Color.White;
+            this.groupBoxIncome.Location = new System.Drawing.Point(46, 157);
+            this.groupBoxIncome.Name = "groupBoxIncome";
+            this.groupBoxIncome.Size = new System.Drawing.Size(869, 532);
+            this.groupBoxIncome.TabIndex = 12;
+            this.groupBoxIncome.TabStop = false;
+            this.groupBoxIncome.Text = "Income";
+            this.groupBoxIncome.Visible = false;
+            // 
+            // dataGridViewIncome
+            // 
+            this.dataGridViewIncome.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewIncome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewIncome.Location = new System.Drawing.Point(35, 134);
+            this.dataGridViewIncome.Name = "dataGridViewIncome";
+            this.dataGridViewIncome.RowTemplate.Height = 24;
+            this.dataGridViewIncome.Size = new System.Drawing.Size(804, 361);
+            this.dataGridViewIncome.TabIndex = 0;
+            // 
+            // btnAddIncome
+            // 
+            this.btnAddIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddIncome.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddIncome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnAddIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddIncome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddIncome.ForeColor = System.Drawing.Color.White;
+            this.btnAddIncome.Location = new System.Drawing.Point(662, 48);
+            this.btnAddIncome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddIncome.Name = "btnAddIncome";
+            this.btnAddIncome.Size = new System.Drawing.Size(156, 56);
+            this.btnAddIncome.TabIndex = 13;
+            this.btnAddIncome.Text = "+ income";
+            this.btnAddIncome.UseVisualStyleBackColor = false;
+            this.btnAddIncome.Click += new System.EventHandler(this.btnAddIncome_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(20, 63);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 28);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Date: ";
+            // 
+            // dateTimePickerInDate
+            // 
+            this.dateTimePickerInDate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerInDate.Location = new System.Drawing.Point(107, 62);
+            this.dateTimePickerInDate.Name = "dateTimePickerInDate";
+            this.dateTimePickerInDate.Size = new System.Drawing.Size(326, 28);
+            this.dateTimePickerInDate.TabIndex = 15;
+            // 
+            // pictBoxSearchInDate
+            // 
+            this.pictBoxSearchInDate.Image = ((System.Drawing.Image)(resources.GetObject("pictBoxSearchInDate.Image")));
+            this.pictBoxSearchInDate.Location = new System.Drawing.Point(441, 53);
+            this.pictBoxSearchInDate.Name = "pictBoxSearchInDate";
+            this.pictBoxSearchInDate.Size = new System.Drawing.Size(47, 45);
+            this.pictBoxSearchInDate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictBoxSearchInDate.TabIndex = 16;
+            this.pictBoxSearchInDate.TabStop = false;
+            this.pictBoxSearchInDate.Click += new System.EventHandler(this.pictBoxSearchInDate_Click);
+            // 
+            // groupBoxExpense
+            // 
+            this.groupBoxExpense.Controls.Add(this.picBoxSearchExpDate);
+            this.groupBoxExpense.Controls.Add(this.dateTimePickerExpDate);
+            this.groupBoxExpense.Controls.Add(this.label8);
+            this.groupBoxExpense.Controls.Add(this.btnAddExpense);
+            this.groupBoxExpense.Controls.Add(this.dataGridViewExpense);
+            this.groupBoxExpense.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxExpense.ForeColor = System.Drawing.Color.White;
+            this.groupBoxExpense.Location = new System.Drawing.Point(46, 157);
+            this.groupBoxExpense.Name = "groupBoxExpense";
+            this.groupBoxExpense.Size = new System.Drawing.Size(869, 532);
+            this.groupBoxExpense.TabIndex = 13;
+            this.groupBoxExpense.TabStop = false;
+            this.groupBoxExpense.Text = "Expense";
+            this.groupBoxExpense.Visible = false;
+            // 
+            // picBoxSearchExpDate
+            // 
+            this.picBoxSearchExpDate.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSearchExpDate.Image")));
+            this.picBoxSearchExpDate.Location = new System.Drawing.Point(441, 53);
+            this.picBoxSearchExpDate.Name = "picBoxSearchExpDate";
+            this.picBoxSearchExpDate.Size = new System.Drawing.Size(47, 45);
+            this.picBoxSearchExpDate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxSearchExpDate.TabIndex = 16;
+            this.picBoxSearchExpDate.TabStop = false;
+            this.picBoxSearchExpDate.Click += new System.EventHandler(this.picBoxSearchExpDate_Click);
+            // 
+            // dateTimePickerExpDate
+            // 
+            this.dateTimePickerExpDate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerExpDate.Location = new System.Drawing.Point(107, 62);
+            this.dateTimePickerExpDate.Name = "dateTimePickerExpDate";
+            this.dateTimePickerExpDate.Size = new System.Drawing.Size(326, 28);
+            this.dateTimePickerExpDate.TabIndex = 15;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(20, 63);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(81, 28);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Date: ";
+            // 
+            // btnAddExpense
+            // 
+            this.btnAddExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddExpense.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddExpense.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnAddExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddExpense.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddExpense.ForeColor = System.Drawing.Color.White;
+            this.btnAddExpense.Location = new System.Drawing.Point(662, 48);
+            this.btnAddExpense.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddExpense.Name = "btnAddExpense";
+            this.btnAddExpense.Size = new System.Drawing.Size(156, 56);
+            this.btnAddExpense.TabIndex = 13;
+            this.btnAddExpense.Text = "+ expense";
+            this.btnAddExpense.UseVisualStyleBackColor = false;
+            this.btnAddExpense.Click += new System.EventHandler(this.btnAddExpense_Click);
+            // 
+            // dataGridViewExpense
+            // 
+            this.dataGridViewExpense.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewExpense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewExpense.Location = new System.Drawing.Point(35, 134);
+            this.dataGridViewExpense.Name = "dataGridViewExpense";
+            this.dataGridViewExpense.RowTemplate.Height = 24;
+            this.dataGridViewExpense.Size = new System.Drawing.Size(804, 361);
+            this.dataGridViewExpense.TabIndex = 0;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
+            this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.pnlStocks);
             this.Controls.Add(this.pnlVehicMach);
             this.Controls.Add(this.pnlStorage);
@@ -1501,6 +1717,15 @@
             this.groupBoxProducts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchProd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
+            this.pnlAccounting.ResumeLayout(false);
+            this.groupBoxIncome.ResumeLayout(false);
+            this.groupBoxIncome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxSearchInDate)).EndInit();
+            this.groupBoxExpense.ResumeLayout(false);
+            this.groupBoxExpense.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchExpDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpense)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1592,5 +1817,20 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAddProd;
         private System.Windows.Forms.DataGridView dataGridViewProducts;
+        private System.Windows.Forms.Panel pnlAccounting;
+        public System.Windows.Forms.Button btnExpense;
+        public System.Windows.Forms.Button btnIncome;
+        private System.Windows.Forms.GroupBox groupBoxIncome;
+        private System.Windows.Forms.DataGridView dataGridViewIncome;
+        public System.Windows.Forms.Button btnAddIncome;
+        private System.Windows.Forms.DateTimePicker dateTimePickerInDate;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictBoxSearchInDate;
+        private System.Windows.Forms.GroupBox groupBoxExpense;
+        private System.Windows.Forms.PictureBox picBoxSearchExpDate;
+        private System.Windows.Forms.DateTimePicker dateTimePickerExpDate;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Button btnAddExpense;
+        private System.Windows.Forms.DataGridView dataGridViewExpense;
     }
 }

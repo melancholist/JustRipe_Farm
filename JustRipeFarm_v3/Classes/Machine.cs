@@ -12,10 +12,14 @@ namespace JustRipeFarm_v3
         private string machineType;
         private string modelName;
         private string machineStatus;
+        private DateTime date;
+        private decimal price;
 
         public int Id { get => id; set => id = value; }
         public string MachineType { get => machineType; set => machineType = value; }
         public string ModelName { get => modelName; set => modelName = value; }
         public string MachineStatus { get => machineStatus; set => machineStatus = value; }
+        public DateTime Date { get => date; set => date = value; }
+        public decimal Price { get => price; set => price = value; }
     }
 }

@@ -13,7 +13,6 @@ namespace JustRipeFarm_v3
 {
     public partial class AddNewProduct : Form
     {
-        AddNewProduct product = new AddNewProduct();
         DbConnector DBConn = new DbConnector();
 
         public AddNewProduct()

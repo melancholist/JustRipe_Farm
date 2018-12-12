@@ -28,6 +28,7 @@ namespace JustRipeFarm_v3
             this.textBoxEngNo.Text = "";
             this.textBoxWeightLimit.Text = "";
             comboBoxVehicleStatus.SelectedIndex = -1;
+            this.textBoxPrice.Text = "";
         }
 
         private void btbSave_Click(object sender, EventArgs e)
@@ -42,6 +43,8 @@ namespace JustRipeFarm_v3
             vehicle.WeightLimit = Decimal.Parse(textBoxWeightLimit.Text);
             vehicle.EngineNumber = Decimal.Parse(textBoxEngNo.Text);
             vehicle.VehicleStatus = comboBoxVehicleStatus.Text;
+            vehicle.Price = Decimal.Parse(textBoxPrice.Text);
+            vehicle.Date = dateTimePicker2.Value.Date;
 
             vehicleHandler.addNewVehicle(DBConn.getConn(), vehicle);
             MessageBox.Show("A new vehicle has been added!");
