@@ -130,7 +130,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1069, 48);
+            this.panel1.Size = new System.Drawing.Size(1069, 44);
             this.panel1.TabIndex = 1;
             // 
             // picBoxBack
@@ -150,11 +150,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.label1.Location = new System.Drawing.Point(423, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 37);
+            this.label1.Size = new System.Drawing.Size(239, 37);
             this.label1.TabIndex = 6;
             this.label1.Text = "Assigning Tasks";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -793,9 +793,9 @@
             this.panel2.Controls.Add(this.btnTreating);
             this.panel2.Controls.Add(this.btnHarvest);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 48);
+            this.panel2.Location = new System.Drawing.Point(0, 44);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(175, 622);
+            this.panel2.Size = new System.Drawing.Size(175, 626);
             this.panel2.TabIndex = 2;
             // 
             // btnDriving

@@ -1697,8 +1697,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
-            this.Controls.Add(this.pnlStocks);
             this.Controls.Add(this.pnlSchedule);
+            this.Controls.Add(this.pnlStocks);
             this.Controls.Add(this.pnlResources);
             this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.pnlVehicMach);

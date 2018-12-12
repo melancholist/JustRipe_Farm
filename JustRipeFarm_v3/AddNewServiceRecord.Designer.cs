@@ -53,11 +53,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(125, 8);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 32);
+            this.label1.Size = new System.Drawing.Size(290, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "New Service Record";
             // 
@@ -66,7 +66,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(24, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 17);
+            this.label2.Size = new System.Drawing.Size(114, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Service Type";
             // 
@@ -75,17 +75,18 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(24, 73);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 17);
+            this.label3.Size = new System.Drawing.Size(113, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Service Date";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(46, 93);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.LightGray;
+            this.label4.Location = new System.Drawing.Point(94, 122);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(169, 17);
+            this.label4.Size = new System.Drawing.Size(215, 19);
             this.label4.TabIndex = 3;
             this.label4.Text = "Equipment Serial Number";
             // 
@@ -94,7 +95,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(24, 108);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 17);
+            this.label5.Size = new System.Drawing.Size(187, 19);
             this.label5.TabIndex = 4;
             this.label5.Text = "Description of Service";
             // 
@@ -106,30 +107,36 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(45, 135);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.LightGray;
+            this.groupBox1.Location = new System.Drawing.Point(70, 184);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(446, 152);
+            this.groupBox1.Size = new System.Drawing.Size(534, 152);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Service Information";
             // 
             // textBoxServiceDesc
             // 
-            this.textBoxServiceDesc.Location = new System.Drawing.Point(212, 103);
+            this.textBoxServiceDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
+            this.textBoxServiceDesc.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxServiceDesc.Location = new System.Drawing.Point(257, 105);
             this.textBoxServiceDesc.Name = "textBoxServiceDesc";
-            this.textBoxServiceDesc.Size = new System.Drawing.Size(200, 22);
+            this.textBoxServiceDesc.Size = new System.Drawing.Size(200, 28);
             this.textBoxServiceDesc.TabIndex = 7;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(212, 68);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(257, 71);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(228, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(228, 23);
             this.dateTimePicker1.TabIndex = 6;
             // 
             // comboBoxServiceType
             // 
+            this.comboBoxServiceType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
+            this.comboBoxServiceType.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.comboBoxServiceType.FormattingEnabled = true;
             this.comboBoxServiceType.Items.AddRange(new object[] {
             "Battery replacement",
@@ -145,46 +152,53 @@
             "Hydraulic Fluid",
             "Hydraulic Pump",
             "Others"});
-            this.comboBoxServiceType.Location = new System.Drawing.Point(212, 32);
+            this.comboBoxServiceType.Location = new System.Drawing.Point(257, 36);
             this.comboBoxServiceType.Name = "comboBoxServiceType";
-            this.comboBoxServiceType.Size = new System.Drawing.Size(200, 24);
+            this.comboBoxServiceType.Size = new System.Drawing.Size(200, 27);
             this.comboBoxServiceType.TabIndex = 5;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(416, 313);
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnSave.Location = new System.Drawing.Point(496, 364);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(108, 48);
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(301, 313);
+            this.btnClear.BackColor = System.Drawing.Color.Silver;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(382, 364);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.Size = new System.Drawing.Size(108, 48);
             this.btnClear.TabIndex = 7;
             this.btnClear.Text = "Clear All";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // textBoxEqSerialNo
             // 
-            this.textBoxEqSerialNo.Location = new System.Drawing.Point(257, 88);
+            this.textBoxEqSerialNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
+            this.textBoxEqSerialNo.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxEqSerialNo.Location = new System.Drawing.Point(327, 122);
             this.textBoxEqSerialNo.Name = "textBoxEqSerialNo";
             this.textBoxEqSerialNo.Size = new System.Drawing.Size(200, 22);
             this.textBoxEqSerialNo.TabIndex = 8;
             // 
             // exitPictureBox
             // 
-            this.exitPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
+            this.exitPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
             this.exitPictureBox.ImageActive = null;
-            this.exitPictureBox.Location = new System.Drawing.Point(496, 10);
+            this.exitPictureBox.Location = new System.Drawing.Point(626, 12);
             this.exitPictureBox.Name = "exitPictureBox";
-            this.exitPictureBox.Size = new System.Drawing.Size(31, 29);
+            this.exitPictureBox.Size = new System.Drawing.Size(47, 39);
             this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.exitPictureBox.TabIndex = 35;
             this.exitPictureBox.TabStop = false;
@@ -193,13 +207,13 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.exitPictureBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(539, 49);
+            this.panel1.Size = new System.Drawing.Size(685, 71);
             this.panel1.TabIndex = 55;
             // 
             // bunifuDragControl1
@@ -213,8 +227,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(539, 373);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
+            this.ClientSize = new System.Drawing.Size(685, 446);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBoxEqSerialNo);
             this.Controls.Add(this.btnClear);

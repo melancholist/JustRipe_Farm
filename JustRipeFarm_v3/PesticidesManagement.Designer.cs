@@ -68,15 +68,15 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(566, 51);
+            this.panel1.Size = new System.Drawing.Size(566, 77);
             this.panel1.TabIndex = 38;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(209, 6);
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(12, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(160, 37);
             this.label1.TabIndex = 36;
@@ -87,9 +87,9 @@
             this.exitPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
             this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
             this.exitPictureBox.ImageActive = null;
-            this.exitPictureBox.Location = new System.Drawing.Point(523, 7);
+            this.exitPictureBox.Location = new System.Drawing.Point(500, 7);
             this.exitPictureBox.Name = "exitPictureBox";
-            this.exitPictureBox.Size = new System.Drawing.Size(31, 29);
+            this.exitPictureBox.Size = new System.Drawing.Size(54, 43);
             this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.exitPictureBox.TabIndex = 35;
             this.exitPictureBox.TabStop = false;
@@ -108,9 +108,9 @@
             this.pnlAddPesticides.Controls.Add(this.btnClearP);
             this.pnlAddPesticides.Controls.Add(this.btnSaveP);
             this.pnlAddPesticides.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlAddPesticides.Location = new System.Drawing.Point(0, 51);
+            this.pnlAddPesticides.Location = new System.Drawing.Point(0, 77);
             this.pnlAddPesticides.Name = "pnlAddPesticides";
-            this.pnlAddPesticides.Size = new System.Drawing.Size(566, 412);
+            this.pnlAddPesticides.Size = new System.Drawing.Size(566, 386);
             this.pnlAddPesticides.TabIndex = 39;
             // 
             // textBoxPesComp
@@ -244,16 +244,16 @@
             this.pnlUpdatePes.Controls.Add(this.btnClearUpd);
             this.pnlUpdatePes.Controls.Add(this.btnSaveUpd);
             this.pnlUpdatePes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlUpdatePes.Location = new System.Drawing.Point(0, 51);
+            this.pnlUpdatePes.Location = new System.Drawing.Point(0, 77);
             this.pnlUpdatePes.Name = "pnlUpdatePes";
-            this.pnlUpdatePes.Size = new System.Drawing.Size(566, 412);
+            this.pnlUpdatePes.Size = new System.Drawing.Size(566, 386);
             this.pnlUpdatePes.TabIndex = 44;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.ForeColor = System.Drawing.Color.LightGray;
             this.label6.Location = new System.Drawing.Point(454, 180);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 23);
@@ -300,7 +300,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.ForeColor = System.Drawing.Color.LightGray;
             this.label7.Location = new System.Drawing.Point(39, 176);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(237, 30);
@@ -311,7 +311,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.ForeColor = System.Drawing.Color.LightGray;
             this.label9.Location = new System.Drawing.Point(75, 80);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(201, 30);
@@ -320,18 +320,19 @@
             // 
             // btnClearUpd
             // 
+            this.btnClearUpd.BackColor = System.Drawing.Color.DimGray;
             this.btnClearUpd.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnClearUpd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnClearUpd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnClearUpd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClearUpd.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearUpd.ForeColor = System.Drawing.Color.White;
-            this.btnClearUpd.Location = new System.Drawing.Point(106, 317);
+            this.btnClearUpd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearUpd.Location = new System.Drawing.Point(255, 317);
             this.btnClearUpd.Name = "btnClearUpd";
             this.btnClearUpd.Size = new System.Drawing.Size(114, 48);
             this.btnClearUpd.TabIndex = 1;
             this.btnClearUpd.Text = "Clear";
-            this.btnClearUpd.UseVisualStyleBackColor = true;
+            this.btnClearUpd.UseVisualStyleBackColor = false;
             this.btnClearUpd.Click += new System.EventHandler(this.btnClearUpd_Click);
             // 
             // btnSaveUpd
@@ -342,7 +343,7 @@
             this.btnSaveUpd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveUpd.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveUpd.ForeColor = System.Drawing.Color.White;
-            this.btnSaveUpd.Location = new System.Drawing.Point(334, 317);
+            this.btnSaveUpd.Location = new System.Drawing.Point(386, 317);
             this.btnSaveUpd.Name = "btnSaveUpd";
             this.btnSaveUpd.Size = new System.Drawing.Size(114, 48);
             this.btnSaveUpd.TabIndex = 0;
