@@ -30,11 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -105,20 +104,21 @@
             this.btnMachine = new System.Windows.Forms.Button();
             this.btnVehic = new System.Windows.Forms.Button();
             this.pnlStocks = new System.Windows.Forms.Panel();
-            this.groupBoxProducts = new System.Windows.Forms.GroupBox();
-            this.picBoxSearchProd = new System.Windows.Forms.PictureBox();
-            this.comboBoxProdCat = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnAddProd = new System.Windows.Forms.Button();
-            this.dataGridViewProducts = new System.Windows.Forms.DataGridView();
+            this.storageYieldCapacity = new Bunifu.Framework.UI.BunifuCircleProgressbar();
+            this.btnProducts = new System.Windows.Forms.Button();
+            this.btnYields = new System.Windows.Forms.Button();
             this.groupBoxYields = new System.Windows.Forms.GroupBox();
             this.picBoxSearchYield = new System.Windows.Forms.PictureBox();
             this.comboBoxYieldType = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnAddYield = new System.Windows.Forms.Button();
             this.dataGridViewYields = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.btnProducts = new System.Windows.Forms.Button();
-            this.btnYields = new System.Windows.Forms.Button();
+            this.groupBoxProducts = new System.Windows.Forms.GroupBox();
+            this.picBoxSearchProd = new System.Windows.Forms.PictureBox();
+            this.comboBoxProdCat = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnAddProd = new System.Windows.Forms.Button();
+            this.dataGridViewProducts = new System.Windows.Forms.DataGridView();
             this.pnlAccounting = new System.Windows.Forms.Panel();
             this.groupBoxExpense = new System.Windows.Forms.GroupBox();
             this.picBoxSearchExpDate = new System.Windows.Forms.PictureBox();
@@ -135,7 +135,6 @@
             this.btnExpense = new System.Windows.Forms.Button();
             this.btnIncome = new System.Windows.Forms.Button();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.storageYieldCapacity = new Bunifu.Framework.UI.BunifuCircleProgressbar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -164,12 +163,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).BeginInit();
             this.pnlStocks.SuspendLayout();
-            this.groupBoxProducts.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchProd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
             this.groupBoxYields.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchYield)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYields)).BeginInit();
+            this.groupBoxProducts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchProd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
             this.pnlAccounting.SuspendLayout();
             this.groupBoxExpense.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchExpDate)).BeginInit();
@@ -194,7 +193,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Candara", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
+            this.label1.ForeColor = System.Drawing.Color.DarkSeaGreen;
             this.label1.Location = new System.Drawing.Point(77, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(392, 40);
@@ -629,20 +628,20 @@
             // 
             this.dataGridViewSchedule.AllowUserToAddRows = false;
             this.dataGridViewSchedule.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridViewSchedule.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewSchedule.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dataGridViewSchedule.BackgroundColor = System.Drawing.Color.DarkSlateGray;
             this.dataGridViewSchedule.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewSchedule.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewSchedule.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSchedule.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSchedule.DoubleBuffered = true;
             this.dataGridViewSchedule.EnableHeadersVisualStyles = false;
@@ -1251,6 +1250,169 @@
             this.pnlStocks.Size = new System.Drawing.Size(967, 726);
             this.pnlStocks.TabIndex = 22;
             // 
+            // storageYieldCapacity
+            // 
+            this.storageYieldCapacity.animated = false;
+            this.storageYieldCapacity.animationIterval = 5;
+            this.storageYieldCapacity.animationSpeed = 300;
+            this.storageYieldCapacity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(146)))), ((int)(((byte)(103)))));
+            this.storageYieldCapacity.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("storageYieldCapacity.BackgroundImage")));
+            this.storageYieldCapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
+            this.storageYieldCapacity.ForeColor = System.Drawing.Color.White;
+            this.storageYieldCapacity.LabelVisible = true;
+            this.storageYieldCapacity.LineProgressThickness = 8;
+            this.storageYieldCapacity.LineThickness = 5;
+            this.storageYieldCapacity.Location = new System.Drawing.Point(753, 20);
+            this.storageYieldCapacity.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.storageYieldCapacity.MaxValue = 100;
+            this.storageYieldCapacity.Name = "storageYieldCapacity";
+            this.storageYieldCapacity.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.storageYieldCapacity.ProgressColor = System.Drawing.Color.SeaGreen;
+            this.storageYieldCapacity.Size = new System.Drawing.Size(117, 117);
+            this.storageYieldCapacity.TabIndex = 26;
+            this.storageYieldCapacity.Value = 0;
+            // 
+            // btnProducts
+            // 
+            this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnProducts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProducts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnProducts.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnProducts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducts.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProducts.ForeColor = System.Drawing.Color.White;
+            this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProducts.Location = new System.Drawing.Point(487, 31);
+            this.btnProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(186, 74);
+            this.btnProducts.TabIndex = 19;
+            this.btnProducts.Text = "Products";
+            this.btnProducts.UseVisualStyleBackColor = false;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
+            // 
+            // btnYields
+            // 
+            this.btnYields.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnYields.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnYields.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnYields.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnYields.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnYields.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnYields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnYields.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYields.ForeColor = System.Drawing.Color.White;
+            this.btnYields.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnYields.Location = new System.Drawing.Point(269, 31);
+            this.btnYields.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnYields.Name = "btnYields";
+            this.btnYields.Size = new System.Drawing.Size(186, 74);
+            this.btnYields.TabIndex = 18;
+            this.btnYields.Text = "Yields";
+            this.btnYields.UseVisualStyleBackColor = false;
+            this.btnYields.Click += new System.EventHandler(this.btnYields_Click);
+            // 
+            // groupBoxYields
+            // 
+            this.groupBoxYields.Controls.Add(this.picBoxSearchYield);
+            this.groupBoxYields.Controls.Add(this.comboBoxYieldType);
+            this.groupBoxYields.Controls.Add(this.label5);
+            this.groupBoxYields.Controls.Add(this.btnAddYield);
+            this.groupBoxYields.Controls.Add(this.dataGridViewYields);
+            this.groupBoxYields.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxYields.ForeColor = System.Drawing.Color.White;
+            this.groupBoxYields.Location = new System.Drawing.Point(46, 143);
+            this.groupBoxYields.Name = "groupBoxYields";
+            this.groupBoxYields.Size = new System.Drawing.Size(884, 563);
+            this.groupBoxYields.TabIndex = 20;
+            this.groupBoxYields.TabStop = false;
+            this.groupBoxYields.Text = "Yields";
+            this.groupBoxYields.Visible = false;
+            // 
+            // picBoxSearchYield
+            // 
+            this.picBoxSearchYield.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBoxSearchYield.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSearchYield.Image")));
+            this.picBoxSearchYield.Location = new System.Drawing.Point(328, 66);
+            this.picBoxSearchYield.Name = "picBoxSearchYield";
+            this.picBoxSearchYield.Size = new System.Drawing.Size(53, 44);
+            this.picBoxSearchYield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxSearchYield.TabIndex = 24;
+            this.picBoxSearchYield.TabStop = false;
+            this.picBoxSearchYield.Click += new System.EventHandler(this.picBoxSearchYield_Click);
+            // 
+            // comboBoxYieldType
+            // 
+            this.comboBoxYieldType.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxYieldType.FormattingEnabled = true;
+            this.comboBoxYieldType.Location = new System.Drawing.Point(123, 73);
+            this.comboBoxYieldType.Name = "comboBoxYieldType";
+            this.comboBoxYieldType.Size = new System.Drawing.Size(183, 31);
+            this.comboBoxYieldType.TabIndex = 23;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(33, 76);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 23);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Type:";
+            // 
+            // btnAddYield
+            // 
+            this.btnAddYield.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddYield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddYield.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddYield.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddYield.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnAddYield.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnAddYield.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddYield.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddYield.ForeColor = System.Drawing.Color.White;
+            this.btnAddYield.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddYield.Location = new System.Drawing.Point(655, 58);
+            this.btnAddYield.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddYield.Name = "btnAddYield";
+            this.btnAddYield.Size = new System.Drawing.Size(156, 54);
+            this.btnAddYield.TabIndex = 21;
+            this.btnAddYield.Text = "+ yield";
+            this.btnAddYield.UseVisualStyleBackColor = false;
+            this.btnAddYield.Click += new System.EventHandler(this.btnAddYield_Click);
+            // 
+            // dataGridViewYields
+            // 
+            this.dataGridViewYields.AllowUserToAddRows = false;
+            this.dataGridViewYields.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewYields.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewYields.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridViewYields.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(146)))), ((int)(((byte)(103)))));
+            this.dataGridViewYields.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewYields.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewYields.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewYields.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewYields.DoubleBuffered = true;
+            this.dataGridViewYields.EnableHeadersVisualStyles = false;
+            this.dataGridViewYields.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.dataGridViewYields.HeaderForeColor = System.Drawing.Color.White;
+            this.dataGridViewYields.Location = new System.Drawing.Point(59, 127);
+            this.dataGridViewYields.Name = "dataGridViewYields";
+            this.dataGridViewYields.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridViewYields.RowTemplate.Height = 24;
+            this.dataGridViewYields.Size = new System.Drawing.Size(765, 399);
+            this.dataGridViewYields.TabIndex = 25;
+            // 
             // groupBoxProducts
             // 
             this.groupBoxProducts.Controls.Add(this.picBoxSearchProd);
@@ -1329,155 +1491,6 @@
             this.dataGridViewProducts.RowTemplate.Height = 24;
             this.dataGridViewProducts.Size = new System.Drawing.Size(765, 399);
             this.dataGridViewProducts.TabIndex = 0;
-            // 
-            // groupBoxYields
-            // 
-            this.groupBoxYields.Controls.Add(this.picBoxSearchYield);
-            this.groupBoxYields.Controls.Add(this.comboBoxYieldType);
-            this.groupBoxYields.Controls.Add(this.label5);
-            this.groupBoxYields.Controls.Add(this.btnAddYield);
-            this.groupBoxYields.Controls.Add(this.dataGridViewYields);
-            this.groupBoxYields.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxYields.ForeColor = System.Drawing.Color.White;
-            this.groupBoxYields.Location = new System.Drawing.Point(46, 143);
-            this.groupBoxYields.Name = "groupBoxYields";
-            this.groupBoxYields.Size = new System.Drawing.Size(884, 563);
-            this.groupBoxYields.TabIndex = 20;
-            this.groupBoxYields.TabStop = false;
-            this.groupBoxYields.Text = "Yields";
-            this.groupBoxYields.Visible = false;
-            // 
-            // picBoxSearchYield
-            // 
-            this.picBoxSearchYield.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBoxSearchYield.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSearchYield.Image")));
-            this.picBoxSearchYield.Location = new System.Drawing.Point(328, 66);
-            this.picBoxSearchYield.Name = "picBoxSearchYield";
-            this.picBoxSearchYield.Size = new System.Drawing.Size(53, 44);
-            this.picBoxSearchYield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxSearchYield.TabIndex = 24;
-            this.picBoxSearchYield.TabStop = false;
-            this.picBoxSearchYield.Click += new System.EventHandler(this.picBoxSearchYield_Click);
-            // 
-            // comboBoxYieldType
-            // 
-            this.comboBoxYieldType.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxYieldType.FormattingEnabled = true;
-            this.comboBoxYieldType.Location = new System.Drawing.Point(123, 73);
-            this.comboBoxYieldType.Name = "comboBoxYieldType";
-            this.comboBoxYieldType.Size = new System.Drawing.Size(183, 31);
-            this.comboBoxYieldType.TabIndex = 23;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 76);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 23);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Type:";
-            // 
-            // btnAddYield
-            // 
-            this.btnAddYield.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnAddYield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddYield.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddYield.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnAddYield.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnAddYield.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnAddYield.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddYield.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddYield.ForeColor = System.Drawing.Color.White;
-            this.btnAddYield.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddYield.Location = new System.Drawing.Point(655, 58);
-            this.btnAddYield.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddYield.Name = "btnAddYield";
-            this.btnAddYield.Size = new System.Drawing.Size(156, 54);
-            this.btnAddYield.TabIndex = 21;
-            this.btnAddYield.Text = "+ yield";
-            this.btnAddYield.UseVisualStyleBackColor = false;
-            this.btnAddYield.Click += new System.EventHandler(this.btnAddYield_Click);
-            // 
-            // dataGridViewYields
-            // 
-            this.dataGridViewYields.AllowUserToAddRows = false;
-            this.dataGridViewYields.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridViewYields.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewYields.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dataGridViewYields.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(146)))), ((int)(((byte)(103)))));
-            this.dataGridViewYields.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewYields.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewYields.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewYields.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewYields.DoubleBuffered = true;
-            this.dataGridViewYields.EnableHeadersVisualStyles = false;
-            this.dataGridViewYields.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.dataGridViewYields.HeaderForeColor = System.Drawing.Color.White;
-            this.dataGridViewYields.Location = new System.Drawing.Point(59, 127);
-            this.dataGridViewYields.Name = "dataGridViewYields";
-            this.dataGridViewYields.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewYields.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridViewYields.RowTemplate.Height = 24;
-            this.dataGridViewYields.Size = new System.Drawing.Size(765, 399);
-            this.dataGridViewYields.TabIndex = 25;
-            // 
-            // btnProducts
-            // 
-            this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnProducts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnProducts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnProducts.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnProducts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProducts.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProducts.ForeColor = System.Drawing.Color.White;
-            this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProducts.Location = new System.Drawing.Point(487, 31);
-            this.btnProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Size = new System.Drawing.Size(186, 74);
-            this.btnProducts.TabIndex = 19;
-            this.btnProducts.Text = "Products";
-            this.btnProducts.UseVisualStyleBackColor = false;
-            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
-            // 
-            // btnYields
-            // 
-            this.btnYields.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnYields.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnYields.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnYields.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnYields.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnYields.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnYields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnYields.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnYields.ForeColor = System.Drawing.Color.White;
-            this.btnYields.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnYields.Location = new System.Drawing.Point(269, 31);
-            this.btnYields.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnYields.Name = "btnYields";
-            this.btnYields.Size = new System.Drawing.Size(186, 74);
-            this.btnYields.TabIndex = 18;
-            this.btnYields.Text = "Yields";
-            this.btnYields.UseVisualStyleBackColor = false;
-            this.btnYields.Click += new System.EventHandler(this.btnYields_Click);
             // 
             // pnlAccounting
             // 
@@ -1678,37 +1691,15 @@
             this.bunifuDragControl1.TargetControl = this.panel2;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // storageYieldCapacity
-            // 
-            this.storageYieldCapacity.animated = false;
-            this.storageYieldCapacity.animationIterval = 5;
-            this.storageYieldCapacity.animationSpeed = 300;
-            this.storageYieldCapacity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(146)))), ((int)(((byte)(103)))));
-            this.storageYieldCapacity.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("storageYieldCapacity.BackgroundImage")));
-            this.storageYieldCapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
-            this.storageYieldCapacity.ForeColor = System.Drawing.Color.White;
-            this.storageYieldCapacity.LabelVisible = true;
-            this.storageYieldCapacity.LineProgressThickness = 8;
-            this.storageYieldCapacity.LineThickness = 5;
-            this.storageYieldCapacity.Location = new System.Drawing.Point(753, 20);
-            this.storageYieldCapacity.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.storageYieldCapacity.MaxValue = 100;
-            this.storageYieldCapacity.Name = "storageYieldCapacity";
-            this.storageYieldCapacity.ProgressBackColor = System.Drawing.Color.Gainsboro;
-            this.storageYieldCapacity.ProgressColor = System.Drawing.Color.SeaGreen;
-            this.storageYieldCapacity.Size = new System.Drawing.Size(117, 117);
-            this.storageYieldCapacity.TabIndex = 26;
-            this.storageYieldCapacity.Value = 0;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
-            this.Controls.Add(this.pnlStocks);
-            this.Controls.Add(this.pnlSchedule);
             this.Controls.Add(this.pnlResources);
+            this.Controls.Add(this.pnlSchedule);
+            this.Controls.Add(this.pnlStocks);
             this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.pnlVehicMach);
             this.Controls.Add(this.pnlStorage);
@@ -1752,14 +1743,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).EndInit();
             this.pnlStocks.ResumeLayout(false);
-            this.groupBoxProducts.ResumeLayout(false);
-            this.groupBoxProducts.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchProd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
             this.groupBoxYields.ResumeLayout(false);
             this.groupBoxYields.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchYield)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYields)).EndInit();
+            this.groupBoxProducts.ResumeLayout(false);
+            this.groupBoxProducts.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchProd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
             this.pnlAccounting.ResumeLayout(false);
             this.groupBoxExpense.ResumeLayout(false);
             this.groupBoxExpense.PerformLayout();
