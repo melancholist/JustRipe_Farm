@@ -9,7 +9,7 @@ namespace JustRipeFarm_v3
 {
     public class PesticideHandler
     {
-        public int addNewFertiliser(MySqlConnection conn, Pesticides pesticides)
+        public int addNewPesticide(MySqlConnection conn, Pesticides pesticides)
         {
             string addPesticideQuery = "INSERT INTO pesticide (pesticidesType, pesticideQauntity, company)"
                 + "VALUES ('" + pesticides.PesticidesType + "', '" + pesticides.PesticideQauntity + "', '" + pesticides.Company + "',)";

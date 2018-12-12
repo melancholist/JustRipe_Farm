@@ -13,7 +13,6 @@ namespace JustRipeFarm_v3
 {
     public partial class AddNewVehicle : Form
     {
-        AddNewVehicle vehicle = new AddNewVehicle();
         DbConnector DBConn = new DbConnector();
 
         public AddNewVehicle()

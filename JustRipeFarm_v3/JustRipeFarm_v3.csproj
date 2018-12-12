@@ -80,6 +80,12 @@
     <Compile Include="AddNewCrop.Designer.cs">
       <DependentUpon>AddNewCrop.cs</DependentUpon>
     </Compile>
+    <Compile Include="FertiliserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FertiliserManagement.Designer.cs">
+      <DependentUpon>FertiliserManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddNewMachine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,12 @@
     <Compile Include="Classes\Staff.cs" />
     <Compile Include="ClassHandlers\StaffHandler.cs" />
     <Compile Include="Classes\Machine.cs" />
+    <Compile Include="PesticidesManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesticidesManagement.Designer.cs">
+      <DependentUpon>PesticidesManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="StaffManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,11 +201,20 @@
     <Compile Include="ClassHandlers\IncomeHandler.cs" />
     <Compile Include="Classes\Vehicle.cs" />
     <Compile Include="ClassHandlers\VehicleHandler.cs" />
+    <Compile Include="StorageManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StorageManagement.Designer.cs">
+      <DependentUpon>StorageManagement.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddNewEquipment.resx">
       <DependentUpon>AddNewEquipment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddNewCrop.resx">
       <DependentUpon>AddNewCrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FertiliserManagement.resx">
+      <DependentUpon>FertiliserManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddNewMachine.resx">
       <DependentUpon>AddNewMachine.cs</DependentUpon>
@@ -219,6 +240,9 @@
     <EmbeddedResource Include="AddNewExpense.resx">
       <DependentUpon>AddNewExpense.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PesticidesManagement.resx">
+      <DependentUpon>PesticidesManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StaffManagement.resx">
       <DependentUpon>StaffManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StorageManagement.resx">
+      <DependentUpon>StorageManagement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

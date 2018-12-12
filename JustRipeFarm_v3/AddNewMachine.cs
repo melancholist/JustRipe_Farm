@@ -13,7 +13,6 @@ namespace JustRipeFarm_v3
 {
     public partial class AddNewMachine : Form
     {
-        AddNewMachine machine = new AddNewMachine();
         DbConnector DBConn = new DbConnector();
 
         public AddNewMachine()

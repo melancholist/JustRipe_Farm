@@ -84,15 +84,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewStorage = new System.Windows.Forms.DataGridView();
             this.pnlVehicMach = new System.Windows.Forms.Panel();
-            this.btnVehic = new System.Windows.Forms.Button();
-            this.btnMachine = new System.Windows.Forms.Button();
-            this.groupBoxVehicle = new System.Windows.Forms.GroupBox();
-            this.dataGridViewVehicle = new System.Windows.Forms.DataGridView();
-            this.btnAddVehic = new System.Windows.Forms.Button();
-            this.comboBoxVehicType = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBoxSearchV = new System.Windows.Forms.PictureBox();
-            this.btnUpdateV = new System.Windows.Forms.Button();
             this.groupBoxMachine = new System.Windows.Forms.GroupBox();
             this.btnUpdateM = new System.Windows.Forms.Button();
             this.picBoxSearchM = new System.Windows.Forms.PictureBox();
@@ -100,36 +91,45 @@
             this.comboBoxMachType = new System.Windows.Forms.ComboBox();
             this.btnAddMach = new System.Windows.Forms.Button();
             this.dataGridViewMachine = new System.Windows.Forms.DataGridView();
+            this.groupBoxVehicle = new System.Windows.Forms.GroupBox();
+            this.btnUpdateV = new System.Windows.Forms.Button();
+            this.pictureBoxSearchV = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBoxVehicType = new System.Windows.Forms.ComboBox();
+            this.btnAddVehic = new System.Windows.Forms.Button();
+            this.dataGridViewVehicle = new System.Windows.Forms.DataGridView();
+            this.btnMachine = new System.Windows.Forms.Button();
+            this.btnVehic = new System.Windows.Forms.Button();
             this.pnlStocks = new System.Windows.Forms.Panel();
-            this.btnYields = new System.Windows.Forms.Button();
-            this.btnProducts = new System.Windows.Forms.Button();
-            this.groupBoxYields = new System.Windows.Forms.GroupBox();
-            this.dataGridViewYields = new System.Windows.Forms.DataGridView();
-            this.btnAddYield = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBoxYieldType = new System.Windows.Forms.ComboBox();
-            this.picBoxSearchYield = new System.Windows.Forms.PictureBox();
             this.groupBoxProducts = new System.Windows.Forms.GroupBox();
             this.picBoxSearchProd = new System.Windows.Forms.PictureBox();
             this.comboBoxProdCat = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnAddProd = new System.Windows.Forms.Button();
             this.dataGridViewProducts = new System.Windows.Forms.DataGridView();
+            this.groupBoxYields = new System.Windows.Forms.GroupBox();
+            this.picBoxSearchYield = new System.Windows.Forms.PictureBox();
+            this.comboBoxYieldType = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnAddYield = new System.Windows.Forms.Button();
+            this.dataGridViewYields = new System.Windows.Forms.DataGridView();
+            this.btnProducts = new System.Windows.Forms.Button();
+            this.btnYields = new System.Windows.Forms.Button();
             this.pnlAccounting = new System.Windows.Forms.Panel();
-            this.btnIncome = new System.Windows.Forms.Button();
-            this.btnExpense = new System.Windows.Forms.Button();
-            this.groupBoxIncome = new System.Windows.Forms.GroupBox();
-            this.dataGridViewIncome = new System.Windows.Forms.DataGridView();
-            this.btnAddIncome = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePickerInDate = new System.Windows.Forms.DateTimePicker();
-            this.pictBoxSearchInDate = new System.Windows.Forms.PictureBox();
             this.groupBoxExpense = new System.Windows.Forms.GroupBox();
             this.picBoxSearchExpDate = new System.Windows.Forms.PictureBox();
             this.dateTimePickerExpDate = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.btnAddExpense = new System.Windows.Forms.Button();
             this.dataGridViewExpense = new System.Windows.Forms.DataGridView();
+            this.groupBoxIncome = new System.Windows.Forms.GroupBox();
+            this.pictBoxSearchInDate = new System.Windows.Forms.PictureBox();
+            this.dateTimePickerInDate = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnAddIncome = new System.Windows.Forms.Button();
+            this.dataGridViewIncome = new System.Windows.Forms.DataGridView();
+            this.btnExpense = new System.Windows.Forms.Button();
+            this.btnIncome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -151,26 +151,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchStorage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStorage)).BeginInit();
             this.pnlVehicMach.SuspendLayout();
-            this.groupBoxVehicle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchV)).BeginInit();
             this.groupBoxMachine.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMachine)).BeginInit();
+            this.groupBoxVehicle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).BeginInit();
             this.pnlStocks.SuspendLayout();
-            this.groupBoxYields.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYields)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchYield)).BeginInit();
             this.groupBoxProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
+            this.groupBoxYields.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchYield)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYields)).BeginInit();
             this.pnlAccounting.SuspendLayout();
-            this.groupBoxIncome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictBoxSearchInDate)).BeginInit();
             this.groupBoxExpense.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchExpDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpense)).BeginInit();
+            this.groupBoxIncome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxSearchInDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -1014,145 +1014,6 @@
             this.pnlVehicMach.Size = new System.Drawing.Size(967, 726);
             this.pnlVehicMach.TabIndex = 16;
             // 
-            // btnVehic
-            // 
-            this.btnVehic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnVehic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnVehic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVehic.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnVehic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnVehic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVehic.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVehic.ForeColor = System.Drawing.Color.White;
-            this.btnVehic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVehic.Location = new System.Drawing.Point(228, 39);
-            this.btnVehic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnVehic.Name = "btnVehic";
-            this.btnVehic.Size = new System.Drawing.Size(229, 82);
-            this.btnVehic.TabIndex = 18;
-            this.btnVehic.Text = "Vehicles";
-            this.btnVehic.UseVisualStyleBackColor = false;
-            this.btnVehic.Click += new System.EventHandler(this.btnVehic_Click);
-            // 
-            // btnMachine
-            // 
-            this.btnMachine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnMachine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMachine.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMachine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnMachine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnMachine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMachine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMachine.ForeColor = System.Drawing.Color.White;
-            this.btnMachine.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMachine.Location = new System.Drawing.Point(477, 39);
-            this.btnMachine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMachine.Name = "btnMachine";
-            this.btnMachine.Size = new System.Drawing.Size(229, 82);
-            this.btnMachine.TabIndex = 19;
-            this.btnMachine.Text = "Machines";
-            this.btnMachine.UseVisualStyleBackColor = false;
-            this.btnMachine.Click += new System.EventHandler(this.btnMachine_Click);
-            // 
-            // groupBoxVehicle
-            // 
-            this.groupBoxVehicle.Controls.Add(this.btnUpdateV);
-            this.groupBoxVehicle.Controls.Add(this.pictureBoxSearchV);
-            this.groupBoxVehicle.Controls.Add(this.label3);
-            this.groupBoxVehicle.Controls.Add(this.comboBoxVehicType);
-            this.groupBoxVehicle.Controls.Add(this.btnAddVehic);
-            this.groupBoxVehicle.Controls.Add(this.dataGridViewVehicle);
-            this.groupBoxVehicle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBoxVehicle.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxVehicle.ForeColor = System.Drawing.Color.White;
-            this.groupBoxVehicle.Location = new System.Drawing.Point(60, 157);
-            this.groupBoxVehicle.Name = "groupBoxVehicle";
-            this.groupBoxVehicle.Size = new System.Drawing.Size(838, 526);
-            this.groupBoxVehicle.TabIndex = 20;
-            this.groupBoxVehicle.TabStop = false;
-            this.groupBoxVehicle.Text = "Vehicle";
-            this.groupBoxVehicle.Visible = false;
-            // 
-            // dataGridViewVehicle
-            // 
-            this.dataGridViewVehicle.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewVehicle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewVehicle.Location = new System.Drawing.Point(43, 114);
-            this.dataGridViewVehicle.Name = "dataGridViewVehicle";
-            this.dataGridViewVehicle.RowTemplate.Height = 24;
-            this.dataGridViewVehicle.Size = new System.Drawing.Size(752, 370);
-            this.dataGridViewVehicle.TabIndex = 0;
-            // 
-            // btnAddVehic
-            // 
-            this.btnAddVehic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnAddVehic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddVehic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddVehic.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnAddVehic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnAddVehic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddVehic.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddVehic.ForeColor = System.Drawing.Color.White;
-            this.btnAddVehic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddVehic.Location = new System.Drawing.Point(480, 44);
-            this.btnAddVehic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddVehic.Name = "btnAddVehic";
-            this.btnAddVehic.Size = new System.Drawing.Size(143, 55);
-            this.btnAddVehic.TabIndex = 21;
-            this.btnAddVehic.Text = "+ vehicle";
-            this.btnAddVehic.UseVisualStyleBackColor = false;
-            this.btnAddVehic.Click += new System.EventHandler(this.btnAddVehic_Click);
-            // 
-            // comboBoxVehicType
-            // 
-            this.comboBoxVehicType.FormattingEnabled = true;
-            this.comboBoxVehicType.Location = new System.Drawing.Point(118, 55);
-            this.comboBoxVehicType.Name = "comboBoxVehicType";
-            this.comboBoxVehicType.Size = new System.Drawing.Size(188, 35);
-            this.comboBoxVehicType.TabIndex = 22;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(39, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 23);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Type:";
-            // 
-            // pictureBoxSearchV
-            // 
-            this.pictureBoxSearchV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxSearchV.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSearchV.Image")));
-            this.pictureBoxSearchV.Location = new System.Drawing.Point(320, 50);
-            this.pictureBoxSearchV.Name = "pictureBoxSearchV";
-            this.pictureBoxSearchV.Size = new System.Drawing.Size(51, 44);
-            this.pictureBoxSearchV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxSearchV.TabIndex = 24;
-            this.pictureBoxSearchV.TabStop = false;
-            this.pictureBoxSearchV.Click += new System.EventHandler(this.pictureBoxSearchV_Click);
-            // 
-            // btnUpdateV
-            // 
-            this.btnUpdateV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnUpdateV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUpdateV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdateV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnUpdateV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnUpdateV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateV.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateV.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateV.Location = new System.Drawing.Point(629, 45);
-            this.btnUpdateV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUpdateV.Name = "btnUpdateV";
-            this.btnUpdateV.Size = new System.Drawing.Size(143, 55);
-            this.btnUpdateV.TabIndex = 25;
-            this.btnUpdateV.Text = "update";
-            this.btnUpdateV.UseVisualStyleBackColor = false;
-            this.btnUpdateV.Click += new System.EventHandler(this.btnUpdateV_Click);
-            // 
             // groupBoxMachine
             // 
             this.groupBoxMachine.Controls.Add(this.btnUpdateM);
@@ -1253,6 +1114,145 @@
             this.dataGridViewMachine.Size = new System.Drawing.Size(752, 370);
             this.dataGridViewMachine.TabIndex = 0;
             // 
+            // groupBoxVehicle
+            // 
+            this.groupBoxVehicle.Controls.Add(this.btnUpdateV);
+            this.groupBoxVehicle.Controls.Add(this.pictureBoxSearchV);
+            this.groupBoxVehicle.Controls.Add(this.label3);
+            this.groupBoxVehicle.Controls.Add(this.comboBoxVehicType);
+            this.groupBoxVehicle.Controls.Add(this.btnAddVehic);
+            this.groupBoxVehicle.Controls.Add(this.dataGridViewVehicle);
+            this.groupBoxVehicle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBoxVehicle.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxVehicle.ForeColor = System.Drawing.Color.White;
+            this.groupBoxVehicle.Location = new System.Drawing.Point(60, 157);
+            this.groupBoxVehicle.Name = "groupBoxVehicle";
+            this.groupBoxVehicle.Size = new System.Drawing.Size(838, 526);
+            this.groupBoxVehicle.TabIndex = 20;
+            this.groupBoxVehicle.TabStop = false;
+            this.groupBoxVehicle.Text = "Vehicle";
+            this.groupBoxVehicle.Visible = false;
+            // 
+            // btnUpdateV
+            // 
+            this.btnUpdateV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnUpdateV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnUpdateV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdateV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnUpdateV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnUpdateV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateV.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateV.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdateV.Location = new System.Drawing.Point(629, 45);
+            this.btnUpdateV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdateV.Name = "btnUpdateV";
+            this.btnUpdateV.Size = new System.Drawing.Size(143, 55);
+            this.btnUpdateV.TabIndex = 25;
+            this.btnUpdateV.Text = "update";
+            this.btnUpdateV.UseVisualStyleBackColor = false;
+            this.btnUpdateV.Click += new System.EventHandler(this.btnUpdateV_Click);
+            // 
+            // pictureBoxSearchV
+            // 
+            this.pictureBoxSearchV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxSearchV.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSearchV.Image")));
+            this.pictureBoxSearchV.Location = new System.Drawing.Point(320, 50);
+            this.pictureBoxSearchV.Name = "pictureBoxSearchV";
+            this.pictureBoxSearchV.Size = new System.Drawing.Size(51, 44);
+            this.pictureBoxSearchV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSearchV.TabIndex = 24;
+            this.pictureBoxSearchV.TabStop = false;
+            this.pictureBoxSearchV.Click += new System.EventHandler(this.pictureBoxSearchV_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(39, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 23);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Type:";
+            // 
+            // comboBoxVehicType
+            // 
+            this.comboBoxVehicType.FormattingEnabled = true;
+            this.comboBoxVehicType.Location = new System.Drawing.Point(118, 55);
+            this.comboBoxVehicType.Name = "comboBoxVehicType";
+            this.comboBoxVehicType.Size = new System.Drawing.Size(188, 35);
+            this.comboBoxVehicType.TabIndex = 22;
+            // 
+            // btnAddVehic
+            // 
+            this.btnAddVehic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddVehic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddVehic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddVehic.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnAddVehic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnAddVehic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddVehic.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddVehic.ForeColor = System.Drawing.Color.White;
+            this.btnAddVehic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddVehic.Location = new System.Drawing.Point(480, 44);
+            this.btnAddVehic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddVehic.Name = "btnAddVehic";
+            this.btnAddVehic.Size = new System.Drawing.Size(143, 55);
+            this.btnAddVehic.TabIndex = 21;
+            this.btnAddVehic.Text = "+ vehicle";
+            this.btnAddVehic.UseVisualStyleBackColor = false;
+            this.btnAddVehic.Click += new System.EventHandler(this.btnAddVehic_Click);
+            // 
+            // dataGridViewVehicle
+            // 
+            this.dataGridViewVehicle.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewVehicle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewVehicle.Location = new System.Drawing.Point(43, 114);
+            this.dataGridViewVehicle.Name = "dataGridViewVehicle";
+            this.dataGridViewVehicle.RowTemplate.Height = 24;
+            this.dataGridViewVehicle.Size = new System.Drawing.Size(752, 370);
+            this.dataGridViewVehicle.TabIndex = 0;
+            // 
+            // btnMachine
+            // 
+            this.btnMachine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnMachine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMachine.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMachine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnMachine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnMachine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMachine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMachine.ForeColor = System.Drawing.Color.White;
+            this.btnMachine.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMachine.Location = new System.Drawing.Point(477, 39);
+            this.btnMachine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMachine.Name = "btnMachine";
+            this.btnMachine.Size = new System.Drawing.Size(229, 82);
+            this.btnMachine.TabIndex = 19;
+            this.btnMachine.Text = "Machines";
+            this.btnMachine.UseVisualStyleBackColor = false;
+            this.btnMachine.Click += new System.EventHandler(this.btnMachine_Click);
+            // 
+            // btnVehic
+            // 
+            this.btnVehic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnVehic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVehic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVehic.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnVehic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnVehic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVehic.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVehic.ForeColor = System.Drawing.Color.White;
+            this.btnVehic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVehic.Location = new System.Drawing.Point(228, 39);
+            this.btnVehic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVehic.Name = "btnVehic";
+            this.btnVehic.Size = new System.Drawing.Size(229, 82);
+            this.btnVehic.TabIndex = 18;
+            this.btnVehic.Text = "Vehicles";
+            this.btnVehic.UseVisualStyleBackColor = false;
+            this.btnVehic.Click += new System.EventHandler(this.btnVehic_Click);
+            // 
             // pnlStocks
             // 
             this.pnlStocks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(146)))), ((int)(((byte)(103)))));
@@ -1264,127 +1264,6 @@
             this.pnlStocks.Name = "pnlStocks";
             this.pnlStocks.Size = new System.Drawing.Size(967, 726);
             this.pnlStocks.TabIndex = 22;
-            // 
-            // btnYields
-            // 
-            this.btnYields.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnYields.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnYields.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnYields.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnYields.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnYields.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnYields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnYields.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnYields.ForeColor = System.Drawing.Color.White;
-            this.btnYields.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnYields.Location = new System.Drawing.Point(269, 31);
-            this.btnYields.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnYields.Name = "btnYields";
-            this.btnYields.Size = new System.Drawing.Size(186, 74);
-            this.btnYields.TabIndex = 18;
-            this.btnYields.Text = "Yields";
-            this.btnYields.UseVisualStyleBackColor = false;
-            this.btnYields.Click += new System.EventHandler(this.btnYields_Click);
-            // 
-            // btnProducts
-            // 
-            this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnProducts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnProducts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnProducts.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnProducts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProducts.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProducts.ForeColor = System.Drawing.Color.White;
-            this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProducts.Location = new System.Drawing.Point(487, 31);
-            this.btnProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Size = new System.Drawing.Size(186, 74);
-            this.btnProducts.TabIndex = 19;
-            this.btnProducts.Text = "Products";
-            this.btnProducts.UseVisualStyleBackColor = false;
-            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
-            // 
-            // groupBoxYields
-            // 
-            this.groupBoxYields.Controls.Add(this.picBoxSearchYield);
-            this.groupBoxYields.Controls.Add(this.comboBoxYieldType);
-            this.groupBoxYields.Controls.Add(this.label5);
-            this.groupBoxYields.Controls.Add(this.btnAddYield);
-            this.groupBoxYields.Controls.Add(this.dataGridViewYields);
-            this.groupBoxYields.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxYields.ForeColor = System.Drawing.Color.White;
-            this.groupBoxYields.Location = new System.Drawing.Point(44, 126);
-            this.groupBoxYields.Name = "groupBoxYields";
-            this.groupBoxYields.Size = new System.Drawing.Size(884, 563);
-            this.groupBoxYields.TabIndex = 20;
-            this.groupBoxYields.TabStop = false;
-            this.groupBoxYields.Text = "Yields";
-            this.groupBoxYields.Visible = false;
-            // 
-            // dataGridViewYields
-            // 
-            this.dataGridViewYields.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewYields.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewYields.Location = new System.Drawing.Point(59, 127);
-            this.dataGridViewYields.Name = "dataGridViewYields";
-            this.dataGridViewYields.RowTemplate.Height = 24;
-            this.dataGridViewYields.Size = new System.Drawing.Size(765, 399);
-            this.dataGridViewYields.TabIndex = 0;
-            // 
-            // btnAddYield
-            // 
-            this.btnAddYield.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnAddYield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddYield.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddYield.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnAddYield.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnAddYield.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnAddYield.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddYield.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddYield.ForeColor = System.Drawing.Color.White;
-            this.btnAddYield.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddYield.Location = new System.Drawing.Point(655, 58);
-            this.btnAddYield.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddYield.Name = "btnAddYield";
-            this.btnAddYield.Size = new System.Drawing.Size(156, 54);
-            this.btnAddYield.TabIndex = 21;
-            this.btnAddYield.Text = "+ yield";
-            this.btnAddYield.UseVisualStyleBackColor = false;
-            this.btnAddYield.Click += new System.EventHandler(this.btnAddYield_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 76);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 23);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Type:";
-            // 
-            // comboBoxYieldType
-            // 
-            this.comboBoxYieldType.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxYieldType.FormattingEnabled = true;
-            this.comboBoxYieldType.Location = new System.Drawing.Point(123, 73);
-            this.comboBoxYieldType.Name = "comboBoxYieldType";
-            this.comboBoxYieldType.Size = new System.Drawing.Size(183, 31);
-            this.comboBoxYieldType.TabIndex = 23;
-            // 
-            // picBoxSearchYield
-            // 
-            this.picBoxSearchYield.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBoxSearchYield.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSearchYield.Image")));
-            this.picBoxSearchYield.Location = new System.Drawing.Point(328, 66);
-            this.picBoxSearchYield.Name = "picBoxSearchYield";
-            this.picBoxSearchYield.Size = new System.Drawing.Size(53, 44);
-            this.picBoxSearchYield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxSearchYield.TabIndex = 24;
-            this.picBoxSearchYield.TabStop = false;
-            this.picBoxSearchYield.Click += new System.EventHandler(this.picBoxSearchYield_Click);
             // 
             // groupBoxProducts
             // 
@@ -1465,6 +1344,127 @@
             this.dataGridViewProducts.Size = new System.Drawing.Size(765, 399);
             this.dataGridViewProducts.TabIndex = 0;
             // 
+            // groupBoxYields
+            // 
+            this.groupBoxYields.Controls.Add(this.picBoxSearchYield);
+            this.groupBoxYields.Controls.Add(this.comboBoxYieldType);
+            this.groupBoxYields.Controls.Add(this.label5);
+            this.groupBoxYields.Controls.Add(this.btnAddYield);
+            this.groupBoxYields.Controls.Add(this.dataGridViewYields);
+            this.groupBoxYields.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxYields.ForeColor = System.Drawing.Color.White;
+            this.groupBoxYields.Location = new System.Drawing.Point(44, 126);
+            this.groupBoxYields.Name = "groupBoxYields";
+            this.groupBoxYields.Size = new System.Drawing.Size(884, 563);
+            this.groupBoxYields.TabIndex = 20;
+            this.groupBoxYields.TabStop = false;
+            this.groupBoxYields.Text = "Yields";
+            this.groupBoxYields.Visible = false;
+            // 
+            // picBoxSearchYield
+            // 
+            this.picBoxSearchYield.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBoxSearchYield.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSearchYield.Image")));
+            this.picBoxSearchYield.Location = new System.Drawing.Point(328, 66);
+            this.picBoxSearchYield.Name = "picBoxSearchYield";
+            this.picBoxSearchYield.Size = new System.Drawing.Size(53, 44);
+            this.picBoxSearchYield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxSearchYield.TabIndex = 24;
+            this.picBoxSearchYield.TabStop = false;
+            this.picBoxSearchYield.Click += new System.EventHandler(this.picBoxSearchYield_Click);
+            // 
+            // comboBoxYieldType
+            // 
+            this.comboBoxYieldType.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxYieldType.FormattingEnabled = true;
+            this.comboBoxYieldType.Location = new System.Drawing.Point(123, 73);
+            this.comboBoxYieldType.Name = "comboBoxYieldType";
+            this.comboBoxYieldType.Size = new System.Drawing.Size(183, 31);
+            this.comboBoxYieldType.TabIndex = 23;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(33, 76);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 23);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Type:";
+            // 
+            // btnAddYield
+            // 
+            this.btnAddYield.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddYield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddYield.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddYield.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddYield.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnAddYield.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnAddYield.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddYield.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddYield.ForeColor = System.Drawing.Color.White;
+            this.btnAddYield.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddYield.Location = new System.Drawing.Point(655, 58);
+            this.btnAddYield.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddYield.Name = "btnAddYield";
+            this.btnAddYield.Size = new System.Drawing.Size(156, 54);
+            this.btnAddYield.TabIndex = 21;
+            this.btnAddYield.Text = "+ yield";
+            this.btnAddYield.UseVisualStyleBackColor = false;
+            this.btnAddYield.Click += new System.EventHandler(this.btnAddYield_Click);
+            // 
+            // dataGridViewYields
+            // 
+            this.dataGridViewYields.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewYields.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewYields.Location = new System.Drawing.Point(59, 127);
+            this.dataGridViewYields.Name = "dataGridViewYields";
+            this.dataGridViewYields.RowTemplate.Height = 24;
+            this.dataGridViewYields.Size = new System.Drawing.Size(765, 399);
+            this.dataGridViewYields.TabIndex = 0;
+            // 
+            // btnProducts
+            // 
+            this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnProducts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProducts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnProducts.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnProducts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducts.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProducts.ForeColor = System.Drawing.Color.White;
+            this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProducts.Location = new System.Drawing.Point(487, 31);
+            this.btnProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(186, 74);
+            this.btnProducts.TabIndex = 19;
+            this.btnProducts.Text = "Products";
+            this.btnProducts.UseVisualStyleBackColor = false;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
+            // 
+            // btnYields
+            // 
+            this.btnYields.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnYields.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnYields.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnYields.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnYields.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnYields.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnYields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnYields.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYields.ForeColor = System.Drawing.Color.White;
+            this.btnYields.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnYields.Location = new System.Drawing.Point(269, 31);
+            this.btnYields.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnYields.Name = "btnYields";
+            this.btnYields.Size = new System.Drawing.Size(186, 74);
+            this.btnYields.TabIndex = 18;
+            this.btnYields.Text = "Yields";
+            this.btnYields.UseVisualStyleBackColor = false;
+            this.btnYields.Click += new System.EventHandler(this.btnYields_Click);
+            // 
             // pnlAccounting
             // 
             this.pnlAccounting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
@@ -1476,113 +1476,6 @@
             this.pnlAccounting.Name = "pnlAccounting";
             this.pnlAccounting.Size = new System.Drawing.Size(967, 726);
             this.pnlAccounting.TabIndex = 22;
-            // 
-            // btnIncome
-            // 
-            this.btnIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnIncome.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnIncome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
-            this.btnIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIncome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIncome.ForeColor = System.Drawing.Color.White;
-            this.btnIncome.Location = new System.Drawing.Point(234, 43);
-            this.btnIncome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnIncome.Name = "btnIncome";
-            this.btnIncome.Size = new System.Drawing.Size(184, 66);
-            this.btnIncome.TabIndex = 10;
-            this.btnIncome.Text = "Income";
-            this.btnIncome.UseVisualStyleBackColor = false;
-            this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click);
-            // 
-            // btnExpense
-            // 
-            this.btnExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnExpense.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnExpense.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
-            this.btnExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExpense.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExpense.ForeColor = System.Drawing.Color.White;
-            this.btnExpense.Location = new System.Drawing.Point(504, 43);
-            this.btnExpense.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExpense.Name = "btnExpense";
-            this.btnExpense.Size = new System.Drawing.Size(184, 66);
-            this.btnExpense.TabIndex = 11;
-            this.btnExpense.Text = "Expense";
-            this.btnExpense.UseVisualStyleBackColor = false;
-            this.btnExpense.Click += new System.EventHandler(this.btnExpense_Click);
-            // 
-            // groupBoxIncome
-            // 
-            this.groupBoxIncome.Controls.Add(this.pictBoxSearchInDate);
-            this.groupBoxIncome.Controls.Add(this.dateTimePickerInDate);
-            this.groupBoxIncome.Controls.Add(this.label7);
-            this.groupBoxIncome.Controls.Add(this.btnAddIncome);
-            this.groupBoxIncome.Controls.Add(this.dataGridViewIncome);
-            this.groupBoxIncome.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxIncome.ForeColor = System.Drawing.Color.White;
-            this.groupBoxIncome.Location = new System.Drawing.Point(46, 157);
-            this.groupBoxIncome.Name = "groupBoxIncome";
-            this.groupBoxIncome.Size = new System.Drawing.Size(869, 532);
-            this.groupBoxIncome.TabIndex = 12;
-            this.groupBoxIncome.TabStop = false;
-            this.groupBoxIncome.Text = "Income";
-            this.groupBoxIncome.Visible = false;
-            // 
-            // dataGridViewIncome
-            // 
-            this.dataGridViewIncome.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewIncome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewIncome.Location = new System.Drawing.Point(35, 134);
-            this.dataGridViewIncome.Name = "dataGridViewIncome";
-            this.dataGridViewIncome.RowTemplate.Height = 24;
-            this.dataGridViewIncome.Size = new System.Drawing.Size(804, 361);
-            this.dataGridViewIncome.TabIndex = 0;
-            // 
-            // btnAddIncome
-            // 
-            this.btnAddIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnAddIncome.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnAddIncome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
-            this.btnAddIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddIncome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddIncome.ForeColor = System.Drawing.Color.White;
-            this.btnAddIncome.Location = new System.Drawing.Point(662, 48);
-            this.btnAddIncome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddIncome.Name = "btnAddIncome";
-            this.btnAddIncome.Size = new System.Drawing.Size(156, 56);
-            this.btnAddIncome.TabIndex = 13;
-            this.btnAddIncome.Text = "+ income";
-            this.btnAddIncome.UseVisualStyleBackColor = false;
-            this.btnAddIncome.Click += new System.EventHandler(this.btnAddIncome_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(20, 63);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 28);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Date: ";
-            // 
-            // dateTimePickerInDate
-            // 
-            this.dateTimePickerInDate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerInDate.Location = new System.Drawing.Point(107, 62);
-            this.dateTimePickerInDate.Name = "dateTimePickerInDate";
-            this.dateTimePickerInDate.Size = new System.Drawing.Size(326, 28);
-            this.dateTimePickerInDate.TabIndex = 15;
-            // 
-            // pictBoxSearchInDate
-            // 
-            this.pictBoxSearchInDate.Image = ((System.Drawing.Image)(resources.GetObject("pictBoxSearchInDate.Image")));
-            this.pictBoxSearchInDate.Location = new System.Drawing.Point(441, 53);
-            this.pictBoxSearchInDate.Name = "pictBoxSearchInDate";
-            this.pictBoxSearchInDate.Size = new System.Drawing.Size(47, 45);
-            this.pictBoxSearchInDate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictBoxSearchInDate.TabIndex = 16;
-            this.pictBoxSearchInDate.TabStop = false;
-            this.pictBoxSearchInDate.Click += new System.EventHandler(this.pictBoxSearchInDate_Click);
             // 
             // groupBoxExpense
             // 
@@ -1604,7 +1497,7 @@
             // picBoxSearchExpDate
             // 
             this.picBoxSearchExpDate.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSearchExpDate.Image")));
-            this.picBoxSearchExpDate.Location = new System.Drawing.Point(441, 53);
+            this.picBoxSearchExpDate.Location = new System.Drawing.Point(480, 54);
             this.picBoxSearchExpDate.Name = "picBoxSearchExpDate";
             this.picBoxSearchExpDate.Size = new System.Drawing.Size(47, 45);
             this.picBoxSearchExpDate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1617,7 +1510,7 @@
             this.dateTimePickerExpDate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerExpDate.Location = new System.Drawing.Point(107, 62);
             this.dateTimePickerExpDate.Name = "dateTimePickerExpDate";
-            this.dateTimePickerExpDate.Size = new System.Drawing.Size(326, 28);
+            this.dateTimePickerExpDate.Size = new System.Drawing.Size(356, 28);
             this.dateTimePickerExpDate.TabIndex = 15;
             // 
             // label8
@@ -1656,6 +1549,113 @@
             this.dataGridViewExpense.RowTemplate.Height = 24;
             this.dataGridViewExpense.Size = new System.Drawing.Size(804, 361);
             this.dataGridViewExpense.TabIndex = 0;
+            // 
+            // groupBoxIncome
+            // 
+            this.groupBoxIncome.Controls.Add(this.pictBoxSearchInDate);
+            this.groupBoxIncome.Controls.Add(this.dateTimePickerInDate);
+            this.groupBoxIncome.Controls.Add(this.label7);
+            this.groupBoxIncome.Controls.Add(this.btnAddIncome);
+            this.groupBoxIncome.Controls.Add(this.dataGridViewIncome);
+            this.groupBoxIncome.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxIncome.ForeColor = System.Drawing.Color.White;
+            this.groupBoxIncome.Location = new System.Drawing.Point(46, 157);
+            this.groupBoxIncome.Name = "groupBoxIncome";
+            this.groupBoxIncome.Size = new System.Drawing.Size(869, 532);
+            this.groupBoxIncome.TabIndex = 12;
+            this.groupBoxIncome.TabStop = false;
+            this.groupBoxIncome.Text = "Income";
+            this.groupBoxIncome.Visible = false;
+            // 
+            // pictBoxSearchInDate
+            // 
+            this.pictBoxSearchInDate.Image = ((System.Drawing.Image)(resources.GetObject("pictBoxSearchInDate.Image")));
+            this.pictBoxSearchInDate.Location = new System.Drawing.Point(480, 54);
+            this.pictBoxSearchInDate.Name = "pictBoxSearchInDate";
+            this.pictBoxSearchInDate.Size = new System.Drawing.Size(47, 45);
+            this.pictBoxSearchInDate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictBoxSearchInDate.TabIndex = 16;
+            this.pictBoxSearchInDate.TabStop = false;
+            this.pictBoxSearchInDate.Click += new System.EventHandler(this.pictBoxSearchInDate_Click);
+            // 
+            // dateTimePickerInDate
+            // 
+            this.dateTimePickerInDate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerInDate.Location = new System.Drawing.Point(107, 62);
+            this.dateTimePickerInDate.Name = "dateTimePickerInDate";
+            this.dateTimePickerInDate.Size = new System.Drawing.Size(356, 28);
+            this.dateTimePickerInDate.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(20, 63);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 28);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Date: ";
+            // 
+            // btnAddIncome
+            // 
+            this.btnAddIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddIncome.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddIncome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnAddIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddIncome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddIncome.ForeColor = System.Drawing.Color.White;
+            this.btnAddIncome.Location = new System.Drawing.Point(662, 48);
+            this.btnAddIncome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddIncome.Name = "btnAddIncome";
+            this.btnAddIncome.Size = new System.Drawing.Size(156, 56);
+            this.btnAddIncome.TabIndex = 13;
+            this.btnAddIncome.Text = "+ income";
+            this.btnAddIncome.UseVisualStyleBackColor = false;
+            this.btnAddIncome.Click += new System.EventHandler(this.btnAddIncome_Click);
+            // 
+            // dataGridViewIncome
+            // 
+            this.dataGridViewIncome.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewIncome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewIncome.Location = new System.Drawing.Point(35, 134);
+            this.dataGridViewIncome.Name = "dataGridViewIncome";
+            this.dataGridViewIncome.RowTemplate.Height = 24;
+            this.dataGridViewIncome.Size = new System.Drawing.Size(804, 361);
+            this.dataGridViewIncome.TabIndex = 0;
+            // 
+            // btnExpense
+            // 
+            this.btnExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnExpense.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnExpense.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExpense.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpense.ForeColor = System.Drawing.Color.White;
+            this.btnExpense.Location = new System.Drawing.Point(504, 43);
+            this.btnExpense.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExpense.Name = "btnExpense";
+            this.btnExpense.Size = new System.Drawing.Size(184, 66);
+            this.btnExpense.TabIndex = 11;
+            this.btnExpense.Text = "Expense";
+            this.btnExpense.UseVisualStyleBackColor = false;
+            this.btnExpense.Click += new System.EventHandler(this.btnExpense_Click);
+            // 
+            // btnIncome
+            // 
+            this.btnIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnIncome.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnIncome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIncome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIncome.ForeColor = System.Drawing.Color.White;
+            this.btnIncome.Location = new System.Drawing.Point(234, 43);
+            this.btnIncome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnIncome.Name = "btnIncome";
+            this.btnIncome.Size = new System.Drawing.Size(184, 66);
+            this.btnIncome.TabIndex = 10;
+            this.btnIncome.Text = "Income";
+            this.btnIncome.UseVisualStyleBackColor = false;
+            this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click);
             // 
             // Main
             // 
@@ -1700,32 +1700,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchStorage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStorage)).EndInit();
             this.pnlVehicMach.ResumeLayout(false);
-            this.groupBoxVehicle.ResumeLayout(false);
-            this.groupBoxVehicle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchV)).EndInit();
             this.groupBoxMachine.ResumeLayout(false);
             this.groupBoxMachine.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMachine)).EndInit();
+            this.groupBoxVehicle.ResumeLayout(false);
+            this.groupBoxVehicle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).EndInit();
             this.pnlStocks.ResumeLayout(false);
-            this.groupBoxYields.ResumeLayout(false);
-            this.groupBoxYields.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYields)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchYield)).EndInit();
             this.groupBoxProducts.ResumeLayout(false);
             this.groupBoxProducts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchProd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
+            this.groupBoxYields.ResumeLayout(false);
+            this.groupBoxYields.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchYield)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYields)).EndInit();
             this.pnlAccounting.ResumeLayout(false);
-            this.groupBoxIncome.ResumeLayout(false);
-            this.groupBoxIncome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictBoxSearchInDate)).EndInit();
             this.groupBoxExpense.ResumeLayout(false);
             this.groupBoxExpense.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSearchExpDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpense)).EndInit();
+            this.groupBoxIncome.ResumeLayout(false);
+            this.groupBoxIncome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxSearchInDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).EndInit();
             this.ResumeLayout(false);
 
         }

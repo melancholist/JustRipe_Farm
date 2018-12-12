@@ -232,11 +232,17 @@ namespace JustRipeFarm_v3
         }
         private void btnAddFertilisers_Click(object sender, EventArgs e)
         {
-
+            FertiliserManagement fer = new FertiliserManagement();
+            fer.Show();
+            fer.pnlAddFertiliser.Show();
+            fer.pnlUpdateFer.Hide();
         }
         private void btnUpdateFert_Click(object sender, EventArgs e)
         {
-
+            FertiliserManagement fer = new FertiliserManagement();
+            fer.Show();
+            fer.pnlAddFertiliser.Hide();
+            fer.pnlUpdateFer.Show();
         }
         //Pesticides
         private void btnPesticides_Click(object sender, EventArgs e)
@@ -269,11 +275,17 @@ namespace JustRipeFarm_v3
         }
         private void btnAddPesticides_Click(object sender, EventArgs e)
         {
-
+            PesticidesManagement pesMang = new PesticidesManagement();
+            pesMang.Show();
+            pesMang.pnlAddPesticides.Show();
+            pesMang.pnlUpdatePes.Hide();
         }
         private void btnUpdatePest_Click(object sender, EventArgs e)
         {
-
+            PesticidesManagement pesMang = new PesticidesManagement();
+            pesMang.Show();
+            pesMang.pnlAddPesticides.Hide();
+            pesMang.pnlUpdatePes.Show();
         }
         //Equipments
         private void btnEquipment_Click(object sender, EventArgs e)
@@ -451,7 +463,8 @@ namespace JustRipeFarm_v3
         }
         private void btnAddMach_Click(object sender, EventArgs e)
         {
-
+            AddNewMachine mach = new AddNewMachine();
+            mach.Show();
         }
         private void btnUpdateM_Click(object sender, EventArgs e)
         {

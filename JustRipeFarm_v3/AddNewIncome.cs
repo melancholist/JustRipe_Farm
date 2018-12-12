@@ -13,7 +13,6 @@ namespace JustRipeFarm_v3
 {
     public partial class AddNewIncome : Form
     {
-        AddNewIncome income = new AddNewIncome();
         DbConnector DBConn = new DbConnector();
 
         public AddNewIncome()

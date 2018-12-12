@@ -13,7 +13,6 @@ namespace JustRipeFarm_v3
 {
     public partial class AddNewExpense : Form
     {
-        AddNewExpense expense = new AddNewExpense();
         DbConnector DBConn = new DbConnector();
 
         public AddNewExpense()
