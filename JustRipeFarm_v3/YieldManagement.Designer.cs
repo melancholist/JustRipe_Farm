@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(YieldManagement));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.comboBoxStrUName = new System.Windows.Forms.ComboBox();
             this.textBoxYType = new System.Windows.Forms.TextBox();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numYQuantity)).BeginInit();
@@ -189,6 +191,13 @@
             this.textBoxYType.Size = new System.Drawing.Size(183, 28);
             this.textBoxYType.TabIndex = 59;
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // YieldManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -207,6 +216,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "YieldManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yield";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -231,5 +241,6 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.ComboBox comboBoxStrUName;
         private System.Windows.Forms.TextBox textBoxYType;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

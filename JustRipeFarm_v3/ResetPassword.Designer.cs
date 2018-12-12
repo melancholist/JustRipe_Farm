@@ -41,6 +41,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.exitPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -151,7 +153,7 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.ElipseRadius = 25;
             this.bunifuElipse1.TargetControl = this;
             // 
             // exitPictureBox
@@ -167,6 +169,20 @@
             this.exitPictureBox.TabStop = false;
             this.exitPictureBox.Zoom = 30;
             this.exitPictureBox.Click += new System.EventHandler(this.exitPictureBox_Click);
+            // 
+            // panelTop
+            // 
+            this.panelTop.Location = new System.Drawing.Point(0, 2);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(478, 455);
+            this.panelTop.TabIndex = 19;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panelTop;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // ResetPassword
             // 
@@ -184,6 +200,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ResetPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -207,5 +224,7 @@
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuImageButton exitPictureBox;
+        private System.Windows.Forms.Panel panelTop;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

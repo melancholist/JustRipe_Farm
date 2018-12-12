@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddStaff));
             this.panel1 = new System.Windows.Forms.Panel();
             this.picBoxBack = new Bunifu.Framework.UI.BunifuImageButton();
@@ -60,6 +61,7 @@
             this.lblWage = new System.Windows.Forms.Label();
             this.wageTextBox = new System.Windows.Forms.TextBox();
             this.roleComboBox = new System.Windows.Forms.ComboBox();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).BeginInit();
             this.SuspendLayout();
@@ -407,6 +409,13 @@
             this.roleComboBox.Size = new System.Drawing.Size(180, 29);
             this.roleComboBox.TabIndex = 3;
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // AddStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -487,5 +496,6 @@
         public System.Windows.Forms.DateTimePicker hiredDateTimePicker;
         private Bunifu.Framework.UI.BunifuImageButton picBoxBack;
         public System.Windows.Forms.ComboBox statusComboBox;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StorageManagement));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,6 +51,7 @@
             this.numMaxTemp = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.numAirHumd = new System.Windows.Forms.NumericUpDown();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCubicCap)).BeginInit();
@@ -85,7 +87,7 @@
             this.exitPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
             this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
             this.exitPictureBox.ImageActive = null;
-            this.exitPictureBox.Location = new System.Drawing.Point(526, 5);
+            this.exitPictureBox.Location = new System.Drawing.Point(526, 10);
             this.exitPictureBox.Name = "exitPictureBox";
             this.exitPictureBox.Size = new System.Drawing.Size(31, 29);
             this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -294,6 +296,13 @@
             this.numAirHumd.Size = new System.Drawing.Size(120, 28);
             this.numAirHumd.TabIndex = 53;
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // StorageManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -321,6 +330,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StorageManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StorageManagement";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -357,5 +367,6 @@
         private System.Windows.Forms.NumericUpDown numMaxTemp;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.NumericUpDown numAirHumd;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

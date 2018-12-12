@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -128,6 +129,7 @@
             this.dataGridViewIncome = new System.Windows.Forms.DataGridView();
             this.btnExpense = new System.Windows.Forms.Button();
             this.btnIncome = new System.Windows.Forms.Button();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -1614,6 +1616,13 @@
             this.btnIncome.UseVisualStyleBackColor = false;
             this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click);
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel2;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1787,5 +1796,6 @@
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.Button btnAddExpense;
         private System.Windows.Forms.DataGridView dataGridViewExpense;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
