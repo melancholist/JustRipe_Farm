@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -60,6 +60,7 @@
             this.btnTreatment = new System.Windows.Forms.Button();
             this.btnHarvest = new System.Windows.Forms.Button();
             this.btnSowing = new System.Windows.Forms.Button();
+            this.dataGridViewSchedule = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pnlResources = new System.Windows.Forms.Panel();
             this.btnFertilisers = new System.Windows.Forms.Button();
             this.btnPesticides = new System.Windows.Forms.Button();
@@ -131,7 +132,6 @@
             this.btnExpense = new System.Windows.Forms.Button();
             this.btnIncome = new System.Windows.Forms.Button();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.dataGridViewSchedule = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -139,6 +139,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picboxLabourer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxManager)).BeginInit();
             this.pnlSchedule.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).BeginInit();
             this.pnlResources.SuspendLayout();
             this.groupBoxPesticides.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesticides)).BeginInit();
@@ -172,7 +173,6 @@
             this.groupBoxIncome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxSearchInDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -620,6 +620,36 @@
             this.btnSowing.Text = "Sowing";
             this.btnSowing.UseVisualStyleBackColor = false;
             this.btnSowing.Click += new System.EventHandler(this.btnSowing_Click);
+            // 
+            // dataGridViewSchedule
+            // 
+            this.dataGridViewSchedule.AllowUserToAddRows = false;
+            this.dataGridViewSchedule.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewSchedule.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridViewSchedule.BackgroundColor = System.Drawing.Color.DarkSlateGray;
+            this.dataGridViewSchedule.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewSchedule.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSchedule.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSchedule.DoubleBuffered = true;
+            this.dataGridViewSchedule.EnableHeadersVisualStyles = false;
+            this.dataGridViewSchedule.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.dataGridViewSchedule.HeaderForeColor = System.Drawing.Color.White;
+            this.dataGridViewSchedule.Location = new System.Drawing.Point(37, 126);
+            this.dataGridViewSchedule.Name = "dataGridViewSchedule";
+            this.dataGridViewSchedule.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridViewSchedule.RowTemplate.Height = 24;
+            this.dataGridViewSchedule.Size = new System.Drawing.Size(897, 515);
+            this.dataGridViewSchedule.TabIndex = 15;
             // 
             // pnlResources
             // 
@@ -1615,44 +1645,14 @@
             this.bunifuDragControl1.TargetControl = this.panel2;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // dataGridViewSchedule
-            // 
-            this.dataGridViewSchedule.AllowUserToAddRows = false;
-            this.dataGridViewSchedule.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridViewSchedule.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dataGridViewSchedule.BackgroundColor = System.Drawing.Color.DarkSlateGray;
-            this.dataGridViewSchedule.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewSchedule.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewSchedule.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSchedule.DoubleBuffered = true;
-            this.dataGridViewSchedule.EnableHeadersVisualStyles = false;
-            this.dataGridViewSchedule.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.dataGridViewSchedule.HeaderForeColor = System.Drawing.Color.White;
-            this.dataGridViewSchedule.Location = new System.Drawing.Point(37, 126);
-            this.dataGridViewSchedule.Name = "dataGridViewSchedule";
-            this.dataGridViewSchedule.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridViewSchedule.RowTemplate.Height = 24;
-            this.dataGridViewSchedule.Size = new System.Drawing.Size(897, 515);
-            this.dataGridViewSchedule.TabIndex = 15;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
-            this.Controls.Add(this.pnlResources);
             this.Controls.Add(this.pnlSchedule);
+            this.Controls.Add(this.pnlResources);
             this.Controls.Add(this.pnlAccounting);
             this.Controls.Add(this.pnlStocks);
             this.Controls.Add(this.pnlVehicMach);
@@ -1673,6 +1673,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picboxLabourer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxManager)).EndInit();
             this.pnlSchedule.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).EndInit();
             this.pnlResources.ResumeLayout(false);
             this.groupBoxPesticides.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesticides)).EndInit();
@@ -1713,7 +1714,6 @@
             this.groupBoxIncome.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxSearchInDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).EndInit();
             this.ResumeLayout(false);
 
         }
