@@ -12,22 +12,21 @@ namespace JustRipeFarm_v3
         public int addYield(MySqlConnection conn, Yield yield)
         {
             string addYield = "INSERT INTO yield (yieldType, quantity, storageUnitName, storageCapacity)"
-                + "VALUES ('" + yield.YieldType + "', '" + yield.Quantity + "', '" + yield.StorageUnitName + "', '" +
-                yield.StorageCapacity + "')";
+                + "VALUES ('" + yield.YieldType + "', '" + yield.Quantity + "', '" + yield.StorageUnitName + "')";
 
             MySqlCommand sqlComm = new MySqlCommand(addYield, conn);
 
             return sqlComm.ExecuteNonQuery();
         }
 
-        public int storagePercentage(MySqlConnection conn, Yield yield)
+        /*public int storagePercentage(MySqlConnection conn, Yield yield)
         {
-            string percent = "SELECT ('" + yield.StorageCapacity + "' / '" + yield.Quantity + "') * 100" +
+            string percent = "SELECT ('" + 2000 + "' / '" + yield.Quantity + "') * 100" +
                 "FROM yield";
 
             MySqlCommand sqlComm = new MySqlCommand(percent, conn);
 
             return sqlComm.ExecuteNonQuery();
-        }
+        }*/
     }
 }
