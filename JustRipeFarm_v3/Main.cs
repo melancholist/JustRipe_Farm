@@ -170,10 +170,10 @@ namespace JustRipeFarm_v3
         //Crops
         private void btnCrops_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable("crops");
+            DataTable dt = new DataTable("crop");
             try
             {
-                string query = "SELECT * FROM crops";
+                string query = "SELECT * FROM crop";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))

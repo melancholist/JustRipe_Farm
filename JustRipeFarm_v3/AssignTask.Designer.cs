@@ -255,15 +255,6 @@
             this.comboBoxStorageUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxStorageUnit.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxStorageUnit.FormattingEnabled = true;
-            this.comboBoxStorageUnit.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8"});
             this.comboBoxStorageUnit.Location = new System.Drawing.Point(180, 292);
             this.comboBoxStorageUnit.Name = "comboBoxStorageUnit";
             this.comboBoxStorageUnit.Size = new System.Drawing.Size(162, 29);
@@ -384,6 +375,13 @@
             this.comboBoxHarvestMehtod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxHarvestMehtod.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxHarvestMehtod.FormattingEnabled = true;
+            this.comboBoxHarvestMehtod.Items.AddRange(new object[] {
+            "Cutting",
+            "Field Drying",
+            "Hauling",
+            "Threshing",
+            "Cleaning",
+            "Bagging"});
             this.comboBoxHarvestMehtod.Location = new System.Drawing.Point(180, 123);
             this.comboBoxHarvestMehtod.Name = "comboBoxHarvestMehtod";
             this.comboBoxHarvestMehtod.Size = new System.Drawing.Size(220, 29);
@@ -1085,6 +1083,14 @@
             this.comboBoxMethods.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxMethods.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxMethods.FormattingEnabled = true;
+            this.comboBoxMethods.Items.AddRange(new object[] {
+            "Broadcasting",
+            "Dibbling",
+            "Drilling",
+            "Seed dropping behind the plough",
+            "Transplanting",
+            "Hill dropping",
+            " Check row planting"});
             this.comboBoxMethods.Location = new System.Drawing.Point(180, 127);
             this.comboBoxMethods.Name = "comboBoxMethods";
             this.comboBoxMethods.Size = new System.Drawing.Size(243, 29);

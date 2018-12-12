@@ -290,7 +290,7 @@ namespace JustRipeFarm_v3
             harv.Date = DateTime.ParseExact(textBoxHarvDate.Text, "d-M-yyyy", CultureInfo.InvariantCulture);
             harv.Method = comboBoxHarvestMehtod.Text;
             harv.Machine = comboBoxPlantType.Text;
-            harv.StorageUnit = int.Parse(comboBoxStorageUnit.Text);
+            harv.StorageUnit = comboBoxStorageUnit.Text;
             harv.StartTime = dateTimePickerStartHarv.Value.Date;
             harv.EndTime = dateTimePickerEndHarv.Value.Date;
 

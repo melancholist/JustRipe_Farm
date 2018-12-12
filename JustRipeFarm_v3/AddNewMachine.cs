@@ -28,7 +28,6 @@ namespace JustRipeFarm_v3
 
             machine.MachineType = comboBoxMachineType.Text;
             machine.ModelName = textBoxModelName.Text;
-            machine.Date = dateTimePicker1.Value.Date;
             machine.MachineStatus = comboBoxMachineStatus.Text;
             machine.Price = Decimal.Parse(textBoxPrice.Text);
 

@@ -151,7 +151,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(68, 207);
+            this.label6.Location = new System.Drawing.Point(68, 200);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 17);
             this.label6.TabIndex = 11;
@@ -159,7 +159,7 @@
             // 
             // textBoxPrice
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(199, 202);
+            this.textBoxPrice.Location = new System.Drawing.Point(199, 195);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(125, 22);
             this.textBoxPrice.TabIndex = 12;
