@@ -51,10 +51,11 @@
             // lblCustomer
             // 
             this.lblCustomer.AutoSize = true;
-            this.lblCustomer.ForeColor = System.Drawing.Color.White;
+            this.lblCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomer.ForeColor = System.Drawing.Color.Black;
             this.lblCustomer.Location = new System.Drawing.Point(32, 91);
             this.lblCustomer.Name = "lblCustomer";
-            this.lblCustomer.Size = new System.Drawing.Size(68, 17);
+            this.lblCustomer.Size = new System.Drawing.Size(76, 17);
             this.lblCustomer.TabIndex = 28;
             this.lblCustomer.Text = "Customer";
             // 
@@ -104,69 +105,78 @@
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.ForeColor = System.Drawing.Color.White;
+            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.ForeColor = System.Drawing.Color.Black;
             this.lblDescription.Location = new System.Drawing.Point(35, 238);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(79, 17);
+            this.lblDescription.Size = new System.Drawing.Size(90, 17);
             this.lblDescription.TabIndex = 19;
             this.lblDescription.Text = "Description";
             // 
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
-            this.lblCategory.ForeColor = System.Drawing.Color.White;
+            this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.ForeColor = System.Drawing.Color.Black;
             this.lblCategory.Location = new System.Drawing.Point(35, 199);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(65, 17);
+            this.lblCategory.Size = new System.Drawing.Size(73, 17);
             this.lblCategory.TabIndex = 18;
             this.lblCategory.Text = "Category";
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.ForeColor = System.Drawing.Color.White;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.Black;
             this.lblDate.Location = new System.Drawing.Point(35, 159);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(38, 17);
+            this.lblDate.Size = new System.Drawing.Size(42, 17);
             this.lblDate.TabIndex = 17;
             this.lblDate.Text = "Date";
             // 
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.ForeColor = System.Drawing.Color.White;
+            this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmount.ForeColor = System.Drawing.Color.Black;
             this.lblAmount.Location = new System.Drawing.Point(35, 124);
             this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(68, 17);
+            this.lblAmount.Size = new System.Drawing.Size(76, 17);
             this.lblAmount.TabIndex = 16;
             this.lblAmount.Text = "Amount $";
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(267, 308);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(75, 37);
             this.btnSave.TabIndex = 30;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(164, 308);
+            this.btnClear.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(179, 308);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.Size = new System.Drawing.Size(82, 37);
             this.btnClear.TabIndex = 29;
             this.btnClear.Text = "Clear all";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // lblNewTransaction
             // 
             this.lblNewTransaction.AutoSize = true;
+            this.lblNewTransaction.BackColor = System.Drawing.Color.OliveDrab;
             this.lblNewTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewTransaction.ForeColor = System.Drawing.Color.White;
-            this.lblNewTransaction.Location = new System.Drawing.Point(102, 8);
+            this.lblNewTransaction.ForeColor = System.Drawing.Color.LemonChiffon;
+            this.lblNewTransaction.Location = new System.Drawing.Point(12, 7);
             this.lblNewTransaction.Name = "lblNewTransaction";
             this.lblNewTransaction.Size = new System.Drawing.Size(188, 32);
             this.lblNewTransaction.TabIndex = 32;
@@ -188,7 +198,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(76)))), ((int)(((byte)(56)))));
+            this.panel1.BackColor = System.Drawing.Color.OliveDrab;
             this.panel1.Controls.Add(this.lblNewTransaction);
             this.panel1.Controls.Add(this.exitPictureBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -201,7 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(392, 367);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSave);
