@@ -77,7 +77,7 @@ namespace JustRipeFarm_v3
         void FillFertilisers()
         {
             dbconn.connect();
-            string fertiliserquery = "Select * FROM fertilsers";
+            string fertiliserquery = "Select * FROM fertiliser";
             MySqlCommand cmd = new MySqlCommand(fertiliserquery, dbconn.getConn());
             MySqlDataReader reader;
             try
@@ -86,7 +86,7 @@ namespace JustRipeFarm_v3
 
                 while (reader.Read())
                 {
-                    string fertiliser = reader.GetString("fertilserType");
+                    string fertiliser = reader.GetString("fertiliserType");
                     comboBoxFertilisers.Items.Add(fertiliser);
                 }
             }
@@ -268,7 +268,7 @@ namespace JustRipeFarm_v3
             Sowing sow = new Sowing();
             sow.LabourerName = comboBoxWorkers.Text;
             sow.FarmSector = int.Parse(comboBoxFarmSectorSow.Text);
-            sow.Date = DateTime.ParseExact(textBoxSowDate.Text, "d-M-yyyy", CultureInfo.InvariantCulture);
+            sow.Date = DateTime.ParseExact(textBoxSowDate.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
             sow.Method = comboBoxMethods.Text;
             sow.Seed = comboBoxSeeds.Text;
             sow.Quantity = numericUpDownQauntity.Value;
@@ -287,7 +287,7 @@ namespace JustRipeFarm_v3
             Harvest harv = new Harvest();
             harv.LabourerName = comboBoxWorkerHarv.Text;
             harv.FarmSector = int.Parse(comboBoxFarmSectorHarv.Text);
-            harv.Date = DateTime.ParseExact(textBoxHarvDate.Text, "d-M-yyyy", CultureInfo.InvariantCulture);
+            harv.Date = DateTime.ParseExact(textBoxHarvDate.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
             harv.Method = comboBoxHarvestMehtod.Text;
             harv.Machine = comboBoxPlantType.Text;
             harv.StorageUnit = comboBoxStorageUnit.Text;
@@ -306,7 +306,7 @@ namespace JustRipeFarm_v3
             Treating trt = new Treating();
             trt.LabourerName = comboBoxWorkerT.Text;
             trt.FarmSector = int.Parse(comboBoxFarmT.Text);
-            trt.Date = DateTime.ParseExact(textBoxTreatmentDate.Text, "d-M-yyyy", System.Globalization.CultureInfo.InvariantCulture);
+            trt.Date = DateTime.ParseExact(textBoxTreatmentDate.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
             trt.FertiliserUsed = comboBoxFertilisers.Text;
             trt.Quantity = numericUpDownFertilisers.Value;
             trt.StartTime = dateTimePickerStartTr.Value.Date;
@@ -324,7 +324,7 @@ namespace JustRipeFarm_v3
             Driving drv = new Driving();
             drv.LabourerName = comboBoxDriver.Text;
             drv.FarmSector = int.Parse(comboBoxFarmD.Text);
-            drv.Date = DateTime.ParseExact(textBoxDrivingDate.Text, "d-M-yyyy", System.Globalization.CultureInfo.InvariantCulture);
+            drv.Date = DateTime.ParseExact(textBoxDrivingDate.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
             drv.VehicleUsed = comboBoxVehicles.Text;
 
             ScheduleHandler scHand = new ScheduleHandler();

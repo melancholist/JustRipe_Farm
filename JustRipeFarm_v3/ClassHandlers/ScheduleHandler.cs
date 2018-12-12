@@ -13,7 +13,7 @@ namespace JustRipeFarm_v3
         {
             string sowingQuery = "INSERT INTO sowingTask (labourerName, farmSector, date, method, seed, quantity, startTime, endTime)"
                 + "VALUES ('" + sowing.LabourerName + "', " + sowing.FarmSector + ", '" + sowing.Date.ToString("yyyy-MM-dd") + "', '" +
-                sowing.Method + "', '" + sowing.Seed + "', '" + sowing.Quantity + "', '" + sowing.StartTime.ToString("hh:mm") + "', '" +
+                sowing.Method + "', '" + sowing.Seed + "', '" + sowing.Quantity + "', '" + sowing.StartTime.ToString("hh:mm:ss") + "', '" +
                 sowing.EndTime.ToString("hh:mm") + "' )";
 
             MySqlCommand sqlCmd = new MySqlCommand(sowingQuery, cn);
@@ -25,7 +25,7 @@ namespace JustRipeFarm_v3
         {
             string harvestQuery = "INSERT INTO harvestTask (labourerName, farmSector, date, method, storageUnit, machine, startTime, endTime)"
                 + "VALUES ('" + harvest.LabourerName + "', " + harvest.FarmSector + ", '" + harvest.Date.ToString("yyyy-MM-dd") + "', '" +
-                harvest.Method + "', '" + harvest.StorageUnit + "', '" + harvest.Machine + "', '" + harvest.StartTime.ToString("hh:mm") + "', '" +
+                harvest.Method + "', '" + harvest.StorageUnit + "', '" + harvest.Machine + "', '" + harvest.StartTime.ToString("hh:mm:ss") + "', '" +
                 harvest.EndTime.ToString("hh:mm") + "' )";
 
             MySqlCommand sqlCmd = new MySqlCommand(harvestQuery, cn);
@@ -37,7 +37,7 @@ namespace JustRipeFarm_v3
         {
             string treatmentQuery = "INSERT INTO treatmentTask (labourerName, farmSector, date, fertiliserUsed, quantity, startTime, endTime)"
                 + "VALUES ('" + treating.LabourerName + "', " + treating.FarmSector + ", '" + treating.Date.ToString("yyyy-MM-dd") + "', '" +
-                treating.FertiliserUsed + "', '" + treating.Quantity + "', '" + treating.StartTime.ToString("hh:mm") + "', '" +
+                treating.FertiliserUsed + "', '" + treating.Quantity + "', '" + treating.StartTime.ToString("hh:mm:ss") + "', '" +
                 treating.EndTime.ToString("hh:mm") + "' )";
 
             MySqlCommand sqlCmd = new MySqlCommand(treatmentQuery, cn);

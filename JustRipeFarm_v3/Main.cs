@@ -15,6 +15,8 @@ namespace JustRipeFarm_v3
     public partial class Main : Form
     {
         Staff lab = new Staff();
+        Login lgn = new Login();
+        DbConnector dbc = new DbConnector();
         string connString = "server=sql12.freemysqlhosting.net;user=sql12268366;database=sql12268366;password=1VpFDLJHBC;port=3306";
 
         public Main()
@@ -69,7 +71,8 @@ namespace JustRipeFarm_v3
             DataTable dt = new DataTable("sowingTask");
             try
             {
-                string query = "SELECT * FROM sowingTask";
+                Login lgn = new Login();
+                string query = "SELECT * FROM sowingTask ";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -89,7 +92,8 @@ namespace JustRipeFarm_v3
             DataTable dt = new DataTable("harvestTask");
             try
             {
-                string query = "SELECT * FROM harvestTask";
+                Login lgn = new Login();
+                string query = "SELECT * FROM harvestTask ";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -109,7 +113,8 @@ namespace JustRipeFarm_v3
             DataTable dt = new DataTable("treatmentTask");
             try
             {
-                string query = "SELECT * FROM treatmentTask";
+                Login lgn = new Login();
+                string query = "SELECT * FROM treatmentTask ";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -129,7 +134,8 @@ namespace JustRipeFarm_v3
             DataTable dt = new DataTable("drivingTask");
             try
             {
-                string query = "SELECT * FROM drivingTask";
+                Login lgn = new Login();
+                string query = "SELECT * FROM drivingTask ";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -316,7 +322,6 @@ namespace JustRipeFarm_v3
                 groupBoxEquip.Visible = true;
             }
         }
-
         private void btnAddEquipment_Click(object sender, EventArgs e)
         {
             AddNewEquipment equip = new AddNewEquipment();
@@ -325,6 +330,7 @@ namespace JustRipeFarm_v3
 
 
         //Storage panel
+        DataTable datb = new DataTable("storage");
         private void btnStorage_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
@@ -344,7 +350,6 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator6.Hide();
             }
 
-            DataTable dt = new DataTable("storage");
             try
             {
                 string query = "SELECT * FROM storage";
@@ -352,8 +357,8 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
-                        da.Fill(dt);
-                        dataGridViewStorage.DataSource = dt;
+                        da.Fill(datb);
+                        dataGridViewStorage.DataSource = datb;
                     }
                 }
             }
@@ -364,8 +369,7 @@ namespace JustRipeFarm_v3
         }
         private void picBoxSearchStorage_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable("storage");
-            DataView dv = dt.DefaultView;
+            DataView dv = datb.DefaultView;
             dv.RowFilter = string.Format("unitName LIKE '%{0}%'", comboBoxUnitName.SelectedItem.ToString());
             comboBoxUnitName.DataSource = dv.ToTable();
         }
@@ -396,12 +400,12 @@ namespace JustRipeFarm_v3
             }
         }
         //Vehicle
+        DataTable dtbl = new DataTable("vehicle");
         private void btnVehic_Click(object sender, EventArgs e)
         {
             groupBoxVehicle.Visible = true;
             groupBoxMachine.Visible = false;
 
-            DataTable dt = new DataTable("vehicle");
             try
             {
                 string query = "SELECT * FROM vehicle";
@@ -409,8 +413,8 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
-                        da.Fill(dt);
-                        dataGridViewVehicle.DataSource = dt;
+                        da.Fill(dtbl);
+                        dataGridViewVehicle.DataSource = dtbl;
                     }
                 }
             }
@@ -426,18 +430,17 @@ namespace JustRipeFarm_v3
         }
         private void pictureBoxSearchV_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable("vehicle");
-            DataView dv = dt.DefaultView;
+            DataView dv = dtbl.DefaultView;
             dv.RowFilter = string.Format("vehicleType LIKE '%{0}%'", comboBoxVehicType.SelectedItem.ToString());
             comboBoxVehicType.DataSource = dv.ToTable();
         }
         //Machine
+        DataTable dtb = new DataTable("machine");
         private void btnMachine_Click(object sender, EventArgs e)
         {
             groupBoxVehicle.Visible = false;
             groupBoxMachine.Visible = true;
 
-            DataTable dt = new DataTable("machine");
             try
             {
                 string query = "SELECT * FROM machine";
@@ -445,8 +448,8 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
-                        da.Fill(dt);
-                        dataGridViewMachine.DataSource = dt;
+                        da.Fill(dtb);
+                        dataGridViewMachine.DataSource = dtb;
                     }
                 }
             }
@@ -457,8 +460,7 @@ namespace JustRipeFarm_v3
         }
         private void picBoxSearchM_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable("machine");
-            DataView dv = dt.DefaultView;
+            DataView dv = dtb.DefaultView;
             dv.RowFilter = string.Format("machineType LIKE '%{0}%'", comboBoxMachType.SelectedItem.ToString());
             comboBoxMachType.DataSource = dv.ToTable();
         }
@@ -490,12 +492,12 @@ namespace JustRipeFarm_v3
             }
         }
         //Yields
+        DataTable dtab = new DataTable("yield");
         private void btnYields_Click(object sender, EventArgs e)
         {
             groupBoxYields.Visible = true;
             groupBoxProducts.Visible = false;
 
-            DataTable dt = new DataTable("yield");
             try
             {
                 string query = "SELECT * FROM yield";
@@ -503,8 +505,8 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
-                        da.Fill(dt);
-                        dataGridViewYields.DataSource = dt;
+                        da.Fill(dtab);
+                        dataGridViewYields.DataSource = dtab;
                     }
                 }
             }
@@ -520,18 +522,17 @@ namespace JustRipeFarm_v3
         }
         private void picBoxSearchYield_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable("yield");
-            DataView dv = dt.DefaultView;
+            DataView dv = dtab.DefaultView;
             dv.RowFilter = string.Format("yieldType LIKE '%{0}%'", comboBoxYieldType.SelectedItem.ToString());
             comboBoxYieldType.DataSource = dv.ToTable();
         }
         //Products
+        DataTable data = new DataTable("product");
         private void btnProducts_Click(object sender, EventArgs e)
         {
             groupBoxYields.Visible = false;
             groupBoxProducts.Visible = true;
 
-            DataTable dt = new DataTable("product");
             try
             {
                 string query = "SELECT * FROM product";
@@ -539,8 +540,8 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
-                        da.Fill(dt);
-                        dataGridViewProducts.DataSource = dt;
+                        da.Fill(data);
+                        dataGridViewProducts.DataSource = data;
                     }
                 }
             }
@@ -556,8 +557,7 @@ namespace JustRipeFarm_v3
         }
         private void picBoxSearchProd_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable("product");
-            DataView dv = dt.DefaultView;
+            DataView dv = data.DefaultView;
             dv.RowFilter = string.Format("category LIKE '%{0}%'", comboBoxProdCat.SelectedItem.ToString());
             comboBoxProdCat.DataSource = dv.ToTable();
         }
@@ -584,12 +584,12 @@ namespace JustRipeFarm_v3
             }
         }
         //Income
+        DataTable dta = new DataTable("income");
         private void btnIncome_Click(object sender, EventArgs e)
         {
             groupBoxIncome.Visible = true;
             groupBoxExpense.Visible = false;
 
-            DataTable dt = new DataTable("income");
             try
             {
                 string query = "SELECT * FROM income";
@@ -597,8 +597,8 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
-                        da.Fill(dt);
-                        dataGridViewIncome.DataSource = dt;
+                        da.Fill(dta);
+                        dataGridViewIncome.DataSource = dta;
                     }
                 }
             }
@@ -614,12 +614,12 @@ namespace JustRipeFarm_v3
         }
         private void pictBoxSearchInDate_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable("income");
-            DataView dv = dt.DefaultView;
-            dv.RowFilter = string.Format("date = '#{0}#'", dateTimePickerInDate.Value.ToShortDateString());
+            DataView dv = dta.DefaultView;
+            dv.RowFilter = string.Format("date = '#{0}#'", dateTimePickerInDate.Value.ToLongDateString());
             dataGridViewIncome.DataSource = dv.ToTable();
         }
         //Expense
+        DataTable dtt = new DataTable("expense");
         private void btnExpense_Click(object sender, EventArgs e)
         {
             groupBoxIncome.Visible = false;
@@ -633,8 +633,8 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
-                        da.Fill(dt);
-                        dataGridViewExpense.DataSource = dt;
+                        da.Fill(dtt);
+                        dataGridViewExpense.DataSource = dtt;
                     }
                 }
             }
@@ -650,9 +650,8 @@ namespace JustRipeFarm_v3
         }
         private void picBoxSearchExpDate_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable("expense");
-            DataView dv = dt.DefaultView;
-            dv.RowFilter = string.Format("date = '#{0}#'", dateTimePickerExpDate.Value.ToShortDateString());
+            DataView dv = dtt.DefaultView;
+            dv.RowFilter = string.Format("date = '#{0}#'", dateTimePickerExpDate.Value.ToLongDateString());
             dataGridViewExpense.DataSource = dv.ToTable();
         }
 

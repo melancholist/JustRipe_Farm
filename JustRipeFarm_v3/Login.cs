@@ -14,7 +14,6 @@ namespace JustRipeFarm_v3
     public partial class Login : Form
     {
         DbConnector DBConn = new DbConnector();
-        Main mn = new Main();
         MySqlDataAdapter da;
 
         public Login()
@@ -78,6 +77,7 @@ namespace JustRipeFarm_v3
                     da.Fill(dta);
                     if (dta.Rows.Count == 1)
                     {
+                        Main mn = new Main();
                         this.Hide();
                         mn.Show();
 

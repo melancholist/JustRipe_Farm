@@ -1549,6 +1549,13 @@
             // 
             this.comboBoxProdCat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxProdCat.FormattingEnabled = true;
+            this.comboBoxProdCat.Items.AddRange(new object[] {
+            "Fruits",
+            "Legumes and Beans",
+            "Nuts and Seeds",
+            "Spices and Herbs",
+            "Vegetable and Vegetable Products",
+            "Others"});
             this.comboBoxProdCat.Location = new System.Drawing.Point(164, 73);
             this.comboBoxProdCat.Name = "comboBoxProdCat";
             this.comboBoxProdCat.Size = new System.Drawing.Size(183, 31);
@@ -1749,6 +1756,7 @@
             // 
             // pictBoxSearchInDate
             // 
+            this.pictBoxSearchInDate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictBoxSearchInDate.Image = ((System.Drawing.Image)(resources.GetObject("pictBoxSearchInDate.Image")));
             this.pictBoxSearchInDate.Location = new System.Drawing.Point(480, 54);
             this.pictBoxSearchInDate.Name = "pictBoxSearchInDate";
@@ -1842,6 +1850,7 @@
             // 
             // picBoxSearchExpDate
             // 
+            this.picBoxSearchExpDate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBoxSearchExpDate.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSearchExpDate.Image")));
             this.picBoxSearchExpDate.Location = new System.Drawing.Point(480, 54);
             this.picBoxSearchExpDate.Name = "picBoxSearchExpDate";

@@ -12,7 +12,7 @@ namespace JustRipeFarm_v3
         public int addNewFertiliser(MySqlConnection conn, Fertiliser fertiliser)
         {
             string addFertiliserQuery = "INSERT INTO fertiliser (fertiliserType, fertiliserQuantity, fertiliserCompany)"
-                + "VALUES ('" + fertiliser.FertiliserType + "', '" + fertiliser.FertiliserQuantity + "', '" + fertiliser.FertiliserCompany + "',)";
+                + "VALUES ('" + fertiliser.FertiliserType + "', '" + fertiliser.FertiliserQuantity + "', '" + fertiliser.FertiliserCompany + "')";
 
             MySqlCommand sqlComm = new MySqlCommand(addFertiliserQuery, conn);
 

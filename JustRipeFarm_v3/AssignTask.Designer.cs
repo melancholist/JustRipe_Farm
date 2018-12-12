@@ -304,22 +304,22 @@
             // 
             this.dateTimePickerEndHarv.CalendarFont = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerEndHarv.CustomFormat = "hh:mm";
-            this.dateTimePickerEndHarv.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerEndHarv.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePickerEndHarv.Location = new System.Drawing.Point(622, 427);
             this.dateTimePickerEndHarv.Name = "dateTimePickerEndHarv";
             this.dateTimePickerEndHarv.ShowUpDown = true;
-            this.dateTimePickerEndHarv.Size = new System.Drawing.Size(92, 22);
+            this.dateTimePickerEndHarv.Size = new System.Drawing.Size(150, 22);
             this.dateTimePickerEndHarv.TabIndex = 16;
             // 
             // dateTimePickerStartHarv
             // 
             this.dateTimePickerStartHarv.CalendarFont = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerStartHarv.CustomFormat = "hh:mm";
-            this.dateTimePickerStartHarv.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerStartHarv.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePickerStartHarv.Location = new System.Drawing.Point(622, 362);
             this.dateTimePickerStartHarv.Name = "dateTimePickerStartHarv";
             this.dateTimePickerStartHarv.ShowUpDown = true;
-            this.dateTimePickerStartHarv.Size = new System.Drawing.Size(92, 22);
+            this.dateTimePickerStartHarv.Size = new System.Drawing.Size(150, 22);
             this.dateTimePickerStartHarv.TabIndex = 15;
             // 
             // label13
@@ -483,22 +483,22 @@
             // 
             this.dateTimePickerEndTr.CalendarFont = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerEndTr.CustomFormat = "hh:mm";
-            this.dateTimePickerEndTr.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerEndTr.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePickerEndTr.Location = new System.Drawing.Point(636, 410);
             this.dateTimePickerEndTr.Name = "dateTimePickerEndTr";
             this.dateTimePickerEndTr.ShowUpDown = true;
-            this.dateTimePickerEndTr.Size = new System.Drawing.Size(92, 22);
+            this.dateTimePickerEndTr.Size = new System.Drawing.Size(150, 22);
             this.dateTimePickerEndTr.TabIndex = 22;
             // 
             // dateTimePickerStartTr
             // 
             this.dateTimePickerStartTr.CalendarFont = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerStartTr.CustomFormat = "hh:mm";
-            this.dateTimePickerStartTr.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerStartTr.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePickerStartTr.Location = new System.Drawing.Point(636, 345);
             this.dateTimePickerStartTr.Name = "dateTimePickerStartTr";
             this.dateTimePickerStartTr.ShowUpDown = true;
-            this.dateTimePickerStartTr.Size = new System.Drawing.Size(92, 22);
+            this.dateTimePickerStartTr.Size = new System.Drawing.Size(150, 22);
             this.dateTimePickerStartTr.TabIndex = 21;
             // 
             // label24
@@ -543,6 +543,15 @@
             this.comboBoxFarmT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxFarmT.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFarmT.FormattingEnabled = true;
+            this.comboBoxFarmT.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
             this.comboBoxFarmT.Location = new System.Drawing.Point(173, 343);
             this.comboBoxFarmT.Name = "comboBoxFarmT";
             this.comboBoxFarmT.Size = new System.Drawing.Size(202, 29);
@@ -748,6 +757,14 @@
             this.comboBoxFarmD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxFarmD.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFarmD.FormattingEnabled = true;
+            this.comboBoxFarmD.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
             this.comboBoxFarmD.Location = new System.Drawing.Point(178, 158);
             this.comboBoxFarmD.Name = "comboBoxFarmD";
             this.comboBoxFarmD.Size = new System.Drawing.Size(202, 29);
@@ -1012,22 +1029,22 @@
             // 
             this.dateTimePickerEndSow.CalendarFont = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerEndSow.CustomFormat = "hh:mm";
-            this.dateTimePickerEndSow.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerEndSow.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePickerEndSow.Location = new System.Drawing.Point(626, 427);
             this.dateTimePickerEndSow.Name = "dateTimePickerEndSow";
             this.dateTimePickerEndSow.ShowUpDown = true;
-            this.dateTimePickerEndSow.Size = new System.Drawing.Size(92, 22);
+            this.dateTimePickerEndSow.Size = new System.Drawing.Size(150, 22);
             this.dateTimePickerEndSow.TabIndex = 10;
             // 
             // dateTimePickerStartSow
             // 
             this.dateTimePickerStartSow.CalendarFont = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerStartSow.CustomFormat = "hh:mm";
-            this.dateTimePickerStartSow.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerStartSow.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePickerStartSow.Location = new System.Drawing.Point(626, 362);
             this.dateTimePickerStartSow.Name = "dateTimePickerStartSow";
             this.dateTimePickerStartSow.ShowUpDown = true;
-            this.dateTimePickerStartSow.Size = new System.Drawing.Size(92, 22);
+            this.dateTimePickerStartSow.Size = new System.Drawing.Size(150, 22);
             this.dateTimePickerStartSow.TabIndex = 9;
             // 
             // label6
