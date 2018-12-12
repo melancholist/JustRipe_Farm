@@ -29,9 +29,9 @@ namespace JustRipeFarm_v3
             panelBtnIndicator5.Hide();
             panelBtnIndicator6.Hide();
             pnlResources.Hide();
-            //pnlStorage.Hide();
-            //pnlVehicle.Hide();
-            //pnlStocks.Hide();
+            pnlStorage.Hide();
+            pnlVehicMach.Hide();
+            pnlStocks.Hide();
             //pnlAccounting.Hide();
         }
 
@@ -49,9 +49,9 @@ namespace JustRipeFarm_v3
         {
             pnlSchedule.Show();
             pnlResources.Hide();
-            //pnlStorage.Hide();
-            //pnlVehicle.Hide();
-            //pnlStocks.Hide();
+            pnlStorage.Hide();
+            pnlVehicMach.Hide();
+            pnlStocks.Hide();
             //pnlAccounting.Hide();
 
             if (btnSchedule.Enabled)
@@ -145,15 +145,16 @@ namespace JustRipeFarm_v3
             }
         }
 
+
         //Resources panel
         private void btnResources_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
             pnlResources.Show();
             pnlResources.BringToFront();
-            //pnlStorage.Hide();
-            //pnlVehicle.Hide();
-            //pnlStocks.Hide();
+            pnlStorage.Hide();
+            pnlVehicMach.Hide();
+            pnlStocks.Hide();
             //pnlAccounting.Hide();
 
             if (btnResources.Enabled)
@@ -309,14 +310,15 @@ namespace JustRipeFarm_v3
             equip.Show();
         }
 
+
         //Storage panel
         private void btnStorage_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
             pnlResources.Hide();
-            //pnlStorage.Show();
-            //pnlVehicle.Hide();
-            //pnlStocks.Hide();
+            pnlStorage.Show();
+            pnlVehicMach.Hide();
+            pnlStocks.Hide();
             //pnlAccounting.Hide();
 
             if (btnStorage.Enabled)
@@ -328,16 +330,42 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator5.Hide();
                 panelBtnIndicator6.Hide();
             }
+
+            DataTable dt = new DataTable("storage");
+            try
+            {
+                string query = "SELECT * FROM storage";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewStorage.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void picBoxSearchStorage_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("storage");
+            DataView dv = dt.DefaultView;
+            dv.RowFilter = string.Format("unitName LIKE '%{0}%'", comboBoxUnitName.SelectedItem.ToString());
+            comboBoxUnitName.DataSource = dv.ToTable();
         }
 
-        //Vehicle and Machines 
+
+        //Vehicle/Machine panel 
         private void btnVehicle_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
             pnlResources.Hide();
-            //pnlStorage.Hide();
-            //pnlVehicle.Show();
-            //pnlStocks.Hide();
+            pnlStorage.Hide();
+            pnlVehicMach.Hide();
+            pnlStocks.Hide();
             //pnlAccounting.Hide();
 
             if (btnVehicle.Enabled)
@@ -350,18 +378,98 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator6.Hide();
             }
         }
+        //Vehicle
+        private void btnVehic_Click(object sender, EventArgs e)
+        {
+            groupBoxVehicle.Visible = true;
+            groupBoxMachine.Visible = false;
 
-        //Yield
+            DataTable dt = new DataTable("vehicle");
+            try
+            {
+                string query = "SELECT * FROM vehicle";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewVehicle.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btnAddVehic_Click(object sender, EventArgs e)
+        {
+            AddNewVehicle vehic = new AddNewVehicle();
+            vehic.Show();
+        }
+        private void pictureBoxSearchV_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("vehicle");
+            DataView dv = dt.DefaultView;
+            dv.RowFilter = string.Format("vehicleType LIKE '%{0}%'", comboBoxVehicType.SelectedItem.ToString());
+            comboBoxVehicType.DataSource = dv.ToTable();
+        }
+        private void btnUpdateV_Click(object sender, EventArgs e)
+        {
+
+        }
+        //Machine
+        private void btnMachine_Click(object sender, EventArgs e)
+        {
+            groupBoxVehicle.Visible = false;
+            groupBoxMachine.Visible = true;
+
+            DataTable dt = new DataTable("machine");
+            try
+            {
+                string query = "SELECT * FROM machine";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewMachine.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void picBoxSearchM_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("machine");
+            DataView dv = dt.DefaultView;
+            dv.RowFilter = string.Format("machineType LIKE '%{0}%'", comboBoxMachType.SelectedItem.ToString());
+            comboBoxMachType.DataSource = dv.ToTable();
+        }
+        private void btnAddMach_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnUpdateM_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        //Stock panel
         private void btnStock_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
             pnlResources.Hide();
-            //pnlStorage.Hide();
-            //pnlVehicle.Hide();
-            //pnlStocks.Show();
+            pnlStorage.Hide();
+            pnlVehicMach.Hide();
+            pnlStocks.Show();
             //pnlAccounting.Hide();
 
-            if (btnYields.Enabled)
+            if (btnStock.Enabled)
             {
                 panelBtnIndicator1.Hide();
                 panelBtnIndicator2.Hide();
@@ -371,13 +479,84 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator6.Hide();
             }
         }
+        //Yields
+        private void btnYields_Click(object sender, EventArgs e)
+        {
+            groupBoxYields.Visible = true;
+            groupBoxProducts.Visible = false;
+
+            DataTable dt = new DataTable("yield");
+            try
+            {
+                string query = "SELECT * FROM yield";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewYields.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btnAddYield_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void picBoxSearchYield_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("yield");
+            DataView dv = dt.DefaultView;
+            dv.RowFilter = string.Format("yieldType LIKE '%{0}%'", comboBoxYieldType.SelectedItem.ToString());
+            comboBoxYieldType.DataSource = dv.ToTable();
+        }
+        //Products
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            groupBoxYields.Visible = false;
+            groupBoxProducts.Visible = true;
+
+            DataTable dt = new DataTable("product");
+            try
+            {
+                string query = "SELECT * FROM product";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewProducts.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btnAddProd_Click(object sender, EventArgs e)
+        {
+            AddNewProduct product = new AddNewProduct();
+            product.Show();
+        }
+        private void picBoxSearchProd_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("product");
+            DataView dv = dt.DefaultView;
+            dv.RowFilter = string.Format("category LIKE '%{0}%'", comboBoxProdCat.SelectedItem.ToString());
+            comboBoxProdCat.DataSource = dv.ToTable();
+        }
 
         //Accounting 
         private void btnAccounting_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
             pnlResources.Hide();
-            //pnlStorage.Hide();
+            pnlStorage.Hide();
             //pnlVehicle.Hide();
             //pnlStocks.Hide();
             //pnlAccounting.Show();
