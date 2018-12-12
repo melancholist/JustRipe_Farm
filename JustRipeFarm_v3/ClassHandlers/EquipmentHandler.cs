@@ -13,7 +13,7 @@ namespace JustRipeFarm_v3
         {
             string insertQuery = "INSERT INTO equipment (type, brand, model, serialNumber, purchaseDate, price, description)"
                 + "VALUES ('" + equipment.Type + "', '" + equipment.Brand + "'  , " + equipment.Model + ", '" +
-                equipment.SerialNumber + "', '" + equipment.PurchaseDate + "', '" + equipment.Price + "', '" + equipment.Description + "' )";
+                equipment.SerialNumber + "', '" + equipment.PurchaseDate.ToString("yyyy-MM-dd") + "', '" + equipment.Price + "', '" + equipment.Description + "' )";
 
             MySqlCommand sqlComm = new MySqlCommand(insertQuery, conn);
 
