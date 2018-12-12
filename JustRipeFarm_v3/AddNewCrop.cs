@@ -13,7 +13,6 @@ namespace JustRipeFarm_v3
 {
     public partial class AddNewCrop : Form
     {
-        AddNewCrop crop = new AddNewCrop();
         DbConnector DBConn = new DbConnector();
 
         public AddNewCrop()

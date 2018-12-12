@@ -19,5 +19,15 @@ namespace JustRipeFarm_v3
 
             return sqlComm.ExecuteNonQuery();
         }
+
+        public int storagePercentage(MySqlConnection conn, Yield yield)
+        {
+            string percent = "SELECT ('" + yield.StorageCapacity + "' / '" + yield.Quantity + "') * 100" +
+                "FROM yield";
+
+            MySqlCommand sqlComm = new MySqlCommand(percent, conn);
+
+            return sqlComm.ExecuteNonQuery();
+        }
     }
 }
