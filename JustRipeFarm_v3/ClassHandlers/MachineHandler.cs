@@ -11,8 +11,8 @@ namespace JustRipeFarm_v3
     {
         public int addNewMachine(MySqlConnection conn, Machine machine)
         {
-            string addMachineQuery = "INSERT INTO machine (machineType, modelName, machineStatus)"
-                + "VALUES ('" + machine.MachineType + "', '" + machine.ModelName + "', '" + machine.MachineStatus + "' )";
+            string addMachineQuery = "INSERT INTO machine (machineType, modelName, machineStatus, price)"
+                + "VALUES ('" + machine.MachineType + "', '" + machine.ModelName + "', '" + machine.MachineStatus + "', '" + machine.Price + "' )";
 
             MySqlCommand sqlComm = new MySqlCommand(addMachineQuery, conn);
 

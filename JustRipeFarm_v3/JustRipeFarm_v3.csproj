@@ -80,6 +80,12 @@
     <Compile Include="AddNewCrop.Designer.cs">
       <DependentUpon>AddNewCrop.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddNewMachine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewMachine.Designer.cs">
+      <DependentUpon>AddNewMachine.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddNewProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddNewCrop.resx">
       <DependentUpon>AddNewCrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewMachine.resx">
+      <DependentUpon>AddNewMachine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddNewProduct.resx">
       <DependentUpon>AddNewProduct.cs</DependentUpon>

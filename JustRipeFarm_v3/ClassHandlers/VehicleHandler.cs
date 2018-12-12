@@ -11,10 +11,10 @@ namespace JustRipeFarm_v3
     {
         public int addNewVehicle(MySqlConnection conn, Vehicle vehicle)
         {
-            string addVehicleQuery = "INSERT INTO vehicle (vehicleType, modelName, productionYear, engineNumber, weightLimit, vehicleStatus)"
+            string addVehicleQuery = "INSERT INTO vehicle (vehicleType, modelName, productionYear, engineNumber, weightLimit, vehicleStatus, price, date)"
                 + "VALUES ('" + vehicle.VehicleType + "', '" + vehicle.ModelName + "', '" +
                 vehicle.ProductionYear.ToString("yyyy") + "', '" + vehicle.EngineNumber + "', '" + vehicle.WeightLimit + "', '" +
-                vehicle.VehicleStatus + "' )";
+                vehicle.VehicleStatus + "',  '" + vehicle.Price + "',  '" + vehicle.Date + "')";
 
             MySqlCommand sqlComm = new MySqlCommand(addVehicleQuery, conn);
 
