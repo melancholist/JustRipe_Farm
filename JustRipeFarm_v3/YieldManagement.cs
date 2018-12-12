@@ -63,6 +63,7 @@ namespace JustRipeFarm_v3
             yield.YieldType = textBoxYType.Text;
             yield.Quantity = Decimal.Parse(numYQuantity.Value.ToString());
             yield.StorageUnitName = comboBoxStrUName.Text;
+            yield.StorageCapacity = Decimal.Parse(numericUpDownStorCapacity.Value.ToString());
 
             YieldHandler yHandlr = new YieldHandler();
             yHandlr.addYield(conn.getConn(), yield);

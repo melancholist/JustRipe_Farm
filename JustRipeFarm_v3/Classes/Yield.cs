@@ -12,10 +12,12 @@ namespace JustRipeFarm_v3
         private string yieldType;
         private decimal quantity;
         private string storageUnitName;
+        private decimal storageCapacity;
 
         public int Id { get => id; set => id = value; }
         public string YieldType { get => yieldType; set => yieldType = value; }
         public decimal Quantity { get => quantity; set => quantity = value; }
         public string StorageUnitName { get => storageUnitName; set => storageUnitName = value; }
+        public decimal StorageCapacity { get => storageCapacity; set => storageCapacity = value; }
     }
 }

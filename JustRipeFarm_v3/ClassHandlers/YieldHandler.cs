@@ -11,8 +11,9 @@ namespace JustRipeFarm_v3
     {
         public int addYield(MySqlConnection conn, Yield yield)
         {
-            string addYield = "INSERT INTO yield (yieldType, quantity, storageUnitName)"
-                + "VALUES ('" + yield.YieldType + "', '" + yield.Quantity + "', '" + yield.StorageUnitName + "')";
+            string addYield = "INSERT INTO yield (yieldType, quantity, storageUnitName, storageCapacity)"
+                + "VALUES ('" + yield.YieldType + "', '" + yield.Quantity + "', '" + yield.StorageUnitName + "', '" +
+                yield.StorageCapacity + "')";
 
             MySqlCommand sqlComm = new MySqlCommand(addYield, conn);
 
