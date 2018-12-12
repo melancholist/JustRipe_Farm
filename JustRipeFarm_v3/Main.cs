@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System.Diagnostics;
 
 namespace JustRipeFarm_v3
@@ -15,7 +15,7 @@ namespace JustRipeFarm_v3
     public partial class Main : Form
     {
         Staff lab = new Staff();
-        DbConnector DbCon = new DbConnector();
+        string connString = "server=sql12.freemysqlhosting.net;user=sql12268366;database=sql12268366;password=1VpFDLJHBC;port=3306";
 
         public Main()
         {
@@ -23,19 +23,16 @@ namespace JustRipeFarm_v3
             //Panels
             pnlSchedule.Show();
             panelBtnIndicator1.Show();
-            pnlSowing.Show();
-            pnlHarvest.Hide();
-            panelBtnIndicatorSow.Show();
             panelBtnIndicator2.Hide();
             panelBtnIndicator3.Hide();
             panelBtnIndicator4.Hide();
             panelBtnIndicator5.Hide();
             panelBtnIndicator6.Hide();
             pnlResources.Hide();
-            pnlStorage.Hide();
-            pnlVehicle.Hide();
-            pnlStocks.Hide();
-            pnlAccounting.Hide();
+            //pnlStorage.Hide();
+            //pnlVehicle.Hide();
+            //pnlStocks.Hide();
+            //pnlAccounting.Hide();
         }
 
         //Exit Logout page and return to Login Page when button is clicked
@@ -47,15 +44,15 @@ namespace JustRipeFarm_v3
             login.Show();
         }
 
-        //Schedule panel appears when button is clicked
+        //Schedule panel
         private void btnSchedule_Click(object sender, EventArgs e)
         {
             pnlSchedule.Show();
             pnlResources.Hide();
-            pnlStorage.Hide();
-            pnlVehicle.Hide();
-            pnlStocks.Hide();
-            pnlAccounting.Hide();
+            //pnlStorage.Hide();
+            //pnlVehicle.Hide();
+            //pnlStocks.Hide();
+            //pnlAccounting.Hide();
 
             if (btnSchedule.Enabled)
             {
@@ -67,42 +64,97 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator6.Hide();
             }
         }
-
-        //Sowing panel within Schedule panel appears when button is clicked
         private void btnSowing_Click(object sender, EventArgs e)
         {
-            pnlSowing.Show();
-            pnlHarvest.Hide();
-            //Hide harvest panel and show Sowing panel
-            if (btnSowing.Enabled)
+            DataTable dt = new DataTable("sowingTask");
+            try
             {
-                panelBtnIndicatorHarv.Hide();
-                panelBtnIndicatorSow.Show();
+                string query = "SELECT * FROM sowingTask";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewSchedule.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        //Harvest panel within Schedule panel appears
         private void btnHarvest_Click(object sender, EventArgs e)
         {
-            pnlSowing.Hide();
-            pnlHarvest.Show();
-            //Hide Sowing panel and show Harvest panel
-            if (btnHarvest.Enabled)
+            DataTable dt = new DataTable("harvestTask");
+            try
             {
-                panelBtnIndicatorHarv.Show();
-                panelBtnIndicatorSow.Hide();
+                string query = "SELECT * FROM harvestTask";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewSchedule.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btnTreatment_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("treatmentTask");
+            try
+            {
+                string query = "SELECT * FROM treatmentTask";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewSchedule.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btnDriving_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("drivingTask");
+            try
+            {
+                string query = "SELECT * FROM drivingTask";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewSchedule.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        //Resources panel appears when button is clicked
+        //Resources panel
         private void btnResources_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
             pnlResources.Show();
-            pnlStorage.Hide();
-            pnlVehicle.Hide();
-            pnlStocks.Hide();
-            pnlAccounting.Hide();
+            pnlResources.BringToFront();
+            //pnlStorage.Hide();
+            //pnlVehicle.Hide();
+            //pnlStocks.Hide();
+            //pnlAccounting.Hide();
 
             if (btnResources.Enabled)
             {
@@ -114,16 +166,158 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator6.Hide();
             }
         }
+        //Crops
+        private void btnCrops_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("crops");
+            try
+            {
+                string query = "SELECT * FROM crops";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewCrops.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
-        //Storage panel appears when button is clicked
+            if (btnCrops.Enabled)
+            {
+                groupBoxCrops.Visible = true;
+                groupBoxFertilisers.Visible = false;
+                groupBoxPesticides.Visible = false;
+                groupBoxEquip.Visible = false;
+            }
+        }
+        private void btnAddCrops_Click(object sender, EventArgs e)
+        {
+            AddNewCrop crop = new AddNewCrop();
+            crop.Show();
+        }
+        //Fertilisers
+        private void btnFertilisers_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("fertiliser");
+            try
+            {
+                string query = "SELECT * FROM fertiliser";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewFertiliser.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            if (btnFertilisers.Enabled)
+            {
+                groupBoxCrops.Visible = false;
+                groupBoxFertilisers.Visible = true;
+                groupBoxPesticides.Visible = false;
+                groupBoxEquip.Visible = false;
+            }
+        }
+        private void btnAddFertilisers_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnUpdateFert_Click(object sender, EventArgs e)
+        {
+
+        }
+        //Pesticides
+        private void btnPesticides_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("pesticide");
+            try
+            {
+                string query = "SELECT * FROM pesticide";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewPesticides.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            if (btnPesticides.Enabled)
+            {
+                groupBoxCrops.Visible = false;
+                groupBoxFertilisers.Visible = false;
+                groupBoxPesticides.Visible = true;
+                groupBoxEquip.Visible = false;
+            }
+        }
+        private void btnAddPesticides_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnUpdatePest_Click(object sender, EventArgs e)
+        {
+
+        }
+        //Equipments
+        private void btnEquipment_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable("equipment");
+            try
+            {
+                string query = "SELECT * FROM equipment";
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        da.Fill(dt);
+                        dataGridViewEquipment.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            if (btnEquipment.Enabled)
+            {
+                groupBoxCrops.Visible = false;
+                groupBoxFertilisers.Visible = false;
+                groupBoxPesticides.Visible = false;
+                groupBoxEquip.Visible = true;
+            }
+        }
+        private void btnAddEquipment_Click(object sender, EventArgs e)
+        {
+            AddNewEquipment equip = new AddNewEquipment();
+            equip.Show();
+        }
+
+        //Storage panel
         private void btnStorage_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
             pnlResources.Hide();
-            pnlStorage.Show();
-            pnlVehicle.Hide();
-            pnlStocks.Hide();
-            pnlAccounting.Hide();
+            //pnlStorage.Show();
+            //pnlVehicle.Hide();
+            //pnlStocks.Hide();
+            //pnlAccounting.Hide();
 
             if (btnStorage.Enabled)
             {
@@ -136,15 +330,15 @@ namespace JustRipeFarm_v3
             }
         }
 
-        //Vehicle panel appears when button is clicked
+        //Vehicle and Machines 
         private void btnVehicle_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
             pnlResources.Hide();
-            pnlStorage.Hide();
-            pnlVehicle.Show();
-            pnlStocks.Hide();
-            pnlAccounting.Hide();
+            //pnlStorage.Hide();
+            //pnlVehicle.Show();
+            //pnlStocks.Hide();
+            //pnlAccounting.Hide();
 
             if (btnVehicle.Enabled)
             {
@@ -157,15 +351,15 @@ namespace JustRipeFarm_v3
             }
         }
 
-        //Stock panel appears when button is clicked
+        //Yield
         private void btnStock_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
             pnlResources.Hide();
-            pnlStorage.Hide();
-            pnlVehicle.Hide();
-            pnlStocks.Show();
-            pnlAccounting.Hide();
+            //pnlStorage.Hide();
+            //pnlVehicle.Hide();
+            //pnlStocks.Show();
+            //pnlAccounting.Hide();
 
             if (btnYields.Enabled)
             {
@@ -178,15 +372,15 @@ namespace JustRipeFarm_v3
             }
         }
 
-        //Accounting panel appears when button is clicked
+        //Accounting 
         private void btnAccounting_Click(object sender, EventArgs e)
         {
             pnlSchedule.Hide();
             pnlResources.Hide();
-            pnlStorage.Hide();
-            pnlVehicle.Hide();
-            pnlStocks.Hide();
-            pnlAccounting.Show();
+            //pnlStorage.Hide();
+            //pnlVehicle.Hide();
+            //pnlStocks.Hide();
+            //pnlAccounting.Show();
 
             if (btnAccounting.Enabled)
             {
@@ -207,122 +401,10 @@ namespace JustRipeFarm_v3
             this.Hide();
         }
 
-        //Redirect user to add new plant form
-        private void btnAddNewCrop_Click(object sender, EventArgs e)
-        {
-            AddNewCrop addNewCrop = new AddNewCrop();
-            addNewCrop.Show();
-        }
-
-        //Equipment panel appears and crops panel is hidden when button is clicked
-        private void btnEquipment_Click(object sender, EventArgs e)
-        {
-            pnlEquipment.Show();
-            pnlCrops.Hide();
-        }
-
-        //Redirect user to add new equipment form
-        private void btnAddNewEq_Click(object sender, EventArgs e)
-        {
-            AddNewEquipment addNewEquipment = new AddNewEquipment();
-            addNewEquipment.Show();
-        }
-
-        //Crops panel appears and equipment panel is hidden when button is clicked
-        private void btnCrops_Click(object sender, EventArgs e)
-        {
-            pnlCrops.Show();
-            pnlEquipment.Hide();
-        }
-
-        //Products panel within stock panel appears
-        private void btnProducts_Click(object sender, EventArgs e)
-        {
-            pnlProducts.Show();
-            pnlOnlineStore.Hide();
-        }
-
         //Redirect user to website
-        private void linkLabelOnlineStore_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        /*private void linkLabelOnlineStore_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-        }
-
-        //Online Store panel within stock panel appears
-        private void btnOnlineStore_Click(object sender, EventArgs e)
-        {
-            pnlProducts.Hide();
-            pnlOnlineStore.Show();
-        }
-
-        //New Expense form appears when button is clicked
-        private void btnNewExpense_Click(object sender, EventArgs e)
-        {
-            AddNewExpense newExpense = new AddNewExpense();
-            newExpense.Show();
-        }
-
-        //New Income form appears when button is clicked
-        private void btnNewIncome_Click(object sender, EventArgs e)
-        {
-            AddNewIncome newIncome = new AddNewIncome();
-            newIncome.Show();
-        }
-
-        //Income panel appears within Accounting panel when button is clicked
-        private void btnIncomeSales_Click(object sender, EventArgs e)
-        {
-            pnlIncome.Show();
-            pnlExpenses.Hide();
-        }
-
-        //Expenses panel appears within Accounting panel when button is clicked
-        private void btnExpenses_Click(object sender, EventArgs e)
-        {
-            pnlIncome.Hide();
-            pnlExpenses.Show();
-        }
-
-        //Maintenance panel appears within Equipment panel when button is clicked
-        private void btnMaintenance_Click(object sender, EventArgs e)
-        {
-            pnlEqMain.Hide();
-            pnlMaintenance.Show();
-        }
-
-        //Add New Service Record form appears when button is clicked
-        private void btnNewServiceRecord_Click(object sender, EventArgs e)
-        {
-            AddNewServiceRecord addNewServiceRecord = new AddNewServiceRecord();
-            addNewServiceRecord.Show();
-        }
-
-        //Add New Product form appears when button is clicked
-        private void btnAddNewProduct_Click(object sender, EventArgs e)
-        {
-            AddNewProduct addNewProduct = new AddNewProduct();
-            addNewProduct.Show();
-        }
-
-        //Main Vehicle panel appears within Vehicle panel when button is clicked
-        private void labelVehicle_Click(object sender, EventArgs e)
-        {
-            pnlMaintenance.Hide();
-            pnlVehicleMain.Show();
-        }
-
-        //Maintenance panel appears within Vehicle panel when button is clicked
-        private void btnVehicleMaintenance_Click(object sender, EventArgs e)
-        {
-            pnlMaintenance.Show();
-            pnlVehicleMain.Hide();
-        }
-
-        //Add New Vehicle form appears when button is clicked
-        private void btnAddNewVehicle_Click(object sender, EventArgs e)
-        {
-            AddNewVehicle addNewVehicle = new AddNewVehicle();
-            addNewVehicle.Show();
-        }
+        }*/
     }
 }

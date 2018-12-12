@@ -24,7 +24,7 @@ namespace JustRipeFarm_v3
             pnlBtnIndic1.Show();
         }
 
-        DataTable dt = new DataTable("TBL_Transaction");
+        DataTable dt = new DataTable("staffdata");
         private void StaffManagement_Load(object sender, EventArgs e)
         {
             try

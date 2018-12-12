@@ -21,8 +21,8 @@ namespace JustRipeFarm_v3
 
         public int updateQuantity(MySqlConnection conn, Fertiliser fertiliser)
         {
-            string query = "UPDATE vehicle SET fertiliserQuantity = '" + fertiliser.FertiliserQuantity + "' " +
-                "WHERE fertiliserType = '" + fertiliser.FertiliserQuantity + "'";
+            string query = "UPDATE fertiliser SET fertiliserQuantity = '" + fertiliser.FertiliserQuantity + "' " +
+                "WHERE fertiliserType = '" + fertiliser.FertiliserType + "'";
 
             MySqlCommand sqlCmd = new MySqlCommand(query, conn);
             return sqlCmd.ExecuteNonQuery();

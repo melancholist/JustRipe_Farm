@@ -53,61 +53,30 @@
             this.panelBtnIndicator1 = new System.Windows.Forms.Panel();
             this.btnSchedule = new System.Windows.Forms.Button();
             this.pnlSchedule = new System.Windows.Forms.Panel();
-            this.pnlSowing = new System.Windows.Forms.Panel();
-            this.pnlHarvest = new System.Windows.Forms.Panel();
-            this.panelBtnIndicatorHarv = new System.Windows.Forms.Panel();
+            this.btnDriving = new System.Windows.Forms.Button();
+            this.btnTreatment = new System.Windows.Forms.Button();
             this.btnHarvest = new System.Windows.Forms.Button();
-            this.panelBtnIndicatorSow = new System.Windows.Forms.Panel();
             this.btnSowing = new System.Windows.Forms.Button();
-            this.pnlAccounting = new System.Windows.Forms.Panel();
-            this.pnlExpenses = new System.Windows.Forms.Panel();
-            this.dataGridViewExpenses = new System.Windows.Forms.DataGridView();
-            this.lblExpenses = new System.Windows.Forms.Label();
-            this.btnNewExpense = new System.Windows.Forms.Button();
-            this.pnlIncome = new System.Windows.Forms.Panel();
-            this.lblIncome = new System.Windows.Forms.Label();
-            this.dataGridViewIncome = new System.Windows.Forms.DataGridView();
-            this.btnNewIncome = new System.Windows.Forms.Button();
-            this.btnExpenses = new System.Windows.Forms.Button();
-            this.btnIncomeSales = new System.Windows.Forms.Button();
-            this.lblAccounting = new System.Windows.Forms.Label();
+            this.dataGridViewSchedule = new System.Windows.Forms.DataGridView();
             this.pnlResources = new System.Windows.Forms.Panel();
-            this.pnlEquipment = new System.Windows.Forms.Panel();
-            this.pnlMaintenance = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnNewServiceRecord = new System.Windows.Forms.Button();
-            this.dataGridViewMaintenance = new System.Windows.Forms.DataGridView();
-            this.pnlEqMain = new System.Windows.Forms.Panel();
-            this.dataGridViewEquipment = new System.Windows.Forms.DataGridView();
-            this.btnMaintenance = new System.Windows.Forms.Button();
-            this.btnAddNewEq = new System.Windows.Forms.Button();
-            this.pnlCrops = new System.Windows.Forms.Panel();
-            this.dataGridViewCrops = new System.Windows.Forms.DataGridView();
-            this.btnAddNewCrop = new System.Windows.Forms.Button();
-            this.lblResources = new System.Windows.Forms.Label();
+            this.btnFertilisers = new System.Windows.Forms.Button();
+            this.btnPesticides = new System.Windows.Forms.Button();
             this.btnEquipment = new System.Windows.Forms.Button();
             this.btnCrops = new System.Windows.Forms.Button();
-            this.pnlStorage = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pnlStocks = new System.Windows.Forms.Panel();
-            this.pnlProducts = new System.Windows.Forms.Panel();
-            this.btnAddNewProduct = new System.Windows.Forms.Button();
-            this.lblProducts = new System.Windows.Forms.Label();
-            this.dataGridViewProducts = new System.Windows.Forms.DataGridView();
-            this.pnlOnlineStore = new System.Windows.Forms.Panel();
-            this.linkLabelOnlineStore = new System.Windows.Forms.LinkLabel();
-            this.btnOnlineStore = new System.Windows.Forms.Button();
-            this.btnProducts = new System.Windows.Forms.Button();
-            this.lblStocks = new System.Windows.Forms.Label();
-            this.pnlVehicle = new System.Windows.Forms.Panel();
-            this.pnlVehicleMain = new System.Windows.Forms.Panel();
-            this.dataGridViewVehicle = new System.Windows.Forms.DataGridView();
-            this.btnAddNewVehicle = new System.Windows.Forms.Button();
-            this.pnlVehicleMaintenance = new System.Windows.Forms.Panel();
-            this.dataGridViewMaintenanceHistory = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnVehicleMaintenance = new System.Windows.Forms.Button();
-            this.labelVehicle = new System.Windows.Forms.Label();
+            this.groupBoxPesticides = new System.Windows.Forms.GroupBox();
+            this.btnAddPesticides = new System.Windows.Forms.Button();
+            this.btnUpdatePest = new System.Windows.Forms.Button();
+            this.dataGridViewPesticides = new System.Windows.Forms.DataGridView();
+            this.groupBoxFertilisers = new System.Windows.Forms.GroupBox();
+            this.btnUpdateFert = new System.Windows.Forms.Button();
+            this.btnAddFertilisers = new System.Windows.Forms.Button();
+            this.dataGridViewFertiliser = new System.Windows.Forms.DataGridView();
+            this.groupBoxEquip = new System.Windows.Forms.GroupBox();
+            this.btnAddEquipment = new System.Windows.Forms.Button();
+            this.dataGridViewEquipment = new System.Windows.Forms.DataGridView();
+            this.groupBoxCrops = new System.Windows.Forms.GroupBox();
+            this.btnAddCrops = new System.Windows.Forms.Button();
+            this.dataGridViewCrops = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -115,30 +84,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.picboxLabourer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxManager)).BeginInit();
             this.pnlSchedule.SuspendLayout();
-            this.pnlSowing.SuspendLayout();
-            this.pnlAccounting.SuspendLayout();
-            this.pnlExpenses.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpenses)).BeginInit();
-            this.pnlIncome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).BeginInit();
             this.pnlResources.SuspendLayout();
-            this.pnlEquipment.SuspendLayout();
-            this.pnlMaintenance.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaintenance)).BeginInit();
-            this.pnlEqMain.SuspendLayout();
+            this.groupBoxPesticides.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesticides)).BeginInit();
+            this.groupBoxFertilisers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFertiliser)).BeginInit();
+            this.groupBoxEquip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).BeginInit();
-            this.pnlCrops.SuspendLayout();
+            this.groupBoxCrops.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCrops)).BeginInit();
-            this.pnlStorage.SuspendLayout();
-            this.pnlStocks.SuspendLayout();
-            this.pnlProducts.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
-            this.pnlOnlineStore.SuspendLayout();
-            this.pnlVehicle.SuspendLayout();
-            this.pnlVehicleMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).BeginInit();
-            this.pnlVehicleMaintenance.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaintenanceHistory)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -485,582 +440,408 @@
             // 
             // pnlSchedule
             // 
-            this.pnlSchedule.Controls.Add(this.pnlSowing);
-            this.pnlSchedule.Controls.Add(this.panelBtnIndicatorHarv);
+            this.pnlSchedule.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlSchedule.Controls.Add(this.btnDriving);
+            this.pnlSchedule.Controls.Add(this.btnTreatment);
             this.pnlSchedule.Controls.Add(this.btnHarvest);
-            this.pnlSchedule.Controls.Add(this.panelBtnIndicatorSow);
             this.pnlSchedule.Controls.Add(this.btnSowing);
-            this.pnlSchedule.Location = new System.Drawing.Point(231, 65);
-            this.pnlSchedule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlSchedule.Controls.Add(this.dataGridViewSchedule);
+            this.pnlSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlSchedule.Location = new System.Drawing.Point(233, 65);
             this.pnlSchedule.Name = "pnlSchedule";
-            this.pnlSchedule.Size = new System.Drawing.Size(969, 722);
+            this.pnlSchedule.Size = new System.Drawing.Size(967, 726);
             this.pnlSchedule.TabIndex = 7;
             // 
-            // pnlSowing
+            // btnDriving
             // 
-            this.pnlSowing.BackColor = System.Drawing.Color.Gray;
-            this.pnlSowing.Controls.Add(this.pnlHarvest);
-            this.pnlSowing.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlSowing.Location = new System.Drawing.Point(2, 52);
-            this.pnlSowing.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlSowing.Name = "pnlSowing";
-            this.pnlSowing.Size = new System.Drawing.Size(968, 670);
-            this.pnlSowing.TabIndex = 8;
+            this.btnDriving.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnDriving.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDriving.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDriving.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnDriving.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnDriving.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnDriving.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDriving.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDriving.ForeColor = System.Drawing.Color.White;
+            this.btnDriving.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDriving.Location = new System.Drawing.Point(664, 30);
+            this.btnDriving.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDriving.Name = "btnDriving";
+            this.btnDriving.Size = new System.Drawing.Size(181, 61);
+            this.btnDriving.TabIndex = 14;
+            this.btnDriving.Text = "Driving";
+            this.btnDriving.UseVisualStyleBackColor = false;
+            this.btnDriving.Click += new System.EventHandler(this.btnDriving_Click);
             // 
-            // pnlHarvest
+            // btnTreatment
             // 
-            this.pnlHarvest.BackColor = System.Drawing.Color.Moccasin;
-            this.pnlHarvest.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlHarvest.Location = new System.Drawing.Point(0, 0);
-            this.pnlHarvest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlHarvest.Name = "pnlHarvest";
-            this.pnlHarvest.Size = new System.Drawing.Size(970, 670);
-            this.pnlHarvest.TabIndex = 9;
-            // 
-            // panelBtnIndicatorHarv
-            // 
-            this.panelBtnIndicatorHarv.BackColor = System.Drawing.Color.Crimson;
-            this.panelBtnIndicatorHarv.ForeColor = System.Drawing.Color.White;
-            this.panelBtnIndicatorHarv.Location = new System.Drawing.Point(487, -1);
-            this.panelBtnIndicatorHarv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelBtnIndicatorHarv.Name = "panelBtnIndicatorHarv";
-            this.panelBtnIndicatorHarv.Size = new System.Drawing.Size(10, 54);
-            this.panelBtnIndicatorHarv.TabIndex = 7;
-            this.panelBtnIndicatorHarv.Visible = false;
+            this.btnTreatment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnTreatment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTreatment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTreatment.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnTreatment.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnTreatment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnTreatment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTreatment.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTreatment.ForeColor = System.Drawing.Color.White;
+            this.btnTreatment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTreatment.Location = new System.Drawing.Point(477, 30);
+            this.btnTreatment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTreatment.Name = "btnTreatment";
+            this.btnTreatment.Size = new System.Drawing.Size(181, 61);
+            this.btnTreatment.TabIndex = 13;
+            this.btnTreatment.Text = "Treatment";
+            this.btnTreatment.UseVisualStyleBackColor = false;
+            this.btnTreatment.Click += new System.EventHandler(this.btnTreatment_Click);
             // 
             // btnHarvest
             // 
             this.btnHarvest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnHarvest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnHarvest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHarvest.FlatAppearance.BorderSize = 0;
+            this.btnHarvest.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnHarvest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnHarvest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnHarvest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHarvest.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHarvest.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHarvest.ForeColor = System.Drawing.Color.White;
-            this.btnHarvest.Location = new System.Drawing.Point(485, 0);
+            this.btnHarvest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHarvest.Location = new System.Drawing.Point(290, 30);
             this.btnHarvest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHarvest.Name = "btnHarvest";
-            this.btnHarvest.Size = new System.Drawing.Size(485, 54);
-            this.btnHarvest.TabIndex = 6;
+            this.btnHarvest.Size = new System.Drawing.Size(181, 61);
+            this.btnHarvest.TabIndex = 12;
             this.btnHarvest.Text = "Harvest";
             this.btnHarvest.UseVisualStyleBackColor = false;
             this.btnHarvest.Click += new System.EventHandler(this.btnHarvest_Click);
             // 
-            // panelBtnIndicatorSow
-            // 
-            this.panelBtnIndicatorSow.BackColor = System.Drawing.Color.Crimson;
-            this.panelBtnIndicatorSow.ForeColor = System.Drawing.Color.White;
-            this.panelBtnIndicatorSow.Location = new System.Drawing.Point(0, 0);
-            this.panelBtnIndicatorSow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelBtnIndicatorSow.Name = "panelBtnIndicatorSow";
-            this.panelBtnIndicatorSow.Size = new System.Drawing.Size(7, 54);
-            this.panelBtnIndicatorSow.TabIndex = 5;
-            this.panelBtnIndicatorSow.Visible = false;
-            // 
             // btnSowing
             // 
             this.btnSowing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnSowing.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSowing.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSowing.FlatAppearance.BorderSize = 0;
+            this.btnSowing.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSowing.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnSowing.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnSowing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSowing.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSowing.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSowing.ForeColor = System.Drawing.Color.White;
-            this.btnSowing.Location = new System.Drawing.Point(0, 0);
+            this.btnSowing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSowing.Location = new System.Drawing.Point(103, 30);
             this.btnSowing.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSowing.Name = "btnSowing";
-            this.btnSowing.Size = new System.Drawing.Size(485, 54);
-            this.btnSowing.TabIndex = 4;
+            this.btnSowing.Size = new System.Drawing.Size(181, 61);
+            this.btnSowing.TabIndex = 11;
             this.btnSowing.Text = "Sowing";
             this.btnSowing.UseVisualStyleBackColor = false;
             this.btnSowing.Click += new System.EventHandler(this.btnSowing_Click);
             // 
-            // pnlAccounting
+            // dataGridViewSchedule
             // 
-            this.pnlAccounting.BackColor = System.Drawing.Color.Gray;
-            this.pnlAccounting.Controls.Add(this.pnlExpenses);
-            this.pnlAccounting.Controls.Add(this.pnlIncome);
-            this.pnlAccounting.Controls.Add(this.btnExpenses);
-            this.pnlAccounting.Controls.Add(this.btnIncomeSales);
-            this.pnlAccounting.Controls.Add(this.lblAccounting);
-            this.pnlAccounting.Location = new System.Drawing.Point(231, 64);
-            this.pnlAccounting.Name = "pnlAccounting";
-            this.pnlAccounting.Size = new System.Drawing.Size(969, 642);
-            this.pnlAccounting.TabIndex = 0;
-            // 
-            // pnlExpenses
-            // 
-            this.pnlExpenses.Controls.Add(this.dataGridViewExpenses);
-            this.pnlExpenses.Controls.Add(this.lblExpenses);
-            this.pnlExpenses.Controls.Add(this.btnNewExpense);
-            this.pnlExpenses.Location = new System.Drawing.Point(43, 73);
-            this.pnlExpenses.Name = "pnlExpenses";
-            this.pnlExpenses.Size = new System.Drawing.Size(740, 547);
-            this.pnlExpenses.TabIndex = 12;
-            // 
-            // dataGridViewExpenses
-            // 
-            this.dataGridViewExpenses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewExpenses.Location = new System.Drawing.Point(34, 71);
-            this.dataGridViewExpenses.Name = "dataGridViewExpenses";
-            this.dataGridViewExpenses.RowTemplate.Height = 24;
-            this.dataGridViewExpenses.Size = new System.Drawing.Size(571, 398);
-            this.dataGridViewExpenses.TabIndex = 8;
-            // 
-            // lblExpenses
-            // 
-            this.lblExpenses.AutoSize = true;
-            this.lblExpenses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExpenses.Location = new System.Drawing.Point(29, 24);
-            this.lblExpenses.Name = "lblExpenses";
-            this.lblExpenses.Size = new System.Drawing.Size(107, 25);
-            this.lblExpenses.TabIndex = 7;
-            this.lblExpenses.Text = "Expenses";
-            // 
-            // btnNewExpense
-            // 
-            this.btnNewExpense.Location = new System.Drawing.Point(471, 491);
-            this.btnNewExpense.Name = "btnNewExpense";
-            this.btnNewExpense.Size = new System.Drawing.Size(134, 35);
-            this.btnNewExpense.TabIndex = 6;
-            this.btnNewExpense.Text = "New Expense";
-            this.btnNewExpense.UseVisualStyleBackColor = true;
-            this.btnNewExpense.Click += new System.EventHandler(this.btnNewExpense_Click);
-            // 
-            // pnlIncome
-            // 
-            this.pnlIncome.Controls.Add(this.lblIncome);
-            this.pnlIncome.Controls.Add(this.dataGridViewIncome);
-            this.pnlIncome.Controls.Add(this.btnNewIncome);
-            this.pnlIncome.Location = new System.Drawing.Point(43, 76);
-            this.pnlIncome.Name = "pnlIncome";
-            this.pnlIncome.Size = new System.Drawing.Size(740, 547);
-            this.pnlIncome.TabIndex = 11;
-            // 
-            // lblIncome
-            // 
-            this.lblIncome.AutoSize = true;
-            this.lblIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIncome.Location = new System.Drawing.Point(23, 18);
-            this.lblIncome.Name = "lblIncome";
-            this.lblIncome.Size = new System.Drawing.Size(136, 24);
-            this.lblIncome.TabIndex = 5;
-            this.lblIncome.Text = "Income/Sales";
-            // 
-            // dataGridViewIncome
-            // 
-            this.dataGridViewIncome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewIncome.Location = new System.Drawing.Point(16, 52);
-            this.dataGridViewIncome.Name = "dataGridViewIncome";
-            this.dataGridViewIncome.RowTemplate.Height = 24;
-            this.dataGridViewIncome.Size = new System.Drawing.Size(576, 395);
-            this.dataGridViewIncome.TabIndex = 4;
-            // 
-            // btnNewIncome
-            // 
-            this.btnNewIncome.Location = new System.Drawing.Point(392, 456);
-            this.btnNewIncome.Name = "btnNewIncome";
-            this.btnNewIncome.Size = new System.Drawing.Size(130, 38);
-            this.btnNewIncome.TabIndex = 1;
-            this.btnNewIncome.Text = "New Income";
-            this.btnNewIncome.UseVisualStyleBackColor = true;
-            this.btnNewIncome.Click += new System.EventHandler(this.btnNewIncome_Click);
-            // 
-            // btnExpenses
-            // 
-            this.btnExpenses.Location = new System.Drawing.Point(487, 30);
-            this.btnExpenses.Name = "btnExpenses";
-            this.btnExpenses.Size = new System.Drawing.Size(78, 33);
-            this.btnExpenses.TabIndex = 10;
-            this.btnExpenses.Text = "Expenses";
-            this.btnExpenses.UseVisualStyleBackColor = true;
-            this.btnExpenses.Click += new System.EventHandler(this.btnExpenses_Click);
-            // 
-            // btnIncomeSales
-            // 
-            this.btnIncomeSales.Location = new System.Drawing.Point(308, 30);
-            this.btnIncomeSales.Name = "btnIncomeSales";
-            this.btnIncomeSales.Size = new System.Drawing.Size(129, 32);
-            this.btnIncomeSales.TabIndex = 9;
-            this.btnIncomeSales.Text = "Income/Sales";
-            this.btnIncomeSales.UseVisualStyleBackColor = true;
-            this.btnIncomeSales.Click += new System.EventHandler(this.btnIncomeSales_Click);
-            // 
-            // lblAccounting
-            // 
-            this.lblAccounting.AutoSize = true;
-            this.lblAccounting.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccounting.Location = new System.Drawing.Point(25, 18);
-            this.lblAccounting.Name = "lblAccounting";
-            this.lblAccounting.Size = new System.Drawing.Size(230, 46);
-            this.lblAccounting.TabIndex = 0;
-            this.lblAccounting.Text = "Accounting";
+            this.dataGridViewSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSchedule.Location = new System.Drawing.Point(37, 126);
+            this.dataGridViewSchedule.Name = "dataGridViewSchedule";
+            this.dataGridViewSchedule.RowTemplate.Height = 24;
+            this.dataGridViewSchedule.Size = new System.Drawing.Size(896, 515);
+            this.dataGridViewSchedule.TabIndex = 0;
             // 
             // pnlResources
             // 
-            this.pnlResources.BackColor = System.Drawing.Color.Gray;
-            this.pnlResources.Controls.Add(this.pnlEquipment);
-            this.pnlResources.Controls.Add(this.pnlCrops);
-            this.pnlResources.Controls.Add(this.lblResources);
+            this.pnlResources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(70)))));
+            this.pnlResources.Controls.Add(this.btnFertilisers);
+            this.pnlResources.Controls.Add(this.btnPesticides);
             this.pnlResources.Controls.Add(this.btnEquipment);
             this.pnlResources.Controls.Add(this.btnCrops);
-            this.pnlResources.Location = new System.Drawing.Point(231, 64);
+            this.pnlResources.Controls.Add(this.groupBoxPesticides);
+            this.pnlResources.Controls.Add(this.groupBoxFertilisers);
+            this.pnlResources.Controls.Add(this.groupBoxEquip);
+            this.pnlResources.Controls.Add(this.groupBoxCrops);
+            this.pnlResources.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlResources.Location = new System.Drawing.Point(233, 65);
             this.pnlResources.Name = "pnlResources";
-            this.pnlResources.Size = new System.Drawing.Size(969, 696);
-            this.pnlResources.TabIndex = 6;
+            this.pnlResources.Size = new System.Drawing.Size(967, 726);
+            this.pnlResources.TabIndex = 15;
             // 
-            // pnlEquipment
+            // btnFertilisers
             // 
-            this.pnlEquipment.Controls.Add(this.pnlMaintenance);
-            this.pnlEquipment.Controls.Add(this.pnlEqMain);
-            this.pnlEquipment.Controls.Add(this.btnMaintenance);
-            this.pnlEquipment.Controls.Add(this.btnAddNewEq);
-            this.pnlEquipment.Location = new System.Drawing.Point(43, 82);
-            this.pnlEquipment.Name = "pnlEquipment";
-            this.pnlEquipment.Size = new System.Drawing.Size(835, 517);
-            this.pnlEquipment.TabIndex = 4;
+            this.btnFertilisers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnFertilisers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnFertilisers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFertilisers.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnFertilisers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnFertilisers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFertilisers.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFertilisers.ForeColor = System.Drawing.Color.White;
+            this.btnFertilisers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFertilisers.Location = new System.Drawing.Point(300, 30);
+            this.btnFertilisers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFertilisers.Name = "btnFertilisers";
+            this.btnFertilisers.Size = new System.Drawing.Size(181, 62);
+            this.btnFertilisers.TabIndex = 21;
+            this.btnFertilisers.Text = "Fertilisers";
+            this.btnFertilisers.UseVisualStyleBackColor = false;
+            this.btnFertilisers.Click += new System.EventHandler(this.btnFertilisers_Click);
             // 
-            // pnlMaintenance
+            // btnPesticides
             // 
-            this.pnlMaintenance.Controls.Add(this.label3);
-            this.pnlMaintenance.Controls.Add(this.btnNewServiceRecord);
-            this.pnlMaintenance.Controls.Add(this.dataGridViewMaintenance);
-            this.pnlMaintenance.Location = new System.Drawing.Point(26, 77);
-            this.pnlMaintenance.Name = "pnlMaintenance";
-            this.pnlMaintenance.Size = new System.Drawing.Size(777, 428);
-            this.pnlMaintenance.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(52, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(249, 29);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Maintenance History";
-            // 
-            // btnNewServiceRecord
-            // 
-            this.btnNewServiceRecord.Location = new System.Drawing.Point(596, 379);
-            this.btnNewServiceRecord.Name = "btnNewServiceRecord";
-            this.btnNewServiceRecord.Size = new System.Drawing.Size(146, 32);
-            this.btnNewServiceRecord.TabIndex = 1;
-            this.btnNewServiceRecord.Text = "New Service Record";
-            this.btnNewServiceRecord.UseVisualStyleBackColor = true;
-            this.btnNewServiceRecord.Click += new System.EventHandler(this.btnNewServiceRecord_Click);
-            // 
-            // dataGridViewMaintenance
-            // 
-            this.dataGridViewMaintenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMaintenance.Location = new System.Drawing.Point(52, 71);
-            this.dataGridViewMaintenance.Name = "dataGridViewMaintenance";
-            this.dataGridViewMaintenance.RowTemplate.Height = 24;
-            this.dataGridViewMaintenance.Size = new System.Drawing.Size(620, 299);
-            this.dataGridViewMaintenance.TabIndex = 0;
-            // 
-            // pnlEqMain
-            // 
-            this.pnlEqMain.Controls.Add(this.dataGridViewEquipment);
-            this.pnlEqMain.Location = new System.Drawing.Point(34, 77);
-            this.pnlEqMain.Name = "pnlEqMain";
-            this.pnlEqMain.Size = new System.Drawing.Size(721, 399);
-            this.pnlEqMain.TabIndex = 3;
-            // 
-            // dataGridViewEquipment
-            // 
-            this.dataGridViewEquipment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEquipment.Location = new System.Drawing.Point(51, 51);
-            this.dataGridViewEquipment.Name = "dataGridViewEquipment";
-            this.dataGridViewEquipment.RowTemplate.Height = 24;
-            this.dataGridViewEquipment.Size = new System.Drawing.Size(578, 291);
-            this.dataGridViewEquipment.TabIndex = 1;
-            // 
-            // btnMaintenance
-            // 
-            this.btnMaintenance.Location = new System.Drawing.Point(231, 26);
-            this.btnMaintenance.Name = "btnMaintenance";
-            this.btnMaintenance.Size = new System.Drawing.Size(128, 37);
-            this.btnMaintenance.TabIndex = 2;
-            this.btnMaintenance.Text = "Maintenance";
-            this.btnMaintenance.UseVisualStyleBackColor = true;
-            this.btnMaintenance.Click += new System.EventHandler(this.btnMaintenance_Click);
-            // 
-            // btnAddNewEq
-            // 
-            this.btnAddNewEq.Location = new System.Drawing.Point(34, 26);
-            this.btnAddNewEq.Name = "btnAddNewEq";
-            this.btnAddNewEq.Size = new System.Drawing.Size(158, 37);
-            this.btnAddNewEq.TabIndex = 0;
-            this.btnAddNewEq.Text = "Add New Equipment";
-            this.btnAddNewEq.UseVisualStyleBackColor = true;
-            this.btnAddNewEq.Click += new System.EventHandler(this.btnAddNewEq_Click);
-            // 
-            // pnlCrops
-            // 
-            this.pnlCrops.Controls.Add(this.dataGridViewCrops);
-            this.pnlCrops.Controls.Add(this.btnAddNewCrop);
-            this.pnlCrops.Location = new System.Drawing.Point(43, 82);
-            this.pnlCrops.Name = "pnlCrops";
-            this.pnlCrops.Size = new System.Drawing.Size(704, 450);
-            this.pnlCrops.TabIndex = 3;
-            // 
-            // dataGridViewCrops
-            // 
-            this.dataGridViewCrops.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCrops.Location = new System.Drawing.Point(53, 90);
-            this.dataGridViewCrops.Name = "dataGridViewCrops";
-            this.dataGridViewCrops.RowTemplate.Height = 24;
-            this.dataGridViewCrops.Size = new System.Drawing.Size(581, 301);
-            this.dataGridViewCrops.TabIndex = 2;
-            // 
-            // btnAddNewCrop
-            // 
-            this.btnAddNewCrop.Location = new System.Drawing.Point(53, 31);
-            this.btnAddNewCrop.Name = "btnAddNewCrop";
-            this.btnAddNewCrop.Size = new System.Drawing.Size(117, 38);
-            this.btnAddNewCrop.TabIndex = 1;
-            this.btnAddNewCrop.Text = "Add new crop";
-            this.btnAddNewCrop.UseVisualStyleBackColor = true;
-            this.btnAddNewCrop.Click += new System.EventHandler(this.btnAddNewCrop_Click);
-            // 
-            // lblResources
-            // 
-            this.lblResources.AutoSize = true;
-            this.lblResources.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResources.Location = new System.Drawing.Point(36, 28);
-            this.lblResources.Name = "lblResources";
-            this.lblResources.Size = new System.Drawing.Size(184, 38);
-            this.lblResources.TabIndex = 0;
-            this.lblResources.Text = "Resources";
+            this.btnPesticides.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnPesticides.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPesticides.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPesticides.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnPesticides.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnPesticides.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesticides.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesticides.ForeColor = System.Drawing.Color.White;
+            this.btnPesticides.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesticides.Location = new System.Drawing.Point(487, 30);
+            this.btnPesticides.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPesticides.Name = "btnPesticides";
+            this.btnPesticides.Size = new System.Drawing.Size(181, 62);
+            this.btnPesticides.TabIndex = 20;
+            this.btnPesticides.Text = "Pestisides";
+            this.btnPesticides.UseVisualStyleBackColor = false;
+            this.btnPesticides.Click += new System.EventHandler(this.btnPesticides_Click);
             // 
             // btnEquipment
             // 
-            this.btnEquipment.Location = new System.Drawing.Point(405, 31);
+            this.btnEquipment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnEquipment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEquipment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEquipment.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEquipment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnEquipment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEquipment.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEquipment.ForeColor = System.Drawing.Color.White;
+            this.btnEquipment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEquipment.Location = new System.Drawing.Point(674, 30);
+            this.btnEquipment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEquipment.Name = "btnEquipment";
-            this.btnEquipment.Size = new System.Drawing.Size(107, 35);
-            this.btnEquipment.TabIndex = 2;
+            this.btnEquipment.Size = new System.Drawing.Size(181, 62);
+            this.btnEquipment.TabIndex = 19;
             this.btnEquipment.Text = "Equipment";
-            this.btnEquipment.UseVisualStyleBackColor = true;
+            this.btnEquipment.UseVisualStyleBackColor = false;
             this.btnEquipment.Click += new System.EventHandler(this.btnEquipment_Click);
             // 
             // btnCrops
             // 
-            this.btnCrops.Location = new System.Drawing.Point(274, 33);
+            this.btnCrops.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnCrops.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCrops.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCrops.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCrops.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnCrops.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrops.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrops.ForeColor = System.Drawing.Color.White;
+            this.btnCrops.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCrops.Location = new System.Drawing.Point(113, 30);
+            this.btnCrops.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCrops.Name = "btnCrops";
-            this.btnCrops.Size = new System.Drawing.Size(87, 34);
-            this.btnCrops.TabIndex = 1;
+            this.btnCrops.Size = new System.Drawing.Size(181, 62);
+            this.btnCrops.TabIndex = 18;
             this.btnCrops.Text = "Crops";
-            this.btnCrops.UseVisualStyleBackColor = true;
+            this.btnCrops.UseVisualStyleBackColor = false;
             this.btnCrops.Click += new System.EventHandler(this.btnCrops_Click);
             // 
-            // pnlStorage
+            // groupBoxPesticides
             // 
-            this.pnlStorage.BackColor = System.Drawing.Color.Gray;
-            this.pnlStorage.Controls.Add(this.label2);
-            this.pnlStorage.Location = new System.Drawing.Point(234, 65);
-            this.pnlStorage.Name = "pnlStorage";
-            this.pnlStorage.Size = new System.Drawing.Size(912, 662);
-            this.pnlStorage.TabIndex = 5;
+            this.groupBoxPesticides.Controls.Add(this.btnAddPesticides);
+            this.groupBoxPesticides.Controls.Add(this.btnUpdatePest);
+            this.groupBoxPesticides.Controls.Add(this.dataGridViewPesticides);
+            this.groupBoxPesticides.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxPesticides.ForeColor = System.Drawing.Color.White;
+            this.groupBoxPesticides.Location = new System.Drawing.Point(38, 143);
+            this.groupBoxPesticides.Name = "groupBoxPesticides";
+            this.groupBoxPesticides.Size = new System.Drawing.Size(896, 546);
+            this.groupBoxPesticides.TabIndex = 11;
+            this.groupBoxPesticides.TabStop = false;
+            this.groupBoxPesticides.Text = "Pesticides";
+            this.groupBoxPesticides.Visible = false;
             // 
-            // label2
+            // btnAddPesticides
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(38, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 32);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Storage";
+            this.btnAddPesticides.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddPesticides.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddPesticides.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnAddPesticides.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddPesticides.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPesticides.ForeColor = System.Drawing.Color.White;
+            this.btnAddPesticides.Location = new System.Drawing.Point(562, 41);
+            this.btnAddPesticides.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddPesticides.Name = "btnAddPesticides";
+            this.btnAddPesticides.Size = new System.Drawing.Size(139, 54);
+            this.btnAddPesticides.TabIndex = 10;
+            this.btnAddPesticides.Text = "+ pesticide";
+            this.btnAddPesticides.UseVisualStyleBackColor = false;
+            this.btnAddPesticides.Click += new System.EventHandler(this.btnAddPesticides_Click);
             // 
-            // pnlStocks
+            // btnUpdatePest
             // 
-            this.pnlStocks.BackColor = System.Drawing.Color.DarkGray;
-            this.pnlStocks.Controls.Add(this.pnlProducts);
-            this.pnlStocks.Controls.Add(this.pnlOnlineStore);
-            this.pnlStocks.Controls.Add(this.btnOnlineStore);
-            this.pnlStocks.Controls.Add(this.btnProducts);
-            this.pnlStocks.Controls.Add(this.lblStocks);
-            this.pnlStocks.Location = new System.Drawing.Point(231, 64);
-            this.pnlStocks.Name = "pnlStocks";
-            this.pnlStocks.Size = new System.Drawing.Size(969, 727);
-            this.pnlStocks.TabIndex = 1;
+            this.btnUpdatePest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnUpdatePest.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnUpdatePest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnUpdatePest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdatePest.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdatePest.ForeColor = System.Drawing.Color.White;
+            this.btnUpdatePest.Location = new System.Drawing.Point(708, 41);
+            this.btnUpdatePest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdatePest.Name = "btnUpdatePest";
+            this.btnUpdatePest.Size = new System.Drawing.Size(139, 54);
+            this.btnUpdatePest.TabIndex = 12;
+            this.btnUpdatePest.Text = "update";
+            this.btnUpdatePest.UseVisualStyleBackColor = false;
+            this.btnUpdatePest.Click += new System.EventHandler(this.btnUpdatePest_Click);
             // 
-            // pnlProducts
+            // dataGridViewPesticides
             // 
-            this.pnlProducts.Controls.Add(this.btnAddNewProduct);
-            this.pnlProducts.Controls.Add(this.lblProducts);
-            this.pnlProducts.Controls.Add(this.dataGridViewProducts);
-            this.pnlProducts.Location = new System.Drawing.Point(35, 73);
-            this.pnlProducts.Name = "pnlProducts";
-            this.pnlProducts.Size = new System.Drawing.Size(709, 402);
-            this.pnlProducts.TabIndex = 2;
+            this.dataGridViewPesticides.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewPesticides.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPesticides.Location = new System.Drawing.Point(32, 110);
+            this.dataGridViewPesticides.Name = "dataGridViewPesticides";
+            this.dataGridViewPesticides.RowTemplate.Height = 24;
+            this.dataGridViewPesticides.Size = new System.Drawing.Size(815, 399);
+            this.dataGridViewPesticides.TabIndex = 0;
             // 
-            // btnAddNewProduct
+            // groupBoxFertilisers
             // 
-            this.btnAddNewProduct.Location = new System.Drawing.Point(536, 21);
-            this.btnAddNewProduct.Name = "btnAddNewProduct";
-            this.btnAddNewProduct.Size = new System.Drawing.Size(128, 36);
-            this.btnAddNewProduct.TabIndex = 2;
-            this.btnAddNewProduct.Text = "Add new product";
-            this.btnAddNewProduct.UseVisualStyleBackColor = true;
-            this.btnAddNewProduct.Click += new System.EventHandler(this.btnAddNewProduct_Click);
+            this.groupBoxFertilisers.Controls.Add(this.btnUpdateFert);
+            this.groupBoxFertilisers.Controls.Add(this.btnAddFertilisers);
+            this.groupBoxFertilisers.Controls.Add(this.dataGridViewFertiliser);
+            this.groupBoxFertilisers.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxFertilisers.ForeColor = System.Drawing.Color.White;
+            this.groupBoxFertilisers.Location = new System.Drawing.Point(38, 143);
+            this.groupBoxFertilisers.Name = "groupBoxFertilisers";
+            this.groupBoxFertilisers.Size = new System.Drawing.Size(896, 546);
+            this.groupBoxFertilisers.TabIndex = 11;
+            this.groupBoxFertilisers.TabStop = false;
+            this.groupBoxFertilisers.Text = "Fertilisers";
+            this.groupBoxFertilisers.Visible = false;
             // 
-            // lblProducts
+            // btnUpdateFert
             // 
-            this.lblProducts.AutoSize = true;
-            this.lblProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProducts.Location = new System.Drawing.Point(28, 21);
-            this.lblProducts.Name = "lblProducts";
-            this.lblProducts.Size = new System.Drawing.Size(135, 32);
-            this.lblProducts.TabIndex = 1;
-            this.lblProducts.Text = "Products";
+            this.btnUpdateFert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnUpdateFert.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnUpdateFert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnUpdateFert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateFert.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateFert.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateFert.Location = new System.Drawing.Point(708, 41);
+            this.btnUpdateFert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdateFert.Name = "btnUpdateFert";
+            this.btnUpdateFert.Size = new System.Drawing.Size(139, 54);
+            this.btnUpdateFert.TabIndex = 11;
+            this.btnUpdateFert.Text = "update";
+            this.btnUpdateFert.UseVisualStyleBackColor = false;
+            this.btnUpdateFert.Click += new System.EventHandler(this.btnUpdateFert_Click);
             // 
-            // dataGridViewProducts
+            // btnAddFertilisers
             // 
-            this.dataGridViewProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProducts.Location = new System.Drawing.Point(46, 83);
-            this.dataGridViewProducts.Name = "dataGridViewProducts";
-            this.dataGridViewProducts.RowTemplate.Height = 24;
-            this.dataGridViewProducts.Size = new System.Drawing.Size(618, 277);
-            this.dataGridViewProducts.TabIndex = 0;
+            this.btnAddFertilisers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddFertilisers.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddFertilisers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnAddFertilisers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddFertilisers.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFertilisers.ForeColor = System.Drawing.Color.White;
+            this.btnAddFertilisers.Location = new System.Drawing.Point(563, 41);
+            this.btnAddFertilisers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddFertilisers.Name = "btnAddFertilisers";
+            this.btnAddFertilisers.Size = new System.Drawing.Size(139, 54);
+            this.btnAddFertilisers.TabIndex = 10;
+            this.btnAddFertilisers.Text = "+ fertiliser";
+            this.btnAddFertilisers.UseVisualStyleBackColor = false;
+            this.btnAddFertilisers.Click += new System.EventHandler(this.btnAddFertilisers_Click);
             // 
-            // pnlOnlineStore
+            // dataGridViewFertiliser
             // 
-            this.pnlOnlineStore.Controls.Add(this.linkLabelOnlineStore);
-            this.pnlOnlineStore.Location = new System.Drawing.Point(35, 75);
-            this.pnlOnlineStore.Name = "pnlOnlineStore";
-            this.pnlOnlineStore.Size = new System.Drawing.Size(706, 400);
-            this.pnlOnlineStore.TabIndex = 4;
+            this.dataGridViewFertiliser.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewFertiliser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFertiliser.Location = new System.Drawing.Point(32, 110);
+            this.dataGridViewFertiliser.Name = "dataGridViewFertiliser";
+            this.dataGridViewFertiliser.RowTemplate.Height = 24;
+            this.dataGridViewFertiliser.Size = new System.Drawing.Size(815, 399);
+            this.dataGridViewFertiliser.TabIndex = 0;
             // 
-            // linkLabelOnlineStore
+            // groupBoxEquip
             // 
-            this.linkLabelOnlineStore.AutoSize = true;
-            this.linkLabelOnlineStore.Location = new System.Drawing.Point(53, 48);
-            this.linkLabelOnlineStore.Name = "linkLabelOnlineStore";
-            this.linkLabelOnlineStore.Size = new System.Drawing.Size(117, 17);
-            this.linkLabelOnlineStore.TabIndex = 1;
-            this.linkLabelOnlineStore.TabStop = true;
-            this.linkLabelOnlineStore.Text = "Visit Online Store";
-            this.linkLabelOnlineStore.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelOnlineStore_LinkClicked);
+            this.groupBoxEquip.Controls.Add(this.btnAddEquipment);
+            this.groupBoxEquip.Controls.Add(this.dataGridViewEquipment);
+            this.groupBoxEquip.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxEquip.ForeColor = System.Drawing.Color.White;
+            this.groupBoxEquip.Location = new System.Drawing.Point(38, 143);
+            this.groupBoxEquip.Name = "groupBoxEquip";
+            this.groupBoxEquip.Size = new System.Drawing.Size(896, 546);
+            this.groupBoxEquip.TabIndex = 11;
+            this.groupBoxEquip.TabStop = false;
+            this.groupBoxEquip.Text = "Equipments";
+            this.groupBoxEquip.Visible = false;
             // 
-            // btnOnlineStore
+            // btnAddEquipment
             // 
-            this.btnOnlineStore.Location = new System.Drawing.Point(288, 31);
-            this.btnOnlineStore.Name = "btnOnlineStore";
-            this.btnOnlineStore.Size = new System.Drawing.Size(114, 23);
-            this.btnOnlineStore.TabIndex = 3;
-            this.btnOnlineStore.Text = "Online Store";
-            this.btnOnlineStore.UseVisualStyleBackColor = true;
-            this.btnOnlineStore.Click += new System.EventHandler(this.btnOnlineStore_Click);
+            this.btnAddEquipment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddEquipment.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddEquipment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnAddEquipment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddEquipment.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddEquipment.ForeColor = System.Drawing.Color.White;
+            this.btnAddEquipment.Location = new System.Drawing.Point(689, 41);
+            this.btnAddEquipment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddEquipment.Name = "btnAddEquipment";
+            this.btnAddEquipment.Size = new System.Drawing.Size(161, 54);
+            this.btnAddEquipment.TabIndex = 10;
+            this.btnAddEquipment.Text = "+ equipment";
+            this.btnAddEquipment.UseVisualStyleBackColor = false;
+            this.btnAddEquipment.Click += new System.EventHandler(this.btnAddEquipment_Click);
             // 
-            // btnProducts
+            // dataGridViewEquipment
             // 
-            this.btnProducts.Location = new System.Drawing.Point(182, 30);
-            this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Size = new System.Drawing.Size(75, 23);
-            this.btnProducts.TabIndex = 1;
-            this.btnProducts.Text = "Products";
-            this.btnProducts.UseVisualStyleBackColor = true;
-            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
+            this.dataGridViewEquipment.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewEquipment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEquipment.Location = new System.Drawing.Point(32, 110);
+            this.dataGridViewEquipment.Name = "dataGridViewEquipment";
+            this.dataGridViewEquipment.RowTemplate.Height = 24;
+            this.dataGridViewEquipment.Size = new System.Drawing.Size(815, 399);
+            this.dataGridViewEquipment.TabIndex = 0;
             // 
-            // lblStocks
+            // groupBoxCrops
             // 
-            this.lblStocks.AutoSize = true;
-            this.lblStocks.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStocks.Location = new System.Drawing.Point(28, 23);
-            this.lblStocks.Name = "lblStocks";
-            this.lblStocks.Size = new System.Drawing.Size(123, 38);
-            this.lblStocks.TabIndex = 0;
-            this.lblStocks.Text = "Stocks";
+            this.groupBoxCrops.Controls.Add(this.btnAddCrops);
+            this.groupBoxCrops.Controls.Add(this.dataGridViewCrops);
+            this.groupBoxCrops.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCrops.ForeColor = System.Drawing.Color.White;
+            this.groupBoxCrops.Location = new System.Drawing.Point(38, 143);
+            this.groupBoxCrops.Name = "groupBoxCrops";
+            this.groupBoxCrops.Size = new System.Drawing.Size(896, 546);
+            this.groupBoxCrops.TabIndex = 0;
+            this.groupBoxCrops.TabStop = false;
+            this.groupBoxCrops.Text = "Crops";
+            this.groupBoxCrops.Visible = false;
             // 
-            // pnlVehicle
+            // btnAddCrops
             // 
-            this.pnlVehicle.Controls.Add(this.pnlVehicleMain);
-            this.pnlVehicle.Controls.Add(this.pnlVehicleMaintenance);
-            this.pnlVehicle.Controls.Add(this.btnVehicleMaintenance);
-            this.pnlVehicle.Controls.Add(this.labelVehicle);
-            this.pnlVehicle.Location = new System.Drawing.Point(231, 64);
-            this.pnlVehicle.Name = "pnlVehicle";
-            this.pnlVehicle.Size = new System.Drawing.Size(970, 673);
-            this.pnlVehicle.TabIndex = 5;
+            this.btnAddCrops.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddCrops.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddCrops.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnAddCrops.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddCrops.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCrops.ForeColor = System.Drawing.Color.White;
+            this.btnAddCrops.Location = new System.Drawing.Point(708, 41);
+            this.btnAddCrops.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddCrops.Name = "btnAddCrops";
+            this.btnAddCrops.Size = new System.Drawing.Size(139, 54);
+            this.btnAddCrops.TabIndex = 10;
+            this.btnAddCrops.Text = "+ crop";
+            this.btnAddCrops.UseVisualStyleBackColor = false;
+            this.btnAddCrops.Click += new System.EventHandler(this.btnAddCrops_Click);
             // 
-            // pnlVehicleMain
+            // dataGridViewCrops
             // 
-            this.pnlVehicleMain.Controls.Add(this.dataGridViewVehicle);
-            this.pnlVehicleMain.Controls.Add(this.btnAddNewVehicle);
-            this.pnlVehicleMain.Location = new System.Drawing.Point(43, 94);
-            this.pnlVehicleMain.Name = "pnlVehicleMain";
-            this.pnlVehicleMain.Size = new System.Drawing.Size(704, 490);
-            this.pnlVehicleMain.TabIndex = 5;
-            // 
-            // dataGridViewVehicle
-            // 
-            this.dataGridViewVehicle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewVehicle.Location = new System.Drawing.Point(27, 42);
-            this.dataGridViewVehicle.Name = "dataGridViewVehicle";
-            this.dataGridViewVehicle.RowTemplate.Height = 24;
-            this.dataGridViewVehicle.Size = new System.Drawing.Size(654, 379);
-            this.dataGridViewVehicle.TabIndex = 2;
-            // 
-            // btnAddNewVehicle
-            // 
-            this.btnAddNewVehicle.Location = new System.Drawing.Point(542, 444);
-            this.btnAddNewVehicle.Name = "btnAddNewVehicle";
-            this.btnAddNewVehicle.Size = new System.Drawing.Size(143, 31);
-            this.btnAddNewVehicle.TabIndex = 1;
-            this.btnAddNewVehicle.Text = "Add new vehicle";
-            this.btnAddNewVehicle.UseVisualStyleBackColor = true;
-            this.btnAddNewVehicle.Click += new System.EventHandler(this.btnAddNewVehicle_Click);
-            // 
-            // pnlVehicleMaintenance
-            // 
-            this.pnlVehicleMaintenance.Controls.Add(this.dataGridViewMaintenanceHistory);
-            this.pnlVehicleMaintenance.Controls.Add(this.label4);
-            this.pnlVehicleMaintenance.Location = new System.Drawing.Point(38, 97);
-            this.pnlVehicleMaintenance.Name = "pnlVehicleMaintenance";
-            this.pnlVehicleMaintenance.Size = new System.Drawing.Size(709, 490);
-            this.pnlVehicleMaintenance.TabIndex = 4;
-            // 
-            // dataGridViewMaintenanceHistory
-            // 
-            this.dataGridViewMaintenanceHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMaintenanceHistory.Location = new System.Drawing.Point(39, 77);
-            this.dataGridViewMaintenanceHistory.Name = "dataGridViewMaintenanceHistory";
-            this.dataGridViewMaintenanceHistory.RowTemplate.Height = 24;
-            this.dataGridViewMaintenanceHistory.Size = new System.Drawing.Size(595, 312);
-            this.dataGridViewMaintenanceHistory.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(34, 27);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(249, 29);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Maintenance History";
-            // 
-            // btnVehicleMaintenance
-            // 
-            this.btnVehicleMaintenance.Location = new System.Drawing.Point(243, 36);
-            this.btnVehicleMaintenance.Name = "btnVehicleMaintenance";
-            this.btnVehicleMaintenance.Size = new System.Drawing.Size(159, 33);
-            this.btnVehicleMaintenance.TabIndex = 3;
-            this.btnVehicleMaintenance.Text = "Vehicle Maintenance";
-            this.btnVehicleMaintenance.UseVisualStyleBackColor = true;
-            this.btnVehicleMaintenance.Click += new System.EventHandler(this.btnVehicleMaintenance_Click);
-            // 
-            // labelVehicle
-            // 
-            this.labelVehicle.AutoSize = true;
-            this.labelVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVehicle.Location = new System.Drawing.Point(43, 37);
-            this.labelVehicle.Name = "labelVehicle";
-            this.labelVehicle.Size = new System.Drawing.Size(117, 32);
-            this.labelVehicle.TabIndex = 0;
-            this.labelVehicle.Text = "Vehicle";
-            this.labelVehicle.Click += new System.EventHandler(this.labelVehicle_Click);
+            this.dataGridViewCrops.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewCrops.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCrops.Location = new System.Drawing.Point(32, 110);
+            this.dataGridViewCrops.Name = "dataGridViewCrops";
+            this.dataGridViewCrops.RowTemplate.Height = 24;
+            this.dataGridViewCrops.Size = new System.Drawing.Size(815, 399);
+            this.dataGridViewCrops.TabIndex = 0;
             // 
             // Main
             // 
@@ -1069,11 +850,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 791);
             this.Controls.Add(this.pnlResources);
-            this.Controls.Add(this.pnlVehicle);
             this.Controls.Add(this.pnlSchedule);
-            this.Controls.Add(this.pnlStocks);
-            this.Controls.Add(this.pnlAccounting);
-            this.Controls.Add(this.pnlStorage);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1090,41 +867,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.picboxLabourer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxManager)).EndInit();
             this.pnlSchedule.ResumeLayout(false);
-            this.pnlSowing.ResumeLayout(false);
-            this.pnlAccounting.ResumeLayout(false);
-            this.pnlAccounting.PerformLayout();
-            this.pnlExpenses.ResumeLayout(false);
-            this.pnlExpenses.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpenses)).EndInit();
-            this.pnlIncome.ResumeLayout(false);
-            this.pnlIncome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIncome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).EndInit();
             this.pnlResources.ResumeLayout(false);
-            this.pnlResources.PerformLayout();
-            this.pnlEquipment.ResumeLayout(false);
-            this.pnlMaintenance.ResumeLayout(false);
-            this.pnlMaintenance.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaintenance)).EndInit();
-            this.pnlEqMain.ResumeLayout(false);
+            this.groupBoxPesticides.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesticides)).EndInit();
+            this.groupBoxFertilisers.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFertiliser)).EndInit();
+            this.groupBoxEquip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEquipment)).EndInit();
-            this.pnlCrops.ResumeLayout(false);
+            this.groupBoxCrops.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCrops)).EndInit();
-            this.pnlStorage.ResumeLayout(false);
-            this.pnlStorage.PerformLayout();
-            this.pnlStocks.ResumeLayout(false);
-            this.pnlStocks.PerformLayout();
-            this.pnlProducts.ResumeLayout(false);
-            this.pnlProducts.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
-            this.pnlOnlineStore.ResumeLayout(false);
-            this.pnlOnlineStore.PerformLayout();
-            this.pnlVehicle.ResumeLayout(false);
-            this.pnlVehicle.PerformLayout();
-            this.pnlVehicleMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicle)).EndInit();
-            this.pnlVehicleMaintenance.ResumeLayout(false);
-            this.pnlVehicleMaintenance.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaintenanceHistory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1139,13 +891,6 @@
         public System.Windows.Forms.PictureBox picboxLabourer;
         private System.Windows.Forms.Panel panelBtnIndicator1;
         private System.Windows.Forms.Button btnSchedule;
-        private System.Windows.Forms.Panel pnlSchedule;
-        private System.Windows.Forms.Panel panelBtnIndicatorHarv;
-        private System.Windows.Forms.Button btnHarvest;
-        private System.Windows.Forms.Panel panelBtnIndicatorSow;
-        private System.Windows.Forms.Button btnSowing;
-        private System.Windows.Forms.Panel pnlSowing;
-        private System.Windows.Forms.Panel pnlHarvest;
         private System.Windows.Forms.Panel panelBtnIndicator2;
         private System.Windows.Forms.Button btnResources;
         public System.Windows.Forms.Label lblManager;
@@ -1158,56 +903,32 @@
         private System.Windows.Forms.Panel panelBtnIndicator5;
         private System.Windows.Forms.Panel panelBtnIndicator4;
         private System.Windows.Forms.Panel panelBtnIndicator3;
-        private System.Windows.Forms.Panel pnlAccounting;
-        private System.Windows.Forms.Button btnNewIncome;
-        private System.Windows.Forms.Label lblAccounting;
-        private System.Windows.Forms.DataGridView dataGridViewIncome;
-        private System.Windows.Forms.Label lblIncome;
+        private Bunifu.Framework.UI.BunifuImageButton logoutPictureBox;
+        public System.Windows.Forms.Label lblSalesStaff;
+        private System.Windows.Forms.Panel pnlSchedule;
+        private System.Windows.Forms.Button btnDriving;
+        private System.Windows.Forms.Button btnTreatment;
+        private System.Windows.Forms.Button btnHarvest;
+        private System.Windows.Forms.Button btnSowing;
+        public System.Windows.Forms.DataGridView dataGridViewSchedule;
         private System.Windows.Forms.Panel pnlResources;
-        private System.Windows.Forms.Panel pnlCrops;
-        private System.Windows.Forms.Button btnAddNewCrop;
+        private System.Windows.Forms.GroupBox groupBoxCrops;
+        private System.Windows.Forms.GroupBox groupBoxEquip;
+        public System.Windows.Forms.Button btnAddEquipment;
+        private System.Windows.Forms.DataGridView dataGridViewEquipment;
+        private System.Windows.Forms.GroupBox groupBoxPesticides;
+        public System.Windows.Forms.Button btnAddPesticides;
+        private System.Windows.Forms.DataGridView dataGridViewPesticides;
+        private System.Windows.Forms.Button btnFertilisers;
+        private System.Windows.Forms.Button btnPesticides;
         private System.Windows.Forms.Button btnEquipment;
         private System.Windows.Forms.Button btnCrops;
-        private System.Windows.Forms.Label lblResources;
-        private System.Windows.Forms.Panel pnlEquipment;
-        private System.Windows.Forms.DataGridView dataGridViewEquipment;
-        private System.Windows.Forms.Button btnAddNewEq;
-        private System.Windows.Forms.Panel pnlStorage;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel pnlStocks;
-        private System.Windows.Forms.Panel pnlProducts;
-        private System.Windows.Forms.DataGridView dataGridViewProducts;
-        private System.Windows.Forms.Button btnProducts;
-        private System.Windows.Forms.Label lblStocks;
-        private System.Windows.Forms.Button btnAddNewProduct;
-        private System.Windows.Forms.Label lblProducts;
-        private System.Windows.Forms.Panel pnlOnlineStore;
-        private System.Windows.Forms.LinkLabel linkLabelOnlineStore;
-        private System.Windows.Forms.Button btnOnlineStore;
+        private System.Windows.Forms.GroupBox groupBoxFertilisers;
+        public System.Windows.Forms.Button btnAddFertilisers;
+        private System.Windows.Forms.DataGridView dataGridViewFertiliser;
+        public System.Windows.Forms.Button btnAddCrops;
         private System.Windows.Forms.DataGridView dataGridViewCrops;
-        private Bunifu.Framework.UI.BunifuImageButton logoutPictureBox;
-        private System.Windows.Forms.Button btnNewExpense;
-        private System.Windows.Forms.Label lblExpenses;
-        private System.Windows.Forms.DataGridView dataGridViewExpenses;
-        private System.Windows.Forms.Panel pnlExpenses;
-        private System.Windows.Forms.Panel pnlIncome;
-        private System.Windows.Forms.Button btnExpenses;
-        private System.Windows.Forms.Button btnIncomeSales;
-        private System.Windows.Forms.Panel pnlMaintenance;
-        private System.Windows.Forms.Panel pnlEqMain;
-        private System.Windows.Forms.Button btnMaintenance;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnNewServiceRecord;
-        private System.Windows.Forms.DataGridView dataGridViewMaintenance;
-        private System.Windows.Forms.Panel pnlVehicle;
-        private System.Windows.Forms.Label labelVehicle;
-        private System.Windows.Forms.DataGridView dataGridViewVehicle;
-        private System.Windows.Forms.Button btnAddNewVehicle;
-        private System.Windows.Forms.Panel pnlVehicleMain;
-        private System.Windows.Forms.Panel pnlVehicleMaintenance;
-        private System.Windows.Forms.DataGridView dataGridViewMaintenanceHistory;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnVehicleMaintenance;
-        public System.Windows.Forms.Label lblSalesStaff;
+        public System.Windows.Forms.Button btnUpdateFert;
+        public System.Windows.Forms.Button btnUpdatePest;
     }
 }
