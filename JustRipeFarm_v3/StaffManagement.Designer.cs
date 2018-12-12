@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffManagement));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.backpictureBox = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnTask = new System.Windows.Forms.Button();
@@ -41,7 +43,7 @@
             this.picBocSearch = new System.Windows.Forms.PictureBox();
             this.searchComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridViewStaff = new System.Windows.Forms.DataGridView();
+            this.dataGridViewStaff = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backpictureBox)).BeginInit();
             this.panel2.SuspendLayout();
@@ -143,11 +145,11 @@
             // pnlAddStaff
             // 
             this.pnlAddStaff.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlAddStaff.Controls.Add(this.dataGridViewStaff);
             this.pnlAddStaff.Controls.Add(this.btnStaff);
             this.pnlAddStaff.Controls.Add(this.picBocSearch);
             this.pnlAddStaff.Controls.Add(this.searchComboBox);
             this.pnlAddStaff.Controls.Add(this.label2);
-            this.pnlAddStaff.Controls.Add(this.dataGridViewStaff);
             this.pnlAddStaff.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlAddStaff.Location = new System.Drawing.Point(207, 68);
             this.pnlAddStaff.Name = "pnlAddStaff";
@@ -210,13 +212,31 @@
             // 
             // dataGridViewStaff
             // 
-            this.dataGridViewStaff.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewStaff.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewStaff.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridViewStaff.BackgroundColor = System.Drawing.Color.DarkSlateGray;
+            this.dataGridViewStaff.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewStaff.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewStaff.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewStaff.Location = new System.Drawing.Point(45, 109);
+            this.dataGridViewStaff.DoubleBuffered = true;
+            this.dataGridViewStaff.EnableHeadersVisualStyles = false;
+            this.dataGridViewStaff.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.dataGridViewStaff.HeaderForeColor = System.Drawing.Color.White;
+            this.dataGridViewStaff.Location = new System.Drawing.Point(46, 111);
             this.dataGridViewStaff.Name = "dataGridViewStaff";
+            this.dataGridViewStaff.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridViewStaff.RowTemplate.Height = 24;
             this.dataGridViewStaff.Size = new System.Drawing.Size(931, 544);
-            this.dataGridViewStaff.TabIndex = 6;
+            this.dataGridViewStaff.TabIndex = 12;
             // 
             // StaffManagement
             // 
@@ -258,6 +278,6 @@
         private System.Windows.Forms.Button btnStaff;
         private Bunifu.Framework.UI.BunifuImageButton backpictureBox;
         public System.Windows.Forms.Button btnTask;
-        public System.Windows.Forms.DataGridView dataGridViewStaff;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewStaff;
     }
 }
