@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PesticidesManagement));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,6 +51,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btnClearUpd = new System.Windows.Forms.Button();
             this.btnSaveUpd = new System.Windows.Forms.Button();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.pnlAddPesticides.SuspendLayout();
@@ -348,6 +350,13 @@
             this.btnSaveUpd.UseVisualStyleBackColor = true;
             this.btnSaveUpd.Click += new System.EventHandler(this.btnSaveUpd_Click);
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // PesticidesManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -396,5 +405,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnClearUpd;
         private System.Windows.Forms.Button btnSaveUpd;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

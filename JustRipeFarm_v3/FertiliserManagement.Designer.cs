@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FertiliserManagement));
             this.exitPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,6 +51,7 @@
             this.comboBoxUpdateFer = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.panel1.SuspendLayout();
             this.pnlAddFertiliser.SuspendLayout();
@@ -355,6 +357,13 @@
             this.label8.TabIndex = 43;
             this.label8.Text = "Fertiliser Type:";
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // FertiliserManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -404,5 +413,6 @@
         private System.Windows.Forms.ComboBox comboBoxUpdateFer;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
