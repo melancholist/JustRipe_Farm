@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffManagement));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -44,6 +45,7 @@
             this.picBocSearch = new System.Windows.Forms.PictureBox();
             this.searchComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backpictureBox)).BeginInit();
             this.panel2.SuspendLayout();
@@ -239,6 +241,13 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Staff Role:";
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // StaffManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -280,5 +289,6 @@
         private Bunifu.Framework.UI.BunifuImageButton backpictureBox;
         public System.Windows.Forms.Button btnTask;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewStaff;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

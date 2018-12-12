@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AssignTask));
             this.panel1 = new System.Windows.Forms.Panel();
             this.picBoxBack = new Bunifu.Framework.UI.BunifuImageButton();
@@ -109,6 +110,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxWorkers = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).BeginInit();
             this.pnlHarvest.SuspendLayout();
@@ -1120,6 +1122,13 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Field Workers:";
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // AssignTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1236,5 +1245,6 @@
         public System.Windows.Forms.ComboBox comboBoxFarmD;
         public System.Windows.Forms.ComboBox comboBoxDriver;
         public System.Windows.Forms.ComboBox comboBoxPlantType;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
