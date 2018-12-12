@@ -42,8 +42,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.exitPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
@@ -153,7 +151,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(71, 233);
+            this.label6.Location = new System.Drawing.Point(68, 207);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 17);
             this.label6.TabIndex = 11;
@@ -161,7 +159,7 @@
             // 
             // textBoxPrice
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(202, 228);
+            this.textBoxPrice.Location = new System.Drawing.Point(199, 202);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(125, 22);
             this.textBoxPrice.TabIndex = 12;
@@ -179,23 +177,6 @@
             this.exitPictureBox.TabStop = false;
             this.exitPictureBox.Zoom = 30;
             this.exitPictureBox.Click += new System.EventHandler(this.exitPictureBox_Click);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(202, 193);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(68, 198);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 17);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Date";
             // 
             // panel1
             // 
@@ -224,8 +205,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBoxPrice);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBoxModelName);
             this.Controls.Add(this.comboBoxMachineStatus);
             this.Controls.Add(this.comboBoxMachineType);
@@ -260,8 +239,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxPrice;
         private Bunifu.Framework.UI.BunifuImageButton exitPictureBox;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
