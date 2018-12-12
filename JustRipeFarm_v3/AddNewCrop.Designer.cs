@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewCrop));
             this.lblNewPlant = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,26 +59,31 @@
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.exitPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNewPlant
             // 
             this.lblNewPlant.AutoSize = true;
-            this.lblNewPlant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewPlant.Location = new System.Drawing.Point(38, 24);
+            this.lblNewPlant.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewPlant.ForeColor = System.Drawing.Color.White;
+            this.lblNewPlant.Location = new System.Drawing.Point(39, 12);
             this.lblNewPlant.Name = "lblNewPlant";
-            this.lblNewPlant.Size = new System.Drawing.Size(107, 25);
+            this.lblNewPlant.Size = new System.Drawing.Size(130, 29);
             this.lblNewPlant.TabIndex = 0;
             this.lblNewPlant.Text = "New Crop";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(19, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 17);
@@ -86,6 +93,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(19, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 17);
@@ -95,6 +103,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(19, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 17);
@@ -104,6 +113,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(19, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 17);
@@ -113,6 +123,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(19, 160);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 17);
@@ -131,6 +142,7 @@
             // checkBoxOrganic
             // 
             this.checkBoxOrganic.AutoSize = true;
+            this.checkBoxOrganic.ForeColor = System.Drawing.Color.White;
             this.checkBoxOrganic.Location = new System.Drawing.Point(311, 156);
             this.checkBoxOrganic.Name = "checkBoxOrganic";
             this.checkBoxOrganic.Size = new System.Drawing.Size(80, 21);
@@ -141,6 +153,7 @@
             // checkBoxGMO
             // 
             this.checkBoxGMO.AutoSize = true;
+            this.checkBoxGMO.ForeColor = System.Drawing.Color.White;
             this.checkBoxGMO.Location = new System.Drawing.Point(412, 157);
             this.checkBoxGMO.Name = "checkBoxGMO";
             this.checkBoxGMO.Size = new System.Drawing.Size(63, 21);
@@ -169,6 +182,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(62, 473);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(144, 17);
@@ -275,6 +289,7 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.numericUpDown2);
             this.groupBox1.Controls.Add(this.comboBoxPlantingMethod);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(43, 283);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(500, 166);
@@ -331,6 +346,7 @@
             this.groupBox2.Controls.Add(this.textBoxSeedLotNo);
             this.groupBox2.Controls.Add(this.checkBoxGMO);
             this.groupBox2.Controls.Add(this.textBoxSeedOrigin);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(44, 68);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(499, 200);
@@ -338,11 +354,32 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Crop Information";
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // exitPictureBox
+            // 
+            this.exitPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
+            this.exitPictureBox.ImageActive = null;
+            this.exitPictureBox.Location = new System.Drawing.Point(560, 12);
+            this.exitPictureBox.Name = "exitPictureBox";
+            this.exitPictureBox.Size = new System.Drawing.Size(31, 29);
+            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exitPictureBox.TabIndex = 30;
+            this.exitPictureBox.TabStop = false;
+            this.exitPictureBox.Zoom = 30;
+            this.exitPictureBox.Click += new System.EventHandler(this.exitPictureBox_Click);
+            // 
             // AddNewCrop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(603, 564);
+            this.Controls.Add(this.exitPictureBox);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonSave);
@@ -350,6 +387,7 @@
             this.Controls.Add(this.textBoxAddInfo);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lblNewPlant);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddNewCrop";
             this.Text = "AddNewCrop";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -359,6 +397,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,5 +434,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuImageButton exitPictureBox;
     }
 }

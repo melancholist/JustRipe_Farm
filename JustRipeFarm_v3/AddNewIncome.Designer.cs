@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewIncome));
             this.lblCustomer = new System.Windows.Forms.Label();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.comboBoxIncome = new System.Windows.Forms.ComboBox();
@@ -41,11 +43,15 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.lblNewTransaction = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.exitPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCustomer
             // 
             this.lblCustomer.AutoSize = true;
+            this.lblCustomer.ForeColor = System.Drawing.Color.White;
             this.lblCustomer.Location = new System.Drawing.Point(32, 91);
             this.lblCustomer.Name = "lblCustomer";
             this.lblCustomer.Size = new System.Drawing.Size(68, 17);
@@ -54,7 +60,7 @@
             // 
             // textBoxDescription
             // 
-            this.textBoxDescription.Location = new System.Drawing.Point(142, 231);
+            this.textBoxDescription.Location = new System.Drawing.Point(142, 233);
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.Size = new System.Drawing.Size(200, 22);
             this.textBoxDescription.TabIndex = 25;
@@ -90,7 +96,7 @@
             // 
             // textBoxAmount
             // 
-            this.textBoxAmount.Location = new System.Drawing.Point(142, 121);
+            this.textBoxAmount.Location = new System.Drawing.Point(142, 119);
             this.textBoxAmount.Name = "textBoxAmount";
             this.textBoxAmount.Size = new System.Drawing.Size(200, 22);
             this.textBoxAmount.TabIndex = 21;
@@ -98,7 +104,8 @@
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(35, 234);
+            this.lblDescription.ForeColor = System.Drawing.Color.White;
+            this.lblDescription.Location = new System.Drawing.Point(35, 238);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(79, 17);
             this.lblDescription.TabIndex = 19;
@@ -107,6 +114,7 @@
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
+            this.lblCategory.ForeColor = System.Drawing.Color.White;
             this.lblCategory.Location = new System.Drawing.Point(35, 199);
             this.lblCategory.Name = "lblCategory";
             this.lblCategory.Size = new System.Drawing.Size(65, 17);
@@ -116,6 +124,7 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
+            this.lblDate.ForeColor = System.Drawing.Color.White;
             this.lblDate.Location = new System.Drawing.Point(35, 159);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(38, 17);
@@ -125,6 +134,7 @@
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
+            this.lblAmount.ForeColor = System.Drawing.Color.White;
             this.lblAmount.Location = new System.Drawing.Point(35, 124);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.Size = new System.Drawing.Size(68, 17);
@@ -155,17 +165,39 @@
             // 
             this.lblNewTransaction.AutoSize = true;
             this.lblNewTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewTransaction.Location = new System.Drawing.Point(32, 33);
+            this.lblNewTransaction.ForeColor = System.Drawing.Color.White;
+            this.lblNewTransaction.Location = new System.Drawing.Point(32, 28);
             this.lblNewTransaction.Name = "lblNewTransaction";
             this.lblNewTransaction.Size = new System.Drawing.Size(188, 32);
             this.lblNewTransaction.TabIndex = 32;
             this.lblNewTransaction.Text = "New  Income";
             // 
-            // NewIncome
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // exitPictureBox
+            // 
+            this.exitPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
+            this.exitPictureBox.ImageActive = null;
+            this.exitPictureBox.Location = new System.Drawing.Point(349, 12);
+            this.exitPictureBox.Name = "exitPictureBox";
+            this.exitPictureBox.Size = new System.Drawing.Size(31, 29);
+            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exitPictureBox.TabIndex = 33;
+            this.exitPictureBox.TabStop = false;
+            this.exitPictureBox.Zoom = 30;
+            this.exitPictureBox.Click += new System.EventHandler(this.exitPictureBox_Click);
+            // 
+            // AddNewIncome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(392, 367);
+            this.Controls.Add(this.exitPictureBox);
             this.Controls.Add(this.lblNewTransaction);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClear);
@@ -179,8 +211,10 @@
             this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblAmount);
-            this.Name = "NewIncome";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "AddNewIncome";
             this.Text = "RecordTransaction";
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,5 +235,7 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label lblNewTransaction;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuImageButton exitPictureBox;
     }
 }
