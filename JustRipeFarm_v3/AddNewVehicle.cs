@@ -51,5 +51,10 @@ namespace JustRipeFarm_v3
 
             this.Hide();
         }
+
+        private void exitPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

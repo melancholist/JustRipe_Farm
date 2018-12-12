@@ -44,5 +44,10 @@ namespace JustRipeFarm_v3
             comboBoxServiceType.SelectedIndex = -1;
             textBoxServiceDesc.Text = "";
         }
+
+        private void exitPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

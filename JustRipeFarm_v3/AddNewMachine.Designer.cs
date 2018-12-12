@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewMachine));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,20 +43,26 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxPrice = new System.Windows.Forms.TextBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.exitPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 45);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(30, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 17);
+            this.label1.Size = new System.Drawing.Size(259, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add New Machine";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(68, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 17);
@@ -64,6 +72,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(68, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 17);
@@ -73,6 +82,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(68, 159);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 17);
@@ -81,7 +91,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(301, 267);
+            this.btnSave.Location = new System.Drawing.Point(303, 276);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 4;
@@ -91,7 +101,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(162, 266);
+            this.btnClear.Location = new System.Drawing.Point(166, 276);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 5;
@@ -113,7 +123,7 @@
             "Irrigation System",
             "Seed Drills",
             "Mower"});
-            this.comboBoxMachineType.Location = new System.Drawing.Point(202, 83);
+            this.comboBoxMachineType.Location = new System.Drawing.Point(202, 79);
             this.comboBoxMachineType.Name = "comboBoxMachineType";
             this.comboBoxMachineType.Size = new System.Drawing.Size(121, 24);
             this.comboBoxMachineType.TabIndex = 6;
@@ -125,14 +135,14 @@
             "Available",
             "Unavailable",
             "In Maintenance"});
-            this.comboBoxMachineStatus.Location = new System.Drawing.Point(202, 156);
+            this.comboBoxMachineStatus.Location = new System.Drawing.Point(202, 152);
             this.comboBoxMachineStatus.Name = "comboBoxMachineStatus";
             this.comboBoxMachineStatus.Size = new System.Drawing.Size(121, 24);
             this.comboBoxMachineStatus.TabIndex = 7;
             // 
             // textBoxModelName
             // 
-            this.textBoxModelName.Location = new System.Drawing.Point(202, 118);
+            this.textBoxModelName.Location = new System.Drawing.Point(202, 116);
             this.textBoxModelName.Name = "textBoxModelName";
             this.textBoxModelName.Size = new System.Drawing.Size(121, 22);
             this.textBoxModelName.TabIndex = 8;
@@ -147,6 +157,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(68, 198);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 17);
@@ -156,6 +167,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(71, 233);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 17);
@@ -164,16 +176,37 @@
             // 
             // textBoxPrice
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(202, 227);
+            this.textBoxPrice.Location = new System.Drawing.Point(202, 228);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(125, 22);
             this.textBoxPrice.TabIndex = 12;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // exitPictureBox
+            // 
+            this.exitPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
+            this.exitPictureBox.ImageActive = null;
+            this.exitPictureBox.Location = new System.Drawing.Point(417, 12);
+            this.exitPictureBox.Name = "exitPictureBox";
+            this.exitPictureBox.Size = new System.Drawing.Size(31, 29);
+            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exitPictureBox.TabIndex = 34;
+            this.exitPictureBox.TabStop = false;
+            this.exitPictureBox.Zoom = 30;
+            this.exitPictureBox.Click += new System.EventHandler(this.exitPictureBox_Click);
             // 
             // AddNewMachine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(460, 326);
+            this.Controls.Add(this.exitPictureBox);
             this.Controls.Add(this.textBoxPrice);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -187,8 +220,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddNewMachine";
             this.Text = "AddNewMachine";
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +244,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxPrice;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuImageButton exitPictureBox;
     }
 }

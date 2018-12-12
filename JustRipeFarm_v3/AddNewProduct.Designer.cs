@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewProduct));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,13 +46,17 @@
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.exitPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 29);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(35, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 32);
             this.label1.TabIndex = 0;
@@ -59,7 +65,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 98);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(57, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 17);
             this.label2.TabIndex = 1;
@@ -68,7 +75,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(48, 139);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(57, 134);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 2;
@@ -77,7 +85,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(48, 181);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(57, 176);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(122, 17);
             this.label4.TabIndex = 3;
@@ -86,7 +95,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(48, 218);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(57, 213);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 17);
             this.label5.TabIndex = 4;
@@ -95,7 +105,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(48, 256);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(57, 251);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 17);
             this.label6.TabIndex = 5;
@@ -104,7 +115,8 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(48, 297);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(57, 292);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 17);
             this.label8.TabIndex = 7;
@@ -112,14 +124,14 @@
             // 
             // textBoxProductName
             // 
-            this.textBoxProductName.Location = new System.Drawing.Point(187, 95);
+            this.textBoxProductName.Location = new System.Drawing.Point(196, 90);
             this.textBoxProductName.Name = "textBoxProductName";
             this.textBoxProductName.Size = new System.Drawing.Size(121, 22);
             this.textBoxProductName.TabIndex = 8;
             // 
             // textBoxPrice
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(201, 136);
+            this.textBoxPrice.Location = new System.Drawing.Point(210, 131);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(107, 22);
             this.textBoxPrice.TabIndex = 9;
@@ -127,7 +139,8 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(184, 139);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(193, 134);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(16, 17);
             this.label9.TabIndex = 10;
@@ -135,7 +148,7 @@
             // 
             // textBoxQuantityAvailable
             // 
-            this.textBoxQuantityAvailable.Location = new System.Drawing.Point(187, 178);
+            this.textBoxQuantityAvailable.Location = new System.Drawing.Point(196, 173);
             this.textBoxQuantityAvailable.Name = "textBoxQuantityAvailable";
             this.textBoxQuantityAvailable.Size = new System.Drawing.Size(121, 22);
             this.textBoxQuantityAvailable.TabIndex = 11;
@@ -150,7 +163,7 @@
             "Spices and Herbs",
             "Vegetable and Vegetable Products",
             "Others"});
-            this.comboBoxCategory.Location = new System.Drawing.Point(187, 215);
+            this.comboBoxCategory.Location = new System.Drawing.Point(196, 210);
             this.comboBoxCategory.Name = "comboBoxCategory";
             this.comboBoxCategory.Size = new System.Drawing.Size(121, 24);
             this.comboBoxCategory.TabIndex = 12;
@@ -162,21 +175,21 @@
             "Available",
             "Sold Out",
             "Back Ordered"});
-            this.comboBoxStatus.Location = new System.Drawing.Point(187, 253);
+            this.comboBoxStatus.Location = new System.Drawing.Point(196, 248);
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(121, 24);
             this.comboBoxStatus.TabIndex = 14;
             // 
             // textBoxDescription
             // 
-            this.textBoxDescription.Location = new System.Drawing.Point(187, 294);
+            this.textBoxDescription.Location = new System.Drawing.Point(196, 289);
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.Size = new System.Drawing.Size(121, 22);
             this.textBoxDescription.TabIndex = 15;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(112, 350);
+            this.btnClear.Location = new System.Drawing.Point(121, 350);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 16;
@@ -186,7 +199,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(233, 350);
+            this.btnSave.Location = new System.Drawing.Point(242, 350);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 17;
@@ -194,11 +207,32 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // exitPictureBox
+            // 
+            this.exitPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
+            this.exitPictureBox.ImageActive = null;
+            this.exitPictureBox.Location = new System.Drawing.Point(331, 12);
+            this.exitPictureBox.Name = "exitPictureBox";
+            this.exitPictureBox.Size = new System.Drawing.Size(31, 29);
+            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exitPictureBox.TabIndex = 34;
+            this.exitPictureBox.TabStop = false;
+            this.exitPictureBox.Zoom = 30;
+            this.exitPictureBox.Click += new System.EventHandler(this.exitPictureBox_Click);
+            // 
             // AddNewProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(374, 401);
+            this.Controls.Add(this.exitPictureBox);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.textBoxDescription);
@@ -215,8 +249,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddNewProduct";
             this.Text = "AddNewProduct";
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,5 +276,7 @@
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSave;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuImageButton exitPictureBox;
     }
 }

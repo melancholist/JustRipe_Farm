@@ -48,5 +48,10 @@ namespace JustRipeFarm_v3
             comboBoxCategory.SelectedIndex = -1;
             comboBoxStatus.SelectedIndex = -1;
         }
+
+        private void exitPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
