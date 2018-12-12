@@ -180,7 +180,7 @@
             this.dataGridViewStaff.EnableHeadersVisualStyles = false;
             this.dataGridViewStaff.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.dataGridViewStaff.HeaderForeColor = System.Drawing.Color.White;
-            this.dataGridViewStaff.Location = new System.Drawing.Point(46, 111);
+            this.dataGridViewStaff.Location = new System.Drawing.Point(16, 111);
             this.dataGridViewStaff.Name = "dataGridViewStaff";
             this.dataGridViewStaff.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -193,7 +193,7 @@
             this.dataGridViewStaff.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewStaff.RowHeadersVisible = false;
             this.dataGridViewStaff.RowTemplate.Height = 24;
-            this.dataGridViewStaff.Size = new System.Drawing.Size(931, 544);
+            this.dataGridViewStaff.Size = new System.Drawing.Size(995, 571);
             this.dataGridViewStaff.TabIndex = 12;
             // 
             // btnStaff
