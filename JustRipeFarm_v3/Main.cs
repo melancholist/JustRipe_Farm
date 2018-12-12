@@ -368,7 +368,11 @@ namespace JustRipeFarm_v3
             dv.RowFilter = string.Format("unitName LIKE '%{0}%'", comboBoxUnitName.SelectedItem.ToString());
             comboBoxUnitName.DataSource = dv.ToTable();
         }
-
+        private void btnAddStorage_Click(object sender, EventArgs e)
+        {
+            StorageManagement stor = new StorageManagement();
+            stor.Show();
+        }
 
         //Vehicle/Machine panel 
         private void btnVehicle_Click(object sender, EventArgs e)
@@ -426,10 +430,6 @@ namespace JustRipeFarm_v3
             dv.RowFilter = string.Format("vehicleType LIKE '%{0}%'", comboBoxVehicType.SelectedItem.ToString());
             comboBoxVehicType.DataSource = dv.ToTable();
         }
-        private void btnUpdateV_Click(object sender, EventArgs e)
-        {
-
-        }
         //Machine
         private void btnMachine_Click(object sender, EventArgs e)
         {
@@ -465,10 +465,6 @@ namespace JustRipeFarm_v3
         {
             AddNewMachine mach = new AddNewMachine();
             mach.Show();
-        }
-        private void btnUpdateM_Click(object sender, EventArgs e)
-        {
-
         }
 
 
@@ -518,7 +514,8 @@ namespace JustRipeFarm_v3
         }
         private void btnAddYield_Click(object sender, EventArgs e)
         {
-
+            YieldManagement ymang = new YieldManagement();
+            ymang.Show();
         }
         private void picBoxSearchYield_Click(object sender, EventArgs e)
         {

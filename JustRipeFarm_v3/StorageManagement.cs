@@ -27,12 +27,31 @@ namespace JustRipeFarm_v3
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            dbconn.connect();
+            Storage storage = new Storage();
+            storage.UnitType = comboBoxUType.Text;
+            storage.UnitName = textBoxUName.Text;
+            storage.CubicCapacity = Decimal.Parse(numCubicCap.Value.ToString());
+            storage.MinimumTemperature = Decimal.Parse(numMinTemp.Value.ToString());
+            storage.MaximumTemperature = Decimal.Parse(numMaxTemp.Value.ToString());
+            storage.Humidity = Decimal.Parse(numAirHumd.Value.ToString());
 
+            StorageHandler storHandlr = new StorageHandler();
+            storHandlr.addStorage(dbconn.getConn(), storage);
+
+            MessageBox.Show("Storage Added!");
+
+            this.Hide();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-
+            comboBoxUType.Text = "";
+            textBoxUName.Text = "";
+            numCubicCap.Value = 0;
+            numMinTemp.Value = 0;
+            numMaxTemp.Value = 0;
+            numAirHumd.Value = 0;
         }
     }
 }

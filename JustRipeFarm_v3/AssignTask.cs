@@ -162,8 +162,8 @@ namespace JustRipeFarm_v3
         void FillVehicles()
         {
             dbconn.connect();
-            string fieldworkerquery = "Select * FROM vehicle WHERE vehicleType = 'Truck' ";
-            MySqlCommand cmd = new MySqlCommand(fieldworkerquery, dbconn.getConn());
+            string vehiclequery = "Select * FROM vehicle WHERE vehicleType = 'Truck' ";
+            MySqlCommand cmd = new MySqlCommand(vehiclequery, dbconn.getConn());
             MySqlDataReader reader;
             try
             {

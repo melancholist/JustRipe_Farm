@@ -16,7 +16,6 @@ namespace JustRipeFarm_v3
         private decimal weightLimit;
         private string vehicleStatus;
         private decimal price;
-        private DateTime date;
 
         public int Id { get => id; set => id = value; }
         public string VehicleType { get => vehicleType; set => vehicleType = value; }
@@ -26,6 +25,5 @@ namespace JustRipeFarm_v3
         public decimal WeightLimit { get => weightLimit; set => weightLimit = value; }
         public string VehicleStatus { get => vehicleStatus; set => vehicleStatus = value; }
         public decimal Price { get => price; set => price = value; }
-        public DateTime Date { get => date; set => date = value; }
     }
 }

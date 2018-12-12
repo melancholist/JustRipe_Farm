@@ -41,7 +41,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBoxUType = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxUName = new System.Windows.Forms.TextBox();
             this.numCubicCap = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -206,13 +206,13 @@
             this.comboBoxUType.Size = new System.Drawing.Size(183, 29);
             this.comboBoxUType.TabIndex = 45;
             // 
-            // textBox1
+            // textBoxUName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(295, 130);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 28);
-            this.textBox1.TabIndex = 46;
+            this.textBoxUName.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUName.Location = new System.Drawing.Point(295, 130);
+            this.textBoxUName.Name = "textBoxUName";
+            this.textBoxUName.Size = new System.Drawing.Size(183, 28);
+            this.textBoxUName.TabIndex = 46;
             // 
             // numCubicCap
             // 
@@ -308,7 +308,7 @@
             this.Controls.Add(this.numMinTemp);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.numCubicCap);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxUName);
             this.Controls.Add(this.comboBoxUType);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -348,7 +348,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBoxUType;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxUName;
         private System.Windows.Forms.NumericUpDown numCubicCap;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;

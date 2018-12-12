@@ -207,6 +207,12 @@
     <Compile Include="StorageManagement.Designer.cs">
       <DependentUpon>StorageManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="YieldManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YieldManagement.Designer.cs">
+      <DependentUpon>YieldManagement.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddNewEquipment.resx">
       <DependentUpon>AddNewEquipment.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StorageManagement.resx">
       <DependentUpon>StorageManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YieldManagement.resx">
+      <DependentUpon>YieldManagement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

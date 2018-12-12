@@ -39,12 +39,12 @@
             this.comboBoxMachineType = new System.Windows.Forms.ComboBox();
             this.comboBoxMachineStatus = new System.Windows.Forms.ComboBox();
             this.textBoxModelName = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.exitPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,23 +147,6 @@
             this.textBoxModelName.Size = new System.Drawing.Size(121, 22);
             this.textBoxModelName.TabIndex = 8;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(202, 193);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(68, 198);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 17);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Date";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -199,6 +182,23 @@
             this.exitPictureBox.TabStop = false;
             this.exitPictureBox.Zoom = 30;
             this.exitPictureBox.Click += new System.EventHandler(this.exitPictureBox_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(202, 193);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(68, 198);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 17);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Date";
             // 
             // AddNewMachine
             // 
@@ -240,11 +240,11 @@
         private System.Windows.Forms.ComboBox comboBoxMachineType;
         private System.Windows.Forms.ComboBox comboBoxMachineStatus;
         private System.Windows.Forms.TextBox textBoxModelName;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxPrice;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuImageButton exitPictureBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

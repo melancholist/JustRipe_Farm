@@ -46,10 +46,8 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.textBoxPrice = new System.Windows.Forms.TextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.exitPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
@@ -120,7 +118,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(59, 346);
+            this.label7.Location = new System.Drawing.Point(59, 311);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 17);
             this.label7.TabIndex = 6;
@@ -147,7 +145,7 @@
             "Available",
             "Unavailable",
             "In Maintenance"});
-            this.comboBoxVehicleStatus.Location = new System.Drawing.Point(208, 339);
+            this.comboBoxVehicleStatus.Location = new System.Drawing.Point(208, 304);
             this.comboBoxVehicleStatus.Name = "comboBoxVehicleStatus";
             this.comboBoxVehicleStatus.Size = new System.Drawing.Size(121, 24);
             this.comboBoxVehicleStatus.TabIndex = 8;
@@ -210,21 +208,11 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(223, 22);
             this.dateTimePicker1.TabIndex = 16;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(62, 278);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 17);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Date";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(62, 310);
+            this.label10.Location = new System.Drawing.Point(62, 275);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(40, 17);
             this.label10.TabIndex = 18;
@@ -232,17 +220,10 @@
             // 
             // textBoxPrice
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(208, 305);
+            this.textBoxPrice.Location = new System.Drawing.Point(208, 270);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(100, 22);
             this.textBoxPrice.TabIndex = 19;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(208, 273);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(223, 22);
-            this.dateTimePicker2.TabIndex = 20;
             // 
             // exitPictureBox
             // 
@@ -270,10 +251,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(465, 450);
             this.Controls.Add(this.exitPictureBox);
-            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.textBoxPrice);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnClear);
@@ -317,10 +296,8 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBoxPrice;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private Bunifu.Framework.UI.BunifuImageButton exitPictureBox;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }

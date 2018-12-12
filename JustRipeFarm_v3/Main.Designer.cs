@@ -81,18 +81,16 @@
             this.picBoxSearchStorage = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxUnitName = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddStorage = new System.Windows.Forms.Button();
             this.dataGridViewStorage = new System.Windows.Forms.DataGridView();
             this.pnlVehicMach = new System.Windows.Forms.Panel();
             this.groupBoxMachine = new System.Windows.Forms.GroupBox();
-            this.btnUpdateM = new System.Windows.Forms.Button();
             this.picBoxSearchM = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxMachType = new System.Windows.Forms.ComboBox();
             this.btnAddMach = new System.Windows.Forms.Button();
             this.dataGridViewMachine = new System.Windows.Forms.DataGridView();
             this.groupBoxVehicle = new System.Windows.Forms.GroupBox();
-            this.btnUpdateV = new System.Windows.Forms.Button();
             this.pictureBoxSearchV = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxVehicType = new System.Windows.Forms.ComboBox();
@@ -932,7 +930,7 @@
             this.pnlStorage.Controls.Add(this.picBoxSearchStorage);
             this.pnlStorage.Controls.Add(this.label2);
             this.pnlStorage.Controls.Add(this.comboBoxUnitName);
-            this.pnlStorage.Controls.Add(this.button1);
+            this.pnlStorage.Controls.Add(this.btnAddStorage);
             this.pnlStorage.Controls.Add(this.dataGridViewStorage);
             this.pnlStorage.Location = new System.Drawing.Point(233, 65);
             this.pnlStorage.Name = "pnlStorage";
@@ -972,25 +970,26 @@
             this.comboBoxUnitName.Size = new System.Drawing.Size(198, 31);
             this.comboBoxUnitName.TabIndex = 12;
             // 
-            // button1
+            // btnAddStorage
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(727, 63);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 58);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "+ storage";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAddStorage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnAddStorage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddStorage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddStorage.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddStorage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnAddStorage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnAddStorage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddStorage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStorage.ForeColor = System.Drawing.Color.White;
+            this.btnAddStorage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddStorage.Location = new System.Drawing.Point(727, 63);
+            this.btnAddStorage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddStorage.Name = "btnAddStorage";
+            this.btnAddStorage.Size = new System.Drawing.Size(171, 58);
+            this.btnAddStorage.TabIndex = 11;
+            this.btnAddStorage.Text = "+ storage";
+            this.btnAddStorage.UseVisualStyleBackColor = false;
+            this.btnAddStorage.Click += new System.EventHandler(this.btnAddStorage_Click);
             // 
             // dataGridViewStorage
             // 
@@ -1016,7 +1015,6 @@
             // 
             // groupBoxMachine
             // 
-            this.groupBoxMachine.Controls.Add(this.btnUpdateM);
             this.groupBoxMachine.Controls.Add(this.picBoxSearchM);
             this.groupBoxMachine.Controls.Add(this.label4);
             this.groupBoxMachine.Controls.Add(this.comboBoxMachType);
@@ -1033,26 +1031,6 @@
             this.groupBoxMachine.TabStop = false;
             this.groupBoxMachine.Text = "Machine";
             this.groupBoxMachine.Visible = false;
-            // 
-            // btnUpdateM
-            // 
-            this.btnUpdateM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnUpdateM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUpdateM.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdateM.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnUpdateM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnUpdateM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateM.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateM.Location = new System.Drawing.Point(629, 45);
-            this.btnUpdateM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUpdateM.Name = "btnUpdateM";
-            this.btnUpdateM.Size = new System.Drawing.Size(143, 55);
-            this.btnUpdateM.TabIndex = 25;
-            this.btnUpdateM.Text = "update";
-            this.btnUpdateM.UseVisualStyleBackColor = false;
-            this.btnUpdateM.Click += new System.EventHandler(this.btnUpdateM_Click);
             // 
             // picBoxSearchM
             // 
@@ -1095,7 +1073,7 @@
             this.btnAddMach.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddMach.ForeColor = System.Drawing.Color.White;
             this.btnAddMach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddMach.Location = new System.Drawing.Point(480, 44);
+            this.btnAddMach.Location = new System.Drawing.Point(650, 44);
             this.btnAddMach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddMach.Name = "btnAddMach";
             this.btnAddMach.Size = new System.Drawing.Size(143, 55);
@@ -1116,7 +1094,6 @@
             // 
             // groupBoxVehicle
             // 
-            this.groupBoxVehicle.Controls.Add(this.btnUpdateV);
             this.groupBoxVehicle.Controls.Add(this.pictureBoxSearchV);
             this.groupBoxVehicle.Controls.Add(this.label3);
             this.groupBoxVehicle.Controls.Add(this.comboBoxVehicType);
@@ -1132,26 +1109,6 @@
             this.groupBoxVehicle.TabStop = false;
             this.groupBoxVehicle.Text = "Vehicle";
             this.groupBoxVehicle.Visible = false;
-            // 
-            // btnUpdateV
-            // 
-            this.btnUpdateV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnUpdateV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUpdateV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdateV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnUpdateV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnUpdateV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateV.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateV.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateV.Location = new System.Drawing.Point(629, 45);
-            this.btnUpdateV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUpdateV.Name = "btnUpdateV";
-            this.btnUpdateV.Size = new System.Drawing.Size(143, 55);
-            this.btnUpdateV.TabIndex = 25;
-            this.btnUpdateV.Text = "update";
-            this.btnUpdateV.UseVisualStyleBackColor = false;
-            this.btnUpdateV.Click += new System.EventHandler(this.btnUpdateV_Click);
             // 
             // pictureBoxSearchV
             // 
@@ -1194,7 +1151,7 @@
             this.btnAddVehic.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddVehic.ForeColor = System.Drawing.Color.White;
             this.btnAddVehic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddVehic.Location = new System.Drawing.Point(480, 44);
+            this.btnAddVehic.Location = new System.Drawing.Point(650, 44);
             this.btnAddVehic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddVehic.Name = "btnAddVehic";
             this.btnAddVehic.Size = new System.Drawing.Size(143, 55);
@@ -1781,7 +1738,7 @@
         public System.Windows.Forms.Button btnUpdatePest;
         private System.Windows.Forms.Panel pnlStorage;
         private System.Windows.Forms.DataGridView dataGridViewStorage;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddStorage;
         private System.Windows.Forms.PictureBox picBoxSearchStorage;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBoxUnitName;
@@ -1794,9 +1751,7 @@
         private System.Windows.Forms.PictureBox pictureBoxSearchV;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBoxVehicType;
-        private System.Windows.Forms.Button btnUpdateV;
         private System.Windows.Forms.GroupBox groupBoxMachine;
-        private System.Windows.Forms.Button btnUpdateM;
         private System.Windows.Forms.PictureBox picBoxSearchM;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBoxMachType;

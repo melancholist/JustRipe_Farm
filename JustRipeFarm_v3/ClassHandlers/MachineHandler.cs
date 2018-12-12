@@ -19,12 +19,12 @@ namespace JustRipeFarm_v3
             return sqlComm.ExecuteNonQuery();
         }
 
-        public int updateMachine(MySqlConnection conn, Machine machine)
+        /*public int updateMachine(MySqlConnection conn, Machine machine)
         {
             string resetQuery = "UPDATE machine SET machineStatus = '" + machine.MachineStatus + "' WHERE machine.ModelName = '" + machine.ModelName + "'";
 
             MySqlCommand sqlCmd = new MySqlCommand(resetQuery, conn);
             return sqlCmd.ExecuteNonQuery();
-        }
+        }*/
     }
 }

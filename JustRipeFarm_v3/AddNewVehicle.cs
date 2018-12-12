@@ -43,7 +43,6 @@ namespace JustRipeFarm_v3
             vehicle.EngineNumber = Decimal.Parse(textBoxEngNo.Text);
             vehicle.VehicleStatus = comboBoxVehicleStatus.Text;
             vehicle.Price = Decimal.Parse(textBoxPrice.Text);
-            vehicle.Date = dateTimePicker2.Value.Date;
 
             vehicleHandler.addNewVehicle(DBConn.getConn(), vehicle);
             MessageBox.Show("A new vehicle has been added!");
