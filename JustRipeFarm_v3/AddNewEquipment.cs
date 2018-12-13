@@ -20,7 +20,23 @@ namespace JustRipeFarm_v3
             InitializeComponent();
         }
 
-        private void buttonSave_Click(object sender, EventArgs e)
+
+        private void exitPictureBox_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.textBoxType.Text = "";
+            this.textBoxBrand.Text = "";
+            this.textBoxModel.Text = "";
+            this.textBoxSerialNumber.Text = "";
+            this.textBoxPrice.Text = "";
+            this.textBoxDescription.Text = "";
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
         {
             DBConn.connect();
             Equipment equipment = new Equipment();
@@ -37,21 +53,6 @@ namespace JustRipeFarm_v3
             equipmentHandler.addNewEquipment(DBConn.getConn(), equipment);
             MessageBox.Show("A new equipment has been added!");
 
-            this.Hide();
-        }
-
-        private void buttonClear_Click(object sender, EventArgs e)
-        {
-            this.textBoxType.Text = "";
-            this.textBoxBrand.Text = "";
-            this.textBoxModel.Text = "";
-            this.textBoxSerialNumber.Text = "";
-            this.textBoxPrice.Text = "";
-            this.textBoxDescription.Text = "";
-        }
-
-        private void exitPictureBox_Click(object sender, EventArgs e)
-        {
             this.Hide();
         }
     }
