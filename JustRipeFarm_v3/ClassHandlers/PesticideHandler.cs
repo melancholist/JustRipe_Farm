@@ -11,8 +11,8 @@ namespace JustRipeFarm_v3
     {
         public int addNewPesticide(MySqlConnection conn, Pesticides pesticides)
         {
-            string addPesticideQuery = "INSERT INTO pesticide (pesticidesType, pesticideQauntity, company)"
-                + "VALUES ('" + pesticides.PesticidesType + "', '" + pesticides.PesticideQauntity + "', '" + pesticides.Company + "',)";
+            string addPesticideQuery = "INSERT INTO pesticide (pesticideType, pesticideQuantity, company)"
+                + "VALUES ('" + pesticides.PesticideType + "', '" + pesticides.PesticideQuantity + "', '" + pesticides.Company + "')";
 
             MySqlCommand sqlComm = new MySqlCommand(addPesticideQuery, conn);
 
@@ -21,8 +21,8 @@ namespace JustRipeFarm_v3
 
         public int updateQuantity(MySqlConnection conn, Pesticides pesticides)
         {
-            string query = "UPDATE pesticide SET  pesticideQauntity = '" + pesticides.PesticideQauntity + "' " +
-                "WHERE pesticideType = '" + pesticides.PesticidesType + "'";
+            string query = "UPDATE pesticide SET  pesticideQuantity = '" + pesticides.PesticideQuantity + "' " +
+                "WHERE pesticideType = '" + pesticides.PesticideType + "'";
 
             MySqlCommand sqlCmd = new MySqlCommand(query, conn);
             return sqlCmd.ExecuteNonQuery();

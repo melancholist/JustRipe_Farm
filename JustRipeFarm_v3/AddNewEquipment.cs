@@ -13,7 +13,6 @@ namespace JustRipeFarm_v3
 {
     public partial class AddNewEquipment : Form
     {
-        AddNewEquipment equipment = new AddNewEquipment();
         DbConnector DBConn = new DbConnector();
 
         public AddNewEquipment()

@@ -126,6 +126,7 @@
             this.btnSaveP.TabIndex = 63;
             this.btnSaveP.Text = "Save";
             this.btnSaveP.UseVisualStyleBackColor = false;
+            this.btnSaveP.Click += new System.EventHandler(this.btnSaveP_Click);
             // 
             // btnClearP
             // 
@@ -139,6 +140,7 @@
             this.btnClearP.TabIndex = 62;
             this.btnClearP.Text = "Clear All";
             this.btnClearP.UseVisualStyleBackColor = false;
+            this.btnClearP.Click += new System.EventHandler(this.btnClearP_Click);
             // 
             // textBoxPesComp
             // 
@@ -256,6 +258,7 @@
             this.btnSaveUpd.TabIndex = 63;
             this.btnSaveUpd.Text = "Update";
             this.btnSaveUpd.UseVisualStyleBackColor = false;
+            this.btnSaveUpd.Click += new System.EventHandler(this.btnSaveUpd_Click);
             // 
             // btnClearUpd
             // 
@@ -269,6 +272,7 @@
             this.btnClearUpd.TabIndex = 62;
             this.btnClearUpd.Text = "Clear All";
             this.btnClearUpd.UseVisualStyleBackColor = false;
+            this.btnClearUpd.Click += new System.EventHandler(this.btnClearUpd_Click);
             // 
             // label6
             // 

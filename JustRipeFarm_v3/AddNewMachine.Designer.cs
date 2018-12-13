@@ -98,7 +98,7 @@
             // comboBoxMachineType
             // 
             this.comboBoxMachineType.BackColor = System.Drawing.Color.White;
-            this.comboBoxMachineType.ForeColor = System.Drawing.Color.LightGray;
+            this.comboBoxMachineType.ForeColor = System.Drawing.Color.Black;
             this.comboBoxMachineType.FormattingEnabled = true;
             this.comboBoxMachineType.Items.AddRange(new object[] {
             "Tractor",
@@ -119,7 +119,7 @@
             // comboBoxMachineStatus
             // 
             this.comboBoxMachineStatus.BackColor = System.Drawing.Color.White;
-            this.comboBoxMachineStatus.ForeColor = System.Drawing.Color.LightGray;
+            this.comboBoxMachineStatus.ForeColor = System.Drawing.Color.Black;
             this.comboBoxMachineStatus.FormattingEnabled = true;
             this.comboBoxMachineStatus.Items.AddRange(new object[] {
             "Available",
@@ -133,7 +133,7 @@
             // textBoxModelName
             // 
             this.textBoxModelName.BackColor = System.Drawing.Color.White;
-            this.textBoxModelName.ForeColor = System.Drawing.Color.LightGray;
+            this.textBoxModelName.ForeColor = System.Drawing.Color.Black;
             this.textBoxModelName.Location = new System.Drawing.Point(257, 192);
             this.textBoxModelName.Name = "textBoxModelName";
             this.textBoxModelName.Size = new System.Drawing.Size(186, 22);
@@ -154,7 +154,7 @@
             // textBoxPrice
             // 
             this.textBoxPrice.BackColor = System.Drawing.Color.White;
-            this.textBoxPrice.ForeColor = System.Drawing.Color.LightGray;
+            this.textBoxPrice.ForeColor = System.Drawing.Color.Black;
             this.textBoxPrice.Location = new System.Drawing.Point(257, 289);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(186, 22);

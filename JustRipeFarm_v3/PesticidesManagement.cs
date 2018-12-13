@@ -24,8 +24,8 @@ namespace JustRipeFarm_v3
         {
             DBcon.connect();
             Pesticides pes = new Pesticides();
-            pes.PesticidesType = comboBoxPesType.Text;
-            pes.PesticideQauntity = Decimal.Parse(numericUpDownPesQauntity.Value.ToString());
+            pes.PesticideType = comboBoxPesType.Text;
+            pes.PesticideQuantity = Decimal.Parse(numericUpDownPesQauntity.Value.ToString());
             pes.Company = textBoxPesComp.Text;
 
             PesticideHandler pesHandlr = new PesticideHandler();
@@ -47,8 +47,8 @@ namespace JustRipeFarm_v3
         {
             DBcon.connect();
             Pesticides pes = new Pesticides();
-            pes.PesticidesType = comboBoxUpdType.Text;
-            pes.PesticideQauntity = Decimal.Parse(numericUpDownUpdateQ.Value.ToString());
+            pes.PesticideType = comboBoxUpdType.Text;
+            pes.PesticideQuantity = Decimal.Parse(numericUpDownUpdateQ.Value.ToString());
 
             PesticideHandler pesHandlr = new PesticideHandler();
             pesHandlr.updateQuantity(DBcon.getConn(), pes);

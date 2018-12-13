@@ -9,13 +9,13 @@ namespace JustRipeFarm_v3
     public class Pesticides
     {
         private int id;
-        private string pesticidesType;
-        private decimal pesticideQauntity;
+        private string pesticideType;
+        private decimal pesticideQuantity;
         private string company;
 
         public int Id { get => id; set => id = value; }
-        public string PesticidesType { get => pesticidesType; set => pesticidesType = value; }
-        public decimal PesticideQauntity { get => pesticideQauntity; set => pesticideQauntity = value; }
+        public string PesticideType { get => pesticideType; set => pesticideType = value; }
+        public decimal PesticideQuantity { get => pesticideQuantity; set => pesticideQuantity = value; }
         public string Company { get => company; set => company = value; }
     }
 }

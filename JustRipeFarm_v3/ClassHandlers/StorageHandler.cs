@@ -13,7 +13,7 @@ namespace JustRipeFarm_v3
         {
             string addStorageQuery = "INSERT INTO storage (unitType, unitName, cubicCapacity, minimumTemperature, maximumTemperature, humidity)"
                 + "VALUES ('" + storage.UnitType + "', '" + storage.UnitName + "', '" + storage.CubicCapacity + "'," +
-                " '" + storage.MinimumTemperature + "', '" + storage.MaximumTemperature + "', '" + storage.Humidity + "',)";
+                " '" + storage.MinimumTemperature + "', '" + storage.MaximumTemperature + "', '" + storage.Humidity + "')";
 
             MySqlCommand sqlComm = new MySqlCommand(addStorageQuery, conn);
 
