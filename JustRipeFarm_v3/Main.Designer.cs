@@ -158,6 +158,7 @@
             this.btnAddExpense = new System.Windows.Forms.Button();
             this.dataGridViewExpense = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.btnLoad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -1073,6 +1074,7 @@
             // pnlStorage
             // 
             this.pnlStorage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(56)))));
+            this.pnlStorage.Controls.Add(this.btnLoad);
             this.pnlStorage.Controls.Add(this.picBoxSearchStorage);
             this.pnlStorage.Controls.Add(this.label2);
             this.pnlStorage.Controls.Add(this.comboBoxUnitName);
@@ -1087,7 +1089,7 @@
             // 
             this.picBoxSearchStorage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBoxSearchStorage.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSearchStorage.Image")));
-            this.picBoxSearchStorage.Location = new System.Drawing.Point(397, 41);
+            this.picBoxSearchStorage.Location = new System.Drawing.Point(576, 40);
             this.picBoxSearchStorage.Name = "picBoxSearchStorage";
             this.picBoxSearchStorage.Size = new System.Drawing.Size(43, 43);
             this.picBoxSearchStorage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1100,7 +1102,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(56, 51);
+            this.label2.Location = new System.Drawing.Point(235, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 23);
             this.label2.TabIndex = 14;
@@ -1111,7 +1113,7 @@
             this.comboBoxUnitName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxUnitName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxUnitName.FormattingEnabled = true;
-            this.comboBoxUnitName.Location = new System.Drawing.Point(193, 47);
+            this.comboBoxUnitName.Location = new System.Drawing.Point(372, 46);
             this.comboBoxUnitName.Name = "comboBoxUnitName";
             this.comboBoxUnitName.Size = new System.Drawing.Size(198, 31);
             this.comboBoxUnitName.TabIndex = 12;
@@ -1932,6 +1934,27 @@
             this.bunifuDragControl1.TargetControl = this.panel2;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // btnLoad
+            // 
+            this.btnLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnLoad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLoad.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLoad.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnLoad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnLoad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoad.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.ForeColor = System.Drawing.Color.White;
+            this.btnLoad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoad.Location = new System.Drawing.Point(15, 15);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(92, 58);
+            this.btnLoad.TabIndex = 17;
+            this.btnLoad.Text = "load";
+            this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2106,5 +2129,6 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewPesticides;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewFertiliser;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewStorage;
+        private System.Windows.Forms.Button btnLoad;
     }
 }

@@ -349,7 +349,10 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator5.Hide();
                 panelBtnIndicator6.Hide();
             }
-
+             
+        }
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
             try
             {
                 string query = "SELECT * FROM storage";
