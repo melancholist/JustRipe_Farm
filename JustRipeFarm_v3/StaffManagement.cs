@@ -30,7 +30,22 @@ namespace JustRipeFarm_v3
             try
             {
                 string connString = "server=sql12.freemysqlhosting.net;user=sql12268366;database=sql12268366;password=1VpFDLJHBC;port=3306";
-                string query = "SELECT * FROM staffdata";
+                string query = "SELECT " +
+                    "`id` AS 'ID', " +
+                    "`firstName` AS 'First Name', " +
+                    "`lastName` AS 'Last Name', " +
+                    "`age` AS 'Age', " +
+                    "`sex` AS 'Sex', " +
+                    "`address` AS 'Address', " +
+                    "`zipCode` AS 'Zip Code', " +
+                    "`contactNumber` AS 'Contact Number', " +
+                    "`staffRole` AS 'Staff Role', " +
+                    "`loginStatus` AS 'Login Status', " +
+                    "`dateOfHire` AS 'Date Of Hire', " +
+                    "`hourlyWage` AS 'Hourly Wage', " +
+                    "`username` AS 'Username', " +
+                    "`password` AS 'Password' " +
+                    "FROM staffdata";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))

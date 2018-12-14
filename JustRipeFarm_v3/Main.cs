@@ -72,7 +72,16 @@ namespace JustRipeFarm_v3
             try
             {
                 Login lgn = new Login();
-                string query = "SELECT * FROM sowingTask ";
+                string query = "SELECT  `id` AS 'ID', " +
+                    "`labourerName` AS 'Labourer Name', " +
+                    "`farmSector` AS 'Farm Sector', " +
+                    "`date` AS 'Date', " +
+                    "`method` AS 'Method', " +
+                    "`seed` AS 'Seed', " +
+                    "`quantity` AS 'Quantity', " +
+                    "`startTime` AS 'Start Time', " +
+                    "`endTime` AS 'End Time' " +
+                    "FROM sowingTask";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -83,6 +92,8 @@ namespace JustRipeFarm_v3
                         dataGridViewSchedule.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewSchedule.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewSchedule.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewSchedule.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewSchedule.DataSource = dt;
                     }
@@ -99,7 +110,16 @@ namespace JustRipeFarm_v3
             try
             {
                 Login lgn = new Login();
-                string query = "SELECT * FROM harvestTask ";
+                string query = "SELECT `id` AS 'ID', " +
+                    "`labourerName` AS 'Labourer Name', " +
+                    "`farmSector` AS 'Farm Sector', " +
+                    "`date` AS 'Date', " +
+                    "`method` AS 'Method', " +
+                    "`storageUnit` AS 'Storage Unit', " +
+                    "`machine` AS 'Machine', " +
+                    "`startTime` AS 'Start Time', " +
+                    "`endTime` AS 'End Time'" +
+                    "FROM harvestTask";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -110,6 +130,8 @@ namespace JustRipeFarm_v3
                         dataGridViewSchedule.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewSchedule.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewSchedule.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewSchedule.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewSchedule.DataSource = dt;
                     }
@@ -126,7 +148,15 @@ namespace JustRipeFarm_v3
             try
             {
                 Login lgn = new Login();
-                string query = "SELECT * FROM treatmentTask ";
+                string query = "SELECT `id` AS 'ID', " +
+                    "`labourerName` AS 'Labourer Name', " +
+                    "`farmSector` AS 'Farm Sector', " +
+                    "`date` AS 'Date', " +
+                    "`fertiliserUsed` AS 'Fertiliser Used', " +
+                    "`quantity` AS 'Quantity', " +
+                    "`startTime` AS 'Start Time', " +
+                    "`endTime` AS 'EndTime' " +
+                    "FROM treatmentTask";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -137,6 +167,8 @@ namespace JustRipeFarm_v3
                         dataGridViewSchedule.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewSchedule.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewSchedule.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewSchedule.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewSchedule.DataSource = dt;
                     }
@@ -153,7 +185,13 @@ namespace JustRipeFarm_v3
             try
             {
                 Login lgn = new Login();
-                string query = "SELECT * FROM drivingTask ";
+                string query = "SELECT " +
+                    "`id` AS'ID', " +
+                    "`labourerName` AS 'Labourer Name', " +
+                    "`farmSector` AS 'Farm Sector', " +
+                    "`date` AS 'Date', " +
+                    "`vehicleUsed` AS 'Vehicle Used' " +
+                    "FROM drivingTask";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -164,6 +202,8 @@ namespace JustRipeFarm_v3
                         dataGridViewSchedule.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewSchedule.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewSchedule.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewSchedule.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewSchedule.DataSource = dt;
                     }
@@ -203,7 +243,21 @@ namespace JustRipeFarm_v3
             DataTable dt = new DataTable("crop");
             try
             {
-                string query = "SELECT * FROM crop";
+                string query = "SELECT " +
+                    "`id` AS 'ID'," +
+                    " `type` AS 'Type'," +
+                    " `variety` AS 'Variety'," +
+                    " `seedCompany` AS 'Seed Company'," +
+                    " `seedLotNumber` AS 'Seed Lot Number'," +
+                    " `seedOrigin` AS 'Seed Origin'," +
+                    " `plantSpacing` AS 'Plant Spacing'," +
+                    " `plantingDepth` AS 'Planting Depth'," +
+                    " `plantingMethod` AS 'Planting Method'," +
+                    " `seedPerHole` AS 'Seed Per Hole'," +
+                    " `additionalInformation` AS 'Additional Information'," +
+                    " `organic` AS 'Organic'," +
+                    " `gmo` AS 'GMO'" +
+                    " FROM crop";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -214,6 +268,8 @@ namespace JustRipeFarm_v3
                         dataGridViewCrops.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewCrops.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewCrops.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewCrops.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewCrops.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewCrops.DataSource = dt;
                     }
@@ -243,7 +299,12 @@ namespace JustRipeFarm_v3
             DataTable dt = new DataTable("fertiliser");
             try
             {
-                string query = "SELECT * FROM fertiliser";
+                string query = "SELECT " +
+                    "`id` AS 'ID', " +
+                    "`fertiliserType` AS 'Fertiliser Type', " +
+                    "`fertiliserQuantity` AS 'Fertiliser Quantity', " +
+                    "`fertiliserCompany` AS 'Fertiliser Company' " +
+                    "FROM fertiliser";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -254,6 +315,8 @@ namespace JustRipeFarm_v3
                         dataGridViewFertiliser.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewFertiliser.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewFertiliser.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewFertiliser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewFertiliser.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewFertiliser.DataSource = dt;
                     }
@@ -292,7 +355,12 @@ namespace JustRipeFarm_v3
             DataTable dt = new DataTable("pesticide");
             try
             {
-                string query = "SELECT * FROM pesticide";
+                string query = "SELECT " +
+                    "`id` AS 'ID', " +
+                    "`pesticideType` AS 'Pesticide Type', " +
+                    "`pesticideQuantity` AS 'Pesticide Quantity', " +
+                    "`company` AS 'Company' " +
+                    "FROM pesticide";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -303,6 +371,8 @@ namespace JustRipeFarm_v3
                         dataGridViewPesticides.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewPesticides.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewPesticides.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewPesticides.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewPesticides.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewPesticides.DataSource = dt;
                     }
@@ -341,7 +411,16 @@ namespace JustRipeFarm_v3
             DataTable dt = new DataTable("equipment");
             try
             {
-                string query = "SELECT * FROM equipment";
+                string query = "SELECT " +
+                    "`id` AS 'ID', " +
+                    "`type` AS 'Type', " +
+                    "`brand` AS 'Brand', " +
+                    "`model` AS 'Model', " +
+                    "`serialNumber` AS 'Serial Number', " +
+                    "`purchaseDate` AS 'Purchase Date', " +
+                    "`price` AS 'Price', " +
+                    "`description` AS 'Description' " +
+                    "FROM equipment";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -352,6 +431,8 @@ namespace JustRipeFarm_v3
                         dataGridViewEquipment.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewEquipment.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewEquipment.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewEquipment.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewEquipment.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewEquipment.DataSource = dt;
                     }
@@ -403,7 +484,15 @@ namespace JustRipeFarm_v3
         {
             try
             {
-                string query = "SELECT * FROM storage";
+                string query = "SELECT " +
+                    "`id` AS 'ID', " +
+                    "`unitType` AS 'Unit Type', " +
+                    "`unitName` AS 'Unit Name', " +
+                    "`cubicCapacity` AS 'Cubic Capacity', " +
+                    "`minimumTemperature` AS 'Minimum Temperature', " +
+                    "`maximumTemperature` AS 'Maximum Temperature', " +
+                    "`humidity` AS 'Humidity' " +
+                    "FROM storage";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -414,6 +503,8 @@ namespace JustRipeFarm_v3
                         dataGridViewStorage.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewStorage.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewStorage.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewStorage.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewStorage.RowHeadersVisible = false;
                         da.Fill(datb);
                         dataGridViewStorage.DataSource = datb;
                     }
@@ -465,7 +556,16 @@ namespace JustRipeFarm_v3
 
             try
             {
-                string query = "SELECT * FROM vehicle";
+                string query = "SELECT " +
+                    "`id` AS 'ID', " +
+                    "`vehicleType` AS 'Vehicle Type', " +
+                    "`modelName` AS 'Model Name', " +
+                    "`productionYear` AS 'Production Year', " +
+                    "`engineNumber` AS 'Engine Number', " +
+                    "`weightLimit` AS 'Weight Limit', " +
+                    "`vehicleStatus` AS 'Vehicle Status', " +
+                    "`price` AS 'Price' " +
+                    "FROM vehicle";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -476,6 +576,8 @@ namespace JustRipeFarm_v3
                         dataGridViewVehicle.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewVehicle.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewVehicle.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewVehicle.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewVehicle.RowHeadersVisible = false;
                         da.Fill(dtbl);
                         dataGridViewVehicle.DataSource = dtbl;
                     }
@@ -506,7 +608,13 @@ namespace JustRipeFarm_v3
 
             try
             {
-                string query = "SELECT * FROM machine";
+                string query = "SELECT " +
+                    "`id` AS 'ID', " +
+                    "`machineType` AS 'Machine Type', " +
+                    "`modelName` AS 'Model Name', " +
+                    "`machineStatus` AS 'Machine Status', " +
+                    "`price` AS 'Price' " +
+                    "FROM machine";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -517,6 +625,8 @@ namespace JustRipeFarm_v3
                         dataGridViewMachine.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewMachine.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewMachine.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewMachine.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewMachine.RowHeadersVisible = false;
                         da.Fill(dtb);
                         dataGridViewMachine.DataSource = dtb;
                     }
@@ -569,7 +679,11 @@ namespace JustRipeFarm_v3
 
             try
             {
-                string query = "SELECT * FROM yield";
+                string query = "SELECT  `id` AS 'ID', " +
+                    "`yieldType` AS 'Yield Type', " +
+                    "`quantity` AS 'Quantity',  " +
+                    "`storageUnitName` AS 'Storage Unit Name' " +
+                    "FROM yield";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -580,6 +694,8 @@ namespace JustRipeFarm_v3
                         dataGridViewYields.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewYields.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewYields.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewYields.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewYields.RowHeadersVisible = false;
                         da.Fill(dtab);
                         dataGridViewYields.DataSource = dtab;
                     }
@@ -610,7 +726,14 @@ namespace JustRipeFarm_v3
 
             try
             {
-                string query = "SELECT * FROM product";
+                string query = "SELECT `id` AS 'ID', " +
+                    "`productName` AS 'Product Name', " +
+                    "`price` AS 'Price', " +
+                    "`quantityAvailable` AS 'Quantity Available', " +
+                    "`status` AS 'Status', " +
+                    "`category` AS 'Category', " +
+                    "`description` AS 'Description' " +
+                    "FROM product";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -621,6 +744,8 @@ namespace JustRipeFarm_v3
                         dataGridViewProducts.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewProducts.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewProducts.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewProducts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewProducts.RowHeadersVisible = false;
                         da.Fill(data);
                         dataGridViewProducts.DataSource = data;
                     }
@@ -673,7 +798,14 @@ namespace JustRipeFarm_v3
 
             try
             {
-                string query = "SELECT * FROM income";
+                string query = "SELECT " +
+                    "`id` AS 'ID', " +
+                    "`amount` AS 'Amount', " +
+                    "`date` AS 'Date', " +
+                    "`customer` AS 'Customer', " +
+                    "`category` AS 'Category', " +
+                    "`description` AS 'Description' " +
+                    "FROM income";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -684,6 +816,8 @@ namespace JustRipeFarm_v3
                         dataGridViewIncome.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewIncome.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewIncome.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewIncome.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewIncome.RowHeadersVisible = false;
                         da.Fill(dta);
                         dataGridViewIncome.DataSource = dta;
                     }
@@ -715,7 +849,14 @@ namespace JustRipeFarm_v3
             DataTable dt = new DataTable("expense");
             try
             {
-                string query = "SELECT * FROM expense";
+                string query = "SELECT " +
+                    "`id` AS 'ID', " +
+                    "`amount` AS 'Amount', " +
+                    "`date` AS 'Date', " +
+                    "`payee` AS 'Payee', " +
+                    "`category` AS 'Category', " +
+                    "`description` AS 'Description' " +
+                    "FROM expense";
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
@@ -726,6 +867,8 @@ namespace JustRipeFarm_v3
                         dataGridViewExpense.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewExpense.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewExpense.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewExpense.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewExpense.RowHeadersVisible = false;
                         da.Fill(dtt);
                         dataGridViewExpense.DataSource = dtt;
                     }
