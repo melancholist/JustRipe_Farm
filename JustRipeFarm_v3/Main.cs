@@ -77,6 +77,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewSchedule.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewSchedule.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewSchedule.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewSchedule.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewSchedule.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewSchedule.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dt);
                         dataGridViewSchedule.DataSource = dt;
                     }
@@ -98,6 +104,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewSchedule.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewSchedule.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewSchedule.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewSchedule.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewSchedule.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewSchedule.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dt);
                         dataGridViewSchedule.DataSource = dt;
                     }
@@ -119,6 +131,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewSchedule.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewSchedule.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewSchedule.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewSchedule.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewSchedule.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewSchedule.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dt);
                         dataGridViewSchedule.DataSource = dt;
                     }
@@ -140,6 +158,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewSchedule.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewSchedule.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewSchedule.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewSchedule.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewSchedule.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewSchedule.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dt);
                         dataGridViewSchedule.DataSource = dt;
                     }
@@ -184,6 +208,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewCrops.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewCrops.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewCrops.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewCrops.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewCrops.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewCrops.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dt);
                         dataGridViewCrops.DataSource = dt;
                     }
@@ -218,6 +248,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewFertiliser.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewFertiliser.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewFertiliser.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewFertiliser.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewFertiliser.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewFertiliser.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dt);
                         dataGridViewFertiliser.DataSource = dt;
                     }
@@ -261,6 +297,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewPesticides.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewPesticides.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewPesticides.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewPesticides.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewPesticides.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewPesticides.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dt);
                         dataGridViewPesticides.DataSource = dt;
                     }
@@ -304,6 +346,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewEquipment.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewEquipment.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewEquipment.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewEquipment.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewEquipment.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewEquipment.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dt);
                         dataGridViewEquipment.DataSource = dt;
                     }
@@ -360,6 +408,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewStorage.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewStorage.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewStorage.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewStorage.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewStorage.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewStorage.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(datb);
                         dataGridViewStorage.DataSource = datb;
                     }
@@ -416,6 +470,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewVehicle.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewVehicle.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewVehicle.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewVehicle.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewVehicle.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewVehicle.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dtbl);
                         dataGridViewVehicle.DataSource = dtbl;
                     }
@@ -451,6 +511,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewMachine.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewMachine.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewMachine.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewMachine.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewMachine.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewMachine.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dtb);
                         dataGridViewMachine.DataSource = dtb;
                     }
@@ -508,6 +574,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewYields.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewYields.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewYields.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewYields.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewYields.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewYields.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dtab);
                         dataGridViewYields.DataSource = dtab;
                     }
@@ -543,6 +615,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewProducts.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewProducts.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewProducts.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewProducts.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewProducts.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewProducts.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(data);
                         dataGridViewProducts.DataSource = data;
                     }
@@ -600,6 +678,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewIncome.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewIncome.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewIncome.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewIncome.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewIncome.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewIncome.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dta);
                         dataGridViewIncome.DataSource = dta;
                     }
@@ -636,6 +720,12 @@ namespace JustRipeFarm_v3
                 {
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
+                        dataGridViewExpense.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+                        dataGridViewExpense.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                        dataGridViewExpense.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                        dataGridViewExpense.RowsDefaultCellStyle.BackColor = Color.White;
+                        dataGridViewExpense.RowsDefaultCellStyle.ForeColor = Color.Black;
+                        dataGridViewExpense.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                         da.Fill(dtt);
                         dataGridViewExpense.DataSource = dtt;
                     }
