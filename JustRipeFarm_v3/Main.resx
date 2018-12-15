@@ -2036,7 +2036,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANjBX/7y/wFomdq/K1pOaQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBoxSearchV.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picBoxSearchM.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANAAAADQCAYAAAB2pO90AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAFLNJREFUeF7tnQm0d1VZhz/TirRURE0RK4dyRHLCSiU1SRGHlAYcSU0qscHSNDNE
@@ -2130,7 +2130,7 @@
         8hhJzgWy51wkPyC5+Xq8PEhydcIYY4wxxhhjzCB27foG0/5/dbAAkpgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="picBoxSearchM.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxSearchV.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANAAAADQCAYAAAB2pO90AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAFLNJREFUeF7tnQm0d1VZhz/TirRURE0RK4dyRHLCSiU1SRGHlAYcSU0qscHSNDNE

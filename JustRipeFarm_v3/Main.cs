@@ -754,6 +754,23 @@ namespace JustRipeFarm_v3
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        //Vehicle Report Printing
+        private void printVehicle_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Vehicle Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewVehicle);
+        }
+
         private void btnAddVehic_Click(object sender, EventArgs e)
         {
             AddNewVehicle vehic = new AddNewVehicle();
@@ -830,6 +847,23 @@ namespace JustRipeFarm_v3
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        //Machine Report Printing
+        private void PrintMachine_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Machine Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewMachine);
+        }
+
         private void picBoxSearchM_Click(object sender, EventArgs e)
         {
             DataTable dtb = new DataTable("machine");
