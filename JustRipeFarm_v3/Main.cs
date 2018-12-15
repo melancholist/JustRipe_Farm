@@ -36,6 +36,10 @@ namespace JustRipeFarm_v3
             pnlVehicMach.Hide();
             pnlStocks.Hide();
             pnlAccounting.Hide();
+            printSowing.Hide();
+            printHarvest.Hide();
+            printTreatment.Hide();
+            printDriving.Hide();
         }
 
         //Exit Logout page and return to Login Page when button is clicked
@@ -65,6 +69,10 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator4.Hide();
                 panelBtnIndicator5.Hide();
                 panelBtnIndicator6.Hide();
+                printSowing.Hide();
+                printHarvest.Hide();
+                printTreatment.Hide();
+                printDriving.Hide();
             }
         }
         private void btnSowing_Click(object sender, EventArgs e)
@@ -106,7 +114,30 @@ namespace JustRipeFarm_v3
             {
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            //Hides other print buttons
+            printSowing.Show();
+            printHarvest.Hide();
+            printTreatment.Hide();
+            printDriving.Hide();
         }
+        
+        //Sowing Report printing
+        private void printSowing_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Sowing Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewSchedule);
+        }
+
         private void btnHarvest_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable("harvestTask");
@@ -146,7 +177,30 @@ namespace JustRipeFarm_v3
             {
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            //Hides other print buttons
+            printSowing.Hide();
+            printHarvest.Show();
+            printTreatment.Hide();
+            printDriving.Hide();
         }
+
+        //Harvest Report printing
+        private void printHarvest_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Harvest Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewSchedule);
+        }
+
         private void btnTreatment_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable("treatmentTask");
@@ -185,7 +239,31 @@ namespace JustRipeFarm_v3
             {
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            //Hides other print buttons
+            printSowing.Hide();
+            printHarvest.Hide();
+            printTreatment.Show();
+            printDriving.Hide();
         }
+
+        //Treatment Report printing
+        private void printTreatment_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Treatment Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewSchedule);
+        }
+
+
         private void btnDriving_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable("drivingTask");
@@ -222,8 +300,29 @@ namespace JustRipeFarm_v3
             {
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            //Hides other print buttons
+            printSowing.Hide();
+            printHarvest.Hide();
+            printTreatment.Hide();
+            printDriving.Show();
         }
 
+        //Driving Report printing
+        private void printDriving_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Driving Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewSchedule);
+        }
 
         //Resources panel
         private void btnResources_Click(object sender, EventArgs e)
