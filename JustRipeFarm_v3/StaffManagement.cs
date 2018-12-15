@@ -75,7 +75,6 @@ namespace JustRipeFarm_v3
                     dataGridViewStaff.DataSource = dv.ToTable();
                 }
             }
-
         }
 
         private void backpictureBox_Click(object sender, EventArgs e)
