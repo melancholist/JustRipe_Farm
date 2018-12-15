@@ -313,7 +313,7 @@ namespace JustRipeFarm_v3
         {
             dbconn.connect();
 
-            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM treatmentTask WHERE (labourerName = @user AND startDate = @startDate AND endDate = @endDate)", dbconn.getConn());
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM treatmentTask WHERE (labourerName = @user AND startDate = @startDate OR endDate = @endDate)", dbconn.getConn());
             labourerValidation.Parameters.AddWithValue("@user", comboBoxWorkerT.Text);
             labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerStartT.Value.Date);
             labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerEndT.Value.Date);
