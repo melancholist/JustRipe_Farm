@@ -106,7 +106,7 @@ namespace JustRipeFarm_v3
                         dataGridViewSchedule.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewSchedule.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewSchedule.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewSchedule.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewSchedule.DataSource = dt;
@@ -171,7 +171,7 @@ namespace JustRipeFarm_v3
                         dataGridViewSchedule.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewSchedule.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewSchedule.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewSchedule.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewSchedule.DataSource = dt;
@@ -235,7 +235,7 @@ namespace JustRipeFarm_v3
                         dataGridViewSchedule.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewSchedule.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewSchedule.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewSchedule.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewSchedule.DataSource = dt;
@@ -257,8 +257,6 @@ namespace JustRipeFarm_v3
         //Treatment Report printing
         private void printTreatment_Click(object sender, EventArgs e)
         {
-            dataGridViewSchedule.Show();
-
             DGVPrinter printer = new DGVPrinter();
             printer.Title = "Treatment Report"; //Header
             printer.SubTitle = string.Format("Date {0}", DateTime.Now);
@@ -275,6 +273,8 @@ namespace JustRipeFarm_v3
 
         private void btnDriving_Click(object sender, EventArgs e)
         {
+            dataGridViewSchedule.Show();
+
             DataTable dt = new DataTable("drivingTask");
             try
             {
@@ -298,7 +298,7 @@ namespace JustRipeFarm_v3
                         dataGridViewSchedule.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewSchedule.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewSchedule.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewSchedule.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewSchedule.DataSource = dt;
@@ -320,8 +320,6 @@ namespace JustRipeFarm_v3
         //Driving Report printing
         private void printDriving_Click(object sender, EventArgs e)
         {
-            dataGridViewSchedule.Show();
-
             DGVPrinter printer = new DGVPrinter();
             printer.Title = "Driving Report"; //Header
             printer.SubTitle = string.Format("Date {0}", DateTime.Now);
@@ -387,7 +385,7 @@ namespace JustRipeFarm_v3
                         dataGridViewCrops.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewCrops.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewCrops.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewCrops.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewCrops.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewCrops.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewCrops.DataSource = dt;
@@ -448,7 +446,7 @@ namespace JustRipeFarm_v3
                         dataGridViewFertiliser.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewFertiliser.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewFertiliser.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewFertiliser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewFertiliser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewFertiliser.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewFertiliser.DataSource = dt;
@@ -518,7 +516,7 @@ namespace JustRipeFarm_v3
                         dataGridViewPesticides.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewPesticides.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewPesticides.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewPesticides.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewPesticides.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewPesticides.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewPesticides.DataSource = dt;
@@ -592,7 +590,7 @@ namespace JustRipeFarm_v3
                         dataGridViewEquipment.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewEquipment.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewEquipment.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewEquipment.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewEquipment.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewEquipment.RowHeadersVisible = false;
                         da.Fill(dt);
                         dataGridViewEquipment.DataSource = dt;
@@ -675,7 +673,7 @@ namespace JustRipeFarm_v3
                         dataGridViewStorage.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewStorage.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewStorage.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewStorage.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewStorage.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewStorage.RowHeadersVisible = false;
                         da.Fill(datb);
                         dataGridViewStorage.DataSource = datb;
@@ -744,7 +742,7 @@ namespace JustRipeFarm_v3
                         dataGridViewVehicle.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewVehicle.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewVehicle.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewVehicle.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewVehicle.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewVehicle.RowHeadersVisible = false;
                         da.Fill(dtbl);
                         dataGridViewVehicle.DataSource = dtbl;
@@ -820,7 +818,7 @@ namespace JustRipeFarm_v3
                         dataGridViewMachine.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewMachine.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewMachine.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewMachine.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewMachine.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewMachine.RowHeadersVisible = false;
                         da.Fill(dtb);
                         dataGridViewMachine.DataSource = dtb;
@@ -912,7 +910,7 @@ namespace JustRipeFarm_v3
                         dataGridViewYields.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewYields.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewYields.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewYields.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewYields.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewYields.RowHeadersVisible = false;
                         da.Fill(dtab);
                         dataGridViewYields.DataSource = dtab;
@@ -997,7 +995,7 @@ namespace JustRipeFarm_v3
                         dataGridViewProducts.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewProducts.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewProducts.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewProducts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewProducts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewProducts.RowHeadersVisible = false;
                         da.Fill(data);
                         dataGridViewProducts.DataSource = data;
@@ -1093,7 +1091,7 @@ namespace JustRipeFarm_v3
                         dataGridViewIncome.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewIncome.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewIncome.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewIncome.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewIncome.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewIncome.RowHeadersVisible = false;
                         da.Fill(dta);
                         dataGridViewIncome.DataSource = dta;
@@ -1167,7 +1165,7 @@ namespace JustRipeFarm_v3
                         dataGridViewExpense.RowsDefaultCellStyle.BackColor = Color.White;
                         dataGridViewExpense.RowsDefaultCellStyle.ForeColor = Color.Black;
                         dataGridViewExpense.RowsDefaultCellStyle.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                        dataGridViewExpense.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+                        dataGridViewExpense.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         dataGridViewExpense.RowHeadersVisible = false;
                         da.Fill(dtt);
                         dataGridViewExpense.DataSource = dtt;
