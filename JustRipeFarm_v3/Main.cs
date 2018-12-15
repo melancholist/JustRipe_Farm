@@ -73,6 +73,7 @@ namespace JustRipeFarm_v3
                 printHarvest.Hide();
                 printTreatment.Hide();
                 printDriving.Hide();
+                dataGridViewSchedule.Hide();
             }
         }
         private void btnSowing_Click(object sender, EventArgs e)
