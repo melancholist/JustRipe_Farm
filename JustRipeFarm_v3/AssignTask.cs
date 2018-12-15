@@ -242,40 +242,47 @@ namespace JustRipeFarm_v3
         //Buttons to save data into the database
         private void btnSaveSow_Click(object sender, EventArgs e)
         {
-            dbconn.connect();
-            string checkQuery = "SELECT labourerName = @user FROM sowingTask WHERE (startDate >= @startDate AND endDate <= @endDate)";
-            using (MySqlCommand labourerValidation = new MySqlCommand(checkQuery, dbconn.getConn()))
+            try
             {
-                labourerValidation.Parameters.AddWithValue("@user", comboBoxWorkers.Text);
-                labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerSowStartDate.Value.Date);
-                labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerSowEndDate.Value.Date);
-                MySqlDataReader reader;
-                using (reader = labourerValidation.ExecuteReader())
+                dbconn.connect();
+                string checkQuery = "SELECT labourerName = @user FROM sowingTask WHERE (startDate >= @startDate AND endDate <= @endDate)";
+                using (MySqlCommand labourerValidation = new MySqlCommand(checkQuery, dbconn.getConn()))
                 {
-                    if (reader.HasRows)
+                    labourerValidation.Parameters.AddWithValue("@user", comboBoxWorkers.Text);
+                    labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerSowStartDate.Value.Date);
+                    labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerSowEndDate.Value.Date);
+                    using (MySqlDataReader reader = labourerValidation.ExecuteReader())
                     {
-                        MessageBox.Show("Labourer is already assigned to a task!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else
-                    {
-                        Sowing sow = new Sowing();
-                        sow.LabourerName = comboBoxWorkers.Text;
-                        sow.FarmSector = int.Parse(comboBoxFarmSectorSow.Text);
-                        sow.TaskStatus = comBoxSowTaskStatus.Text;
-                        sow.StartDate = dateTimePickerDvStartDate.Value.Date;
-                        sow.EndDate = dateTimePickerDvEndDate.Value.Date;
-                        sow.Method = comboBoxMethods.Text;
-                        sow.Seed = comboBoxSeeds.Text;
-                        sow.Quantity = numericUpDownQauntity.Value;
-                        sow.StartTime = dateTimePickerStartSow.Value;
-                        sow.EndTime = dateTimePickerEndSow.Value;
+                        if (reader.HasRows)
+                        {
+                            MessageBox.Show("Labourer is already assigned to a task!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            reader.Close();
+                        }
+                        else
+                        {
+                            dbconn.connect();
+                            Sowing sow = new Sowing();
+                            sow.LabourerName = comboBoxWorkers.Text;
+                            sow.FarmSector = int.Parse(comboBoxFarmSectorSow.Text);
+                            sow.TaskStatus = comBoxSowTaskStatus.Text;
+                            sow.StartDate = dateTimePickerDvStartDate.Value.Date;
+                            sow.EndDate = dateTimePickerDvEndDate.Value.Date;
+                            sow.Method = comboBoxMethods.Text;
+                            sow.Seed = comboBoxSeeds.Text;
+                            sow.Quantity = numericUpDownQauntity.Value;
+                            sow.StartTime = dateTimePickerStartSow.Value;
+                            sow.EndTime = dateTimePickerEndSow.Value;
 
-                        ScheduleHandler scHand = new ScheduleHandler();
-                        scHand.addSowingSchedule(dbconn.getConn(), sow);
-                        MessageBox.Show("Task Assigned!");
+                            ScheduleHandler scHand = new ScheduleHandler();
+                            scHand.addSowingSchedule(dbconn.getConn(), sow);
+                            MessageBox.Show("Task Assigned!");
+                        }
                     }
-                    reader.Close();
                 }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
 
         }
@@ -296,7 +303,7 @@ namespace JustRipeFarm_v3
             }
             else
             {
-
+                dbconn.connect();
                 Harvest harv = new Harvest();
                 harv.LabourerName = comboBoxWorkerHarv.Text;
                 harv.FarmSector = int.Parse(comboBoxFarmSectorHarv.Text);
@@ -366,6 +373,7 @@ namespace JustRipeFarm_v3
             }
             else
             {
+                dbconn.connect();
                 Driving drv = new Driving();
                 drv.LabourerName = comboBoxDriver.Text;
                 drv.FarmSector = int.Parse(comboBoxFarmD.Text);
