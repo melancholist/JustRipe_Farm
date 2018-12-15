@@ -102,6 +102,10 @@ namespace JustRipeFarm_v3
                                 mn.btnAddEquipment.Visible = true;
                                 mn.btnUpdateFert.Visible = true;
                                 mn.btnUpdatePest.Visible = true;
+                                mn.btnPrintCrops.Visible = true;
+                                mn.btnPrintFertilisers.Visible = true;
+                                mn.btnPrintPesticides.Visible = true;
+                                mn.btnPrntEquipment.Visible = true;
                                 break;
 
                             case "Sales Staff":

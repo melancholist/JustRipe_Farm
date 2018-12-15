@@ -302,6 +302,20 @@ namespace JustRipeFarm_v3
             AddNewCrop crop = new AddNewCrop();
             crop.Show();
         }
+        private void btnPrintCrops_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Crops Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewCrops);
+        }
         //Fertilisers
         private void btnFertilisers_Click(object sender, EventArgs e)
         {
@@ -357,6 +371,20 @@ namespace JustRipeFarm_v3
             fer.Show();
             fer.pnlAddFertiliser.Hide();
             fer.pnlUpdateFer.Show();
+        }
+        private void btnPrintFertilisers_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Fertilisers Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewFertiliser);
         }
         //Pesticides
         private void btnPesticides_Click(object sender, EventArgs e)
@@ -414,6 +442,20 @@ namespace JustRipeFarm_v3
             pesMang.pnlAddPesticides.Hide();
             pesMang.pnlUpdatePes.Show();
         }
+        private void btnPrintPesticides_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Pesticides Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewPesticides);
+        }
         //Equipments
         private void btnEquipment_Click(object sender, EventArgs e)
         {
@@ -464,6 +506,20 @@ namespace JustRipeFarm_v3
         {
             AddNewEquipment equip = new AddNewEquipment();
             equip.Show();
+        }
+        private void btnPrntEquipment_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Equipments Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewEquipment);
         }
 
 
@@ -527,6 +583,7 @@ namespace JustRipeFarm_v3
             StorageManagement stor = new StorageManagement();
             stor.Show();
         }
+
 
         // Vehicle/Machine panel 
         private void btnVehicle_Click(object sender, EventArgs e)
@@ -1063,7 +1120,6 @@ namespace JustRipeFarm_v3
             UpdateTaskStatus tsk = new UpdateTaskStatus();
             tsk.Show();
         }
-
 
         //Redirect user to website
         /*private void linkLabelOnlineStore_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
