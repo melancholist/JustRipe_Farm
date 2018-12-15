@@ -78,6 +78,8 @@ namespace JustRipeFarm_v3
         }
         private void btnSowing_Click(object sender, EventArgs e)
         {
+            dataGridViewSchedule.Show();
+
             DataTable dt = new DataTable("sowingTask");
             try
             {
@@ -141,6 +143,8 @@ namespace JustRipeFarm_v3
 
         private void btnHarvest_Click(object sender, EventArgs e)
         {
+            dataGridViewSchedule.Show();
+
             DataTable dt = new DataTable("harvestTask");
             try
             {
@@ -204,6 +208,8 @@ namespace JustRipeFarm_v3
 
         private void btnTreatment_Click(object sender, EventArgs e)
         {
+            dataGridViewSchedule.Show();
+
             DataTable dt = new DataTable("treatmentTask");
             try
             {
@@ -251,6 +257,8 @@ namespace JustRipeFarm_v3
         //Treatment Report printing
         private void printTreatment_Click(object sender, EventArgs e)
         {
+            dataGridViewSchedule.Show();
+
             DGVPrinter printer = new DGVPrinter();
             printer.Title = "Treatment Report"; //Header
             printer.SubTitle = string.Format("Date {0}", DateTime.Now);
@@ -312,6 +320,8 @@ namespace JustRipeFarm_v3
         //Driving Report printing
         private void printDriving_Click(object sender, EventArgs e)
         {
+            dataGridViewSchedule.Show();
+
             DGVPrinter printer = new DGVPrinter();
             printer.Title = "Driving Report"; //Header
             printer.SubTitle = string.Format("Date {0}", DateTime.Now);
