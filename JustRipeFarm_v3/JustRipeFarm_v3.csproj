@@ -207,6 +207,12 @@
     <Compile Include="StorageManagement.Designer.cs">
       <DependentUpon>StorageManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateTaskStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTaskStatus.Designer.cs">
+      <DependentUpon>UpdateTaskStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="YieldManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StorageManagement.resx">
       <DependentUpon>StorageManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTaskStatus.resx">
+      <DependentUpon>UpdateTaskStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YieldManagement.resx">
       <DependentUpon>YieldManagement.cs</DependentUpon>
