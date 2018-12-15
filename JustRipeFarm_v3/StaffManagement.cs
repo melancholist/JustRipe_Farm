@@ -76,6 +76,21 @@ namespace JustRipeFarm_v3
             main.picBoxManager.Visible = true;
             main.lblManager.Visible = true;
             main.btnStaffManagement.Visible = true;
+            main.btnAccounting.Visible = true;
+            main.btnStock.Visible = true;
+            main.btnAddStorage.Visible = true;
+            main.btnAddVehic.Visible = true;
+            main.btnAddMach.Visible = true;
+            main.btnAddCrops.Visible = true;
+            main.btnAddFertilisers.Visible = true;
+            main.btnAddPesticides.Visible = true;
+            main.btnAddEquipment.Visible = true;
+            main.btnUpdateFert.Visible = true;
+            main.btnUpdatePest.Visible = true;
+            main.btnPrintCrops.Visible = true;
+            main.btnPrintFertilisers.Visible = true;
+            main.btnPrintPesticides.Visible = true;
+            main.btnPrntEquipment.Visible = true;
 
             this.Hide();
         }
