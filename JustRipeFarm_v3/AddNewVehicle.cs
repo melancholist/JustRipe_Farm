@@ -40,7 +40,7 @@ namespace JustRipeFarm_v3
             vehicle.ModelName = textBoxModelName.Text;
             vehicle.ProductionYear = dateTimePicker1.Value.Date;
             vehicle.WeightLimit = Decimal.Parse(textBoxWeightLimit.Text);
-            vehicle.EngineNumber = Decimal.Parse(textBoxEngNo.Text);
+            vehicle.EngineNumber = textBoxEngNo.Text;
             vehicle.VehicleStatus = comboBoxVehicleStatus.Text;
             vehicle.Price = Decimal.Parse(textBoxPrice.Text);
 
@@ -53,6 +53,36 @@ namespace JustRipeFarm_v3
         private void exitPictureBox_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void textBoxPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (ch == 46 && textBoxPrice.Text.IndexOf('.') != 1)
+            {
+                e.Handled = true;
+                return;
+            }
+             if (!char.IsDigit(ch) && ch != 8 && ch != 46) //8 is backspace
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxWeightLimit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (ch == 46 && textBoxPrice.Text.IndexOf('.') != 1)
+            {
+                e.Handled = true;
+                return;
+            }
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46) //8 is backspace
+            {
+                e.Handled = true;
+            }
         }
     }
 }

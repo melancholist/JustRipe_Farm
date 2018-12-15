@@ -53,5 +53,20 @@ namespace JustRipeFarm_v3
         {
             this.Hide();
         }
+
+        private void textBoxPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (ch == 46 && textBoxPrice.Text.IndexOf('.') != 1)
+            {
+                e.Handled = true;
+                return;
+            }
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46) //8 is backspace
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

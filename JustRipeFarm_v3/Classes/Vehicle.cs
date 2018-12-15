@@ -12,7 +12,7 @@ namespace JustRipeFarm_v3
         private string vehicleType;
         private string modelName;
         private DateTime productionYear;
-        private decimal engineNumber;
+        private string engineNumber;
         private decimal weightLimit;
         private string vehicleStatus;
         private decimal price;
@@ -21,7 +21,7 @@ namespace JustRipeFarm_v3
         public string VehicleType { get => vehicleType; set => vehicleType = value; }
         public string ModelName { get => modelName; set => modelName = value; }
         public DateTime ProductionYear { get => productionYear; set => productionYear = value; }
-        public decimal EngineNumber { get => engineNumber; set => engineNumber = value; }
+        public string EngineNumber { get => engineNumber; set => engineNumber = value; }
         public decimal WeightLimit { get => weightLimit; set => weightLimit = value; }
         public string VehicleStatus { get => vehicleStatus; set => vehicleStatus = value; }
         public decimal Price { get => price; set => price = value; }

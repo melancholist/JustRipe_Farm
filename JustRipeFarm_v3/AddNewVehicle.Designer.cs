@@ -178,6 +178,7 @@
             this.textBoxWeightLimit.Name = "textBoxWeightLimit";
             this.textBoxWeightLimit.Size = new System.Drawing.Size(121, 22);
             this.textBoxWeightLimit.TabIndex = 12;
+            this.textBoxWeightLimit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxWeightLimit_KeyPress);
             // 
             // label8
             // 
@@ -214,6 +215,7 @@
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(100, 22);
             this.textBoxPrice.TabIndex = 19;
+            this.textBoxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPrice_KeyPress);
             // 
             // exitPictureBox
             // 
