@@ -686,6 +686,23 @@ namespace JustRipeFarm_v3
             }
 
         }
+
+        //Storage Report Printing
+        private void printStorage_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Storage Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewStorage);
+        }
+
         private void btnAddStorage_Click(object sender, EventArgs e)
         {
             StorageManagement stor = new StorageManagement();
@@ -713,6 +730,7 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator6.Hide();
             }
         }
+
         //Vehicle
         private void btnVehic_Click(object sender, EventArgs e)
         {
@@ -809,6 +827,7 @@ namespace JustRipeFarm_v3
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         //Machine
         private void btnMachine_Click(object sender, EventArgs e)
         {
@@ -920,6 +939,7 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator6.Hide();
             }
         }
+
         //Yields
         private void btnYields_Click(object sender, EventArgs e)
         {
@@ -1100,6 +1120,7 @@ namespace JustRipeFarm_v3
         }
 
 
+
         //Accounting panel
         private void btnAccounting_Click(object sender, EventArgs e)
         {
@@ -1120,6 +1141,7 @@ namespace JustRipeFarm_v3
                 panelBtnIndicator6.Show();
             }
         }
+
         //Income
         private void btnIncome_Click(object sender, EventArgs e)
         {
@@ -1159,11 +1181,29 @@ namespace JustRipeFarm_v3
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        //Income Report Printing
+        private void printIncome_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Income Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewIncome);
+        }
+
         private void btnAddIncome_Click(object sender, EventArgs e)
         {
             AddNewIncome inc = new AddNewIncome();
             inc.Show();
         }
+
         private void pictBoxSearchInDate_Click(object sender, EventArgs e)
         {
             DataTable dta = new DataTable("income");
@@ -1194,6 +1234,7 @@ namespace JustRipeFarm_v3
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         //Expense
         private void btnExpense_Click(object sender, EventArgs e)
         {
@@ -1233,6 +1274,23 @@ namespace JustRipeFarm_v3
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        //Expense Report Printing
+        private void printExpense_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Expense Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewExpense);
+        }
+
         private void btnAddExpense_Click(object sender, EventArgs e)
         {
             AddNewExpense exp = new AddNewExpense();
