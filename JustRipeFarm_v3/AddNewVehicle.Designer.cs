@@ -51,6 +51,7 @@
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -277,6 +278,11 @@
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 15;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // AddNewVehicle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -337,5 +343,6 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

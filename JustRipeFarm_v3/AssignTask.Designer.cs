@@ -123,6 +123,7 @@
             this.comboBoxWorkers = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).BeginInit();
             this.pnlHarvest.SuspendLayout();
@@ -1316,6 +1317,11 @@
             this.bunifuDragControl1.TargetControl = this.panel1;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 15;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // AssignTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1446,5 +1452,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerSowEndDate;
         private System.Windows.Forms.DateTimePicker dateTimePickerSowStartDate;
         private System.Windows.Forms.Label label35;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

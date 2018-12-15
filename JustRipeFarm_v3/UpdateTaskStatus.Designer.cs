@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateTaskStatus));
             this.panel1 = new System.Windows.Forms.Panel();
             this.exitPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
@@ -64,6 +65,7 @@
             this.txtBoxDrv = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.groupBoxUpSow.SuspendLayout();
@@ -545,6 +547,11 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Username:";
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 15;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // UpdateTaskStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -617,5 +624,6 @@
         private System.Windows.Forms.TextBox txtBoxDrv;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

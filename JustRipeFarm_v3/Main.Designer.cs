@@ -176,6 +176,7 @@
             this.btnAddExpense = new System.Windows.Forms.Button();
             this.dataGridViewExpense = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
@@ -2107,6 +2108,11 @@
             this.bunifuDragControl1.TargetControl = this.panel2;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 15;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2278,5 +2284,6 @@
         public System.Windows.Forms.Button btnAddStorage;
         public System.Windows.Forms.Button btnAddVehic;
         public System.Windows.Forms.Button btnAddMach;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

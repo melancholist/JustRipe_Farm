@@ -62,6 +62,7 @@
             this.wageTextBox = new System.Windows.Forms.TextBox();
             this.roleComboBox = new System.Windows.Forms.ComboBox();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).BeginInit();
             this.SuspendLayout();
@@ -416,6 +417,11 @@
             this.bunifuDragControl1.TargetControl = this.panel1;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 15;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // AddStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -498,5 +504,6 @@
         private Bunifu.Framework.UI.BunifuImageButton picBoxBack;
         public System.Windows.Forms.ComboBox statusComboBox;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
