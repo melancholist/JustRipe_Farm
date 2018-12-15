@@ -162,7 +162,7 @@ namespace JustRipeFarm_v3
         void FillVehicles()
         {
             dbconn.connect();
-            string vehiclequery = "Select * FROM vehicle WHERE vehicleType = 'Truck' ";
+            string vehiclequery = "SELECT * FROM vehicle WHERE vehicleType LIKE '%truck%' ";
             MySqlCommand cmd = new MySqlCommand(vehiclequery, dbconn.getConn());
             MySqlDataReader reader;
             try
