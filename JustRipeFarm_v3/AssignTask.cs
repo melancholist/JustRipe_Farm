@@ -244,7 +244,7 @@ namespace JustRipeFarm_v3
         {
             dbconn.connect();
 
-            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM sowingTask WHERE (labourerName = @user AND startDate >= @startDate AND endDate <= @endDate)", dbconn.getConn());
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT labourerName = @user FROM sowingTask WHERE (startDate >= @startDate AND endDate <= @endDate)", dbconn.getConn());
             labourerValidation.Parameters.AddWithValue("@user", comboBoxWorkers.Text);
             labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerSowStartDate.Value.Date);
             labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerSowEndDate.Value.Date);
@@ -278,7 +278,7 @@ namespace JustRipeFarm_v3
         {
             dbconn.connect();
 
-            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM harvestTask WHERE (labourerName = @user AND startDate >= @startDate AND endDate <= @endDate)", dbconn.getConn());
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT labourerName = @user FROM harvestTask WHERE (startDate >= @startDate AND endDate <= @endDate)", dbconn.getConn());
             labourerValidation.Parameters.AddWithValue("@user", comboBoxWorkerHarv.Text);
             labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerHrStartDate.Value.Date);
             labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerHrvEndDate.Value.Date);
@@ -313,7 +313,7 @@ namespace JustRipeFarm_v3
         {
             dbconn.connect();
 
-            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM treatmentTask WHERE (labourerName = @user AND startDate >= @startDate AND endDate <= @endDate)", dbconn.getConn());
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT labourerName = @user FROM treatmentTask WHERE (startDate >= @startDate AND endDate <= @endDate)", dbconn.getConn());
             labourerValidation.Parameters.AddWithValue("@user", comboBoxWorkerT.Text);
             labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerStartT.Value.Date);
             labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerEndT.Value.Date);
@@ -348,7 +348,7 @@ namespace JustRipeFarm_v3
         {
             dbconn.connect();
 
-            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM drivingTask WHERE (labourerName = @user AND startDate >= @startDate AND endDate <= @endDate)", dbconn.getConn());
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT labourerName = @user FROM drivingTask WHERE (startDate >= @startDate AND endDate <= @endDate)", dbconn.getConn());
             labourerValidation.Parameters.AddWithValue("@user", comboBoxDriver.Text);
             labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerDvStartDate.Value.Date);
             labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerDvEndDate.Value.Date);
