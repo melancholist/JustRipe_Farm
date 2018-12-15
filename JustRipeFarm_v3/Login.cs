@@ -106,6 +106,9 @@ namespace JustRipeFarm_v3
                                 mn.btnPrintFertilisers.Visible = true;
                                 mn.btnPrintPesticides.Visible = true;
                                 mn.btnPrntEquipment.Visible = true;
+                                mn.printStorage.Visible = true;
+                                mn.PrintMachine.Visible = true;
+                                mn.printVehicle.Visible = true;
                                 break;
 
                             case "Sales Staff":
@@ -123,6 +126,10 @@ namespace JustRipeFarm_v3
                                 mn.btnAddEquipment.Visible = true;
                                 mn.btnUpdateFert.Visible = true;
                                 mn.btnUpdatePest.Visible = true;
+                                mn.btnPrntEquipment.Visible = true;
+                                mn.printStorage.Visible = true;
+                                mn.PrintMachine.Visible = true;
+                                mn.printVehicle.Visible = true;
                                 this.Hide();
                                 break;
 

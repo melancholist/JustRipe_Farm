@@ -100,6 +100,10 @@ namespace JustRipeFarm_v3
             main.btnPrintFertilisers.Visible = true;
             main.btnPrintPesticides.Visible = true;
             main.btnPrntEquipment.Visible = true;
+            main.btnPrntEquipment.Visible = true;
+            main.printStorage.Visible = true;
+            main.PrintMachine.Visible = true;
+            main.printVehicle.Visible = true;
 
             this.Hide();
         }
