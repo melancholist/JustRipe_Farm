@@ -14,7 +14,7 @@ namespace JustRipeFarm_v3
 {
     public partial class StaffManagement : Form
     {
-        DbConnector Dbconn = new DbConnector();
+        string connString = "server=sql12.freemysqlhosting.net;user=sql12268366;database=sql12268366;password=1VpFDLJHBC;port=3306";
 
         public StaffManagement()
         {
@@ -24,12 +24,11 @@ namespace JustRipeFarm_v3
             pnlBtnIndic1.Show();
         }
 
-        DataTable dt = new DataTable("staffdata");
         private void StaffManagement_Load(object sender, EventArgs e)
         {
             try
             {
-                string connString = "server=sql12.freemysqlhosting.net;user=sql12268366;database=sql12268366;password=1VpFDLJHBC;port=3306";
+                DataTable dt = new DataTable("staffdata");
                 string query = "SELECT " +
                     "`id` AS 'ID', " +
                     "`firstName` AS 'First Name', " +
@@ -63,9 +62,20 @@ namespace JustRipeFarm_v3
 
         private void picBocSearch_Click(object sender, EventArgs e)
         {
-            DataView dv = dt.DefaultView;
-            dv.RowFilter = string.Format("staffRole LIKE '%{0}%'", searchComboBox.SelectedItem.ToString());
-            dataGridViewStaff.DataSource = dv.ToTable();
+            string query = "SELECT * FROM staffdata";
+            DataTable dta = new DataTable("staffdata");
+            using (MySqlConnection con = new MySqlConnection(connString))
+            {
+                using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                {
+                    da.Fill(dta);
+                    dataGridViewStaff.DataSource = dta;
+                    DataView dv = dta.DefaultView;
+                    dv.RowFilter = string.Format("staffRole LIKE '%{0}%'", searchComboBox.SelectedItem.ToString());
+                    dataGridViewStaff.DataSource = dv.ToTable();
+                }
+            }
+
         }
 
         private void backpictureBox_Click(object sender, EventArgs e)
