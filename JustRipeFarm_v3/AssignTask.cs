@@ -244,79 +244,134 @@ namespace JustRipeFarm_v3
         {
             dbconn.connect();
 
-            Sowing sow = new Sowing();
-            sow.LabourerName = comboBoxWorkers.Text;
-            sow.FarmSector = int.Parse(comboBoxFarmSectorSow.Text);
-            sow.TaskStatus = comBoxSowTaskStatus.Text;
-            sow.StartDate = dateTimePickerDvStartDate.Value.Date;
-            sow.EndDate = dateTimePickerDvEndDate.Value.Date;
-            sow.Method = comboBoxMethods.Text;
-            sow.Seed = comboBoxSeeds.Text;
-            sow.Quantity = numericUpDownQauntity.Value;
-            sow.StartTime = dateTimePickerStartSow.Value.Date;
-            sow.EndTime = dateTimePickerEndSow.Value.Date;
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM sowingTask WHERE (labourerName = @user AND startDate = @startDate AND endDate = @endDate)", dbconn.getConn());
+            labourerValidation.Parameters.AddWithValue("@user", comboBoxWorkers.Text);
+            labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerSowStartDate.Value.Date);
+            labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerSowEndDate.Value.Date);
+            MySqlDataReader reader = labourerValidation.ExecuteReader();
 
-            ScheduleHandler scHand = new ScheduleHandler();
-            scHand.addSowingSchedule(dbconn.getConn(), sow);
-            MessageBox.Show("Task Assigned!");
+            if (reader.HasRows)
+            {
+                MessageBox.Show("Labourer is already assigned to a task!");
+            }
+            else
+            {
+                Sowing sow = new Sowing();
+                sow.LabourerName = comboBoxWorkers.Text;
+                sow.FarmSector = int.Parse(comboBoxFarmSectorSow.Text);
+                sow.TaskStatus = comBoxSowTaskStatus.Text;
+                sow.StartDate = dateTimePickerDvStartDate.Value.Date;
+                sow.EndDate = dateTimePickerDvEndDate.Value.Date;
+                sow.Method = comboBoxMethods.Text;
+                sow.Seed = comboBoxSeeds.Text;
+                sow.Quantity = numericUpDownQauntity.Value;
+                sow.StartTime = dateTimePickerStartSow.Value.Date;
+                sow.EndTime = dateTimePickerEndSow.Value.Date;
+
+                ScheduleHandler scHand = new ScheduleHandler();
+                scHand.addSowingSchedule(dbconn.getConn(), sow);
+                MessageBox.Show("Task Assigned!");
+            }
         }
 
         private void btnSaveHarv_Click(object sender, EventArgs e)
         {
             dbconn.connect();
 
-            Harvest harv = new Harvest();
-            harv.LabourerName = comboBoxWorkerHarv.Text;
-            harv.FarmSector = int.Parse(comboBoxFarmSectorHarv.Text);
-            harv.TaskStatus = comBoxHvTaskStatus.Text;
-            harv.StartDate = dateTimePickerHrStartDate.Value.Date;
-            harv.EndDate = dateTimePickerHrvEndDate.Value.Date;
-            harv.Method = comboBoxHarvestMehtod.Text;
-            harv.Machine = comboBoxPlantType.Text;
-            harv.StorageUnit = comboBoxStorageUnit.Text;
-            harv.StartTime = dateTimePickerStartHarv.Value.Date;
-            harv.EndTime = dateTimePickerEndHarv.Value.Date;
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM harvestTask WHERE (labourerName = @user AND startDate = @startDate AND endDate = @endDate)", dbconn.getConn());
+            labourerValidation.Parameters.AddWithValue("@user", comboBoxWorkerHarv.Text);
+            labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerHrStartDate.Value.Date);
+            labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerHrvEndDate.Value.Date);
+            MySqlDataReader reader = labourerValidation.ExecuteReader();
 
-            ScheduleHandler scHand = new ScheduleHandler();
-            scHand.addHarvestSchedule(dbconn.getConn(), harv);
-            MessageBox.Show("Task Assigned!");
+            if (reader.HasRows)
+            {
+                MessageBox.Show("Labourer is already assigned to a task!");
+            }
+            else
+            {
+
+                Harvest harv = new Harvest();
+                harv.LabourerName = comboBoxWorkerHarv.Text;
+                harv.FarmSector = int.Parse(comboBoxFarmSectorHarv.Text);
+                harv.TaskStatus = comBoxHvTaskStatus.Text;
+                harv.StartDate = dateTimePickerHrStartDate.Value.Date;
+                harv.EndDate = dateTimePickerHrvEndDate.Value.Date;
+                harv.Method = comboBoxHarvestMehtod.Text;
+                harv.Machine = comboBoxPlantType.Text;
+                harv.StorageUnit = comboBoxStorageUnit.Text;
+                harv.StartTime = dateTimePickerStartHarv.Value.Date;
+                harv.EndTime = dateTimePickerEndHarv.Value.Date;
+
+                ScheduleHandler scHand = new ScheduleHandler();
+                scHand.addHarvestSchedule(dbconn.getConn(), harv);
+                MessageBox.Show("Task Assigned!");
+            }
         }
 
         private void btnSaveT_Click(object sender, EventArgs e)
         {
             dbconn.connect();
 
-            Treating trt = new Treating();
-            trt.LabourerName = comboBoxWorkerT.Text;
-            trt.FarmSector = int.Parse(comboBoxFarmT.Text);
-            trt.TaskStatus = comBoxTrTaskStatus.Text;
-            trt.StartDate = dateTimePickerStartT.Value.Date;
-            trt.EndDate = dateTimePickerEndT.Value.Date;
-            trt.FertiliserUsed = comboBoxFertilisers.Text;
-            trt.Quantity = numericUpDownFertilisers.Value;
-            trt.StartTime = dateTimePickerStartTr.Value.Date;
-            trt.EndTime = dateTimePickerEndTr.Value.Date;
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM treatmentTask WHERE (labourerName = @user AND startDate = @startDate AND endDate = @endDate)", dbconn.getConn());
+            labourerValidation.Parameters.AddWithValue("@user", comboBoxWorkerT.Text);
+            labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerStartT.Value.Date);
+            labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerEndT.Value.Date);
+            MySqlDataReader reader = labourerValidation.ExecuteReader();
 
-            ScheduleHandler scHand = new ScheduleHandler();
-            scHand.addTreatingSchedule(dbconn.getConn(), trt);
-            MessageBox.Show("Task Assigned!");
+            if (reader.HasRows)
+            {
+                MessageBox.Show("Labourer is already assigned to a task!");
+            }
+            else
+            {
+                dbconn.connect();
+
+                Treating trt = new Treating();
+                trt.LabourerName = comboBoxWorkerT.Text;
+                trt.FarmSector = int.Parse(comboBoxFarmT.Text);
+                trt.TaskStatus = comBoxTrTaskStatus.Text;
+                trt.StartDate = dateTimePickerStartT.Value.Date;
+                trt.EndDate = dateTimePickerEndT.Value.Date;
+                trt.FertiliserUsed = comboBoxFertilisers.Text;
+                trt.Quantity = numericUpDownFertilisers.Value;
+                trt.StartTime = dateTimePickerStartTr.Value.Date;
+                trt.EndTime = dateTimePickerEndTr.Value.Date;
+
+                ScheduleHandler scHand = new ScheduleHandler();
+                scHand.addTreatingSchedule(dbconn.getConn(), trt);
+                MessageBox.Show("Task Assigned!");
+            }
         }
 
         private void btnSaveDrive_Click(object sender, EventArgs e)
         {
             dbconn.connect();
 
-            Driving drv = new Driving();
-            drv.LabourerName = comboBoxDriver.Text;
-            drv.FarmSector = int.Parse(comboBoxFarmD.Text);
-            drv.TaskStatus = comBoxSowTaskStatus.Text;
-            drv.StartDate = dateTimePickerDvStartDate.Value.Date;
-            drv.EndDate = dateTimePickerDvEndDate.Value.Date;
-            drv.VehicleUsed = comboBoxVehicles.Text;
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM drivingTask WHERE (labourerName = @user AND startDate = @startDate AND endDate = @endDate)", dbconn.getConn());
+            labourerValidation.Parameters.AddWithValue("@user", comboBoxDriver.Text);
+            labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerDvStartDate.Value.Date);
+            labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerDvEndDate.Value.Date);
+            MySqlDataReader reader = labourerValidation.ExecuteReader();
 
-            ScheduleHandler scHand = new ScheduleHandler();
-            scHand.addDrivingSchedule(dbconn.getConn(), drv);
-            MessageBox.Show("Task Assigned!");
+            if (reader.HasRows)
+            {
+                MessageBox.Show("Labourer is already assigned to a task!");
+            }
+            else
+            {
+                Driving drv = new Driving();
+                drv.LabourerName = comboBoxDriver.Text;
+                drv.FarmSector = int.Parse(comboBoxFarmD.Text);
+                drv.TaskStatus = comBoxSowTaskStatus.Text;
+                drv.StartDate = dateTimePickerDvStartDate.Value.Date;
+                drv.EndDate = dateTimePickerDvEndDate.Value.Date;
+                drv.VehicleUsed = comboBoxVehicles.Text;
+
+                ScheduleHandler scHand = new ScheduleHandler();
+                scHand.addDrivingSchedule(dbconn.getConn(), drv);
+                MessageBox.Show("Task Assigned!");
+            }
         }
 
         //Clears the textboxes

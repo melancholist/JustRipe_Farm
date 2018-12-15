@@ -203,6 +203,7 @@
             // 
             // dateTimePickerHrvEndDate
             // 
+            this.dateTimePickerHrvEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerHrvEndDate.Location = new System.Drawing.Point(565, 113);
             this.dateTimePickerHrvEndDate.Name = "dateTimePickerHrvEndDate";
             this.dateTimePickerHrvEndDate.Size = new System.Drawing.Size(271, 22);
@@ -210,6 +211,7 @@
             // 
             // dateTimePickerHrStartDate
             // 
+            this.dateTimePickerHrStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerHrStartDate.Location = new System.Drawing.Point(565, 50);
             this.dateTimePickerHrStartDate.Name = "dateTimePickerHrStartDate";
             this.dateTimePickerHrStartDate.Size = new System.Drawing.Size(271, 22);
@@ -370,8 +372,8 @@
             // dateTimePickerEndHarv
             // 
             this.dateTimePickerEndHarv.CalendarFont = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerEndHarv.CustomFormat = "hh:mm";
-            this.dateTimePickerEndHarv.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePickerEndHarv.CustomFormat = "HH:mm:ss";
+            this.dateTimePickerEndHarv.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerEndHarv.Location = new System.Drawing.Point(582, 268);
             this.dateTimePickerEndHarv.Name = "dateTimePickerEndHarv";
             this.dateTimePickerEndHarv.ShowUpDown = true;
@@ -381,8 +383,8 @@
             // dateTimePickerStartHarv
             // 
             this.dateTimePickerStartHarv.CalendarFont = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerStartHarv.CustomFormat = "hh:mm";
-            this.dateTimePickerStartHarv.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePickerStartHarv.CustomFormat = "HH:mm:ss";
+            this.dateTimePickerStartHarv.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerStartHarv.Location = new System.Drawing.Point(582, 203);
             this.dateTimePickerStartHarv.Name = "dateTimePickerStartHarv";
             this.dateTimePickerStartHarv.ShowUpDown = true;
@@ -516,6 +518,7 @@
             // 
             // dateTimePickerEndT
             // 
+            this.dateTimePickerEndT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerEndT.Location = new System.Drawing.Point(565, 136);
             this.dateTimePickerEndT.Name = "dateTimePickerEndT";
             this.dateTimePickerEndT.Size = new System.Drawing.Size(275, 22);
@@ -523,6 +526,7 @@
             // 
             // dateTimePickerStartT
             // 
+            this.dateTimePickerStartT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerStartT.Location = new System.Drawing.Point(565, 55);
             this.dateTimePickerStartT.Name = "dateTimePickerStartT";
             this.dateTimePickerStartT.Size = new System.Drawing.Size(275, 22);
@@ -576,8 +580,8 @@
             // dateTimePickerEndTr
             // 
             this.dateTimePickerEndTr.CalendarFont = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerEndTr.CustomFormat = "hh:mm";
-            this.dateTimePickerEndTr.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePickerEndTr.CustomFormat = "HH:mm:ss ";
+            this.dateTimePickerEndTr.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerEndTr.Location = new System.Drawing.Point(565, 269);
             this.dateTimePickerEndTr.Name = "dateTimePickerEndTr";
             this.dateTimePickerEndTr.ShowUpDown = true;
@@ -587,8 +591,8 @@
             // dateTimePickerStartTr
             // 
             this.dateTimePickerStartTr.CalendarFont = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerStartTr.CustomFormat = "hh:mm";
-            this.dateTimePickerStartTr.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePickerStartTr.CustomFormat = "HH:mm:ss";
+            this.dateTimePickerStartTr.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerStartTr.Location = new System.Drawing.Point(565, 204);
             this.dateTimePickerStartTr.Name = "dateTimePickerStartTr";
             this.dateTimePickerStartTr.ShowUpDown = true;
@@ -780,6 +784,7 @@
             // 
             // dateTimePickerDvEndDate
             // 
+            this.dateTimePickerDvEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerDvEndDate.Location = new System.Drawing.Point(547, 134);
             this.dateTimePickerDvEndDate.Name = "dateTimePickerDvEndDate";
             this.dateTimePickerDvEndDate.Size = new System.Drawing.Size(286, 22);
@@ -787,6 +792,7 @@
             // 
             // dateTimePickerDvStartDate
             // 
+            this.dateTimePickerDvStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerDvStartDate.Location = new System.Drawing.Point(547, 50);
             this.dateTimePickerDvStartDate.Name = "dateTimePickerDvStartDate";
             this.dateTimePickerDvStartDate.Size = new System.Drawing.Size(286, 22);
@@ -1058,6 +1064,7 @@
             // 
             // dateTimePickerSowEndDate
             // 
+            this.dateTimePickerSowEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerSowEndDate.Location = new System.Drawing.Point(546, 128);
             this.dateTimePickerSowEndDate.Name = "dateTimePickerSowEndDate";
             this.dateTimePickerSowEndDate.Size = new System.Drawing.Size(271, 22);
@@ -1065,6 +1072,7 @@
             // 
             // dateTimePickerSowStartDate
             // 
+            this.dateTimePickerSowStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerSowStartDate.Location = new System.Drawing.Point(546, 48);
             this.dateTimePickerSowStartDate.Name = "dateTimePickerSowStartDate";
             this.dateTimePickerSowStartDate.Size = new System.Drawing.Size(271, 22);
@@ -1198,8 +1206,8 @@
             // dateTimePickerEndSow
             // 
             this.dateTimePickerEndSow.CalendarFont = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerEndSow.CustomFormat = "hh:mm";
-            this.dateTimePickerEndSow.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePickerEndSow.CustomFormat = "HH:mm:ss";
+            this.dateTimePickerEndSow.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerEndSow.Location = new System.Drawing.Point(567, 276);
             this.dateTimePickerEndSow.Name = "dateTimePickerEndSow";
             this.dateTimePickerEndSow.ShowUpDown = true;
@@ -1209,8 +1217,8 @@
             // dateTimePickerStartSow
             // 
             this.dateTimePickerStartSow.CalendarFont = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerStartSow.CustomFormat = "hh:mm";
-            this.dateTimePickerStartSow.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePickerStartSow.CustomFormat = "HH:mm:ss";
+            this.dateTimePickerStartSow.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerStartSow.Location = new System.Drawing.Point(567, 211);
             this.dateTimePickerStartSow.Name = "dateTimePickerStartSow";
             this.dateTimePickerStartSow.ShowUpDown = true;
