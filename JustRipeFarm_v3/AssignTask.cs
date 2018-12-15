@@ -244,7 +244,7 @@ namespace JustRipeFarm_v3
         {
             dbconn.connect();
 
-            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM sowingTask WHERE (labourerName = @user BETWEEN startDate = @startDate AND endDate = @endDate)", dbconn.getConn());
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM sowingTask WHERE (labourerName = @user AND startDate >= @startDate AND endDate <= @endDate)", dbconn.getConn());
             labourerValidation.Parameters.AddWithValue("@user", comboBoxWorkers.Text);
             labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerSowStartDate.Value.Date);
             labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerSowEndDate.Value.Date);
@@ -265,8 +265,8 @@ namespace JustRipeFarm_v3
                 sow.Method = comboBoxMethods.Text;
                 sow.Seed = comboBoxSeeds.Text;
                 sow.Quantity = numericUpDownQauntity.Value;
-                sow.StartTime = dateTimePickerStartSow.Value.Date;
-                sow.EndTime = dateTimePickerEndSow.Value.Date;
+                sow.StartTime = dateTimePickerStartSow.Value;
+                sow.EndTime = dateTimePickerEndSow.Value;
 
                 ScheduleHandler scHand = new ScheduleHandler();
                 scHand.addSowingSchedule(dbconn.getConn(), sow);
@@ -278,7 +278,7 @@ namespace JustRipeFarm_v3
         {
             dbconn.connect();
 
-            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM harvestTask WHERE (labourerName = @user BETWEEN startDate = @startDate AND endDate = @endDate)", dbconn.getConn());
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM harvestTask WHERE (labourerName = @user AND startDate >= @startDate AND endDate <= @endDate)", dbconn.getConn());
             labourerValidation.Parameters.AddWithValue("@user", comboBoxWorkerHarv.Text);
             labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerHrStartDate.Value.Date);
             labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerHrvEndDate.Value.Date);
@@ -300,8 +300,8 @@ namespace JustRipeFarm_v3
                 harv.Method = comboBoxHarvestMehtod.Text;
                 harv.Machine = comboBoxPlantType.Text;
                 harv.StorageUnit = comboBoxStorageUnit.Text;
-                harv.StartTime = dateTimePickerStartHarv.Value.Date;
-                harv.EndTime = dateTimePickerEndHarv.Value.Date;
+                harv.StartTime = dateTimePickerStartHarv.Value;
+                harv.EndTime = dateTimePickerEndHarv.Value;
 
                 ScheduleHandler scHand = new ScheduleHandler();
                 scHand.addHarvestSchedule(dbconn.getConn(), harv);
@@ -313,7 +313,7 @@ namespace JustRipeFarm_v3
         {
             dbconn.connect();
 
-            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM treatmentTask WHERE (labourerName = @user BETWEEN startDate = @startDate AND endDate = @endDate)", dbconn.getConn());
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM treatmentTask WHERE (labourerName = @user AND startDate >= @startDate AND endDate <= @endDate)", dbconn.getConn());
             labourerValidation.Parameters.AddWithValue("@user", comboBoxWorkerT.Text);
             labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerStartT.Value.Date);
             labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerEndT.Value.Date);
@@ -348,7 +348,7 @@ namespace JustRipeFarm_v3
         {
             dbconn.connect();
 
-            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM drivingTask WHERE (labourerName = @user BETWEEN startDate = @startDate AND endDate = @endDate)", dbconn.getConn());
+            MySqlCommand labourerValidation = new MySqlCommand("SELECT * FROM drivingTask WHERE (labourerName = @user AND startDate >= @startDate AND endDate <= @endDate)", dbconn.getConn());
             labourerValidation.Parameters.AddWithValue("@user", comboBoxDriver.Text);
             labourerValidation.Parameters.AddWithValue("@startDate", dateTimePickerDvStartDate.Value.Date);
             labourerValidation.Parameters.AddWithValue("@endDate", dateTimePickerDvEndDate.Value.Date);
