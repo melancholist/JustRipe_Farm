@@ -598,7 +598,7 @@
             this.dateTimePickerStartTr.ShowUpDown = true;
             this.dateTimePickerStartTr.Size = new System.Drawing.Size(150, 22);
             this.dateTimePickerStartTr.TabIndex = 21;
-            this.dateTimePickerStartTr.Value = new System.DateTime(2018, 12, 15, 0, 0, 0, 0);
+            this.dateTimePickerStartTr.Value = new System.DateTime(2018, 12, 20, 12, 53, 0, 0);
             // 
             // label24
             // 
