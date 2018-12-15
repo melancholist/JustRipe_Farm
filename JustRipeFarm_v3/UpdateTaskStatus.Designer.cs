@@ -76,7 +76,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.panel1.Controls.Add(this.exitPictureBox);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -90,7 +90,7 @@
             this.exitPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.exitPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPictureBox.Image")));
             this.exitPictureBox.ImageActive = null;
-            this.exitPictureBox.Location = new System.Drawing.Point(657, 12);
+            this.exitPictureBox.Location = new System.Drawing.Point(657, 14);
             this.exitPictureBox.Name = "exitPictureBox";
             this.exitPictureBox.Size = new System.Drawing.Size(31, 29);
             this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -104,7 +104,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Candara", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(199, 7);
+            this.label1.Location = new System.Drawing.Point(207, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 40);
             this.label1.TabIndex = 5;
@@ -120,9 +120,9 @@
             this.btnSow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSow.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSow.ForeColor = System.Drawing.Color.White;
-            this.btnSow.Location = new System.Drawing.Point(1, 58);
+            this.btnSow.Location = new System.Drawing.Point(9, 58);
             this.btnSow.Name = "btnSow";
-            this.btnSow.Size = new System.Drawing.Size(171, 59);
+            this.btnSow.Size = new System.Drawing.Size(161, 59);
             this.btnSow.TabIndex = 1;
             this.btnSow.Text = "Sowing";
             this.btnSow.UseVisualStyleBackColor = false;
@@ -137,9 +137,9 @@
             this.btnDrive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDrive.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDrive.ForeColor = System.Drawing.Color.White;
-            this.btnDrive.Location = new System.Drawing.Point(527, 58);
+            this.btnDrive.Location = new System.Drawing.Point(531, 58);
             this.btnDrive.Name = "btnDrive";
-            this.btnDrive.Size = new System.Drawing.Size(171, 59);
+            this.btnDrive.Size = new System.Drawing.Size(161, 59);
             this.btnDrive.TabIndex = 2;
             this.btnDrive.Text = "Driving";
             this.btnDrive.UseVisualStyleBackColor = false;
@@ -154,9 +154,9 @@
             this.btnTreat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTreat.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTreat.ForeColor = System.Drawing.Color.White;
-            this.btnTreat.Location = new System.Drawing.Point(351, 58);
+            this.btnTreat.Location = new System.Drawing.Point(357, 58);
             this.btnTreat.Name = "btnTreat";
-            this.btnTreat.Size = new System.Drawing.Size(171, 59);
+            this.btnTreat.Size = new System.Drawing.Size(161, 59);
             this.btnTreat.TabIndex = 3;
             this.btnTreat.Text = "Treatment";
             this.btnTreat.UseVisualStyleBackColor = false;
@@ -171,9 +171,9 @@
             this.btnHarv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHarv.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHarv.ForeColor = System.Drawing.Color.White;
-            this.btnHarv.Location = new System.Drawing.Point(176, 58);
+            this.btnHarv.Location = new System.Drawing.Point(183, 58);
             this.btnHarv.Name = "btnHarv";
-            this.btnHarv.Size = new System.Drawing.Size(171, 59);
+            this.btnHarv.Size = new System.Drawing.Size(161, 59);
             this.btnHarv.TabIndex = 4;
             this.btnHarv.Text = "Harvest";
             this.btnHarv.UseVisualStyleBackColor = false;
@@ -188,8 +188,8 @@
             this.groupBoxUpSow.Controls.Add(this.label3);
             this.groupBoxUpSow.Controls.Add(this.label2);
             this.groupBoxUpSow.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxUpSow.ForeColor = System.Drawing.Color.White;
-            this.groupBoxUpSow.Location = new System.Drawing.Point(62, 179);
+            this.groupBoxUpSow.ForeColor = System.Drawing.Color.Black;
+            this.groupBoxUpSow.Location = new System.Drawing.Point(64, 179);
             this.groupBoxUpSow.Name = "groupBoxUpSow";
             this.groupBoxUpSow.Size = new System.Drawing.Size(572, 314);
             this.groupBoxUpSow.TabIndex = 5;
@@ -204,7 +204,7 @@
             this.btnSowClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnSowClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnSowClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSowClear.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSowClear.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSowClear.ForeColor = System.Drawing.Color.White;
             this.btnSowClear.Location = new System.Drawing.Point(289, 239);
             this.btnSowClear.Name = "btnSowClear";
@@ -216,12 +216,12 @@
             // 
             // btnSowUpd
             // 
-            this.btnSowUpd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btnSowUpd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
             this.btnSowUpd.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSowUpd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnSowUpd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnSowUpd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSowUpd.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSowUpd.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSowUpd.ForeColor = System.Drawing.Color.White;
             this.btnSowUpd.Location = new System.Drawing.Point(427, 239);
             this.btnSowUpd.Name = "btnSowUpd";
@@ -254,20 +254,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(43, 154);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 22);
+            this.label3.Size = new System.Drawing.Size(114, 23);
             this.label3.TabIndex = 1;
             this.label3.Text = "Task Status:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(43, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 22);
+            this.label2.Size = new System.Drawing.Size(108, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Username:";
             // 
@@ -280,8 +280,8 @@
             this.groupBoxHarv.Controls.Add(this.label4);
             this.groupBoxHarv.Controls.Add(this.label5);
             this.groupBoxHarv.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxHarv.ForeColor = System.Drawing.Color.White;
-            this.groupBoxHarv.Location = new System.Drawing.Point(62, 179);
+            this.groupBoxHarv.ForeColor = System.Drawing.Color.Black;
+            this.groupBoxHarv.Location = new System.Drawing.Point(64, 179);
             this.groupBoxHarv.Name = "groupBoxHarv";
             this.groupBoxHarv.Size = new System.Drawing.Size(572, 314);
             this.groupBoxHarv.TabIndex = 6;
@@ -296,7 +296,7 @@
             this.btnHarvClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnHarvClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnHarvClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHarvClear.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHarvClear.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHarvClear.ForeColor = System.Drawing.Color.White;
             this.btnHarvClear.Location = new System.Drawing.Point(289, 239);
             this.btnHarvClear.Name = "btnHarvClear";
@@ -308,12 +308,12 @@
             // 
             // btnHarvUpd
             // 
-            this.btnHarvUpd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btnHarvUpd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
             this.btnHarvUpd.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnHarvUpd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnHarvUpd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnHarvUpd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHarvUpd.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHarvUpd.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHarvUpd.ForeColor = System.Drawing.Color.White;
             this.btnHarvUpd.Location = new System.Drawing.Point(427, 239);
             this.btnHarvUpd.Name = "btnHarvUpd";
@@ -346,20 +346,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(43, 154);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 22);
+            this.label4.Size = new System.Drawing.Size(114, 23);
             this.label4.TabIndex = 1;
             this.label4.Text = "Task Status:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(43, 66);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 22);
+            this.label5.Size = new System.Drawing.Size(108, 23);
             this.label5.TabIndex = 0;
             this.label5.Text = "Username:";
             // 
@@ -372,8 +372,8 @@
             this.groupBoxTreat.Controls.Add(this.label6);
             this.groupBoxTreat.Controls.Add(this.label7);
             this.groupBoxTreat.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxTreat.ForeColor = System.Drawing.Color.White;
-            this.groupBoxTreat.Location = new System.Drawing.Point(62, 179);
+            this.groupBoxTreat.ForeColor = System.Drawing.Color.Black;
+            this.groupBoxTreat.Location = new System.Drawing.Point(64, 179);
             this.groupBoxTreat.Name = "groupBoxTreat";
             this.groupBoxTreat.Size = new System.Drawing.Size(572, 314);
             this.groupBoxTreat.TabIndex = 8;
@@ -388,7 +388,7 @@
             this.btnTrtClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnTrtClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnTrtClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrtClear.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrtClear.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrtClear.ForeColor = System.Drawing.Color.White;
             this.btnTrtClear.Location = new System.Drawing.Point(289, 239);
             this.btnTrtClear.Name = "btnTrtClear";
@@ -400,12 +400,12 @@
             // 
             // btnUpdTreat
             // 
-            this.btnUpdTreat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btnUpdTreat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
             this.btnUpdTreat.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnUpdTreat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnUpdTreat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnUpdTreat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdTreat.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdTreat.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdTreat.ForeColor = System.Drawing.Color.White;
             this.btnUpdTreat.Location = new System.Drawing.Point(427, 239);
             this.btnUpdTreat.Name = "btnUpdTreat";
@@ -438,20 +438,20 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold);
             this.label6.Location = new System.Drawing.Point(43, 154);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 22);
+            this.label6.Size = new System.Drawing.Size(114, 23);
             this.label6.TabIndex = 1;
             this.label6.Text = "Task Status:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold);
             this.label7.Location = new System.Drawing.Point(43, 66);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 22);
+            this.label7.Size = new System.Drawing.Size(108, 23);
             this.label7.TabIndex = 0;
             this.label7.Text = "Username:";
             // 
@@ -464,8 +464,8 @@
             this.groupBoxDriv.Controls.Add(this.label8);
             this.groupBoxDriv.Controls.Add(this.label9);
             this.groupBoxDriv.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxDriv.ForeColor = System.Drawing.Color.White;
-            this.groupBoxDriv.Location = new System.Drawing.Point(62, 179);
+            this.groupBoxDriv.ForeColor = System.Drawing.Color.Black;
+            this.groupBoxDriv.Location = new System.Drawing.Point(64, 179);
             this.groupBoxDriv.Name = "groupBoxDriv";
             this.groupBoxDriv.Size = new System.Drawing.Size(572, 314);
             this.groupBoxDriv.TabIndex = 9;
@@ -480,7 +480,7 @@
             this.btnDrvClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnDrvClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnDrvClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDrvClear.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDrvClear.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDrvClear.ForeColor = System.Drawing.Color.White;
             this.btnDrvClear.Location = new System.Drawing.Point(289, 239);
             this.btnDrvClear.Name = "btnDrvClear";
@@ -492,12 +492,12 @@
             // 
             // btnUpdDrv
             // 
-            this.btnUpdDrv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btnUpdDrv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
             this.btnUpdDrv.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnUpdDrv.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
             this.btnUpdDrv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnUpdDrv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdDrv.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdDrv.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdDrv.ForeColor = System.Drawing.Color.White;
             this.btnUpdDrv.Location = new System.Drawing.Point(427, 239);
             this.btnUpdDrv.Name = "btnUpdDrv";
@@ -530,20 +530,20 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(43, 154);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(113, 22);
+            this.label8.Size = new System.Drawing.Size(114, 23);
             this.label8.TabIndex = 1;
             this.label8.Text = "Task Status:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(43, 66);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(106, 22);
+            this.label9.Size = new System.Drawing.Size(108, 23);
             this.label9.TabIndex = 0;
             this.label9.Text = "Username:";
             // 
@@ -556,17 +556,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(209)))), ((int)(((byte)(182)))));
             this.ClientSize = new System.Drawing.Size(700, 548);
-            this.Controls.Add(this.groupBoxDriv);
-            this.Controls.Add(this.groupBoxTreat);
-            this.Controls.Add(this.groupBoxHarv);
-            this.Controls.Add(this.groupBoxUpSow);
             this.Controls.Add(this.btnHarv);
             this.Controls.Add(this.btnTreat);
             this.Controls.Add(this.btnDrive);
             this.Controls.Add(this.btnSow);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.groupBoxUpSow);
+            this.Controls.Add(this.groupBoxDriv);
+            this.Controls.Add(this.groupBoxTreat);
+            this.Controls.Add(this.groupBoxHarv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UpdateTaskStatus";
