@@ -11,12 +11,16 @@ namespace JustRipeFarm_v3
         private int id;
         private string labourerName;
         private int farmSector;
-        private DateTime date;
+        private string taskStatus;
+        private DateTime startDate;
+        private DateTime endDate;
 
         public int Id { get => id; set => id = value; }
         public string LabourerName { get => labourerName; set => labourerName = value; }
         public int FarmSector { get => farmSector; set => farmSector = value; }
-        public DateTime Date { get => date; set => date = value; }
+        public string TaskStatus { get => taskStatus; set => taskStatus = value; }
+        public DateTime StartDate { get => startDate; set => startDate = value; }
+        public DateTime EndDate { get => endDate; set => endDate = value; }
     }
 
     public class Sowing : Schedule

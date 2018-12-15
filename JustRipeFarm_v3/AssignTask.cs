@@ -239,27 +239,6 @@ namespace JustRipeFarm_v3
             pnlDriving.BringToFront();
         }
 
-        //Calender values to input in textbox
-        private void monthCalendarSowing_DateChanged(object sender, DateRangeEventArgs e)
-        {
-            textBoxSowDate.Text = monthCalendarSowing.SelectionRange.Start.ToShortDateString();
-        }
-
-        private void monthCalendarHarvest_DateChanged(object sender, DateRangeEventArgs e)
-        {
-            textBoxHarvDate.Text = monthCalendarHarvest.SelectionRange.Start.ToShortDateString();
-        }
-
-        private void monthCalendarTreatment_DateChanged(object sender, DateRangeEventArgs e)
-        {
-            textBoxTreatmentDate.Text = monthCalendarTreatment.SelectionRange.Start.ToShortDateString();
-        }
-
-        private void monthCalendarDriving_DateChanged(object sender, DateRangeEventArgs e)
-        {
-            textBoxDrivingDate.Text = monthCalendarDriving.SelectionRange.Start.ToShortDateString();
-        }
-
         //Buttons to save data into the database
         private void btnSaveSow_Click(object sender, EventArgs e)
         {
@@ -268,7 +247,9 @@ namespace JustRipeFarm_v3
             Sowing sow = new Sowing();
             sow.LabourerName = comboBoxWorkers.Text;
             sow.FarmSector = int.Parse(comboBoxFarmSectorSow.Text);
-            sow.Date = DateTime.ParseExact(textBoxSowDate.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+            sow.TaskStatus = comBoxSowTaskStatus.Text;
+            sow.StartDate = dateTimePickerDvStartDate.Value.Date;
+            sow.EndDate = dateTimePickerDvEndDate.Value.Date;
             sow.Method = comboBoxMethods.Text;
             sow.Seed = comboBoxSeeds.Text;
             sow.Quantity = numericUpDownQauntity.Value;
@@ -287,7 +268,9 @@ namespace JustRipeFarm_v3
             Harvest harv = new Harvest();
             harv.LabourerName = comboBoxWorkerHarv.Text;
             harv.FarmSector = int.Parse(comboBoxFarmSectorHarv.Text);
-            harv.Date = DateTime.ParseExact(textBoxHarvDate.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+            harv.TaskStatus = comBoxHvTaskStatus.Text;
+            harv.StartDate = dateTimePickerHrStartDate.Value.Date;
+            harv.EndDate = dateTimePickerHrvEndDate.Value.Date;
             harv.Method = comboBoxHarvestMehtod.Text;
             harv.Machine = comboBoxPlantType.Text;
             harv.StorageUnit = comboBoxStorageUnit.Text;
@@ -306,7 +289,9 @@ namespace JustRipeFarm_v3
             Treating trt = new Treating();
             trt.LabourerName = comboBoxWorkerT.Text;
             trt.FarmSector = int.Parse(comboBoxFarmT.Text);
-            trt.Date = DateTime.ParseExact(textBoxTreatmentDate.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+            trt.TaskStatus = comBoxTrTaskStatus.Text;
+            trt.StartDate = dateTimePickerStartT.Value.Date;
+            trt.EndDate = dateTimePickerEndT.Value.Date;
             trt.FertiliserUsed = comboBoxFertilisers.Text;
             trt.Quantity = numericUpDownFertilisers.Value;
             trt.StartTime = dateTimePickerStartTr.Value.Date;
@@ -324,7 +309,9 @@ namespace JustRipeFarm_v3
             Driving drv = new Driving();
             drv.LabourerName = comboBoxDriver.Text;
             drv.FarmSector = int.Parse(comboBoxFarmD.Text);
-            drv.Date = DateTime.ParseExact(textBoxDrivingDate.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+            drv.TaskStatus = comBoxSowTaskStatus.Text;
+            drv.StartDate = dateTimePickerDvStartDate.Value.Date;
+            drv.EndDate = dateTimePickerDvEndDate.Value.Date;
             drv.VehicleUsed = comboBoxVehicles.Text;
 
             ScheduleHandler scHand = new ScheduleHandler();
@@ -337,7 +324,7 @@ namespace JustRipeFarm_v3
         {
             comboBoxWorkers.Text = "";
             comboBoxFarmSectorSow.Text = "";
-            textBoxSowDate.Text = "";
+            comBoxSowTaskStatus.Text = "";
             comboBoxMethods.Text = "";
             comboBoxSeeds.Text = ""; 
         }
@@ -346,7 +333,7 @@ namespace JustRipeFarm_v3
         {
             comboBoxWorkerHarv.Text = "";
             comboBoxFarmSectorHarv.Text = "";
-            textBoxHarvDate.Text = "";
+            comBoxHvTaskStatus.Text = "";
             comboBoxHarvestMehtod.Text = "";
             comboBoxPlantType.Text = "";
             comboBoxStorageUnit.Text = "";
@@ -356,7 +343,7 @@ namespace JustRipeFarm_v3
         {
             comboBoxWorkerT.Text = "";
             comboBoxFarmT.Text = "";
-            textBoxTreatmentDate.Text = "";
+            comBoxTrTaskStatus.Text = "";
             comboBoxFertilisers.Text = "";
             numericUpDownFertilisers.Value = 0;
         }
@@ -365,7 +352,7 @@ namespace JustRipeFarm_v3
         {
             comboBoxDriver.Text = "";
             comboBoxFarmD.Text = "";
-            textBoxDrivingDate.Text = "";
+            comBoxDrvTaskStatus.Text = "";
             comboBoxVehicles.Text = "";
         }
     }
