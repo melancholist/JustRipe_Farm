@@ -405,6 +405,7 @@
             this.btnAccounting.Text = "Accounting";
             this.btnAccounting.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccounting.UseVisualStyleBackColor = true;
+            this.btnAccounting.Visible = false;
             this.btnAccounting.Click += new System.EventHandler(this.btnAccounting_Click);
             // 
             // btnStock
@@ -426,6 +427,7 @@
             this.btnStock.Text = "Stocks";
             this.btnStock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStock.UseVisualStyleBackColor = true;
+            this.btnStock.Visible = false;
             this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
             // btnVehicle
@@ -855,6 +857,7 @@
             this.btnAddCrops.TabIndex = 10;
             this.btnAddCrops.Text = "+ crop";
             this.btnAddCrops.UseVisualStyleBackColor = false;
+            this.btnAddCrops.Visible = false;
             this.btnAddCrops.Click += new System.EventHandler(this.btnAddCrops_Click);
             // 
             // dataGridViewCrops
@@ -934,6 +937,7 @@
             this.btnAddPesticides.TabIndex = 10;
             this.btnAddPesticides.Text = "+ pesticide";
             this.btnAddPesticides.UseVisualStyleBackColor = false;
+            this.btnAddPesticides.Visible = false;
             this.btnAddPesticides.Click += new System.EventHandler(this.btnAddPesticides_Click);
             // 
             // btnUpdatePest
@@ -951,6 +955,7 @@
             this.btnUpdatePest.TabIndex = 12;
             this.btnUpdatePest.Text = "update";
             this.btnUpdatePest.UseVisualStyleBackColor = false;
+            this.btnUpdatePest.Visible = false;
             this.btnUpdatePest.Click += new System.EventHandler(this.btnUpdatePest_Click);
             // 
             // dataGridViewPesticides
@@ -1030,6 +1035,7 @@
             this.btnUpdateFert.TabIndex = 11;
             this.btnUpdateFert.Text = "update";
             this.btnUpdateFert.UseVisualStyleBackColor = false;
+            this.btnUpdateFert.Visible = false;
             this.btnUpdateFert.Click += new System.EventHandler(this.btnUpdateFert_Click);
             // 
             // btnAddFertilisers
@@ -1047,6 +1053,7 @@
             this.btnAddFertilisers.TabIndex = 10;
             this.btnAddFertilisers.Text = "+ fertiliser";
             this.btnAddFertilisers.UseVisualStyleBackColor = false;
+            this.btnAddFertilisers.Visible = false;
             this.btnAddFertilisers.Click += new System.EventHandler(this.btnAddFertilisers_Click);
             // 
             // dataGridViewFertiliser
@@ -1125,6 +1132,7 @@
             this.btnAddEquipment.TabIndex = 10;
             this.btnAddEquipment.Text = "+ equipment";
             this.btnAddEquipment.UseVisualStyleBackColor = false;
+            this.btnAddEquipment.Visible = false;
             this.btnAddEquipment.Click += new System.EventHandler(this.btnAddEquipment_Click);
             // 
             // dataGridViewEquipment
@@ -1203,6 +1211,7 @@
             this.btnAddStorage.TabIndex = 11;
             this.btnAddStorage.Text = "+ storage";
             this.btnAddStorage.UseVisualStyleBackColor = false;
+            this.btnAddStorage.Visible = false;
             this.btnAddStorage.Click += new System.EventHandler(this.btnAddStorage_Click);
             // 
             // dataGridViewStorage
@@ -1369,6 +1378,7 @@
             this.btnAddVehic.TabIndex = 21;
             this.btnAddVehic.Text = "+ vehicle";
             this.btnAddVehic.UseVisualStyleBackColor = false;
+            this.btnAddVehic.Visible = false;
             this.btnAddVehic.Click += new System.EventHandler(this.btnAddVehic_Click);
             // 
             // dataGridViewVehicle
@@ -1484,6 +1494,7 @@
             this.btnAddMach.TabIndex = 21;
             this.btnAddMach.Text = "+ machine";
             this.btnAddMach.UseVisualStyleBackColor = false;
+            this.btnAddMach.Visible = false;
             this.btnAddMach.Click += new System.EventHandler(this.btnAddMach_Click);
             // 
             // dataGridViewMachine
@@ -2182,8 +2193,6 @@
         private System.Windows.Forms.Button btnResources;
         public System.Windows.Forms.Label lblManager;
         public System.Windows.Forms.PictureBox picBoxManager;
-        private System.Windows.Forms.Button btnAccounting;
-        private System.Windows.Forms.Button btnStock;
         private System.Windows.Forms.Button btnVehicle;
         private System.Windows.Forms.Button btnStorage;
         private System.Windows.Forms.Panel panelBtnIndicator6;
@@ -2213,10 +2222,8 @@
         public System.Windows.Forms.Button btnUpdateFert;
         public System.Windows.Forms.Button btnUpdatePest;
         private System.Windows.Forms.Panel pnlStorage;
-        private System.Windows.Forms.Button btnAddStorage;
         private System.Windows.Forms.Panel pnlVehicMach;
         private System.Windows.Forms.GroupBox groupBoxVehicle;
-        private System.Windows.Forms.Button btnAddVehic;
         private System.Windows.Forms.Button btnMachine;
         private System.Windows.Forms.Button btnVehic;
         private System.Windows.Forms.PictureBox pictureBoxSearchV;
@@ -2226,7 +2233,6 @@
         private System.Windows.Forms.PictureBox picBoxSearchM;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBoxMachType;
-        private System.Windows.Forms.Button btnAddMach;
         private System.Windows.Forms.Panel pnlStocks;
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button btnYields;
@@ -2267,5 +2273,10 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewStorage;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewYields;
         public System.Windows.Forms.Button btnUpdateTaskStatus;
+        public System.Windows.Forms.Button btnAccounting;
+        public System.Windows.Forms.Button btnStock;
+        public System.Windows.Forms.Button btnAddStorage;
+        public System.Windows.Forms.Button btnAddVehic;
+        public System.Windows.Forms.Button btnAddMach;
     }
 }

@@ -91,12 +91,34 @@ namespace JustRipeFarm_v3
                                 mn.btnStaffManagement.Visible = true;
                                 mn.lblManager.Visible = true;
                                 mn.picBoxManager.Visible = true;
+                                mn.btnAccounting.Visible = true;
+                                mn.btnStock.Visible = true;
+                                mn.btnAddStorage.Visible = true;
+                                mn.btnAddVehic.Visible = true;
+                                mn.btnAddMach.Visible = true;
+                                mn.btnAddCrops.Visible = true;
+                                mn.btnAddFertilisers.Visible = true;
+                                mn.btnAddPesticides.Visible = true;
+                                mn.btnAddEquipment.Visible = true;
+                                mn.btnUpdateFert.Visible = true;
+                                mn.btnUpdatePest.Visible = true;
                                 break;
 
                             case "Sales Staff":
                                 mn.Show();
                                 mn.lblSalesStaff.Visible = true;
                                 mn.picBoxManager.Visible = true;
+                                mn.btnAccounting.Visible = true;
+                                mn.btnStock.Visible = true;
+                                mn.btnAddStorage.Visible = true;
+                                mn.btnAddVehic.Visible = true;
+                                mn.btnAddMach.Visible = true;
+                                mn.btnAddCrops.Visible = true;
+                                mn.btnAddFertilisers.Visible = true;
+                                mn.btnAddPesticides.Visible = true;
+                                mn.btnAddEquipment.Visible = true;
+                                mn.btnUpdateFert.Visible = true;
+                                mn.btnUpdatePest.Visible = true;
                                 this.Hide();
                                 break;
 
