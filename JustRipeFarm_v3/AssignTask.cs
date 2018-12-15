@@ -252,7 +252,7 @@ namespace JustRipeFarm_v3
 
             if (reader.HasRows)
             {
-                MessageBox.Show("Labourer is already assigned to a task!");
+                MessageBox.Show("Labourer is already assigned to a task!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -286,7 +286,7 @@ namespace JustRipeFarm_v3
 
             if (reader.HasRows)
             {
-                MessageBox.Show("Labourer is already assigned to a task!");
+                MessageBox.Show("Labourer is already assigned to a task!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -321,7 +321,7 @@ namespace JustRipeFarm_v3
 
             if (reader.HasRows)
             {
-                MessageBox.Show("Labourer is already assigned to a task!");
+                MessageBox.Show("Labourer is already assigned to a task!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -356,7 +356,7 @@ namespace JustRipeFarm_v3
 
             if (reader.HasRows)
             {
-                MessageBox.Show("Labourer is already assigned to a task!");
+                MessageBox.Show("Labourer is already assigned to a task!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
