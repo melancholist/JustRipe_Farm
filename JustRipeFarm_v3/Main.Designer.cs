@@ -81,6 +81,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUpdateTaskStatus = new System.Windows.Forms.Button();
             this.logoutPictureBox = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnStaffManagement = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -243,6 +244,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.panel2.Controls.Add(this.btnUpdateTaskStatus);
             this.panel2.Controls.Add(this.logoutPictureBox);
             this.panel2.Controls.Add(this.btnStaffManagement);
             this.panel2.Controls.Add(this.label1);
@@ -253,6 +255,23 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1200, 65);
             this.panel2.TabIndex = 5;
+            // 
+            // btnUpdateTaskStatus
+            // 
+            this.btnUpdateTaskStatus.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnUpdateTaskStatus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnUpdateTaskStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateTaskStatus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateTaskStatus.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateTaskStatus.Location = new System.Drawing.Point(871, 5);
+            this.btnUpdateTaskStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdateTaskStatus.Name = "btnUpdateTaskStatus";
+            this.btnUpdateTaskStatus.Size = new System.Drawing.Size(261, 54);
+            this.btnUpdateTaskStatus.TabIndex = 10;
+            this.btnUpdateTaskStatus.Text = "update task status";
+            this.btnUpdateTaskStatus.UseVisualStyleBackColor = true;
+            this.btnUpdateTaskStatus.Visible = false;
+            this.btnUpdateTaskStatus.Click += new System.EventHandler(this.btnUpdateTaskStatus_Click);
             // 
             // logoutPictureBox
             // 
@@ -2092,6 +2111,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -2246,5 +2266,6 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewFertiliser;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewStorage;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewYields;
+        public System.Windows.Forms.Button btnUpdateTaskStatus;
     }
 }

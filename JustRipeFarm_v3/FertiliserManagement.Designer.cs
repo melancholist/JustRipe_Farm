@@ -368,6 +368,7 @@
             this.Controls.Add(this.pnlUpdateFer);
             this.Controls.Add(this.pnlAddFertiliser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FertiliserManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddNewFertiliser";

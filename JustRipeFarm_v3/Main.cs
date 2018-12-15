@@ -1042,6 +1042,13 @@ namespace JustRipeFarm_v3
             this.Hide();
         }
 
+        //Redirrect users to update task status form
+        private void btnUpdateTaskStatus_Click(object sender, EventArgs e)
+        {
+            UpdateTaskStatus tsk = new UpdateTaskStatus();
+            tsk.Show();
+        }
+
         //Redirect user to website
         /*private void linkLabelOnlineStore_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

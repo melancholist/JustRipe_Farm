@@ -105,6 +105,7 @@ namespace JustRipeFarm_v3
                                 this.Hide();
                                 mn.lblLabourer.Visible = true;
                                 mn.picboxLabourer.Visible = true;
+                                mn.btnUpdateTaskStatus.Visible = true;
                                 break;
 
                             case "Field Worker":
@@ -112,6 +113,7 @@ namespace JustRipeFarm_v3
                                 this.Hide();
                                 mn.lblLabourer.Visible = true;
                                 mn.picboxLabourer.Visible = true;
+                                mn.btnUpdateTaskStatus.Visible = true;
                                 break;
                         }
                     }

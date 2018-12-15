@@ -79,6 +79,11 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.pnlDriving = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
+            this.comBoxDrvTaskStatus = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerDvEndDate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDvStartDate = new System.Windows.Forms.DateTimePicker();
+            this.label37 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.comboBoxVehicles = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -94,6 +99,11 @@
             this.btnTreating = new System.Windows.Forms.Button();
             this.btnHarvest = new System.Windows.Forms.Button();
             this.pnlSowing = new System.Windows.Forms.Panel();
+            this.comBoxSowTaskStatus = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.dateTimePickerSowEndDate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerSowStartDate = new System.Windows.Forms.DateTimePicker();
+            this.label35 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSaveSow = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -113,16 +123,6 @@
             this.comboBoxWorkers = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.label35 = new System.Windows.Forms.Label();
-            this.dateTimePickerSowStartDate = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerSowEndDate = new System.Windows.Forms.DateTimePicker();
-            this.label36 = new System.Windows.Forms.Label();
-            this.comBoxSowTaskStatus = new System.Windows.Forms.ComboBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.dateTimePickerDvStartDate = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerDvEndDate = new System.Windows.Forms.DateTimePicker();
-            this.comBoxDrvTaskStatus = new System.Windows.Forms.ComboBox();
-            this.label38 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxBack)).BeginInit();
             this.pnlHarvest.SuspendLayout();
@@ -753,6 +753,56 @@
             this.pnlDriving.Size = new System.Drawing.Size(892, 622);
             this.pnlDriving.TabIndex = 25;
             // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.White;
+            this.label38.Location = new System.Drawing.Point(432, 225);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(120, 23);
+            this.label38.TabIndex = 31;
+            this.label38.Text = "Task Status:";
+            // 
+            // comBoxDrvTaskStatus
+            // 
+            this.comBoxDrvTaskStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comBoxDrvTaskStatus.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comBoxDrvTaskStatus.FormattingEnabled = true;
+            this.comBoxDrvTaskStatus.Items.AddRange(new object[] {
+            "Assigned",
+            "In Progress",
+            "Completed"});
+            this.comBoxDrvTaskStatus.Location = new System.Drawing.Point(567, 221);
+            this.comBoxDrvTaskStatus.Name = "comBoxDrvTaskStatus";
+            this.comBoxDrvTaskStatus.Size = new System.Drawing.Size(202, 29);
+            this.comBoxDrvTaskStatus.TabIndex = 30;
+            // 
+            // dateTimePickerDvEndDate
+            // 
+            this.dateTimePickerDvEndDate.Location = new System.Drawing.Point(547, 134);
+            this.dateTimePickerDvEndDate.Name = "dateTimePickerDvEndDate";
+            this.dateTimePickerDvEndDate.Size = new System.Drawing.Size(286, 22);
+            this.dateTimePickerDvEndDate.TabIndex = 28;
+            // 
+            // dateTimePickerDvStartDate
+            // 
+            this.dateTimePickerDvStartDate.Location = new System.Drawing.Point(547, 50);
+            this.dateTimePickerDvStartDate.Name = "dateTimePickerDvStartDate";
+            this.dateTimePickerDvStartDate.Size = new System.Drawing.Size(286, 22);
+            this.dateTimePickerDvStartDate.TabIndex = 27;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(432, 129);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(103, 23);
+            this.label37.TabIndex = 26;
+            this.label37.Text = "End Date:";
+            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -981,6 +1031,56 @@
             this.pnlSowing.Size = new System.Drawing.Size(894, 622);
             this.pnlSowing.TabIndex = 3;
             // 
+            // comBoxSowTaskStatus
+            // 
+            this.comBoxSowTaskStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comBoxSowTaskStatus.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comBoxSowTaskStatus.FormattingEnabled = true;
+            this.comBoxSowTaskStatus.Items.AddRange(new object[] {
+            "Assigned",
+            "In Progress",
+            "Completed"});
+            this.comBoxSowTaskStatus.Location = new System.Drawing.Point(562, 386);
+            this.comBoxSowTaskStatus.Name = "comBoxSowTaskStatus";
+            this.comBoxSowTaskStatus.Size = new System.Drawing.Size(202, 29);
+            this.comBoxSowTaskStatus.TabIndex = 29;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(431, 387);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(120, 23);
+            this.label36.TabIndex = 23;
+            this.label36.Text = "Task Status:";
+            // 
+            // dateTimePickerSowEndDate
+            // 
+            this.dateTimePickerSowEndDate.Location = new System.Drawing.Point(546, 128);
+            this.dateTimePickerSowEndDate.Name = "dateTimePickerSowEndDate";
+            this.dateTimePickerSowEndDate.Size = new System.Drawing.Size(271, 22);
+            this.dateTimePickerSowEndDate.TabIndex = 22;
+            // 
+            // dateTimePickerSowStartDate
+            // 
+            this.dateTimePickerSowStartDate.Location = new System.Drawing.Point(546, 48);
+            this.dateTimePickerSowStartDate.Name = "dateTimePickerSowStartDate";
+            this.dateTimePickerSowStartDate.Size = new System.Drawing.Size(271, 22);
+            this.dateTimePickerSowStartDate.TabIndex = 21;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(431, 127);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(103, 23);
+            this.label35.TabIndex = 20;
+            this.label35.Text = "End Date:";
+            // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
@@ -1207,106 +1307,6 @@
             this.bunifuDragControl1.TargetControl = this.panel1;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(431, 127);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(103, 23);
-            this.label35.TabIndex = 20;
-            this.label35.Text = "End Date:";
-            // 
-            // dateTimePickerSowStartDate
-            // 
-            this.dateTimePickerSowStartDate.Location = new System.Drawing.Point(546, 48);
-            this.dateTimePickerSowStartDate.Name = "dateTimePickerSowStartDate";
-            this.dateTimePickerSowStartDate.Size = new System.Drawing.Size(271, 22);
-            this.dateTimePickerSowStartDate.TabIndex = 21;
-            // 
-            // dateTimePickerSowEndDate
-            // 
-            this.dateTimePickerSowEndDate.Location = new System.Drawing.Point(546, 128);
-            this.dateTimePickerSowEndDate.Name = "dateTimePickerSowEndDate";
-            this.dateTimePickerSowEndDate.Size = new System.Drawing.Size(271, 22);
-            this.dateTimePickerSowEndDate.TabIndex = 22;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(431, 387);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(120, 23);
-            this.label36.TabIndex = 23;
-            this.label36.Text = "Task Status:";
-            // 
-            // comBoxSowTaskStatus
-            // 
-            this.comBoxSowTaskStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comBoxSowTaskStatus.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comBoxSowTaskStatus.FormattingEnabled = true;
-            this.comBoxSowTaskStatus.Items.AddRange(new object[] {
-            "Assigned",
-            "In Progress",
-            "Completed"});
-            this.comBoxSowTaskStatus.Location = new System.Drawing.Point(562, 386);
-            this.comBoxSowTaskStatus.Name = "comBoxSowTaskStatus";
-            this.comBoxSowTaskStatus.Size = new System.Drawing.Size(202, 29);
-            this.comBoxSowTaskStatus.TabIndex = 29;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(432, 129);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(103, 23);
-            this.label37.TabIndex = 26;
-            this.label37.Text = "End Date:";
-            // 
-            // dateTimePickerDvStartDate
-            // 
-            this.dateTimePickerDvStartDate.Location = new System.Drawing.Point(547, 50);
-            this.dateTimePickerDvStartDate.Name = "dateTimePickerDvStartDate";
-            this.dateTimePickerDvStartDate.Size = new System.Drawing.Size(286, 22);
-            this.dateTimePickerDvStartDate.TabIndex = 27;
-            // 
-            // dateTimePickerDvEndDate
-            // 
-            this.dateTimePickerDvEndDate.Location = new System.Drawing.Point(547, 134);
-            this.dateTimePickerDvEndDate.Name = "dateTimePickerDvEndDate";
-            this.dateTimePickerDvEndDate.Size = new System.Drawing.Size(286, 22);
-            this.dateTimePickerDvEndDate.TabIndex = 28;
-            // 
-            // comBoxDrvTaskStatus
-            // 
-            this.comBoxDrvTaskStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comBoxDrvTaskStatus.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comBoxDrvTaskStatus.FormattingEnabled = true;
-            this.comBoxDrvTaskStatus.Items.AddRange(new object[] {
-            "Assigned",
-            "In Progress",
-            "Completed"});
-            this.comBoxDrvTaskStatus.Location = new System.Drawing.Point(567, 221);
-            this.comBoxDrvTaskStatus.Name = "comBoxDrvTaskStatus";
-            this.comBoxDrvTaskStatus.Size = new System.Drawing.Size(202, 29);
-            this.comBoxDrvTaskStatus.TabIndex = 30;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.White;
-            this.label38.Location = new System.Drawing.Point(432, 225);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(120, 23);
-            this.label38.TabIndex = 31;
-            this.label38.Text = "Task Status:";
-            // 
             // AssignTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1320,6 +1320,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AssignTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AssignTask";
