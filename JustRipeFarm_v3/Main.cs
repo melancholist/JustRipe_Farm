@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.Diagnostics;
+using DGVPrinterHelper;
 
 namespace JustRipeFarm_v3
 {
@@ -788,6 +789,20 @@ namespace JustRipeFarm_v3
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void printYield_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Yield Report"; //Header
+            printer.SubTitle = string.Format("Date {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Just Ripe Farm"; //Footer
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewYields);
+        }
         //Products
         private void btnProducts_Click(object sender, EventArgs e)
         {
@@ -1048,6 +1063,7 @@ namespace JustRipeFarm_v3
             UpdateTaskStatus tsk = new UpdateTaskStatus();
             tsk.Show();
         }
+
 
         //Redirect user to website
         /*private void linkLabelOnlineStore_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -80,6 +80,7 @@
     <Compile Include="AddNewCrop.Designer.cs">
       <DependentUpon>AddNewCrop.cs</DependentUpon>
     </Compile>
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="FertiliserManagement.cs">
       <SubType>Form</SubType>
     </Compile>
