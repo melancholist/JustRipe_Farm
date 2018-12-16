@@ -14,6 +14,12 @@ namespace JustRipeFarm_v3
 
         public string connect()
         {
+            // To access the database
+            // Go to this website http://www.phpmyadmin.co/
+            //Server: sql12.freemysqlhosting.net
+            //Username: sql12268366
+            //Password: 1VpFDLJHBC
+
             string connectionString = "server=sql12.freemysqlhosting.net;user=sql12268366;database=sql12268366;password=1VpFDLJHBC;port=3306";
             conn = new MySqlConnection(connectionString);
             try

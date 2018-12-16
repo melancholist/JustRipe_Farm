@@ -11,6 +11,7 @@ using MySql.Data.MySqlClient;
 using System.Diagnostics;
 using DGVPrinterHelper;
 
+
 namespace JustRipeFarm_v3
 {
     public partial class Main : Form
@@ -18,6 +19,13 @@ namespace JustRipeFarm_v3
         Staff lab = new Staff();
         Login lgn = new Login();
         DbConnector dbc = new DbConnector();
+
+        // To access the database
+        // Go to this website http://www.phpmyadmin.co/
+        //Server: sql12.freemysqlhosting.net
+        //Username: sql12268366
+        //Password: 1VpFDLJHBC
+
         string connString = "server=sql12.freemysqlhosting.net;user=sql12268366;database=sql12268366;password=1VpFDLJHBC;port=3306";
 
         public Main()
