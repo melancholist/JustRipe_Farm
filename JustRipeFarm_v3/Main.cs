@@ -998,34 +998,6 @@ namespace JustRipeFarm_v3
             YieldManagement ymang = new YieldManagement();
             ymang.Show();
         }
-        private void picBoxSearchYield_Click(object sender, EventArgs e)
-        {
-            DataTable dtab = new DataTable("yield");
-            try
-            {
-                string query = "SELECT  `id` AS 'ID', " +
-                    "`yieldType` AS 'Yield Type', " +
-                    "`quantity` AS 'Quantity',  " +
-                    "`storageUnitName` AS 'Storage Unit Name' " +
-                    "FROM yield";
-                using (MySqlConnection con = new MySqlConnection(connString))
-                {
-                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
-                    {
-                        da.Fill(dtab);
-                        dataGridViewYields.DataSource = dtab;
-                        DataView dv = dtab.DefaultView;
-                        dv.RowFilter = string.Format("yieldType LIKE '%{0}%'", comboBoxYieldType.SelectedItem.ToString());
-                        comboBoxYieldType.DataSource = dv.ToTable();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
 
         //Products
         private void btnProducts_Click(object sender, EventArgs e)
