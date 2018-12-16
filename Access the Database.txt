@@ -1,0 +1,10 @@
+phpMyAdmin MySQL Database access
+---------------------------------
+
+Follow this link: http://www.phpmyadmin.co/
+
+Server: sql12.freemysqlhosting.net
+Name: sql12268366
+Username: sql12268366
+Password: 1VpFDLJHBC
+Port number: 3306
