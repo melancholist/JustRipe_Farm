@@ -18,7 +18,7 @@ namespace JustRipeFarm_UnitTest
             Vehicle vehicle = new Vehicle();
             vehicle.VehicleType = "Truck";
             vehicle.ModelName = "starz45";
-            vehicle.ProductionYear = 2015;
+            vehicle.ProductionYear = new DateTime(2015);
             vehicle.EngineNumber = "56562651";
             vehicle.WeightLimit = 500.20M;
             vehicle.VehicleStatus = "Available";
