@@ -802,39 +802,7 @@ namespace JustRipeFarm_v3
             AddNewVehicle vehic = new AddNewVehicle();
             vehic.Show();
         }
-        private void pictureBoxSearchV_Click(object sender, EventArgs e)
-        {
-            DataTable dtbl = new DataTable("vehicle");
-            try
-            {
-                string query = "SELECT " +
-                    "`id` AS 'ID', " +
-                    "`vehicleType` AS 'Vehicle Type', " +
-                    "`modelName` AS 'Model Name', " +
-                    "`productionYear` AS 'Production Year', " +
-                    "`engineNumber` AS 'Engine Number', " +
-                    "`weightLimit` AS 'Weight Limit', " +
-                    "`vehicleStatus` AS 'Vehicle Status', " +
-                    "`price` AS 'Price' " +
-                    "FROM vehicle";
-                using (MySqlConnection con = new MySqlConnection(connString))
-                {
-                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
-                    {
-                        da.Fill(dtbl);
-                        dataGridViewVehicle.DataSource = dtbl;
-                        DataView dv = dtbl.DefaultView;
-                        dv.RowFilter = string.Format("vehicleType LIKE '%{0}%'", comboBoxVehicType.SelectedItem.ToString());
-                        comboBoxVehicType.DataSource = dv.ToTable();
-
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+        
 
         //Machine
         private void btnMachine_Click(object sender, EventArgs e)
@@ -891,35 +859,7 @@ namespace JustRipeFarm_v3
             printer.PrintDataGridView(dataGridViewMachine);
         }
 
-        private void picBoxSearchM_Click(object sender, EventArgs e)
-        {
-            DataTable dtb = new DataTable("machine");
-            try
-            {
-                string query = "SELECT " +
-                    "`id` AS 'ID', " +
-                    "`machineType` AS 'Machine Type', " +
-                    "`modelName` AS 'Model Name', " +
-                    "`machineStatus` AS 'Machine Status', " +
-                    "`price` AS 'Price' " +
-                    "FROM machine";
-                using (MySqlConnection con = new MySqlConnection(connString))
-                {
-                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
-                    {
-                        da.Fill(dtb);
-                        dataGridViewMachine.DataSource = dtb;
-                        DataView dv = dtb.DefaultView;
-                        dv.RowFilter = string.Format("machineType LIKE '%{0}%'", comboBoxMachType.SelectedItem.ToString());
-                        comboBoxMachType.DataSource = dv.ToTable();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+      
         private void btnAddMach_Click(object sender, EventArgs e)
         {
             AddNewMachine mach = new AddNewMachine();
